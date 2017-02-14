@@ -1,0 +1,844 @@
+<!-- <?phpPHP
+if (! isset($_COOKIE["chkeduserv"])){
+	setcookie("chkeduserv","Y",time( )+86400);
+	$_COOKIE["chkeduserv"] ="N";
+}
+?>  -->
+
+<head>
+<link rel="stylesheet" href="popup.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv=Page-Exit content=blendTrans(Duration=1) />
+<title>ฝ่ายบริการการศึกษา มหาวิทยาลัยเกษตรศาสตร์</title>
+<style type="text/css">
+<!--
+a:link {
+	color: #003366;
+	text-decoration: none;
+}
+a:visited {
+	color: #00336;
+	text-decoration: none;
+}
+a:hover {
+	color: #339900;
+	text-decoration: underline;
+}
+a:active {
+	color: #990000;
+	text-decoration: none;
+}
+.input {
+	BORDER-RIGHT: #BFCCD8 1px solid;
+	BORDER-TOP: #BFCCD8 1px solid;
+	FONT-SIZE: xx-small;
+	BACKGROUND: #FFFFEA;
+	BORDER-LEFT: #BFCCD8 1px solid;
+	BORDER-BOTTOM: #BFCCD8 1px solid;
+}
+.date_head {
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+	color: #FFFFF0;
+	font-weight: bold;
+}
+.search_title {
+	color: #FFB23F;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+	font-weight: bold;
+}
+.menu_pop {
+	color: #003366;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+	font-weight: bold;
+}
+.list_new_top {
+	color: #3F663F;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+}
+.date_to_new {
+	color: #3F668C;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+}
+.new_front {
+	font-size: 14px;
+	color: #003366;
+	font-family: "MS Sans Serif";
+	font-style: normal;
+	font-weight: bold;
+}
+#Layer1 {
+	position:absolute;
+	left:552px;
+	top:314px;
+	width:103px;
+	height:57px;
+	z-index:1;
+	overflow: auto;
+	visibility: visible;
+}
+.bottom_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url(/images/bg-line.jpg);
+	margin-top: 0px;
+}
+body,td,th {
+	font-family: MS Sans Serif;
+	font-size: 14px;
+}
+.style4 {font-size: 14px; color: #003366; font-family: "MS Sans Serif";}
+.style7 {font-size: 13px}
+.style9 {
+	color: #0066FF;
+}
+-->
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<!--script src="popup.js"></script-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script language="JavaScript">function mmLoadMenus() {
+  if (window.mm_menu_0303101642_0) return;
+  window.mm_menu_0303101642_0 = new Menu("root",100,17,"",11,"#FFFFFF","#F79320","#F79320","#FFFFFF","left","middle",3,0,200,-5,7,true,false,true,0,true,true);
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่&nbsp;47</li>","location='/annual_47/'");
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่&nbsp;46</li>","window.open('/annual_46/', '_parent');");
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่&nbsp;45</li>","window.open('/annual_45/', '_parent');");
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่ 44</li>","window.open('/001/udomkati/vichakarn_44/index.htm', '_parent');");
+   mm_menu_0303101642_0.hideOnMouseOut=true;
+   mm_menu_0303101642_0.bgColor='#555555';
+   mm_menu_0303101642_0.menuBorder=0;
+   mm_menu_0303101642_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0303101642_0.menuBorderBgColor='#FF9900';
+
+window.mm_menu_0303105909_0 = new Menu("root",97,17,"",11,"#FFFFFF","#F79320","#F79320","#FFFFFF","left","middle",3,0,200,-5,7,true,false,true,0,true,true);
+  mm_menu_0303105909_0.addMenuItem("<li>ครั้งที่&nbsp;12</li>","window.open('/eduserv/curriculum/market_course/market12/index.htm', '_parent');");
+  mm_menu_0303105909_0.addMenuItem("<li>ครั้งที่&nbsp;11</li>","window.open('/eduserv/curriculum/market_course/market11/index.htm', '_parent');");
+  mm_menu_0303105909_0.addMenuItem("<li>ครั้งที่&nbsp;10</li>","window.open('/001/encourage/link/marketten.htm', '_parent');");
+   mm_menu_0303105909_0.hideOnMouseOut=true;
+   mm_menu_0303105909_0.bgColor='#555555';
+   mm_menu_0303105909_0.menuBorder=0;
+   mm_menu_0303105909_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0303105909_0.menuBorderBgColor='#FF9900';
+} // mmLoadMenus()
+</script>
+
+<script language="JavaScript" src="../mm_menu.js"></script>
+<script language="JavaScript" type="text/javascript">
+var d=new Date();
+var monthname=new Array("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+var dayname=new Array("อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์");
+var Year_Show = d.getFullYear()+543;
+
+<!-- var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();-->
+var TODAY = "วัน"+ dayname[d.getDay()] +"ที่ " + d.getDate() +" "+ monthname[d.getMonth()]  + " พ.ศ. " + Year_Show;
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function clearsearch() {
+
+		alert (document.frmSearch.keyword.value);
+
+}
+//  End -->
+</script>
+<script language="JavaScript1.2">
+	function makevisible(cur,which){
+		strength=(which==0)? 1 : 0.5
+		if (cur.style.MozOpacity)
+			cur.style.MozOpacity=strength
+		else if (cur.filters)
+			cur.filters.alpha.opacity=strength*100
+		}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- //window.open("./pramern_smile/pop_smile.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=500,height=375,left=250,top=175");
+//window.open("popup.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=350,height=210,left=250,top=175");
+//window.open("popup_dadday.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=350,height=210,left=250,top=175");
+//window.open("new_year.htm","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=393,height=309,left=250,top=175");
+//window.open("pop.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=393,height=309,left=250,top=175");
+-->
+</SCRIPT>
+<script type="text/javascript">
+<!--
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<script language="JavaScript" src="../mm_menu.js"></script>
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/gif" href="http://eduserv.ku.ac.th/images/favicon.gif" />
+<style type="text/css">
+<!--
+.style12 {color: #0066CC}
+-->
+</style>
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+</head>
+
+<body leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" onLoad="MM_showHideLayers('Layer1','','inherit')"   style="-webkit-filter: grayscale(15%); filter:  grayscale(15%); ">
+<div id="watermarklogo" style="position:absolute;"></div>
+
+</head>
+
+<!--
+<script language="JavaScript1.2">mmLoadMenus();</script>
+ <a href="javascript:;" name="link1" id="link_VK" onMouseOver="MM_showMenu(window.mm_menu_0218110747_0,100,21,null,'link1')" onMouseOut="MM_startTimeout();">การประชุมวิชาการ</a>
+-->
+
+<!-- <script src="/include/webband.js">
+</script> //-->
+<script language="JavaScript1.2">mmLoadMenus();</script>
+
+
+<!--    popup ///////////////////  -->
+<div id="boxes">
+  <div style="top: 199.5px;  display: none;" id="dialog" class="window"> 
+  
+    <div id="lorem">
+<img src="popbg.jpg">
+    </div>
+   					 <div id="popupfoot"> <a href="#" class="close agree"> <img src="popbtn.jpg"></a></div>
+  </div>
+  <div style="; font-size: 32pt; color:white; display: none; opacity: 0.8;" id="mask"></div>
+</div>
+<!--    popup //////////  -->
+
+<a name="top" id="top"></a>
+<form action="../index.php?method=search" method="post" enctype="application/x-www-form-urlencoded" name="frmSearch" id="frmSearch">
+  <table width="870" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" >
+  <tr><td> <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+      <td width="900"  height="120" valign="bottom" background="images/header.jpg">
+        <div align="right" ><font size=2><b>
+          <script language="JavaScript" type="text/javascript">
+      document.write(TODAY);	</script></b></font>      </div></td>
+    </tr>
+    </table></td></tr>
+	  <td colspan="3"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" >
+
+       <tr class="date_head" bgcolor="#777777">
+         <td width="77" bgcolor="#777777"><div id='cssmenu'>
+<ul>
+   <li><a href='../index.php'><span>หน้าหลัก</span></a></li>
+
+   <li><a href='../index.php?method=about'><span>เกี่ยวกับเรา</span></a></li>
+      <li><a href='http://www.eduserv.ku.ac.th/person_v1-2.php'><span>โครงสร้างหน่วยงาน</span></a></li>
+      <li><a href='../index.php?method=downloads'><span>แบบฟอร์ม</span></a></li>
+   <li class='last'><a href='../index.php?method=contactus'><span>ติดต่อเรา</span></a></li>
+
+</ul>
+</div></td>
+         </tr>
+      </table></td>
+    </tr>
+	<tr>
+      <td colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="date_to_new"><tr align="left" valign="top"><td rowspan="7" align="left" bordercolor="#FFFFFF"  ><table width="200" border="0" cellpadding="0" cellspacing="3" bgcolor="#ffffff" class="date_to_new" ><tr><td bgcolor="#FFFFFF"><div align="center">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="date_to_new">
+          <tr align="left" valign="top">
+            <td rowspan="7" align="left" bordercolor="#FFFFFF"  ><table width="200" border="0" cellpadding="0" cellspacing="3" bgcolor="#ffffff" class="date_to_new" >
+
+				  <tr>
+                  <td width="194" height="42" bgcolor="#C8C8A6" ><div align="center"><a href="http://eduserv.ku.ac.th/index.php?method=data_curri/committee/curriculum_committee"><img src="http://eduserv.ku.ac.th/data_curri/committee/eduCommitteeLogo.jpg" width="190" border="0"/></a></div></td>
+                </tr>
+                <tr>
+                  <td width="194" height="42" bgcolor="#2CC9CD"><div align="center" class="date_head">งานพัฒนาหลักสูตรและการสอน</div></td>
+                </tr>
+
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=curriculum">การพัฒนาหลักสูตร/การสอน</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="https://www.regis.ku.ac.th/cpctrt/curriculum" target="_blank">ข้อมูลสารสนเทศหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/academics 2008/index.html" target="_blank">หลักสูตรระดับปริญญาตรี</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://www.grad.ku.ac.th/academics/index.php" target="_blank">หลักสูตรระดับบัณฑิตศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=ku_law">ข้อบังคับว่าด้วยการศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../001/encourage/link/report.htm" target="_blank">แบบรายงานฯ มคอ./สมอ.</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/organization/curriculum/standard.htm" target="_blank">เกณฑ์มาตรฐานหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=data_curri/manual_general" target="_blank">คู่มือหมวดวิชาศึกษาทั่วไป</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/album/images/58tqf_manual/Ex1.pdf" target="_blank">คู่มือบริหารคุณภาพการศึกษา มก.</a></td>
+                </tr>                
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/trainCR">อบรม/สัมมนาหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="https://phpweb.cpc.ku.ac.th:8443/workflow/index.php" target="_blank">ระบบสนับสนุนกระบวนการขออนุมัติหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://www.mua.go.th/users/bhes/MUA_CURR/CurrCer.html" target="_blank">วันที่ สกอ.รับรองหลักสูตร</a></td>
+                </tr>                
+              <!--  <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/Phase_II/Search/">ระบบสืบค้นรายวิชา (อยู่ระหว่างการปรับปรุงข้อมูล)</a></td>
+                </tr> -->
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="https://tqf.cpe.ku.ac.th/" target="_blank">ระบบ มคอ.ออนไลน</a>์</td>
+                </tr>
+              <!--  <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/curri_research.html" target="_blank">รายงานผลการวิจัยสถาบัน ปี 2554 - 2555</a></td>
+                </tr> -->
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/001/Q&A/QAcurri.php" target="_blank">ถาม-ตอบ</a></td>
+                </tr>
+                <tr>
+                  <td height="42" bgcolor="#2CC9CD" class="date_head"><div align="center" class="date_head">การรับรองคุณวุฒิ </div></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><div align="center">
+                      <p align="center"><a href="https://phpweb.cpc.ku.ac.th:8443/workflow/index.php?menu=archive" target="_blank"> <img src="/images/ku_logo.gif" width="48" height="50" border="0" title="สกอ"></a><a href="http://www.mua.go.th/users/bhes/bhes5/Curr%20Tranfer2554/page%20curr/"><img src="/images/sko_logo.gif" width="48" height="50" border="0" title="ก.พ."></a><a href="http://203.21.42.34/acc/index.html"></a><a href="http://www.otepc.go.th/"></a><a href="http://203.21.42.34/acc/index.html"><img src="/images/kp_logo.jpg" width="48" height="50" border="0" title="ก.พ."></a><a href="http://203.146.206.27/qual55p/menu.php"><img src="/images/kcs_logo.jpg" width="48" height="50" border="0" title="ก.ค.ศ."></a>
+                      <span class="style7"><span class="style12"><strong>ก.พ.</strong></span></span>
+<p align="left"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000"><a href="/data_curri/OCSC/ก.พ.รับรองคุณวุฒิปี 55.pdf">ก.พ.รับรองคุณวุฒิปี 55</a></font><br>
+<img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000"><a href="/data_curri/OCSC/ก.พ.รับรองคุณวุฒิปี 53.pdf">ก.พ.รับรองคุณวุฒิปี 53</a></font><br>
+</p>
+
+                      <span class="style7"><span class="style12"><strong>แนวปฏิบัติการรับรองคุณวุฒิ กคศ.</strong></span></span><br>
+                      <p align="left"><span class="style7"> <a href="/data_curri/qualification.pdf" target="_blank" class="style9"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000">ฉบับที่ 1 </font></a><br>
+                            <a href="/data_curri/qualification_2.pdf" target="_blank" class="style9"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000">ฉบับที่ 2</font><font color="#000000"></font></a></span><a href="/data_curri/qualification_2.pdf" target="_blank" class="style9"> </a><br>
+                            <a href="/data_curri/CommissionOnTeacher.pdf" target="_blank" class="style9"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000">ประกาศสำนักงานเลขาธิการ<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คุรุสภา </font><font color="#000000"></font></a><a href="/data_curri/qualification_2.pdf" target="_blank" class="style9"> </a><br>
+                              <img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000"><a href="/data_curri/KPS_Bundit.pdf">ขึ้นทะเบียนครูผ่านระบบ KSP BUNDIT</a></font> <img src='../images/new_icon.gif'><br>
+                              <img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><font color="#000000"><a href="/data_curri/DegreeNeed.pdf">ประเภทวิชาและสาขาวิชาขาดแคลน</a></font> <img src='../images/new_icon.gif'></p>
+                  </div></td>
+                </tr>
+                <tr>
+                  <td height="42" bgcolor="#2CC9CD" class="date_head"><div align="center" class="date_head">แนะแนวการศึกษา</div></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=eduserv/curriculum/announce/market" target="_parent">ตลาดนัดหลักสูตร</a> </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/school" target="_parent">โครงการแนะแนวเชิงรุก</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=eduserv/curriculum/announce/visitor" target="_parent">การเยี่ยมชมมหาวิทยาลัย</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=eduserv/curriculum/announce/education" target="_parent">รับนักเรียนเข้าศึกษาต่อ</a> </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/AdvLearn">โครงการเรียนล่วงหน้า</a> </td>
+                </tr>
+				  <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/58guidance.pdf" target='_blank'>เอกสารแนะแนวการศึกษา </a>&nbsp;<img src='../images/new_icon.gif'></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/introKU.pdf" target='_blank'>หนังสือแนะนำ มก.</a>&nbsp;<img src='../images/new_icon.gif'></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://reg.registrar.ku.ac.th/quota-admission/">ปฏิทินโครงการรับตรง  มก.<img src='../images/new_icon.gif'></a></td>
+                </tr>
+                <tr>
+                  <td height="48" bgcolor="#2CC9CD"><div align="center" class="date_head">ส่งเสริมและพัฒนาทางวิชาการ</div></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://eduserv.ku.ac.th/idealgrad/"><img src="/images/sm_eduserve.jpg" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/annual" target="_parent">การประชุมวิชาการ &nbsp; </a><img src="../images/icon_upd.gif"></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=manual_kn">หนังสือคู่มือ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/trainVK" target="_parent">อบรม/สัมมนาวิชาการ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/Sammatiti" target="_parent">สัมมาทิฐิกองบริการการศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/personnel" target="_parent">สัมนาบุคลากรกองบริการการศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/album/images/source/gallery.php?path=album/images/55Seminar_4jobs/" target="_parent">สัมมาทิฐิ 4 หน่วยงานสนับสนุน </a></td>
+                </tr>
+                <tr>
+                  <td height="48" bgcolor="#2CC9CD"><div align="center" class="date_head">ส่งเสริมและพัฒนาสื่อการสอน</div></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://www.cyberlab.lh1.ku.ac.th/index.html" target="_blank"><img src="/images/kucyberlab.png" border="0" align="middle"></a></div></td>
+                </tr>
+                <!--               <tr>
+                <td><img src="images/arrow_head.png" width="8" height="8" hspace="4" /><a href="organization/media/room/html/index.php" target="_parent">ระบบการจองห้องคอมฯ</a></td>
+              </tr> -->
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="/qa/index.php" target="_parent">ข้อมูลประกันคุณภาพ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/album/images/53Equipment/" target="_parent">โครงการใช้ทรัพยากรร่วมกัน</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/trainMD" target="_parent">อบรม/สัมมนางานสื่อ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/poster_online/index.php" target="_parent">ระบบโปสเตอร์ออนไลน์</a></td>
+                </tr>
+                <tr>
+                  <td height="47" bgcolor="#2CC9CD"><div align="center" class="date_head">สหกิจศึกษา</div></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://www.co-op.psd.ku.ac.th/" target="_blank"><img src="/images/coop.png" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/mua_coop/index.php" target="_parent">ระบบสารสนเทศสหกิจศึกษา</a></td>
+                </tr>
+                <tr height="10">
+                  <td><!-- <img src="images/line2.png" width="162" height="2"/>--></td>
+                </tr>
+              </table>
+                <br>
+                <table width="98%" border="0" cellpadding="0" cellspacing="3">
+                  <tr>
+                    <td align="center"><a href="http://eduserv.ku.ac.th/km" target="_blank"><img src="/images/logo_km.jpg" border="1"></a></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              <br>
+                <p align="center"><br>
+              </p></td>
+            <td width="100%" bordercolor="#FFFFFF" class="date_to_new"><p align="center">
+<img src="theking.jpg" width="490" height="609">
+            
+
+
+ </p>
+
+                                
+<style type="text/css">
+<!--
+
+a {text-decoration:none;}
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+a:hover {
+	color: #000;
+}
+a:active {
+	color: #000;
+}
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 16px}
+-->
+
+</style>
+<div align="center"><span class="style1"><br />
+  โครงการสัมมนาบุคลากร ประจำปี <br />
+  <span class="style3">การศึกษาดูงานและประชุมเชิงปฏิบัติการ</span></span><br />
+</div>
+<br />
+<table  border="0" cellspacing="1" cellpadding="0" align="center">
+<tr><tr><td colspan=3><h1>2558</h1><hr></td></tr>  
+  
+    					<td width="150" valign="top">
+ 
+    					<table border="0" cellspacing="0" cellpadding="0"  >
+      					<tr>
+                       
+        					<td    > <a href="album/images/source/gallery.php?path=album/dayout/58/"> 
+                        <img src="http://eduserv.ku.ac.th/album/dayout/58//thumb.jpg" width="145"  height="95" style="margin-bottom:0;" 
+                         /></a>
+					    	</td>
+
+      					</tr>
+                        
+      					<tr>
+        				<td width="140"> 
+                        <font size="-1">
+                        <a href="album/images/source/gallery.php?path=album/dayout/58/">  
+						มหาวิทยาลัยธรรมศาสตร์ รังสิต<br />
+						<font size="-3" color="#999999">2015-05-29</font>
+                        
+                        
+              			</a></font>
+
+                        </td>
+      					</tr>
+    					</table>
+       					</td>
+                       
+    
+<tr><td colspan=3><h1>2557</h1><hr></td></tr>  
+  
+    					<td width="150" valign="top">
+ 
+    					<table border="0" cellspacing="0" cellpadding="0"  >
+      					<tr>
+                       
+        					<td    > <a href="album/images/source/gallery.php?path=album/dayout/57/"> 
+                        <img src="http://eduserv.ku.ac.th/album/dayout/57//thumb.jpg" width="145"  height="95" style="margin-bottom:0;" 
+                         /></a>
+					    	</td>
+
+      					</tr>
+                        
+      					<tr>
+        				<td width="140"> 
+                        <font size="-1">
+                        <a href="album/images/source/gallery.php?path=album/dayout/57/">  
+						โรงแรมธรรมรินทร์ จ.ตรัง<br />
+						<font size="-3" color="#999999">2014-11-07</font>
+                        
+                        
+              			</a></font>
+
+                        </td>
+      					</tr>
+    					</table>
+       					</td>
+                       
+    
+<tr><td colspan=3><h1>2556</h1><hr></td></tr>  
+  
+    					<td width="150" valign="top">
+ 
+    					<table border="0" cellspacing="0" cellpadding="0"  >
+      					<tr>
+                       
+        					<td    > <a href="album/images/source/gallery.php?path=album/dayout/56/"> 
+                        <img src="http://eduserv.ku.ac.th/album/dayout/56//thumb.jpg" width="145"  height="95" style="margin-bottom:0;" 
+                         /></a>
+					    	</td>
+
+      					</tr>
+                        
+      					<tr>
+        				<td width="140"> 
+                        <font size="-1">
+                        <a href="album/images/source/gallery.php?path=album/dayout/56/">  
+						สถานีวิจัยประมงศรีราชา จ.ชลบุรี<br />
+						<font size="-3" color="#999999">2013-05-08</font>
+                        
+                        
+              			</a></font>
+
+                        </td>
+      					</tr>
+    					</table>
+       					</td>
+                       
+    
+<tr><td colspan=3><h1>2555</h1><hr></td></tr>  
+  
+    					<td width="150" valign="top">
+ 
+    					<table border="0" cellspacing="0" cellpadding="0"  >
+      					<tr>
+                       
+        					<td    > <a href="album/images/source/gallery.php?path=album/dayout/55/"> 
+                        <img src="http://eduserv.ku.ac.th/album/dayout/55//thumb.jpg" width="145"  height="95" style="margin-bottom:0;" 
+                         /></a>
+					    	</td>
+
+      					</tr>
+                        
+      					<tr>
+        				<td width="140"> 
+                        <font size="-1">
+                        <a href="album/images/source/gallery.php?path=album/dayout/55/">  
+						มหาวิทยาลัยนานาชาติแสตมฟอรด จ.ประจวบคีรีขันธ <br />
+						<font size="-3" color="#999999">2012-04-18</font>
+                        
+                        
+              			</a></font>
+
+                        </td>
+      					</tr>
+    					</table>
+       					</td>
+                       
+    
+<tr><td colspan=3><h1>2553</h1><hr></td></tr>  
+  
+    					<td width="150" valign="top">
+ 
+    					<table border="0" cellspacing="0" cellpadding="0"  >
+      					<tr>
+                       
+        					<td    > <a href="album/images/source/gallery.php?path=album/dayout/54/"> 
+                        <img src="http://eduserv.ku.ac.th/album/dayout/54//thumb.jpg" width="145"  height="95" style="margin-bottom:0;" 
+                         /></a>
+					    	</td>
+
+      					</tr>
+                        
+      					<tr>
+        				<td width="140"> 
+                        <font size="-1">
+                        <a href="album/images/source/gallery.php?path=album/dayout/54/">  
+						มหาวิทยาลัยนเรศวร จ.พิษณุโลก<br />
+						<font size="-3" color="#999999">2010-10-31</font>
+                        
+                        
+              			</a></font>
+
+                        </td>
+      					</tr>
+    					</table>
+       					</td>
+                       
+    
+  
+  
+    					<td width="150" valign="top">
+ 
+    					<table border="0" cellspacing="0" cellpadding="0"  >
+      					<tr>
+                       
+        					<td    > <a href="album/images/source/gallery.php?path=album/dayout/53/"> 
+                        <img src="http://eduserv.ku.ac.th/album/dayout/53//thumb.jpg" width="145"  height="95" style="margin-bottom:0;" 
+                         /></a>
+					    	</td>
+
+      					</tr>
+                        
+      					<tr>
+        				<td width="140"> 
+                        <font size="-1">
+                        <a href="album/images/source/gallery.php?path=album/dayout/53/">  
+						มหาวิทยาลัยบูรพา วิทยาเขตจันทบุรี <br />
+						<font size="-3" color="#999999">2010-05-12</font>
+                        
+                        
+              			</a></font>
+
+                        </td>
+      					</tr>
+    					</table>
+       					</td>
+                       
+    
+</table>
+<p>&nbsp;</p>
+
+
+
+                                <table width="497" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="487"><a href="http://eduserv.ku.ac.th/organization/potent57/index.php" class="style7"></a></td>
+                  </tr>
+              </table></td>
+            <td width="155" rowspan="7" bordercolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="3" bgcolor="#ffffff">
+                <tr>
+                  <td height="41" bgcolor="#FFFFFF" class="style4"><div align="center">
+				<br>
+                          <img src="../images/eduservKU150.png" width="150" height="150" alt="QReduserve"></div>
+                      <br></td>
+                </tr>
+                <tr>
+                  <td height="41" bgcolor="#2CC9CD" class="style4"><div align="center" class="date_head">คู่มือจรรยาบรรณอาจารย์ มหาวิทยาลัยเกษตรศาสตร์</div></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.eduserv.ku.ac.th/manual_kn.php" target="_blank"><img src="../images/manner53.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.eduserv.ku.ac.th/54comment/"><img src="../images/RR.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                <tr>
+                  <td><a href="http://eduserv.ku.ac.th/54resources/" target="_blank"><img src="../images/EDU.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td height="40"><a href="http://eduserv.ku.ac.th/album/images/55project/" target="_blank"><img src="../images/banner_Dr.jpg" width="155" height="40" border="0"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://eduserv.ku.ac.th/LearningCenter/" target="_parent"><img src="../images/lct_02.jpg" width="155" height="40" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://advisor.ku.ac.th" target="_parent"><img src="http://eduserv.ku.ac.th/advisor/advisor.jpg" width="155" height="40" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://ku-pod.ku.ac.th/"><img src="/images/ku-pod.jpg" border="0"></a></div></td>
+                </tr>
+             <!--   <tr>
+                  <td><div align="center"><a href="http://203.146.206.27/qual55p/menu.php"><img src="/images/kks.jpg" border="0"></a></div>
+                      <br></td>
+                </tr> -->
+                <tr>
+                  <td height="46" bgcolor="#2CC9CD"><div align="center" class="date_head">เว็บไซต์ข่าวการศึกษา</div></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.dailynews.co.th/Content/education" target="_blank"><img src="../images/New_Dailynews.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.thairath.co.th/tags/ทีมข่าวการศึกษา" target="_blank"><img src="../images/New_Thairath.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.matichon.co.th/inbound-education.php" target="_blank"><img src="../images/New_matichon.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.norsorpor.com/education.html" target="_blank"><img src="../images/New_NSP.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.eduzones.com/" target="_blank"><img src="../images/New_EDUZONE.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><div align="center">
+                      <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','155','height','119','src','../80yrs_book/king80','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','../80yrs_book/king80' ); //end AC code
+        </script>
+                      <noscript>
+                      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="155" height="119">
+                        <param name="movie" value="../80yrs_book/king80.swf" />
+                        <param name="quality" value="high" />
+                        <embed src="../80yrs_book/king80.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="155" height="119"></embed>
+                      </object>
+                      </noscript>
+                    </div>
+                      <br></td>
+                </tr>
+                <tr>
+                  <td height="44" bgcolor="#2CC9CD" class="date_head"><div align="center" class="date_head">เว็บไซต์หน่วยงาน มก. </div></td>
+                </tr>
+                <tr>
+                  <td><select name="quick_link" class="input" onChange="MM_jumpMenu('parent',this,0)">
+                      <option selected>ลิงค์ด่วน </option>
+                      <option value="http://www.registrar.ku.ac.th/Calender/calendar.htm">ปฏิทินการศึกษา</option>
+                      <option value="http://calendar.ku.ac.th">ปฏิทินกิจกรรม มก.</option>
+                      <option value="http://eduserv.ku.ac.th/phpEventCalendar/index.php">ปฏิทินกิจกรรม กบศ.</option>
+                      <option value="http://pr.ku.ac.th/">ประชาสัมพันธ์ มก.</option>
+                      <option value="https://acc3d.ku.ac.th/">ระบบบัญชี 3 มิติ</option>
+                      <option value="https://www.regis.ku.ac.th/">ระบบสารสนเทศนิสิต</option>
+                      <option value="https://emeeting.ku.ac.th/">ระบบประชุมอิเล็กทรอนิกส์ </option>
+                      <option value="http://eoffice.ku.ac.th/">ระบบหนังสือเวียน</option>
+                      <option value="https://eassess.ku.ac.th/">ระบบประเมินอิเล็กทรอนิกส์</option>
+                      <option value="http://www.lib.ku.ac.th/">ห้องสมุด</option>
+                      <option value="http://www.cpc.ku.ac.th/">บริการคอมพิวเตอร์</option>
+                      <option value="http://www.qa.ku.ac.th/">สำนักประกันคุณภาพ</option>
+                      <option value="http://www.grad.ku.ac.th/ ">บัณฑิตวิทยาลัย</option>
+                      <option value="http://www.inf.ku.ac.th/">สถานพยาบาล มก.</option>
+                      <option value="http://kubook.ku.ac.th/">ศูนย์หนังสือ มก.</option>
+                      <option value="http://ku-press.ku.ac.th/">สำนักพิมพ์ มก.</option>
+                      <option value="http://www.ku.ac.th/agriculture/">สารสนเทศเกษตร</option>
+                      <option value="http://eduserv.ku.ac.th/bandit/033.html">เครือข่ายสถาบันอุดมศึกษา</option>
+                      <option value="http://ku-numthai.rdi.ku.ac.th/">เกษตรศาสตร์นำไทย</option>
+                      <option value="http://kumis.cpc.ku.ac.th/~psdsad/links-index.html">นานาสาระลิงค์</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td><a href="http://edutainment.ku.ac.th/@live/index.php" target="_blank"><img src="../images/live_small.gif" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://kucon.lib.ku.ac.th/kucon/index.html" target="_blank"><img src="../images/Ku40logo.gif" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://webmail.ku.ac.th/" target="_blank"><img src="../images/webmail.png" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://nisit.kasetsart.org/" target="_blank"><img src="../images/transcript.gif" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.sa.ku.ac.th/" target="_blank"><img src="../images/lnk-nisit.png" border="1"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.registrar.ku.ac.th/" target="_blank"><img src="../images/lnk-regis.png" border="1"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://directory.ku.ac.th/"><img src="../images/lnk_nama.jpg" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><!--
+<a href="http://gilw121.lh1.ku.ac.th/sarabun/" target="_blank"><img src="images/eoffice.png" width="162" height="66" border="0" style="filter:alpha(opacity=20);-moz-opacity:0.2" onMouseover="makevisible(this,0)" onMouseout="makevisible(this,1)" /></a>-->                  </td>
+                </tr>
+                <tr height="10">
+                  <td><!-- <img src="images/line2.png" width="162" height="2"/>-->                  </td>
+                </tr>
+              </table>
+                <br>
+                <br>
+                <table border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="date_head">วิทยาเขต</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              <p>&nbsp; </p></td>
+          </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+        </table>
+        <p align="left"><a href="/data_curri/qualification.pdf" target="_blank" class="style9"><font color="#000000"></font></a></p>
+                </div></td>
+              </tr>
+      </table>
+              </td>
+          </tr>
+      </table></td>
+	</tr>
+  </table>
+  Page generated in 1477732610.7167 seconds.  <div align="center"><span class="bottom_text">ฝ่ายบริการการศึกษา สำนักทะเบียนและประมวลผล  อาคารระพีสาคริก <br>
+    มหาวิทยาลัยเกษตรศาสตร์ 50 ถนนงามวงศ์วาน แขวงลาดยาว เขตจตุจักร กรุงเทพฯ 10900<br>
+  โทรศัพท์ 0 2118 0143, โทรสาร 0 2118 0143, Web Master : <a href="mailto:psd.esd@ku.ac.th">psd.esd@ku.ac.th</a></span>  </div>
+</form>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html><url>http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/personnel</url><pagerank>0.0009728710854839056</pagerank>

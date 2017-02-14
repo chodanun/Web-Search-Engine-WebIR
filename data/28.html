@@ -1,0 +1,503 @@
+<!--
+<script>
+var reloaded = false;
+var loc=""+document.location;
+loc = loc.indexOf("?reloaded=")!=-1?loc.substring(loc.indexOf("?reloaded=")+10,loc.length):"";
+loc = loc.indexOf("&")!=-1?loc.substring(0,loc.indexOf("&")):loc;
+reloaded = loc!=""?(loc=="true"):reloaded;
+
+function reloadOnceOnly() {
+	if (!reloaded)
+	window.location.replace(window.location+"?reloaded=true");
+}
+reloadOnceOnly();
+</script> 
+-->
+<html>
+<head>
+<title>M@xLearn - :: Kasetsart University's Powerful eLearning Suite  :: -</title>
+<meta http-equiv="Content-Type" content="text/html; charset=tis-620">
+<LINK href="style.css" type=text/css rel=stylesheet>
+<LINK href="main.css" type=text/css rel=stylesheet>
+<style>
+BODY {
+	SCROLLBAR-FACE-COLOR: #FFFFFF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #00B33A; 
+	SCROLLBAR-SHADOW-COLOR: #000000; 
+	SCROLLBAR-3DLIGHT-COLOR: #E1FDE9; 
+	SCROLLBAR-ARROW-COLOR:  #000000; 
+	SCROLLBAR-TRACK-COLOR: #CCFFDD; 
+	SCROLLBAR-DARKSHADOW-COLOR: #00B33A; 
+}
+</style>
+</head>
+<SCRIPT TYPE="text/JavaScript" SRC="menu.js"></SCRIPT>	
+<SCRIPT TYPE="text/JavaScript">
+	function mnuOn1(Object)
+	{
+		Object.style.color = 'blue';
+	}			
+	function mnuOff(Object)
+	{
+		Object.style.color = Object.DEFCOL;
+	}
+/*
+
+	AddMenu("mnu1",190,115,120,"black","white","mnuOn1(this);","mnuOff(this);","&nbsp;&nbsp;|&nbsp;&nbsp;");
+		
+
+	
+		AddMainMenu(Menu.mnu1,"Available Courses","https://course.ku.ac.th/lms/login/ilogins.php?availableCourses=Yes");
+		AddMainMenu(Menu.mnu1,"News Courses","https://course.ku.ac.th/lms/login/ilogins.php?newCourses=Yes");
+		AddMainMenu(Menu.mnu1,"Statistics","https://course.ku.ac.th/lms/login/ilogins.php?statistics=Yes");
+		AddMainMenu(Menu.mnu1,"Contact us","mailto:fengjini@ku.ac.th;suthee386@hotmail.com;fengstj@ku.ac.th");			
+		
+		AddMainMenu(Menu.mnu1,"Help","#");
+
+		AddSubMenu(Menu.mnu1,0);					
+		CloseMenu();
+
+		AddSubMenu(Menu.mnu1,0);				
+		CloseMenu();
+		
+		AddSubMenu(Menu.mnu1,0);				
+		CloseMenu();
+		
+		AddSubMenu(Menu.mnu1,0);				
+		CloseMenu();
+				
+		AddSubMenu(Menu.mnu1);
+			AddMenuItem("-",null,"#339900");
+			AddMenuItem("VDO Help","https://course.ku.ac.th/help2/learn_help3.wmv","orange");
+			AddMenuItem("Presentation Help","https://course.ku.ac.th/help2/kuclassroom.ppt","orange");
+			AddMenuItem("-",null,"#339900");					
+		CloseMenu();
+		
+	CloseMenu();
+*/
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+
+
+function newImage(arg) {
+        if (document.images) {
+                rslt = new Image();
+                rslt.src = arg;
+                return rslt;
+        }
+}
+
+function changeImages() {
+        if (document.images && (preloadFlag == true)) {
+                for (var i=0; i<changeImages.arguments.length; i+=2) {
+                        document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+                }
+        }
+}
+
+var preloadFlag = false;
+function preloadImages() {
+        if (document.images) {
+                loginnew_17_over = newImage("images/loginnew_17-over.gif");
+                loginnew_18_over = newImage("images/loginnew_18-over.gif");
+                loginnew_20_over = newImage("images/loginnew_20-over.gif");
+                preloadFlag = true;
+        }
+}
+
+function placeFocus() {
+if (document.forms.length > 0) {
+var field = document.forms[0];
+for (i = 0; i < field.length; i++) {
+if ((field.elements[i].type == "text") || (field.elements[i].type == "textarea") || (field.elements[i].type.toString().charAt(0) == "s")) {
+document.forms[0].elements[i].focus();
+break;
+         }
+      }
+   }
+}
+
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+var win = null;
+function NewWindow(mypage,myname,w,h,scroll){
+	LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+	TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+	settings =
+	'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+	win = window.open(mypage,myname,settings)
+}
+</SCRIPT>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" NMOUSEMOVE="mnuMove();"  ONLOAD="placeFocus();">
+
+<table id="Table_01"  width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td  rowspan="2" background="../images/hearder_03.gif"><img src="../images/hearder_01.gif" width="127" height="107" alt="Kasetsart University"></td>
+		<td><img src="../images/hearder_02.gif" width="341" height="51" alt="">
+         </td><td  rowspan="2" width="100%" background="../images/hearder_03.gif"></td>
+		<td rowspan="2">
+			<img src="../images/hearder_04.gif" width="266" height="107" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../images/hearder_05.gif" width="341" height="56" alt=""></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td valign="top">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td width="180" valign="top" background="../images/bg_lines.gif">
+	  <br>
+	  <br>
+          <table width="170" border="0" cellpadding="0" cellspacing="0"  align="center" bgcolor="#99CC00" class="tdGreen">
+                <tr> 
+                  <td width="168" height="16">
+					<div class="BWhite"  ><img src="../images/lock.gif" width="16" height="16"> 
+                  Log In </div></td>
+                </tr>                
+                <tr> 
+                  <td> 
+				  <table width="170" border="0" cellpadding="5" cellspacing="0" align="center" >
+                      <tr> 
+                        <td height="80" bgcolor="#99CC00">
+						<form name="iloginForm" action="LoginAction.php"  method="post">
+						<TABLE width="100%" border=0 cellPadding=5 cellSpacing=0>
+                            <TBODY>
+                              <TR bgColor=#ffffff> 
+                                <TD vAlign=top>username :: 
+                                  <INPUT maxLength="20" size="15" name="ilogin" class="textLogin"></TD>
+                              </TR>
+                              <TR bgColor=#ffffff> 
+                                <TD vAlign=top>password :: 
+                                  <INPUT id="ipassword" type="password"  maxLength="40" size="15" name="ipassword" class="textLogin"></TD>
+                              </TR>
+                              <TR bgColor=#ffffff> 
+                                <TD vAlign=top>
+                                </TD>
+                              </TR>
+                              
+                          <TD vAlign=top> 
+                                  <input type="submit" name="Submit" value="Submit" width="70" class="button"> 
+                                            <input type="reset" name="Submit2" value="Clear" width="70" class="button">
+                            </TD>
+                              </TR>
+                              <TR bgColor=#ffffff> 
+                                <TD vAlign=top>
+                                  | <A href="#"
+                                onclick="MM_popupMsg('ท่านสามารถติดต่อไปยัง\rสำนักบริการคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์\rโทรศัพท์ : +66 2 562-0951-7 \rโทรสาร : +66 2 562-0950\rอีเมล : webmaster-cpc@ku.ac.th\rURL : http://www.cpc.ku.ac.th\r')">Forgot 
+                                  Password</A> | <A class=abox1 
+                                href="https://course.ku.ac.th/course/help2/index.html" 
+                                target=_blank>help</A></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+						  </form>
+						</td>
+                      </tr>
+                </table>
+                </td>
+				</tr>
+              </table>
+	      <br>
+	  	 	  <table width="168" border="0" align="center" cellpadding="2" cellspacing="0" >
+          <tr> 
+            <td> <table width="168" border="0" cellpadding="2" cellspacing="0" class="tdGreen">
+                <tr> 
+                      
+                    <td bgcolor="#99CC00"><font color="#FFFFFF"><img src="../images/icon_member.gif"> 
+                      ขณะนี้มีผู้ Online </font></td>
+                </tr>
+                <tr> 
+                      
+                    <td bgcolor="#FFFFFF">
+					<TABLE cellSpacing=0 cellPadding=5 width=168 border=0>
+                            <TBODY>
+                              <TR bgColor=#ffffff> 
+                                <TD width=87><IMG src="../images/person_user.gif" > นักเรียน </TD>
+                                <TD width=91>: 2 คน</TD>
+                              </TR>
+                              <TR bgColor=#ffffff> 
+                                    <TD width=87><IMG src="../images/person_user.gif" > 
+                                      อาจารย์ </TD>
+                                <TD>: 0 คน</TD>
+                              </TR>
+							  <!--
+                              <TR bgColor=#ffffff> 
+                                    <TD width=87><IMG src="../images/person_user.gif" > 
+                                      บุคลภายนอก </TD>
+                                <TD>: 34 คน</TD>
+                              </TR>
+							  -->
+                            </TBODY>
+                          </TABLE>
+					</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+		<br>
+<!--          <table width="168" border="0" cellpadding="2" cellspacing="0" align="center" class="tdGreen">
+                      <tr> 
+                        
+                    
+              <td bgcolor="#99CC00" class="Bwhite"><img src="../images/edu_icon.gif" width="19" height="18"> 
+                หลักสูตรเรียนแบบ Online </td>
+                      </tr>
+                      <tr> 
+                        <td height="50" ><div align="center"><A 
+                              href="http://maxlearn.eng.ku.ac.th/online_training/"><IMG 
+                              src="../images/temp/mechatronics_online.gif" 
+                              width=168 height="60" border=0></A></div></td>
+                      </tr>
+                    </table>
+          <br>
+          <table width="168" border="0" cellpadding="2" cellspacing="0" align="center" class="tdGreen">
+                      <tr> 
+                        
+                    
+              <td bgcolor="#99CC00" class="Bwhite"><img src="../images/edu_icon.gif" width="19" height="18"> 
+                หลักสูตรฝึกอบรม</td>
+                      </tr>
+                      <tr> 
+                        <td height="50" ><div align="center"><A 
+                              href="http://maxlearn.eng.ku.ac.th/online_training/java/"><IMG 
+                              src="../images/temp/javaprofessionaldeveloper_b.gif" 
+                              width=168 height="60" border=0></A></div></td>
+                      </tr>
+                    </table>
+          <br>-->
+          <table width="170" border="0" align="center" cellpadding="2" cellspacing="0" >
+          <tr> 
+            <td> <table width="170" border="0" cellpadding="2" cellspacing="0" class="tdGreen">
+                <tr> 
+                      <td bgcolor="#99CC00"><font color="#FFFFFF"><span class="Bwhite"><img src="../images/icon_www.gif" width="16" height="16"> 
+                        Interested Links</span></font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#FFFFFF"> <TABLE width="100%" 
+                        align=center cellPadding=0 cellSpacing=0>
+                          <TBODY>
+                            <TR borderColor=#99ccff bgColor=#ffffff> 
+                              <TD align=middle 
+                              width="16%"></TD>
+                              <TD align=middle 
+                              width="84%"></TD>
+                            </TR>
+                            <TR vAlign=top bgColor=#eeeeee> 
+                              <TD>&nbsp;<IMG height=16 alt="" 
+                              src="../images/link.gif" width=20 
+                              border=0></TD>
+                              <TD><a href="http://www.correct.go.th/hrd/journal.htm">วารสารบทความ 
+                                Online</a></TD>
+                            </TR>
+                            <TR vAlign=top bgColor=#fdfdfd> 
+                              <TD>&nbsp;<IMG height=16 alt="" 
+                              src="../images/link.gif" width=20 
+                              border=0></TD>
+                              <TD><a href="http://www.learn.in.th">LearnOnline</a></TD>
+                            </TR>
+                            <TR vAlign=top bgColor=#eeeeee> 
+                              <TD>&nbsp;<IMG height=16 alt="" 
+                              src="../images/link.gif" width=20 
+                              border=0></TD>
+                              <TD><a href="http://www.edtechno.com">Thai Educational 
+                                Technology Resource Center</a></TD>
+                            </TR>
+                            <TR vAlign=top bgColor=#fdfdfd> 
+                              <TD>&nbsp;<IMG height=16 alt="" 
+                              src="../images/link.gif" width=20 
+                              border=0></TD>
+                              <TD><a href="http://www.thaicai.com">thaiCAI</a></TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE> </td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </td>
+      <td valign="top" bgcolor="#FFFFFF"> <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr> 
+            <td valign="top" ><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr> 
+                    <td valign="top"><div align="center"> <br>
+                        <br>
+                      </div>
+                                            <!-- News-->
+					                        <table width="100%" border="0" cellpadding="0" align="center">
+                        <tr> 
+                          <td> <table width="98%" border="0" align="center" cellpadding="2" cellspacing="2" class="tdBotgreen">
+                              <tr> 
+                                <td width="182" bgcolor="#99CC00" class="tdGreen"><font color="#FFFFFF"><img src="../images/icon_pin.gif"><b>&nbsp;News 
+                                  : ข่าวสารประชาสัมพันธ์</b></font></td>
+                              </tr>
+                              <tr> 
+                                <td height="50"> 
+                                  <table width="100%" cellpadding="5" cellspacing="0" align="center" class="tdGreen">
+                                    <tr bgcolor="#FFFFFF"> 
+                                      <td width="15%" align="center" bordercolor="#99CCFF"><b><u>รายวิชา</u></b></td>
+                                      <td width="52%" align="center" bordercolor="#99CCFF"><b><u>ข่าวประกาศ</u></b></td>
+                                      <td width="20%" align="center" bordercolor="#99CCFF"><b><u>ผู้ประกาศ</u></b></td>
+                                      <td width="13%" align="center" bordercolor="#99CCFF"><b><u>วันที่ประกาศ</u></b></td>
+                                    </tr>
+                                                                        <tr  bgcolor="#99CC33" > 
+                                      <td colspan="5"  class="tdGreen"><table width="100%" border="0" cellspacing="0" cellpadding="1">
+                                          <tr> 
+                                            <td width="11%" align="center"><font color="#FFFFFF"><b><u>คณะ</u></b></font><b><font color="#FFFFFF"></font></b></td>
+                                            <td width="89%"><b><font color="#FFFFFF">วิทยาศาสตร์</font></b></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <tr bgcolor="#C8FF91" VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01418399 
+                                         (12,201)                                      </TD>
+                                      <td class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=25775&courses=15010','name','650','500','yes');return false" > 
+                                  		ชื่อหัวข้อ senior project										</a><br>
+										
+										ให้นิสิตที่ลงทะเบียนเรียน วิชา 01418399 หมู่ 12, 201 อ. อนงค์นาฏ สมโชค สุนทรีย์ กรอกข้อมูลชื่อหัวข้อ...									  </td>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=11394&page=1','name','650','500','yes');return false" > 
+                                        รศ ดรอนงค์นาฏ  ศรีวิหค 
+                                        </a> </td>
+                                      <td align="center">2016-10-16</td>
+                                    </tr>
+                                                                        <tr  VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01424453 
+                                                                              </TD>
+                                      <td class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=24988&courses=9059','name','650','500','yes');return false" > 
+                                  		การวัดผลสัมฤทธิ์การเรียนรายวิชา 01424453 PCMB										</a><br>
+										
+										นิสิตสามารถดูรายละเอียดการวัดผลสัมฤทธิ์ในการเรียนวิชาฯ และแบบแผนการออกข้อสอบของรายวิชาฯ ใน resource ...									  </TD>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=96&page=1','name','650','500','yes');return false" > 
+                                        รศ.ดร.จินดาวรรณ  สิรันทวิเนติ 
+                                        </a> </TD>
+                                      <td align="center">2016-09-11</TD>
+                                    </tr>
+                                                                        <tr  bgcolor="#99CC00" > 
+                                      <td colspan="5" class="tdGreen"><table width="100%" border="0" cellspacing="0" cellpadding="1">
+                                          <tr> 
+                                            <td width="11%" align="center"><font color="#FFFFFF"><b><u>คณะ</u></b></font><b><font color="#FFFFFF"></font></b></td>
+                                            <td width="89%"><b><font color="#FFFFFF">วิศวกรรมศาสตร์</font></b></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                                                        <tr bgcolor="#C8FF91" VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01208341 
+                                                                              </TD>
+                                      <td bgcolor="#C8FF91" class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=25781&courses=11575','name','650','500','yes');return false" > 
+                                  		Midterm Score 40%										</a><br>
+										
+										คะแนนสอบกลางภาค ภาคต้นปีการศึกษา 2559 หมู่ 3,251,450 ประกาศไว้ใน score folder									  </TD>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=19135&page=1','name','650','500','yes');return false" > 
+                                        ผศ.ดร.ณัฐศักดิ์  บุญมี 
+                                        </a> </TD>
+                                      <td align="center">2016-10-27</TD>
+                                    </tr>
+                                                                        <tr  VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01206311ME 
+                                         (all)                                      </TD>
+                                      <td class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=25756&courses=7376','name','650','500','yes');return false" > 
+                                  		ประกาศคะแนนสอบกลางภาค59 หมู่3 4 5 252 253 254 ส่วน อ.ชัชพันธ์										</a><br>
+										
+										ประกาศคะแนนสอบกลางภาค59 หมู่3 4 5 252 253 254 ส่วน อ.ชัชพันธ์ : ชื่อไฟล์ MidtermScore59_Chatpun ในห้...									  </TD>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=55539&page=1','name','650','500','yes');return false" > 
+                                        ดร.ชัชพันธ์  ขำญาติ 
+                                        </a> </TD>
+                                      <td align="center">2016-10-11</TD>
+                                    </tr>
+                                                                        <tr bgcolor="#C8FF91" VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01206311IUP 
+                                         (all)                                      </TD>
+                                      <td class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=25755&courses=13880','name','650','500','yes');return false" > 
+                                  		Section 450 451 452 95: Midterm exam scores 59										</a><br>
+										
+										Section 450 451 452 95: Midterm exam scores 59: Part 2:Aj.Chatpun(Full score;65) of all sections are...									  </TD>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=55539&page=1','name','650','500','yes');return false" > 
+                                        ดร.ชัชพันธ์  ขำญาติ 
+                                        </a> </TD>
+                                      <td align="center">2016-10-11</TD>
+                                    </tr>
+                                                                        <tr  VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01999211 
+                                         (all)                                      </TD>
+                                      <td class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=21913&courses=9139','name','650','500','yes');return false" > 
+                                  		Lecture note IUP 01999211										</a><br>
+										
+										Lecture note IUP Assist.Prof.Dr.Weerakaset Suanpaga<br />
+lecture note combination permutation, Convoluti...									  </TD>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=69610&page=1','name','650','500','yes');return false" > 
+                                        <font color=blue>ผศ.ดร.<font color=blue>วีระเกษตร  <font color=blue>สวนผกา 
+                                        </a> </TD>
+                                      <td align="center">2016-08-24</TD>
+                                    </tr>
+                                                                        <tr bgcolor="#C8FF91" VALIGN="top"> 
+                                      <td class="tdG"><img src="../images/right_green.gif"  alt="" border="0" width="10" height="10">&nbsp;01999211 
+                                         (all)                                      </TD>
+                                      <td class="tdG">
+									  									  <a   class="AS" href="#" onClick="NewWindow('../courses/news_detail.php?id=18166&courses=9139','name','650','500','yes');return false" > 
+                                  		lecture note ผศ.ดร.วีระเกษตร										</a><br>
+										
+										lecture note Return period, Convolution, Math Model ผศ.ดร.วีระเกษตรและ ดร.วาทินี<br />
+download lecture 3...									  </TD>
+                                      <td align="center" class="tdG"> <a  href="#" onClick="NewWindow('../personal/info_fpage.php?userid=69610&page=1','name','650','500','yes');return false" > 
+                                        <font color=blue>ผศ.ดร.<font color=blue>วีระเกษตร  <font color=blue>สวนผกา 
+                                        </a> </TD>
+                                      <td align="center">2016-08-24</TD>
+                                    </tr>
+                                                                      </table></td>
+                              </tr>
+                            </table></td>
+                        </tr>
+                      </table>
+                      <br> 
+                                            <!-- Course Statistics All -->
+                                            <!-- End Course Statistic All -->
+                      <!-- Avaliable Course -->
+                                            <!-- End Avaliable Course -->
+                      <br> <br> </td>
+                  </tr>
+                </table></td>
+    </tr>
+    <tr> 
+          <td colspan="2" valign="top" >&nbsp;</td>
+    </tr>
+    <tr> 
+              <td colspan="2">&nbsp;</td>
+    </tr>
+  </table>
+	</td>
+  </tr>
+</table>
+<!-- Footer -->
+<table width="100%" border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td background="../images/bg_lines.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#666666">
+		<div align="center" class="footer">Copyright &copy;2004 Faculty of Engineering 
+                    Kasetsart University. All rights reserved.<br>
+                Best viewed with Microsoft Internet Explorer 4 or Higher on 800x600 
+                pixel
+		</div>
+	</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+<url>https://course.ku.ac.th/lms/login1/ilogins.php</url><pagerank>0</pagerank>

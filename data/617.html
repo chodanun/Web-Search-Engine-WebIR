@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="tis-620">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Academic e-Evaluation  System Kasetsart University">
+    <meta name="author" content="Tharathorn Sottimia (ธราธร  โสตธิมัย)">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>:: Academic e-Evaluation Kasetsart University ::</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container"> <!-- bootstrap.css -->
+	<div class="banner"><img src="images/banner.jpg" class="img-responsive" ></div>
+	<div style="width100%;height:35px">
+	<div style="float:left;"><a href="ShowAll.php" class="btn btn-warning btn-xs" role="button">ระบบถามตอบ</a>		<!-- showAll.php -->
+	<!--<a href="#" class="btn btn-warning btn-xs" role="button">คำถามที่พบบ่อยในระบบประเมินการเรียนการสอน</a>--> <!-- q_a.php -->
+	<a href="rpt_advisor.php" class="btn btn-warning btn-xs" role="button" target="_blank">ตรวจสอบข้อมูลอาจารย์ผู้สอน</a> <!-- rpt_advisor.php -->
+	<a href="https://eassess.ku.ac.th/updata_teacher/index.php" class="btn btn-warning btn-xs" role="button" target="_blank">ปรับปรุงข้อมูลอาจารย์ผู้สอนผ่านเว็บ </a> 
+	</div><div style="float:right;padding-top:5px"><a href="index.php">TH</a> || <a href="index_en.php">EN</a></div></div>
+	
+	   <fieldset>
+       <form class="form-signin" action="" method="post" > 
+       <h4 class="form-signin-heading"><img src="images/user.gif" class="img-thumbnail">เข้าสู่ระบบ</h4>  <!-- singin.css -->
+	             <input type="text" class="form-control" placeholder="Account" name="account" maxlength="15"><!--autofocus-->  <!-- singin.css  bootstrap.css -->
+          <input type="password" class="form-control" placeholder="Password" name="password" maxlength="20">
+		  <select  class="form-control" name="zone">
+		  <option value="0">บางเขน</option>
+		  <option value="1">กำแพงแสน</option>
+		  <option value="3">สกลนคร</option>
+		  <option value="2">ศรีราชา</option>
+		  </select>
+        <!-- <label class="checkbox">
+        <input type="checkbox" value="remember-me">Remember me
+        </label>-->
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>  <!-- bootstrap.css -->
+      </form></fieldset>
+      <div  class="alert alert-danger text-left"><h4><strong>แจ้งให้ทราบ</strong></h4>
+	  <h5>ระบบประเมินการเรียนการสอน ภาคต้น ปีการศึกษา 2559 ครั้งที่ 1 ได้ขยายเวลาการประเมิน 
+      <u> ตั้งแต่วันที่  28 ก.ย. -  4 พ.ย. 2559</u></h5>
+	    <!--<strong><u><font color="#FF0000">หมายเหตุ</font></u> ถ้าไม่เข้าประเมินจะไม่สามารถดำเนินการใดๆ ผ่านระบบสารสนเทศนิสิตได้</strong>-->
+	    </div>
+		<!--<div class="label-danger"><h4><strong><font color="#FF0000"></font></strong></h4>
+	   <h4>ระบบประเมินการเรียนการสอน ได้ขยายเวลาการประเมิน <br>ภาคต้น ปีการศึกษา 2557
+       <u> ตั้งแต่วันที่ 16 ธ.ค. 2557 เป็นต้นไป</u></h4>
+		</div>-->
+	  <h5>กำหนดการใช้ระบบประเมินการเรียนการสอนสำหรับ&nbsp;&nbsp;&nbsp;ภาค<font color="#FF0000">ต้น </font><br>ปีการศึกษา<font color="#FF0000">  2559</font> 
+	  ครั้งที่ <font color="#FF0000">1</font></h5>
+         <br>
+		 <table class="table table-striped table-hover" align="center" style="text-align:center">
+         <tr class="active" style="font-weight:bold;"> 
+         <td width="59%">รายละเอียด</td>
+         <td width="41%">ช่วงเวลา</td>
+         </tr>
+		  				<tr> 
+				<td>1.  ประชาสัมพันธ์การใช้ระบบประเมิน</td>
+				<td>8 ส.ค. 2559 เป็นต้นไป</td>
+  				</tr>
+	       				<tr> 
+				<td>2.  ทุกคณะเข้าตรวจสอบข้อมูลการลงทะเบียน และอาจารย์ผู้สอนให้ถูกต้อง</td>
+				<td>8 ส.ค. 2559 เป็นต้นไป</td>
+  				</tr>
+	       				<tr> 
+				<td>3.  การประเมิน นิสิตประเมินอาจารย์</td>
+				<td>19 - 23  ก.ย. 2559</td>
+  				</tr>
+	       				<tr> 
+				<td>4.  การประเมิน นิสิตประเมินตัวเอง</td>
+				<td>19 - 23  ก.ย. 2559</td>
+  				</tr>
+	       				<tr> 
+				<td>5.  การประเมิน อาจารย์ประเมินตัวเอง</td>
+				<td>19 - 23  ก.ย. 2559</td>
+  				</tr>
+	       				<tr> 
+				<td>6.  คณะดูรายงานรายวิชา</td>
+				<td>7 ต.ค. 2559  เป็นต้นไป</td>
+  				</tr>
+	       				<tr> 
+				<td>7.  ผู้สอนสามารถตรวจสอบสรุปผลการประเมิน</td>
+				<td>7 ต.ค. 2559  เป็นต้นไป</td>
+  				</tr>
+	                 </table>
+	  <h5>กำหนดการใช้ระบบประเมินการเรียนการสอนสำหรับ&nbsp;&nbsp;&nbsp;ภาค<font color="#FF0000">ต้น </font><br>ปีการศึกษา<font color="#FF0000">  2559</font> 
+	  ครั้งที่ <font color="#FF0000">2</font></h5>
+          <br>
+                    <table class="table table-striped table-hover" align="center" style="text-align:center">
+                    <tr class="active" style="font-weight:bold;"> 
+                    <td width="59%">รายละเอียด</td>
+                    <td width="41%">ช่วงเวลา</td>
+                    </tr>
+                    					<tr> 
+					<td>1.  ประชาสัมพันธ์การใช้ระบบประเมิน</td>
+					<td>8 ส.ค. 2559 เป็นต้นไป</td>
+					</tr>
+										<tr> 
+					<td>2.  ทุกคณะเข้าตรวจสอบข้อมูลการลงทะเบียน และอาจารย์ผู้สอนให้ถูกต้อง</td>
+					<td>8 ส.ค. 2559 เป็นต้นไป</td>
+					</tr>
+										<tr> 
+					<td>3.  การประเมิน นิสิตประเมินอาจารย์</td>
+					<td>28 พ.ย.  11 ธ.ค. 2559</td>
+					</tr>
+										<tr> 
+					<td>4.  การประเมิน นิสิตประเมินตัวเอง</td>
+					<td>28 พ.ย.  11 ธ.ค. 2559</td>
+					</tr>
+										<tr> 
+					<td>5.  การประเมิน อาจารย์ประเมินตัวเอง</td>
+					<td>28 พ.ย.  11 ธ.ค. 2559</td>
+					</tr>
+										<tr> 
+					<td>6.  คณะดูรายงานรายวิชาและนิสิตที่ไม่ได้ประเมิน</td>
+					<td>16  ธ.ค. 2559 เป็นต้นไป</td>
+					</tr>
+										<tr> 
+					<td>7.  ผู้สอนสามารถตรวจสอบสรุปผลการประเมิน</td>
+					<td>16  ธ.ค. 2559 เป็นต้นไป</td>
+					</tr>
+					              
+                  </table> 
+<h5><strong><font color="#006699">แจ้งผลการใช้งาน</font></strong></h5>
+<h6>คุณธราธร โสตธิมัย&nbsp;&nbsp;หมายเลข 02-579-0113 ต่อ 622575</h6>
+<h6>E-mail&nbsp;::&nbsp;cpctts@ku.ac.th</h6>
+ <hr size="2px" color="#666666">
+ <div style="text-align:right"><h6>พัฒนาโดยฝ่ายสารสนเทศ สำนักบริการคอมพิวเตอร์ -- Copyright &copy; 2014 --</h6></div>
+    </div> <!-- /container -->
+  </body>
+</html><url>https://eassess.ku.ac.th/</url><pagerank>0.0009777461137684957</pagerank>

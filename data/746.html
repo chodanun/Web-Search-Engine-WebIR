@@ -1,0 +1,600 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type"
+			content="text/html; charset=utf-8">
+		<title>ENGINERRING KU R3</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css"
+			media="all">
+		<script language="JavaScript" type="text/JavaScript">
+			function onClickMenu(index) {
+				var d = document.getElementById('subMenu' + index).style.display;
+				if (d == 'none') {
+					d = 'block';
+				} else {
+					d = 'none';
+				}
+				document.getElementById('subMenu' + index).style.display = d;
+			}
+		</script>
+        <link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+        <link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+        <link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+        
+        
+
+
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="themes/redmond/jquery-ui-1.8.2.custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.multiselect.css" />
+    <style type="text">
+        html, body {
+        margin: 0;			/* Remove body margin/padding */
+    	padding: 0;
+        overflow: hidden;	/* Remove scroll bars on browser window */
+        font-size: 75%;
+        }
+    </style>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/i18n/grid.locale-en.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$.jgrid.no_legacy_api = true;
+	$.jgrid.useJSON = true;
+	</script>
+    <script src="js/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    
+	  <script type="text/javascript">
+		// We use a document ready jquery function.
+		jQuery(document).ready(function(){
+		jQuery("#list2").jqGrid({
+			// the url parameter tells from where to get the data from server
+			// adding ?nd='+new Date().getTime() prevent IE caching
+			//url:'server.php?q=2',
+			//url:'example.php?nd='+new Date().getTime()+'q=2',
+			url:'example_ku.php?q=2',
+			//url:'example_ku.php?q=2&nd='+new Date().getTime(),
+			// datatype parameter defines the format of data returned from the server
+			// in this case we use a JSON data
+			datatype: "json",
+			// colNames parameter is a array in which we describe the names
+			// in the columns. This is the text that apper in the head of the grid.
+			colNames:['รหัสงาน','ปีงบประมาณ', 'ชื่องานวิจัย(ไทย)', 'จำนวนเงิน','หน่วยงาน'],
+			// colModel array describes the model of the column.
+			// name is the name of the column,
+			// index is the name passed to the server to sort data
+			// note that we can pass here nubers too.
+			// width is the width of the column
+			// align is the align of the column (default is left)
+			// sortable defines if this column can be sorted (default true)
+		
+			colModel:[
+				{name:'id',index:'id', width:30, editable:true, sorttype:'int',summaryType:'count', summaryTpl : '({0}) งานวิจัย'},
+				//{name:'fiscal_year',index:'fiscal_year', width:90, sorttype:'date', formatter:'date', datefmt:'Y'},
+				{name:'fiscal_year',index:'fiscal_year', width:28},
+				{name:'research_name_th',index:'research_name_th', width:190},		
+				{name:'research_budget',index:'research_budget', width:40, align:"right", sorttype:'number',formatter:'number',summaryType:'sum'},
+				{name:'department_name',index:'department_name', width:60},
+			],
+			//onSelectRow: function(rowid) { 
+			//               alert('Selected ... rowid=' + rowid); 
+			//          }, 
+			// pager parameter define that we want to use a pager bar
+			// in this case this must be a valid html element.
+			// note that the pager can have a position where you want
+			//pager: jQuery('#pager2'),
+			pager: '#pager2',
+			// rowNum parameter describes how many records we want to
+			// view in the grid. We use this in example.php to return
+			// the needed data.
+			rowNum:10,
+			// rowList parameter construct a select box element in the pager
+			//in wich we can change the number of the visible rows
+			rowList:[10,20,30,50,100,200,500,1000],
+			// sortname sets the initial sorting column. Can be a name or number.
+			// this parameter is added to the url
+			//sortname: 'id',
+			sortname: 'fiscal_year',
+			//viewrecords defines the view the total records from the query in the pager
+			//bar. The related tag is: records in xml or json definitions.
+			viewrecords: true,
+			//sets the sorting order. Default is asc. This parameter is added to the url
+			sortorder: "desc",
+			grouping:true, 
+			groupingView : {
+				groupField : ['department_name'],
+				groupColumnShow : [true],
+				groupText : ['<b>{0}</b>'],
+				groupCollapse : false,
+				groupOrder: ['asc'],
+				groupSummary : [true],
+				showSummaryOnHide: true,
+				groupDataSorted : false
+			},
+			 caption: "ระบบฐานข้อมูลโครงการวิจัย",
+		
+			footerrow: true,
+			userDataOnFooter: true,
+			rownumbers:true, 	
+			height:'auto',	
+			//width:'715',
+			autowidth: true,
+			rowTotal: 2000,
+			loadonce:true,
+			rownumWidth: 40,
+			gridview: true,	
+		
+			
+		});
+		//jQuery("#list2").jqGrid('navGrid','#pager2',{add:true,edit:true,del:true,search:false,refresh:true});
+		jQuery("#list2").jqGrid('navGrid','#pager2',{view:true,del:false,add:false,edit:false,search:true});
+		
+		jQuery("#list2").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : true});
+		
+		jQuery("#cm1").click( function() {
+			var s;
+			s = jQuery("#list2").jqGrid('getGridParam','selrow');
+			alert(s);
+		});
+		
+		
+		});
+    </script>
+    
+    <script type="text/javascript">
+		// We use a document ready jquery function.
+		jQuery(document).ready(function(){
+		jQuery("#list3").jqGrid({
+			// the url parameter tells from where to get the data from server
+			// adding ?nd='+new Date().getTime() prevent IE caching
+			//url:'server.php?q=2',
+			//url:'example.php?nd='+new Date().getTime()+'q=2',
+			url:'grid_public.php?q=2',
+			//url:'example_ku.php?q=2&nd='+new Date().getTime(),
+			// datatype parameter defines the format of data returned from the server
+			// in this case we use a JSON data
+			datatype: "json",
+			// colNames parameter is a array in which we describe the names
+			// in the columns. This is the text that apper in the head of the grid.
+			//colNames:['รหัสบทความ','ชื่อบทความ',  'ชื่อวารสารทางวิชาการ', 'ระยะเวลา','หน่วยงาน'],
+			colNames:['รหัสบทความ','ชื่อบทความ', 'ชื่อวารสารทางวิชาการ', 'วันที่ตีพิมพ์', 'จำนวนเงิน', 'หน่วยงาน'],
+			// colModel array describes the model of the column.
+			// name is the name of the column,
+			// index is the name passed to the server to sort data
+			// note that we can pass here nubers too.
+			// width is the width of the column
+			// align is the align of the column (default is left)
+			// sortable defines if this column can be sorted (default true)
+		
+			colModel:[
+				{name:'id',index:'id', width:60, editable:true, sorttype:'int',summaryType:'count', summaryTpl : '({0}) บทความ'},
+				//{name:'fiscal_year',index:'fiscal_year', width:90, sorttype:'date', formatter:'date', datefmt:'Y'},
+				{name:'public_name',index:'public_name', width:140},
+				{name:'public_journal_name',index:'public_name_eng', width:140},		
+				{name:'public_print_date',index:'public_print_date', width:60},		
+				{name:'public_budget',index:'public_budget', width:60, align:"right", sorttype:'number',formatter:'number',summaryType:'sum'},		
+				{name:'department_name',index:'department_name', width:1},
+
+			],
+			//onSelectRow: function(rowid) { 
+			//               alert('Selected ... rowid=' + rowid); 
+			//          }, 
+			// pager parameter define that we want to use a pager bar
+			// in this case this must be a valid html element.
+			// note that the pager can have a position where you want
+			//pager: jQuery('#pager2'),
+			pager: '#pager3',
+			// rowNum parameter describes how many records we want to
+			// view in the grid. We use this in example.php to return
+			// the needed data.
+			rowNum:10,
+			// rowList parameter construct a select box element in the pager
+			//in wich we can change the number of the visible rows
+			rowList:[10,20,30,50,100,200,500,1000],
+			// sortname sets the initial sorting column. Can be a name or number.
+			// this parameter is added to the url
+			//sortname: 'id',
+			sortname: 'id',
+			//viewrecords defines the view the total records from the query in the pager
+			//bar. The related tag is: records in xml or json definitions.
+			viewrecords: true,
+			//sets the sorting order. Default is asc. This parameter is added to the url
+			sortorder: "desc",
+			grouping:true, 
+			groupingView : {
+				groupField : ['department_name'],
+				groupColumnShow : [true],
+				groupText : ['<b>{0}</b>'],
+				groupCollapse : false,
+				groupOrder: ['asc'],
+				groupSummary : [true],
+				showSummaryOnHide: true,
+				groupDataSorted : false
+			},
+			 caption: "ผลงานตีพิมพ์ในวารสารวิชาการ",
+		
+			footerrow: true,
+			userDataOnFooter: true,
+			rownumbers:true, 	
+			height:'auto',	
+			//width:'715',
+			autowidth: true,
+			rowTotal: 2000,
+			loadonce:true,
+			rownumWidth: 40,
+			gridview: true,	
+		
+			
+		});
+		//jQuery("#list2").jqGrid('navGrid','#pager2',{add:true,edit:true,del:true,search:false,refresh:true});
+		jQuery("#list3").jqGrid('navGrid','#pager3',{view:true,del:false,add:false,edit:false,search:true});
+		
+		jQuery("#list3").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : true});
+		
+		jQuery("#edit").click( function() {
+			var s;
+			s = jQuery("#list3").jqGrid('getGridParam','selrow');
+			//alert(s);
+			if(s) {location.href='edit_public.php?id='+s}
+			
+		});
+		
+		jQuery("#del").click( function() {
+			var s;
+			s = jQuery("#list3").jqGrid('getGridParam','selrow');
+			//alert(s);
+			if(s) {location.href='del_public.php?id='+s}
+			
+		});
+		
+		
+		});
+    </script>
+    
+            <script type="text/javascript">
+		// We use a document ready jquery function.
+		jQuery(document).ready(function(){
+		jQuery("#list4").jqGrid({
+			// the url parameter tells from where to get the data from server
+			// adding ?nd='+new Date().getTime() prevent IE caching
+			//url:'server.php?q=2',
+			//url:'example.php?nd='+new Date().getTime()+'q=2',
+			url:'grid_present.php?q=2',
+			//url:'example_ku.php?q=2&nd='+new Date().getTime(),
+			// datatype parameter defines the format of data returned from the server
+			// in this case we use a JSON data
+			datatype: "json",
+			// colNames parameter is a array in which we describe the names
+			// in the columns. This is the text that apper in the head of the grid.
+
+			colNames:['รหัสบทความ','ชื่อบทความ(ไทย)', 'ชื่อบทความ(อังกฤษ)', 'ชื่องานประชุมทางวิชาการ', 'ระยะเวลา','หน่วยงาน'],
+			
+			// colModel array describes the model of the column.
+			// name is the name of the column,
+			// index is the name passed to the server to sort data
+			// note that we can pass here nubers too.
+			// width is the width of the column
+			// align is the align of the column (default is left)
+			// sortable defines if this column can be sorted (default true)
+		
+			colModel:[
+				{name:'id',index:'id', width:60, editable:true, sorttype:'int',summaryType:'count', summaryTpl : '({0}) บทความ'},
+				{name:'present_name_th',index:'present_name_th', width:140},
+				{name:'present_name_eng',index:'present_name_eng', width:140},		
+				{name:'present_meeting_name',index:'present_meeting_name', width:140},		
+				{name:'duration',index:'duration', width:60},						
+				{name:'department_name',index:'department_name', width:90},
+			],
+			//onSelectRow: function(rowid) { 
+			//               alert('Selected ... rowid=' + rowid); 
+			//          }, 
+			// pager parameter define that we want to use a pager bar
+			// in this case this must be a valid html element.
+			// note that the pager can have a position where you want
+			//pager: jQuery('#pager2'),
+			pager: '#pager4',
+			// rowNum parameter describes how many records we want to
+			// view in the grid. We use this in example.php to return
+			// the needed data.
+			rowNum:10,
+			// rowList parameter construct a select box element in the pager
+			//in wich we can change the number of the visible rows
+			rowList:[10,20,30,50,100,200,500,1000],
+			// sortname sets the initial sorting column. Can be a name or number.
+			// this parameter is added to the url
+			//sortname: 'id',
+			sortname: 'id',
+			//viewrecords defines the view the total records from the query in the pager
+			//bar. The related tag is: records in xml or json definitions.
+			viewrecords: true,
+			//sets the sorting order. Default is asc. This parameter is added to the url
+			sortorder: "desc",
+			grouping:true, 
+			groupingView : {
+				groupField : ['department_name'],
+				groupColumnShow : [true],
+				groupText : ['<b>{0}</b>'],
+				groupCollapse : false,
+				groupOrder: ['asc'],
+				groupSummary : [true],
+				showSummaryOnHide: true,
+				groupDataSorted : false
+			},
+			 caption: "ผลงานนำเสนอในการประชุมวิชาการ",
+		
+			footerrow: true,
+			userDataOnFooter: true,
+			rownumbers:true, 	
+			height:'auto',	
+			//width:'715',
+			autowidth: true,
+			rowTotal: 2000,
+			loadonce:true,
+			rownumWidth: 40,
+			gridview: true,	
+		
+			
+		});
+		//jQuery("#list2").jqGrid('navGrid','#pager2',{add:true,edit:true,del:true,search:false,refresh:true});
+		jQuery("#list4").jqGrid('navGrid','#pager4',{view:true,del:false,add:false,edit:false,search:true});
+		
+		jQuery("#list4").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : true});
+		
+		jQuery("#edit").click( function() {
+			var s;
+			s = jQuery("#list4").jqGrid('getGridParam','selrow');
+			//alert(s);
+			if(s) {location.href='edit_present.php?id='+s}
+			
+		});
+		
+		
+		});
+    </script>
+    
+        <script type="text/javascript">
+		// We use a document ready jquery function.
+		jQuery(document).ready(function(){
+		jQuery("#list5").jqGrid({
+			// the url parameter tells from where to get the data from server
+			// adding ?nd='+new Date().getTime() prevent IE caching
+			//url:'server.php?q=2',
+			//url:'example.php?nd='+new Date().getTime()+'q=2',
+			url:'grid_intel.php?q=2',
+			//url:'example_ku.php?q=2&nd='+new Date().getTime(),
+			// datatype parameter defines the format of data returned from the server
+			// in this case we use a JSON data
+			datatype: "json",
+			// colNames parameter is a array in which we describe the names
+			// in the columns. This is the text that apper in the head of the grid.
+
+			colNames:['รหัสผลงาน','ชื่อผลงาน(ไทย)', 'ชื่อผลงาน(อังกฤษ)', 'หน่วยงานที่ขอความคุ้มครอง', 'วันที่ได้รับ','หน่วยงาน'],
+			
+			// colModel array describes the model of the column.
+			// name is the name of the column,
+			// index is the name passed to the server to sort data
+			// note that we can pass here nubers too.
+			// width is the width of the column
+			// align is the align of the column (default is left)
+			// sortable defines if this column can be sorted (default true)
+		
+			colModel:[
+				{name:'id',index:'id', width:60, editable:true, sorttype:'int',summaryType:'count', summaryTpl : '({0}) บทความ'},
+				{name:'intel_name_th',index:'intel_name_th', width:140},
+				{name:'intel_name_eng',index:'intel_name_eng', width:140},		
+				{name:'intel_department',index:'intel_department', width:140},		
+				{name:'duration',index:'duration', width:60},						
+				{name:'department_name',index:'department_name', width:90},
+			],
+			//onSelectRow: function(rowid) { 
+			//               alert('Selected ... rowid=' + rowid); 
+			//          }, 
+			// pager parameter define that we want to use a pager bar
+			// in this case this must be a valid html element.
+			// note that the pager can have a position where you want
+			//pager: jQuery('#pager2'),
+			pager: '#pager5',
+			// rowNum parameter describes how many records we want to
+			// view in the grid. We use this in example.php to return
+			// the needed data.
+			rowNum:10,
+			// rowList parameter construct a select box element in the pager
+			//in wich we can change the number of the visible rows
+			rowList:[10,20,30,50,100,200,500,1000],
+			// sortname sets the initial sorting column. Can be a name or number.
+			// this parameter is added to the url
+			//sortname: 'id',
+			sortname: 'id',
+			//viewrecords defines the view the total records from the query in the pager
+			//bar. The related tag is: records in xml or json definitions.
+			viewrecords: true,
+			//sets the sorting order. Default is asc. This parameter is added to the url
+			sortorder: "desc",
+			grouping:true, 
+			groupingView : {
+				groupField : ['department_name'],
+				groupColumnShow : [true],
+				groupText : ['<b>{0}</b>'],
+				groupCollapse : false,
+				groupOrder: ['asc'],
+				groupSummary : [true],
+				showSummaryOnHide: true,
+				groupDataSorted : false
+			},
+			 caption: "ผลงานทรัพย์สินทางปัญญา",
+		
+			footerrow: true,
+			userDataOnFooter: true,
+			rownumbers:true, 	
+			height:'auto',	
+			//width:'715',
+			autowidth: true,
+			rowTotal: 2000,
+			loadonce:true,
+			rownumWidth: 40,
+			gridview: true,	
+		
+			
+		});
+		//jQuery("#list2").jqGrid('navGrid','#pager2',{add:true,edit:true,del:true,search:false,refresh:true});
+		jQuery("#list5").jqGrid('navGrid','#pager5',{view:true,del:false,add:false,edit:false,search:true});
+		
+		jQuery("#list5").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : true});
+		
+		jQuery("#edit").click( function() {
+			var s;
+			s = jQuery("#list5").jqGrid('getGridParam','selrow');
+			//alert(s);
+			if(s) {location.href='edit_intel.php?id='+s}
+			
+		});
+		
+		
+		});
+    </script>
+
+	</head>
+	<body>
+		
+	<div>
+			<table id="footer" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+			<!--		<td>
+						<img src="images/header_l.png" height="25px">
+					</td> -->
+					<td width="100%" background="images/footer.jpg">						
+</td>
+			<!--		<td>
+						<img src="images/header_r.png" height="25px">
+					</td>-->
+				</tr>
+			</table>
+		</div>
+		<div align="center"><img src="images/web_header_blue.gif" width="1020" height="75"></div>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="container"
+			style="vertical-align: top;">
+	  <tr height="100%">
+	    <td height="100%" colspan="2" id="sidebar2">
+<div id="ddtopmenubar" class="mattblackmenu">
+                        <ul>
+                        <li><a href="#" rel="ddsubmenuside1">รายงานสรุป</a></li>
+                        <li><a href="#">สืบค้นข้อมูล</a></li>
+                        <li><a href="#" rel="ddsubmenuside2">ตัวชี้วัด</a></li>
+                        <li><a href="#">คำแนะนำ</a></li>
+                        </ul>
+          </div>
+                        
+          <script type="text/javascript">
+                             ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+                        </script>
+                        <form name="form1" method="post" action="login.php">
+                <table width="700" border="0" cellspacing="0">
+		          <tr>
+		            <td colspan="5" style="font-size:12px;"><strong>สำหรับเจ้าหน้าที่เท่านั้น</strong></td>
+	              </tr>
+		          <tr>
+		            <td width="84" align="right" style="font-size:12px;">ชื่อผู้ใช้ :</td>
+		            <td width="107"><input type="text" name="user" id="user" size="15" style="font-size:12px;"></td>
+		            <td width="57" style="font-size:12px;">รหัสผ่าน :</td>
+		            <td width="105"><input type="password" name="pass" id="pass" size="17" style="font-size:12px;"></td>
+		            <td width="337"><input type="submit" name="button" id="button" value="เข้าสู่ระบบ" style="font-size:12px;"></td>
+	              </tr>
+	            </table></form>
+        </td>
+  </tr>
+	  
+	  <tr height="100%">
+				<td  height="100%" width="5">&nbsp;</td>
+				<td id="content" width="773">
+					<!--
+                    <h2>
+					<a href="#">ระบบฐานข้อมูลโครงการวิจัย</a></h2>			                   
+                    -->
+				<div>
+                
+		                                              
+                <!-- the grid definition in html is a table tag with class 'scroll' -->
+                <table id="list2"></table>
+                
+                <!-- pager definition. class scroll tels that we want to use the same theme as grid -->
+                <div id="pager2"></div>
+                                                                
+                
+      			</div>
+			     
+  </td>
+			</tr>
+		</table>
+		<!-- end content -->
+		<!-- FOOTER -->
+<div>
+			<table id="footer" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<!--	<td><img src="images/footer_l.png" height="25px"></td> -->
+					<td width="100%"><img src="images/footer.jpg" width="100%"  height="25px" border="0"></td>
+					<!--<td>
+						<img src="images/footer_r.png" height="25px">
+					</td>-->
+				</tr>
+			</table>
+		</div>
+         <!--Side Drop Down Menu 2 HTML-->
+ 
+    <ul id="ddsubmenuside1" class="ddsubmenustyle blackwhite">
+    	<!--
+        <li><a href="#">จำนวนเงินวิจัย</a>
+            <ul>
+                <li><a href="#">เฉพาะทุน มก.</a>
+                    <ul>
+                        <li><a href="index.php">สรุปตามหน่วยงานขอทุน</a></li>
+                        <li><a href="index.php">สรุปตามหน่วยงานที่นักวิจัยสังกัด</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">เฉพาะเงินนอกงบประมาณ</a>
+                    <ul>
+                        <li><a href="index.php">สรุปตามหน่วยงานขอทุน</a></li>
+                        <li><a href="index.php">สรุปตามหน่วยงานที่นักวิจัยสังกัด</a></li>
+                    </ul>
+                </li>
+             </ul>
+        </li>
+        -->
+        <li><a href="#">ผลงานวิจัย</a>
+             <ul>
+                <li><a href="?mod=1">ผลงานตีพิมพ์ในวารสารวิชาการ</a></li>
+                <li><a href="?mod=2">ผลงานนำเสนอในการประชุมวิชาการ</a></li>
+                <li><a href="?mod=3">ผลงานทรัพย์สินทางปัญญา</a></li>
+              </ul>  
+        </li>
+        <!--
+        <li><a href="#">การใช้ประโยชน์</a></li>
+        
+        <li><a href="#">รางวัล</a>
+            <ul>
+                <li><a href="#">รางวัลโดยบุคคล</a></li>
+                <li><a href="#">รางวัลโดยผลงานการวิจัย/สิ่งประดิษฐ์</a></li>
+                <li><a href="#">รางวัลโดยการนำเสนอในการประชุมวิชาการ</a></li>
+             </ul>  
+        </li>
+        
+   	</ul>
+    <!--Side Drop Down Menu 2 HTML-->
+    <!--
+    <ul id="ddsubmenuside2" class="ddsubmenustyle blackwhite">
+    	<li><a href="#">ตัวชี้วัดที่ 3</a></li>
+    	<li><a href="#">ตัวชี้วัดที่ 4</a></li>
+    </ul>
+    -->
+</body>
+</html><url>http://www.research.eng.ku.ac.th/index.php?option=com_banners&task=click&bid=11</url><pagerank>0</pagerank>

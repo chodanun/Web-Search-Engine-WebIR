@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+<title>-:-:- ระบบติดตามการลงทะเบียนนิสิต มหาวิทยาลัยเกษตรศาสตร์ -:-:-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+<link rel="shortcut icon" href="images/favicon.ico" /> 
+<style>
+body, p, div, span, table, input, td, select, option {font-family: Tahoma; font-size: 11pt; }
+th {font-family: Tahoma; font-size: 11pt; font-weight: bold;}
+</style>
+<script language="JavaScript">
+function ChkValid() {
+   var v1 = document.userenter.form_account.value;
+   var v2 = document.userenter.form_password.value;
+   if (v1.length<=0)
+      {
+      alert("กรุณาป้อนรหัสบัญชี");
+      return false;
+      }
+  else if (v2.length<=0)
+      {
+      alert("กรุณาป้อนรหัสผ่าน");
+      return false;
+      }
+  else
+    {
+    return true;
+    }
+}
+</script>
+ </head>
+ <body>
+<table border='0' align='center' cellpadding='0' cellspacing='0'>
+<tr><td rowspan='2' align='Center'><img src="images/logokublue.jpg" width="100" height="100" alt="ku"  /></td></tr>
+<tr><th><img src="images/followup2.gif" width="577" height="46" alt="logo" /><br /><img src="images/uni.gif" width="434" height="46" alt="logo2" /><br /><br /></th></tr>
+</table>
+
+
+<table border='0' width='80%' align='center' cellpadding='1' cellspacing='1'>
+<tr><td width= '35%' valign='top' align='center' bgcolor='#FBFBFB'>
+<form name="userenter" method='post' action='login_new.php' onSubmit="return ChkValid()">
+  <table  border="1" width='100%' align='center' cellpadding="0" cellspacing="0">
+    <tr>
+      <th height="30" bgcolor="#607293"><font color="#FFFFFF">Login เข้าสู่ระบบ</font></th>
+    </tr>
+	
+    <tr>
+      <td><div align="center">
+        <table align='center' border="0" cellspacing="2" cellpadding="0">
+		
+          <tr>
+            <td height="24"><div align="right">รหัสบัญชี &nbsp; </div></td>
+            <td><input name="form_account" type="text" id="form_account"  value="" size="14" maxlength="8"
+			style="color:BLUE; border-color:#000000;  border-style:solid;  border-width:1px;"></td>
+          </tr>
+          <tr>
+            <td height="24"><div align="right">รหัสผ่าน &nbsp; </div></td>
+            <td><input name="form_password" type="password" id="form_password" size="14" 
+			style="color:BLUE; border-color:#000000;  border-style:solid;  border-width:1px;"></td>
+          </tr>
+<!--
+          <tr>
+            <td height="24"><div align="right">วิทยาเขต &nbsp; </div></td>
+            <td height="24">
+			<select name="zone" id="zone" size='1' style="color:BLUE; border-color:#000000;  border-style:solid;  border-width:1px;">
+			<option value="0" >บางเขน</option>
+			<option value="1" >กำแพงแสน</option>
+			<option value="2" >ศรีราชา</option>
+			<option value="3" >สกลนคร</option>
+			</select>
+		</td>
+          </tr>
+!-->		 
+          <tr>
+		  <input type='hidden' name='zone' value='0' />
+            <td height="43" colspan=2 align=center><input type="submit" value="Login">
+              <input type="reset" value="Cancel"></td>
+          </tr>
+        </table>
+</td></tr></table>
+</form>
+</td>
+<td rowspan='2' width= '65%' valign='top' bgcolor='#FBFBFB'>
+<table border='0' width='100%' cellpadding='0' cellspacing='0'>
+<tr>
+    <th height="30" bgcolor="#607293"><font color="#FFFFFF">ข่าวประชาสัมพันธ์</font></th>
+</tr>
+<tr><td valign='top'width='100%' > 
+		<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse;'> 
+		<tr><td> 
+                <table border='0'> 
+<!-- การรอพินิจ  -->
+				<!--tr><th align='left' bgcolor='yellow'><font color='blue'>การเข้าพบอาจารย์ที่ปรึกษาของนิสิตหลักสูตรนานาชาติ ก่อนการลงทะเบียน ประจำภาคต้น 2556</font>&nbsp;<img border='0' src='images/New_icons_10.gif'></th></tr!--> 
+				<tr><th align='left' bgcolor='yellow'><font color='blue'>กำหนดการการเข้าพบอาจารย์ที่ปรึกษาของนิสิต ก่อนการลงทะเบียน ประจำภาคต้น 2559</font>&nbsp;<img border='0' src='images/New_icons_10.gif'></th></tr>
+				<tr><td><br /> </td></tr>
+
+				<!--tr><th align='left' bgcolor='yellow'><font color='blue'>ความเห็นชอบของอาจารย์ที่ปรึกษา ในการลงทะเบียน ประจำภาคฤดูร้อน 2559 </font>&nbsp;<img border='0' src='images/New_icons_10.gif'></th></tr!--> 
+				<!--tr><th align='left' bgcolor='yellow'><font color='blue'>ความเห็นชอบของอาจารย์ที่ปรึกษา ในการลงทะเบียน ประจำภาคปลาย 2556 ของนิสิตหลักสูตรนานาชาติ</font>&nbsp;<img border='0' src='images/New_icons_10.gif'></th></tr!--> 
+                <tr><td>เรียน อาจารย์ที่ปรึกษาทุกท่าน<br /><br /> 
+						<dd>เพื่อให้ไปตามระเบียบข้อบังคับฯ  ให้อาจารย์ที่ปรึกษาดำเนินการ ดังนี้
+								<OL>
+									<LI> นิสิตที่มีคะแนนเฉลี่ยสะสมน้อยกว่า 2.00 (รอพินิจ) ต้องเข้าพบอาจารย์ที่ปรึกษา เพื่อขอคำแนะนำ ก่อนการลงทะเบียนฯ โดยอาจารย์ที่ปรึกษาสามารถดำเนินการอนุญาตผ่านระบบฯ นี้ได้ <font color='red'><b>ตั้งแต่วันที่ 11 กรกฎาคม   5 สิงหาคม 2559</b></font> เพื่อนิสิตจะได้พิมพ์ใบแจ้งหนี้ และลงทะเบียนเรียนได้ตามเวลาที่กำหนด 
+									<LI> หลังจากนิสิตลงทะเบียนเรียนเรียบร้อยแล้ว ขอให้อาจารย์ที่ปรึกษา ให้ความเห็นชอบ/ไม่เห็นชอบ ผลการลงทะเบียนเรียนของนิสิต ผ่านระบบฯ นี้ได้ <font color='red'><b>ตั้งแต่วันที่ 15 - 19 สิงหาคม 2559</b></font> เพื่อสำนักทะเบียนฯ จะได้ดำเนินการต่อไป 
+								</OL>
+				<br />
+						<dd>จึงเรียนมาเพื่อโปรดทราบ<br /><br /> 
+				</td></tr> 
+
+<!-- การติดตามผลการลงทะเบียน
+				<tr><th align='left'><font color='blue'>การติดตามผลการลงทะเบียนเรียน ประจำภาคต้น 2554</font>&nbsp;<img border='0' src='images/New_icons_10.gif'></th></tr> 
+                <tr><td>เรียน อาจารย์ที่ปรึกษาทุกท่าน<br /><br /> 
+						<dd> ตั้งแต่ภาคต้น ปีการศึกษา 2554 เป็นต้นไป
+อาจารย์ที่ปรึกษาสามารถเข้าไปติดตามผลการลงทะเบียนของนิสิตในความดูแลของท่าน และ<font color = 'blue'>สามารถแสดงความเห็นชอบ หรือ ไม่เห็นชอบ  ต่อการลงทะเบียนในรายวิชานั้นๆได้ ตั้งแต่วันที่ 11  17 มิถุนายน 2554<br></font> 
+						<dd>-  สำนักทะเบียนฯ จะดำเนินการตามความเห็นของอาจารย์ที่ปรึกษา
+และจะประกาศให้นิสิตรับทราบทางเว็บไซต์ของสำนักทะเบียนและประมวลผล<br>
+						<dd>  หรือนิสิตสามารถตรวจสอบผลการลงทะเบียนได้จากระบบสารสนเทศนิสิต
+ได้ตั้งแต่วันที่ 20 มิถุนายน 2554 เป็นต้นไป
+						<dd>- กรณีอาจารย์ที่ปรึกษาไม่เข้าไปดำเนินการใดๆ   สำนักทะเบียนฯ
+จะถือว่าอาจารย์ที่ปรึกษาเห็นชอบต่อการลงทะเบียนเรียนของนิสิตในความดูแลของท่าน
+<br /><br /> 
+						<dd>จึงเรียนมาเพื่อโปรดทราบ<br /><br /> 
+				</td></tr> 
+-->
+				</table> 
+		</td></tr> 
+		</table> 	
+		<hr>
+
+</td></tr>
+
+<!--tr><td align='Center'><font color="red"> <b>ติดต่อสอบถาม</b><br> </font>
+					  โทร: 02-9428200,02-5620951-5 <br>
+					 <font color = 'Blue'>สำนักทะเบียนและประมวลผล</font> : โทร: 02-9428200 ต่อ 618035 - 618042  [ Fax: 02-9428020 ]  <br>
+					 <font color = 'Blue'>กองบริหารวิชาการและนิสิต(กพส.)</font> : ต่อ 633260-3 ต่อ 113 และ 114  [ Fax: 034-281095 ต่อ 112 ]  <br>
+			         <font color = 'Blue'>สำนักบริการคอมพิวเตอร์</font>  : ต่อ 622988, 622575 และ 622582  [ Fax: 02-5620950 ]
+</td></tr!-->
+<tr><td align='Center'><font color="red"> <b>ติดต่อสอบถาม</b><br> </font>
+				<table border='0'>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td rowspan='2' valign='top'><font color = 'Blue'>สำนักทะเบียนและประมวลผล</font></td><td>โทร: 02-1180110, 02-9428200 ต่อ 618035-42 และ 618058  </td></tr>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td>Fax: 02-1180111</td></tr>
+			    <tr><td colspan='2'><hr></td></tr>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td rowspan='2' valign='top'><font color = 'Blue'>กองบริหารวิชาการและนิสิต(กพส.)</font></td><td>โทร: 034-351395 , 034-281096 ต่อ 633260-3 ต่อ 113 และ 114 </td></tr>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td>Fax: 034-281095 ต่อ 112</td></tr>
+			    <tr><td colspan='2'><hr></td></tr>
+			    <tr style='font-family:MS Sans Serif;font-size:11pt;' ><td rowspan='2' valign='top'><font color = 'Blue'>สำนักบริการคอมพิวเตอร์</font></td><td>โทร: 02-5620951-5  ต่อ 622988, 622575 และ 622582 </td></tr>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td>Fax: 02-5620950</td></tr>
+				</table>
+</td></tr>
+
+
+</table>
+</td></tr>
+<tr><td>
+<center><table width='300' border='0' cellpadding='0' cellspacing='2'>
+<tr><td> -:-:-:- <a href='mailto:regjpn@ku.ac.th'> แจ้งปัญหาการใช้งานระบบ </a> -:-:-:-</td></tr><tr><td><A HREF='https://advisor.ku.ac.th/'><nobr>ระบบงานอาจารย์ที่ปรึกษาออนไลน์</nobr></A></td></tr><tr><td><A HREF='https://www.regis.ku.ac.th/fromlogin.php'><nobr>สารสนเทศนิสิตสำหรับเจ้าหน้าที่</nobr></A></td></tr><tr><td><A HREF='https://grade.ku.ac.th/gss/'><nobr>ระบบเกรดออนไลน์</nobr></A></td></tr><tr><td><A HREF='https://eassess.ku.ac.th/'><nobr>ระบบประเมินการเรียนการสอน</nobr></A></td></tr><tr><td><br><A HREF=https://std.regis.ku.ac.th/Adv_CheckRegis/Manual_Checkregis_V2.pdf><nobr>คู่มือการใช้งานระบบติดตามการลงทะเบียนนิสิต</nobr></A></td></tr></table>
+</center></td></tr>
+</table>
+<hr />
+ </body>
+</html>
+<url>https://std.regis.ku.ac.th/Adv_CheckRegis/</url><pagerank>0.0009777461137684957</pagerank>

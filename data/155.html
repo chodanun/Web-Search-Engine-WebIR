@@ -1,0 +1,2587 @@
+<?
+function fn_db_perform($table, $data, $action = 'insert', $parameters = '') {
+    reset($data);
+    if ($action == 'insert') {
+      $query = 'insert into ' . $table . ' (';
+      while (list($columns, ) = each($data)) {
+        $query .= $columns . ', ';
+      }
+      $query = substr($query, 0, -2) . ') values (';
+      reset($data);
+      while (list(, $value) = each($data)) {
+        switch ((string)$value) {
+          case 'now()':
+            $query .= 'now(), ';
+            break;
+          case 'null':
+            $query .= 'null, ';
+            break;
+          default:
+            $query .= '\'' . fn_db_input($value) . '\', ';
+            break;
+        }
+      }
+      $query = substr($query, 0, -2) . ')';
+    } elseif ($action == 'update') {
+      $query = 'update ' . $table . ' set ';
+      while (list($columns, $value) = each($data)) {
+        switch ((string)$value) {
+          case 'now()':
+            $query .= $columns . ' = now(), ';
+            break;
+          case 'null':
+            $query .= $columns .= ' = null, ';
+            break;
+          default:
+            $query .= $columns . ' = \'' . fn_db_input($value) . '\', ';
+            break;
+        }
+      }
+      $query = substr($query, 0, -2) . ' where ' . $parameters;
+    }
+
+    return mysql_query($query);
+}
+
+function fn_db_input($string) {
+    /*if (function_exists('mysql_real_escape_string')) {
+      return mysql_real_escape_string($string);
+    } elseif (function_exists('mysql_escape_string')) {
+      return mysql_escape_string($string);
+    }*/
+	
+    return $string;
+}
+?><!DOCTYPE html>
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<!--<![endif]-->
+
+<html lang="en-US"> 
+
+<!-- head -->
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<!-- meta -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>หลักสูตรวิศวกรรมศาสตรมหาบัณฑิต
+คณะวิศวะกรรมศาสตร์มหาวิทยาลัยเกษตรศาสตร์
+</title>
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />	
+
+<script>
+//<![CDATA[
+window.mfn_slider_portfolio = { visible:4, auto:6 };
+window.mfn_slider_clients = { visible:6, auto:0 };
+//]]>
+</script>
+
+
+<link rel='stylesheet' href='css/cform.css' type='text/css' media='all' />
+<link rel='stylesheet' href='js/doptg/libraries/gui/css/jquery.jscrollpane.css' type='text/css' media='all' />
+<link rel='stylesheet' href='js/doptg/assets/gui/css/jquery.dop.ThumbnailGallery.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/tp_twitter_plugin.css' type='text/css' media='screen' />
+<link rel='stylesheet' href='rs-plugin/css/settings.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/ubermenu.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/responsiveslides.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/jcarousel/skine.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/ui/jquery.ui.all.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/skins/green/imagese.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/style-colors.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/style-2.css' type='text/css' media='all' />
+<link rel="stylesheet" href="css/custom.css" media="all" />
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C400italic%2C700&amp;ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One&amp;ver=4.2.2' type='text/css' media='all' />
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://themes.muffingroup.com/rocco/wp-content/themes/rocco/css/ie8.css" />
+<![endif]-->
+
+
+		
+</head>
+
+
+<!-- body -->
+
+<body class="home page page-id-4311 page-parent page-template-default template-slider  sticky-header layout-full-width">
+
+	
+
+	<!-- #Wrapper -->
+
+	<div id="Wrapper">
+
+		
+
+
+
+		<!-- #Header -->
+
+		<!-- #top_bar -->
+
+		<div id="top_bar">
+
+			
+
+			<div class="contact_info">
+            
+            	<p class="faq" style="color:#FFF;">
+
+					<i class="fa fa-question-circle"></i><a href="faq.php" style="color:#FFF;">FAQ</a>
+
+				</p>
+
+				<p class="phone" style="color:#FFF;">
+
+					<i class="fa fa-phone"></i>02-797-0999 ต่อ 2033 
+
+				</p>
+
+				<p class="mail" style="color:#FFF;">
+
+					<i class="fa fa-envelope-o"></i>fengstsr@ku.ac.th
+
+				</p>
+
+			</div>
+
+		</div>
+
+
+
+		<!-- .header_placeholder 4sticky  -->
+
+		<div class="header_placeholder">
+
+		</div>
+
+
+
+<header id="Header">
+
+		<div class="container" style="width:1338px;">
+
+			<div class="column one">
+
+            
+
+				<div class="addons">
+
+					<!--<div class="social">
+
+						<ul>
+
+							<li class="facebook"><a target="_blank" href="https://www.facebook.com/" title="Facebook">F</a></li>
+
+							
+
+						</ul>
+
+					</div>-->
+
+				</div>
+
+				<!-- .logo -->
+
+				<div class="logo">
+
+					<h1><a id="logo" href="index.php" title="หลักสูตรวิศวกรรมศาสตรมหาบัณฑิต คณะวิศวะกรรมศาสตร์มหาวิทยาลัยเกษตรศาสตร์">
+
+					<img class="scale-with-grid" src="images/logo.png" alt="หลักสูตรวิศวกรรมศาสตรมหาบัณฑิต คณะวิศวะกรรมศาสตร์มหาวิทยาลัยเกษตรศาสตร์"/>
+
+					</a>
+
+					</h1>
+
+				</div>
+
+
+
+				<!-- #menu -->
+
+				<nav id="menu" class="menu-main-menu-container">
+
+				<ul id="menu-main-menu" class="menu">
+
+					<li class="menu-item "><a href="index.php">หน้าหลัก</a></li>
+
+					<li class="menu-item menu-item-has-children "><a>เกี่ยวกับเรา</a>
+
+					<ul class="sub-menu">
+
+						<li class="menu-item"><a href="history.php">ประวัติ</a></li>
+
+						<li class="menu-item"><a href="purpose.php">จุดมุ่งเน้นของหลักสูตร</a></li>
+
+						<li class="menu-item"><a href="gallery.php">ภาพกิจกรรรมนิสิต</a></li>
+
+						<li class="menu-item"><a href="preview_project.php">ตัวอย่างผลงาน</a></li>
+
+					</ul>
+
+					</li>
+
+                    <li class="menu-item "><a href="course.php">หลักสูตร</a></li>
+
+					<li class="menu-item menu-item-has-children "><a>บุคลากร</a>
+
+					<ul class="sub-menu">
+
+						<li class="menu-item"><a href="management-team.php">ผู้บริหาร</a></li>
+                        	
+                        <li class="menu-item"><a href="faculty.php">คณาจารย์</a></li>
+                       
+                        <li class="menu-item"><a href="peopleware.php">เจ้าหน้าที่โครงการ</a></li>
+
+					</ul>
+
+					</li>
+
+                    <li class="menu-item "><a href="directory_student.php">ทำเนียบนิสิต</a></li>
+
+					<li class="menu-item menu-item-has-children "><a>แบบฟอร์ม</a>
+
+					<ul class="sub-menu">
+
+						<li class="menu-item"><a href="form1.php">สำหรับนิสิต</a></li>
+
+						<li class="menu-item"><a href="form2.php">สำหรับผู้สมัคร</a></li>
+
+						
+
+					</ul>
+
+					</li>
+
+                    <li class="menu-item "><a href="enrol.php">การรับสมัครนิสิตใหม่</a></li>
+
+                    <li class="menu-item "><a href="information.php">ข่าวและประชาสัมพันธ์</a></li>
+
+                    <li class="menu-item "><a href="contactus.php">ติดต่อเรา</a></li>
+
+                    
+
+				</ul>
+
+				</nav>
+
+				<a class="responsive-menu-toggle" href="#"><i class='fa fa-reorder'></i></a>
+
+			</div>
+
+		</div>
+
+		</header>
+
+
+
+		<div id="mfn-rev-slider">
+			<div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;padding:px;margin-top:0px;margin-bottom:0px;max-height:480px;">
+
+				<!-- START REVOLUTION SLIDER 4.6.9 fullwidth mode -->
+
+				<div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;max-height:480px;height:480px;">
+
+					<ul>
+
+			
+						<!-- SLIDE  1-->
+
+						<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="7000" data-saveperformance="off">
+
+						<!-- MAIN IMAGE -->
+
+						<img src="ssupload/1469592704-banner1.png" alt="slide_2" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+						<!-- LAYERS -->
+						</li>
+			
+						<!-- SLIDE  1-->
+
+						<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="7000" data-saveperformance="off">
+
+						<!-- MAIN IMAGE -->
+
+						<img src="ssupload/1465887005-bannersildetest2.png" alt="slide_2" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+						<!-- LAYERS -->
+						</li>
+			
+						<!-- SLIDE  1-->
+
+						<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="7000" data-saveperformance="off">
+
+						<!-- MAIN IMAGE -->
+
+						<img src="ssupload/1469592712-banner2.png" alt="slide_2" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+						<!-- LAYERS -->
+						</li>
+			
+						<!-- SLIDE  1-->
+
+						<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="7000" data-saveperformance="off">
+
+						<!-- MAIN IMAGE -->
+
+						<img src="ssupload/1474188477-180959 copy.png" alt="slide_2" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+						<!-- LAYERS -->
+						</li>
+						
+
+					</ul>
+
+					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;">
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- END REVOLUTION SLIDER -->
+
+		</div>
+
+
+
+		<!-- #Content -->
+
+		<div id="Content" style="padding:0;">
+
+			<div class="content_wrapper clearfix">
+
+				<!-- .sections_group -->
+
+				<div class="sections_group">
+
+
+
+
+
+					<!-- icons -->
+
+					<div class="section " style="padding:40px 0 20px; background-color:; background-image:url(images/bgdetailhome2.png); background-repeat:no-repeat; background-position:center; background-attachment:fixed; -webkit-background-size:cover; background-size:cover">
+
+						<div class="section_wrapper clearfix">
+
+							<div class="items_group clearfix">
+
+								
+							<!-- START LINK -->
+
+
+											<div class="column one-third icon_box">
+
+									<div class="scale-with-grid aligncenter wp-caption">
+
+										<div class="photo">
+
+											<div class="photo_wrapper">
+
+												<a href="http://www.meipt.eng.ku.ac.th/course.php" class=""><img class="scale-with-grid" src="ssupload/1447920705-1.png" alt="Image frame 2">
+
+												<div class="mask">
+
+												</div>
+
+												<i class="fa fa-link"></i></a>
+
+											</div>
+
+										</div>
+
+										
+
+									</div>
+
+								</div>
+								<div class="column one-third icon_box">
+
+									<div class="scale-with-grid aligncenter wp-caption">
+
+										<div class="photo">
+
+											<div class="photo_wrapper">
+
+												<a href="http://www.meipt.eng.ku.ac.th/form1.php" class=""><img class="scale-with-grid" src="ssupload/1447920791-2.png" alt="Image frame 2">
+
+												<div class="mask">
+
+												</div>
+
+												<i class="fa fa-link"></i></a>
+
+											</div>
+
+										</div>
+
+										
+
+									</div>
+
+								</div>
+								<div class="column one-third icon_box">
+
+									<div class="scale-with-grid aligncenter wp-caption">
+
+										<div class="photo">
+
+											<div class="photo_wrapper">
+
+												<a href="http://www.meipt.eng.ku.ac.th/form2.php" class=""><img class="scale-with-grid" src="ssupload/1447920812-3.png" alt="Image frame 2">
+
+												<div class="mask">
+
+												</div>
+
+												<i class="fa fa-link"></i></a>
+
+											</div>
+
+										</div>
+
+										
+
+									</div>
+
+								</div>
+
+                                <!-- END LINK -->
+
+                                <div class="column one column">
+
+									<div style="text-align: center;">
+
+										<h3 style="color:#000;">การผ่อนผัน <span class="highlight" style="background-color:#217a18; color:#FFFFFF;">ชำระ</span> ค่าทำเนียมการศึกษา</h3>
+
+										<p style="font-size: 15px; line-height: 24px;">
+
+											สำหรับนึกศึกษาที่มีความจำนง ในการใช้สิทธิผ่อนผันการชำระค่าทำเนียมการศึกษา กรุณาคลิก เพื่อดูรายละเอียดเเละข้อบังคับ ที่เกี่ยวของ
+
+										</p>
+
+                                        <a class="button button_large button_green " href="paylate.php"><i class="fa fa-envelope-alt"></i> ดูรายละเอียด</a>
+
+									</div>
+
+								</div>
+
+								
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- icons -->
+
+                    
+
+                    <div class="section " style="padding:20px 0;">
+
+						<div class="section_wrapper clearfix">
+
+							<div class="items_group clearfix">
+
+                            <h3>ข่าวประชาสัมพันธ์</h3>
+
+											<div class="column one-third article_box">
+
+									<div class="article_box">
+
+										<div class="photo">
+
+											<a href="informationdetail.php?id=16"><img class="scale-with-grid" src="ssupload/1469591686-3.jpg" alt="Powerful admin panel"/></a>
+
+										</div>
+
+										<div class="desc"  style="max-height: 100px; overflow: hidden; word-wrap: break-word;">
+
+											<a href="informationdetail.php?id=16"><h5>ขั้นตอนสำหรับการรายงานตัวนิสิต</h5></a>
+
+											<p></p>
+
+											
+
+										</div>
+
+										<a class="button" style="margin-top: 15px;" href="informationdetail.php?id=16">อ่านต่อ →</a>
+
+									</div>
+
+								</div>
+
+																<div class="column one-third article_box">
+
+									<div class="article_box">
+
+										<div class="photo">
+
+											<a href="informationdetail.php?id=15"><img class="scale-with-grid" src="ssupload/1469590500-logoKU.jpg" alt="Powerful admin panel"/></a>
+
+										</div>
+
+										<div class="desc"  style="max-height: 100px; overflow: hidden; word-wrap: break-word;">
+
+											<a href="informationdetail.php?id=15"><h5>กำหนดการปฐมนิเทศนิสิตใหม่</h5></a>
+
+											<p><p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">กำหนดการปฐมนิเทศนิสิตใหม่
+</span></b><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">(<span lang="TH">ส่วน 1 การปฐมนิเทศของมหาวิทยาลัย</span>)<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">ประจำภาคต้น
+ปีการศึกษา 2559</span></b><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">วันเสาร์ที่
+6 สิงหาคม 2559 เวลา 08.00 ? 11.00 น.</span></b><b><span style="font-size:16.0pt;
+font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></b></p>
+
+<div style="mso-element:para-border-div;border:none;border-bottom:dotted windowtext 3.0pt;
+padding:0cm 0cm 1.0pt 0cm">
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt;
+border:none;mso-border-bottom-alt:dotted windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm"><b><span lang="TH" style="font-size:16.0pt;
+font-family:&quot;TH SarabunPSK&quot;,sans-serif">ณ อาคารจักรพันธ์เพ็ญศิริ
+มหาวิทยาลัยเกษตรศาสตร์ บางเขน</span></b><b><span style="font-size:16.0pt;
+font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt;
+border:none;mso-border-bottom-alt:dotted windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm"><b><span style="font-size:16.0pt;font-family:
+&quot;TH SarabunPSK&quot;,sans-serif"><o:p>&nbsp;</o:p></span></b></p>
+
+</div>
+
+<p class="MsoNormal"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">08.00 - 08.45&nbsp;<span lang="TH">น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ลงทะเบียน &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><o:p></o:p></span></b></p><p class="MsoNormal"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">09.00 - 09.05<span lang="TH">&nbsp;น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; รักษาการแทนอธิการบดี จุดธูปเทียนบูชาพระรัตนตรัย</span><o:p></o:p></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">09.05 - 09.10<span lang="TH">&nbsp;น. &nbsp; &nbsp; &nbsp; คณบดีบัณฑิตวิทยาลัย กล่าวรายงาน</span></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">09.10 - 09.15&nbsp;<span lang="TH">น. &nbsp; &nbsp; &nbsp; รักษาการแทนอธการบดี กล่าวเปิดพิธีการปฐมนิเทศนิสิตใหม่ พร้อมให้โอวาท</span></span></b></p><p class="MsoNormal"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">09.15 - 09.20&nbsp;<span lang="TH">น. &nbsp; &nbsp; &nbsp; คณบดีกล่าวแนะนำผูบริหารที่มาร่วมพิธี</span><o:p></o:p></span></b></p><p class="MsoNormal"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">09.20 - 09.30<span lang="TH">&nbsp;น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; พิธีมอบของที่ระลึกและถ่ายภาพหมู่</span><o:p></o:p></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">09.30 - 10.30<span lang="TH">&nbsp;น. &nbsp; &nbsp; &nbsp; รองศาสตราจารย์ ดร.สมหวัง ขันตยานุวงศ์ คณบดีบัณฑิตวิทยาลัย</span></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;"><span lang="TH"><span class="Apple-tab-span" style="white-space:pre">			</span>&nbsp; &nbsp; กล่าวแนะนำบัณฑิตวิทยาลัย</span></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;"><span lang="TH"><span class="Apple-tab-span" style="white-space:pre">		</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ผู้ช่วยศาสตราจารย์ ดร. สุรางค์ เห็นสว่าง รักษาการแทนรองคณบดีฝ่ายบริการการศึกษา</span></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;"><span lang="TH"><span class="Apple-tab-span" style="white-space:pre">			</span>&nbsp; &nbsp; และสื่อสารองค์การ บรรยายพิเศษ "ข้อบังคับว่าด้วยการศึกษาระดับบัณฑิตศึกษา"<span class="Apple-tab-span" style="white-space:pre">		</span></span></span></b></p><p class="MsoNormal" style="text-align: justify;"><b><span style="font-size: 16pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">10.30 - 11.00&nbsp;<span lang="TH">น. &nbsp; &nbsp; &nbsp; ตอบข้อซักถาม</span></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><br></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;mso-layout-grid-align:
+none;text-autospace:none"><span lang="TH" style="font-size:16.0pt;font-family:
+&quot;TH SarabunPSK&quot;,sans-serif">----------------------------------------------</span><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">กำหนดการปฐมนิเทศนิสิตใหม่
+</span></b><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">(<span lang="TH">ส่วน 2 การปฐมนิเทศโครงการฯ </span>MEiPT)<span lang="TH"><o:p></o:p></span></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">ประจำภาคต้น
+ปีการศึกษา 2559</span></b><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">วันเสาร์ที่
+6 สิงหาคม 2559 เวลา 12.00 ? 15.00 น.</span></b><b><span style="font-size:16.0pt;
+font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">ณ
+อาคารบุญสมสุวชิรัตน์ </span></b><b><span style="font-size:16.0pt;font-family:
+&quot;TH SarabunPSK&quot;,sans-serif">(<span lang="TH">อาคารโยธา ชั้น 8 </span>)<span lang="TH"> มหาวิทยาลัยเกษตรศาสตร์ บางเขน</span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;tab-stops:35.45pt 42.55pt"><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:
+16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">12.00 - 13.00 <span lang="TH">น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ลงทะเบียน /รับเอกสาร ร่วมรับประทานอาหารกลางวัน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:
+16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">13.10 - 13.30<span lang="TH"> น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; พิธีเปิดโดยประธานโครงการฯ รองศาสตราจารย์ ดร.ธัญญะ
+เกียรติวัฒน์ </span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;tab-stops:35.45pt 42.55pt"><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">13.30 - 14.30<span lang="TH"> น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>?<span lang="TH">แนะนำคณะผู้บริหารโครงการของหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต</span><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;tab-stops:35.45pt 42.55pt"><b><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">14.30 - 15.00 <span lang="TH">น.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ตอบข้อซักถาม</span></span></b><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;tab-stops:35.45pt 42.55pt"><span style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;tab-stops:35.45pt 42.55pt"><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="TH" style="font-size:16.0pt;font-family:&quot;TH SarabunPSK&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p></p>
+
+											
+
+										</div>
+
+										<a class="button" style="margin-top: 15px;" href="informationdetail.php?id=15">อ่านต่อ →</a>
+
+									</div>
+
+								</div>
+
+																<div class="column one-third article_box">
+
+									<div class="article_box">
+
+										<div class="photo">
+
+											<a href="informationdetail.php?id=14"><img class="scale-with-grid" src="ssupload/1469590046-logoKU.jpg" alt="Powerful admin panel"/></a>
+
+										</div>
+
+										<div class="desc"  style="max-height: 100px; overflow: hidden; word-wrap: break-word;">
+
+											<a href="informationdetail.php?id=14"><h5>ลงทะเบียนนิสิตออนไลน์</h5></a>
+
+											<p><div><a href="http://grad.ku.ac.th/" style="box-sizing: border-box; color: rgb(68, 68, 68); outline: 0px; font-family: THSarabunNew, Roboto, Tahoma, Arial; font-size: 16px; line-height: 24px; background-color: rgb(255, 255, 255);">http://grad.ku.ac.th</a><font face="Arial, Verdana"><span style="font-size: 12px;"><br></span></font></div><div><br></div><div><a href="http://www.grad.ku.ac.th/2016/01/14/%e0%b8%81%e0%b8%a3%e0%b8%ad%e0%b8%81%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%a1%e0%b8%b9%e0%b8%a5%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%a7%e0%b8%b1%e0%b8%95%e0%b8%b4%e0%b8%99%e0%b8%b4%e0%b8%aa%e0%b8%b4%e0%b8%95/" rel="bookmark" style="box-sizing: border-box; color: rgb(64, 175, 100); text-decoration: none; transition: all 0.4s ease; font-family: THSarabunNew, Roboto, Tahoma, Arial; font-size: 15px; font-weight: bold; line-height: 22.5px; background-color: rgb(255, 255, 255);">กรอกข้อมูลประวัตินิสิตใหม่ || ขอ Account Nontri || ระบบการลงทะเบียนนิสิต Online || พิมพ์ใบรายงานตัวนิสิตระดับบัณฑิตศึกษา (สำหรับเจ้าหน้าที่)</a><br></div><div><br></div><div>เมื่อกรอกข้อมูล - ขอรหัสนนทรีครบแล้ว นำรหัสไปปริ้นใบ bill payment ได้ที่&nbsp;https://sp-regis.ku.ac.th/ และชำระค่าเทอม ภายในวันที่ 11 สิงหาคม 2559</div><div><br></div><div><br></div><div><table border="0" cellpadding="0" cellspacing="0" width="1299" style="border-collapse:
+ collapse;width:977pt">
+ <colgroup><col width="37" style="mso-width-source:userset;mso-width-alt:1184;width:28pt">
+ <col width="113" style="mso-width-source:userset;mso-width-alt:3616;width:85pt">
+ <col width="78" style="mso-width-source:userset;mso-width-alt:2496;width:59pt">
+ <col width="157" style="mso-width-source:userset;mso-width-alt:5024;width:118pt">
+ <col width="85" style="mso-width-source:userset;mso-width-alt:2720;width:64pt">
+ <col width="209" style="mso-width-source:userset;mso-width-alt:6688;width:157pt">
+ <col width="157" style="mso-width-source:userset;mso-width-alt:5024;width:118pt">
+ <col width="105" style="mso-width-source:userset;mso-width-alt:3360;width:79pt">
+ <col width="49" style="mso-width-source:userset;mso-width-alt:1568;width:37pt">
+ <col width="151" style="mso-width-source:userset;mso-width-alt:4832;width:113pt">
+ <col width="84" style="mso-width-source:userset;mso-width-alt:2688;width:63pt">
+ <col width="74" style="mso-width-source:userset;mso-width-alt:2368;width:56pt">
+ </colgroup><tbody><tr height="58" style="height:43.5pt" id="4">
+  <td height="58" class="xl74" width="37" style="height:43.5pt;width:28pt">ลำดับ</td>
+  <td class="xl96" width="113" style="width:85pt">รหัส</td>
+  <td class="xl93" width="78" style="width:59pt">(ยศ/นาย/นาง/</td>
+  <td class="xl75" width="157" style="border-left:none;width:118pt">ชื่อ-สกุล (ไทย)</td>
+  <td class="xl76" width="85" style="border-left:none;width:64pt">(Mr./Mrs./Miss</td>
+  <td class="xl75" width="209" style="border-left:none;width:157pt">ชื่อ-สกุล (Eng)</td>
+  <td class="xl75" width="157" style="border-left:none;width:118pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - แบบ 1.1,1.2&nbsp;</td>
+  <td class="xl77" width="105" style="border-left:none;width:79pt">เลขบัตรประชาชน</td>
+  <td class="xl78" width="49" style="border-left:none;width:37pt">หมู่เลือด</td>
+  <td class="xl87" width="151" style="border-left:none;width:113pt">และ ประเภท
+  การลงทะเบียนเรียน</td>
+  <td class="xl87" width="84" style="border-left:none;width:63pt">วันที่เปิดภาคเรียน</td>
+  <td class="xl87" width="74" style="border-left:none;width:56pt">หมายเหตุ</td>
+ </tr>
+ <tr height="29" style="height:21.75pt">
+  <td height="29" class="xl74" style="height:21.75pt">ที่</td>
+  <td class="xl96">ประจำตัว</td>
+  <td class="xl93">นางสาว)</td>
+  <td class="xl75" style="border-left:none">&nbsp;</td>
+  <td class="xl76" style="border-left:none">or etc.)</td>
+  <td class="xl75" style="border-left:none">&nbsp;</td>
+  <td class="xl75" style="border-left:none">ป.โท&nbsp;
+  - แผน ก&nbsp; แบบ ก1, ก2</td>
+  <td class="xl75" style="border-left:none">&nbsp;</td>
+  <td class="xl75" style="border-left:none">&nbsp;</td>
+  <td class="xl87" style="border-left:none">(UA, UC, GA, GC) ให้ชัดเจน</td>
+  <td class="xl87" style="border-left:none">&nbsp;</td>
+  <td class="xl87" style="border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="29" style="height:21.75pt">
+  <td height="29" class="xl79" style="height:21.75pt">&nbsp;</td>
+  <td class="xl97">นิสิต</td>
+  <td class="xl94">&nbsp;</td>
+  <td class="xl80" style="border-left:none">&nbsp;</td>
+  <td class="xl80" style="border-left:none">&nbsp;</td>
+  <td class="xl80" style="border-left:none">&nbsp;</td>
+  <td class="xl80" style="border-left:none">- แผน ข</td>
+  <td class="xl80" style="border-left:none">&nbsp;</td>
+  <td class="xl80" style="border-left:none">&nbsp;</td>
+  <td class="xl88" style="border-left:none">&nbsp;</td>
+  <td class="xl88" style="border-left:none">&nbsp;</td>
+  <td class="xl88" style="border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl81" style="height:24.0pt">1</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551749</span></td>
+  <td class="xl89">นางสาว</td>
+  <td class="xl64" style="border-left:none">กนกวรรณ พงษ์แก้ว</td>
+  <td class="xl91" style="border-left:none">Miss.</td>
+  <td class="xl71" align="left" style="border-left:none">Kanokwan PONGKAEW</td>
+  <td class="xl72">แผน ก แบบ ก2</td>
+  <td class="xl81" style="border-left:none">1349900590398</td>
+  <td class="xl81" style="border-left:none">O</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">2</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551757</span></td>
+  <td class="xl90" style="border-top:none">นางสาว</td>
+  <td class="xl65" style="border-top:none;border-left:none">กานต์ชนิต พัฒนะอิ่ม</td>
+  <td class="xl92" style="border-top:none;border-left:none">Miss.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Kanchanit
+  PHATTANA-IM</td>
+  <td class="xl85" style="border-top:none">&nbsp;แผน ข</td>
+  <td class="xl85" style="border-top:none;border-left:none">1100800889107</td>
+  <td class="xl85" style="border-top:none;border-left:none">O</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">3</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551765</span></td>
+  <td class="xl90" style="border-top:none">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">ชัยนรินท์ ฉัตรกุล ณ
+  อยุธยา</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Chainarin
+  CHUTKUL NA AYUTTHAYA</td>
+  <td class="xl85" style="border-top:none">&nbsp;แผน ข</td>
+  <td class="xl85" style="border-top:none;border-left:none">1102000981086</td>
+  <td class="xl85" style="border-top:none;border-left:none">A</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">4</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551773</span></td>
+  <td class="xl90" style="border-top:none">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">ไชยวงค์ ทองเสนา</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Chaiwong
+  TONGSENA</td>
+  <td class="xl73" style="border-top:none">แผน ก แบบ ก2</td>
+  <td class="xl85" style="border-top:none;border-left:none">3190200228793</td>
+  <td class="xl85" style="border-top:none;border-left:none">A</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">5</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551781</span></td>
+  <td class="xl90" style="border-top:none">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">ณัฐนนท์ เนติ</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl69" align="left" style="border-top:none;border-left:none">Nuttanont
+  NETI</td>
+  <td class="xl85" style="border-top:none">&nbsp;แผน ข</td>
+  <td class="xl85" style="border-top:none;border-left:none">1102001800085</td>
+  <td class="xl85" style="border-top:none;border-left:none">A</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="33" style="height:24.75pt">
+  <td height="33" class="xl85" style="height:24.75pt;border-top:none">6</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551790</span></td>
+  <td class="xl90" style="border-top:none">นางสาว</td>
+  <td class="xl65" style="border-top:none;border-left:none">ธมนวรรณ นาคเสนอินทร์</td>
+  <td class="xl92" style="border-top:none;border-left:none">Miss.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Tamonwan
+  NARKSENIN</td>
+  <td class="xl85" style="border-top:none">แผน ข</td>
+  <td class="xl85" style="border-top:none;border-left:none">1100200818101</td>
+  <td class="xl85" style="border-top:none;border-left:none">B</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="33" style="height:24.75pt">
+  <td height="33" class="xl85" style="height:24.75pt;border-top:none">7</td>
+  <td class="xl99" width="113" style="width:85pt">5914551803</td>
+  <td class="xl90" style="border-top:none;line-height:20px">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">ปัณณธร อินทร</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl69" align="left" style="border-top:none;border-left:none">Phannatorn
+  INTORN</td>
+  <td class="xl85" style="border-top:none">แผน ข</td>
+  <td class="xl85" style="border-top:none;border-left:none">1959900324641</td>
+  <td class="xl85" style="border-top:none;border-left:none">O</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="33" style="height:24.75pt">
+  <td height="33" class="xl85" style="height:24.75pt;border-top:none">8</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551811</span></td>
+  <td class="xl90" style="border-top:none">นางสาว</td>
+  <td class="xl66" align="left" style="border-top:none;border-left:none">ปาริฉัตร
+  ชัยศิลป์</td>
+  <td class="xl92" style="border-top:none;border-left:none">Miss.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Parichat
+  CHAISIN</td>
+  <td class="xl85" style="border-top:none">แผน ข</td>
+  <td class="xl85" style="border-top:none;border-left:none">1840100395016</td>
+  <td class="xl85" style="border-top:none;border-left:none">B</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="33" style="height:24.75pt">
+  <td height="33" class="xl85" style="height:24.75pt;border-top:none">9</td>
+  <td class="xl99" width="113" style="width:85pt">5914551820</td>
+  <td class="xl90" style="border-top:none;line-height:20px">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">วรสิทธิ์ จันทรจิรวงศ์</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Worasit
+  CHANTARAJIRAWONG</td>
+  <td class="xl73" style="border-top:none">แผน ก แบบ ก2</td>
+  <td class="xl85" style="border-top:none;border-left:none">1103701514736</td>
+  <td class="xl85" style="border-top:none;border-left:none">A</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">10</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551838</span></td>
+  <td class="xl90" style="border-top:none">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">วสันต์ ยอดสวัสดิ์</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Wasan
+  YOTSAWAT</td>
+  <td class="xl73" style="border-top:none">แผน ก แบบ ก2</td>
+  <td class="xl85" style="border-top:none;border-left:none">1959800051406</td>
+  <td class="xl85" style="border-top:none;border-left:none">B</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="33" style="height:24.75pt">
+  <td height="33" class="xl85" style="height:24.75pt;border-top:none">11</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551846</span></td>
+  <td class="xl90" style="border-top:none">นางสาว</td>
+  <td class="xl65" style="border-top:none;border-left:none">สดชื่น รัตนวิบูลย์</td>
+  <td class="xl92" style="border-top:none;border-left:none">Miss.</td>
+  <td class="xl68" align="left" style="border-top:none;border-left:none">Sodchoen
+  RATTANAVIBOOL</td>
+  <td class="xl73" style="border-top:none">แผน ก แบบ ก2</td>
+  <td class="xl85" style="border-top:none;border-left:none">1100701768301</td>
+  <td class="xl85" style="border-top:none;border-left:none">B</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="33" style="height:24.75pt">
+  <td height="33" class="xl85" style="height:24.75pt;border-top:none">12</td>
+  <td class="xl99" width="113" style="width:85pt">5914551854</td>
+  <td class="xl90" style="border-top:none;line-height:20px">นาย</td>
+  <td class="xl65" style="border-top:none;border-left:none">สีหราช บุญประดิษฐ</td>
+  <td class="xl92" style="border-top:none;border-left:none">Mr.</td>
+  <td class="xl69" align="left" style="border-top:none;border-left:none">Seeharach
+  BOONPRADIT</td>
+  <td class="xl73" style="border-top:none">แผน ก แบบ ก2</td>
+  <td class="xl85" style="border-top:none;border-left:none">1809900086113</td>
+  <td class="xl85" style="border-top:none;border-left:none">O</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">13</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551862</span></td>
+  <td class="xl90" style="border-top:none">นางสาว</td>
+  <td class="xl65" style="border-top:none;border-left:none">อรนิตย์ วิวิธพรมงคล</td>
+  <td class="xl92" style="border-top:none;border-left:none">Miss.</td>
+  <td class="xl69" align="left" style="border-top:none;border-left:none">Oranit
+  WIWITPORNMONGKOL</td>
+  <td class="xl86" style="border-top:none">แผน ข</td>
+  <td class="xl86" style="border-top:none;border-left:none">1101200169465</td>
+  <td class="xl86" style="border-top:none;border-left:none">B</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">14</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551871</span></td>
+  <td class="xl90" style="border-top:none">นางสาว</td>
+  <td class="xl65" style="border-top:none;border-left:none">อัญญาณี อ้นวงษ์</td>
+  <td class="xl92" style="border-top:none;border-left:none">Miss.</td>
+  <td class="xl70" align="left" style="border-top:none;border-left:none">Aunyanee
+  ONWONG</td>
+  <td class="xl86" style="border-top:none;border-left:none">แผน ข</td>
+  <td class="xl86" style="border-top:none;border-left:none">1103700704426</td>
+  <td class="xl86" style="border-top:none;border-left:none">B</td>
+  <td class="xl82" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl84" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr>
+ <tr height="32" style="height:24.0pt">
+  <td height="32" class="xl85" style="height:24.0pt;border-top:none">15</td>
+  <td class="xl98"><span style="text-align: -webkit-center;">5914551889</span></td>
+  <td class="xl89">นางสาว</td>
+  <td class="xl64" style="border-left:none">ภคนันท์ เจริญกิจมงคล</td>
+  <td class="xl91" style="border-left:none">Miss</td>
+  <td class="xl71" align="left" style="border-left:none">Pakanun Charoenkujmongkol</td>
+  <td class="xl72">แผน ก แบบ ก2</td>
+  <td class="xl81" style="border-left:none">1103000045101</td>
+  <td class="xl81" style="border-left:none">O</td>
+  <td class="xl83" style="border-top:none;border-left:none">-</td>
+  <td class="xl83" style="border-top:none;border-left:none">7-ส.ค.-59</td>
+  <td class="xl82" style="border-top:none;border-left:none">&nbsp;</td>
+ </tr></tbody></table></div></p>
+
+											
+
+										</div>
+
+										<a class="button" style="margin-top: 15px;" href="informationdetail.php?id=14">อ่านต่อ →</a>
+
+									</div>
+
+								</div>
+
+																<div class="column one-third article_box">
+
+									<div class="article_box">
+
+										<div class="photo">
+
+											<a href="informationdetail.php?id=12"><img class="scale-with-grid" src="ssupload/1467606288-1465887043-logoKU.jpg" alt="Powerful admin panel"/></a>
+
+										</div>
+
+										<div class="desc"  style="max-height: 100px; overflow: hidden; word-wrap: break-word;">
+
+											<a href="informationdetail.php?id=12"><h5>รายชื่อผู้มีสิทธิ์เข้าศึกษา</h5></a>
+
+											<p><p class="MsoNormal" style="text-align: center;"><span style="font-weight: normal;"><span style="font-family: &quot;TH Niramit AS&quot;;"><span lang="TH" style="font-size: x-large;">ร่าง</span></span></span></p><p class="MsoNormal" align="center" style="font-size: 12px; font-weight: normal; margin-right: -35.5pt; text-align: center;"><b><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;;letter-spacing:
+-.9pt">ประกาศโครงการ<a name="OLE_LINK1">เปิดสอนหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม
+(ภาคพิเศษ)</a></span></b><b><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;;letter-spacing:-.9pt"><o:p></o:p></span></b></p><p class="MsoNormal" align="center" style="font-size: 12px; font-weight: normal; margin-right: -0.1pt; text-align: center;"><b><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</span></b><b><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p></o:p></span></b></p><p class="MsoNormal" align="center" style="font-size: 12px; font-weight: normal; margin-right: -0.1pt; text-align: center; line-height: 85%;"><b><span lang="TH" style="font-size:14.0pt;line-height:85%;
+font-family:&quot;TH Niramit AS&quot;">เรื่อง รายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ ประจำภาคต้น ปีการศึกษา
+</span></b><b><span style="font-size:14.0pt;line-height:85%;font-family:&quot;TH Niramit AS&quot;">2559<o:p></o:p></span></b></p><p class="MsoNormal" align="center" style="font-size: 12px; font-weight: normal; margin-right: -37.95pt; text-align: center; line-height: 85%;"><span lang="TH" style="font-size:14.0pt;line-height:85%;
+font-family:&quot;TH Niramit AS&quot;">---------------------------------------------------------------------------------------------</span><span style="font-size:10.0pt;line-height:85%;font-family:&quot;TH Niramit AS&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; text-align: justify;"><span lang="TH" style="font-family:&quot;TH Niramit AS&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="TH" style="font-size:15.0pt;font-family:&quot;TH Niramit AS&quot;;letter-spacing:.1pt">โครงการเปิดสอนหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต
+สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม</span><span style="font-size:15.0pt;
+font-family:&quot;TH Niramit AS&quot;;letter-spacing:.1pt"><o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; text-align: justify;"><span lang="TH" style="font-size:15.0pt;font-family:&quot;TH Niramit AS&quot;;
+letter-spacing:-.1pt">(ภาคพิเศษ) ขอประกาศ</span><span lang="TH" style="font-size:
+15.0pt;font-family:&quot;TH Niramit AS&quot;">รายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ ประจำภาคต้น &nbsp;ปีการศึกษา </span><span style="font-size:15.0pt;
+font-family:&quot;TH Niramit AS&quot;">2559 <span lang="TH">โดยมีรายชื่อดังต่อไปนี้</span></span><span style="font-family:&quot;TH Niramit AS&quot;;letter-spacing:.1pt"><o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-right: -0.1pt; text-align: justify; line-height: 85%;"><span style="font-size:9.0pt;
+line-height:85%;font-family:&quot;TH Niramit AS&quot;;letter-spacing:.1pt"><o:p>&nbsp;</o:p></span></p><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="696" style="font-size: 12px; font-weight: normal; width: 7.25in; margin-left: -0.3in; border-collapse: collapse;">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">ลำดับที่</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">เลขที่ผู้สมัคร</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">ชื่อ - นามสกุล</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p>
+  </td>
+  <td width="120" nowrap="" valign="top" style="width:1.25in;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">แผนการเรียน</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">หมายเหตุ<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">1<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -001<o:p></o:p></span></p>
+  </td>
+  <td width="186" valign="top" style="width:139.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวอัญญาณี อ้นวงษ์</span><span style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข</span><span style="font-size:14.0pt;font-family:
+  &quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">ใบรับรองแพทย์<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">2<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -002<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายปัณณธร อินทร</span><span style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข</span><span style="font-size:14.0pt;font-family:
+  &quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">-<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">3<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -003<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวอรนิตย์ วิวิธพรมงคล</span><span style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข</span><span style="font-size:14.0pt;font-family:
+  &quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">ใบรับรองแพทย์<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">4<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -004<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายณัฐนนท์ เนติ</span><span style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข</span><span style="font-size:14.0pt;font-family:
+  &quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">ยื่นใบสมัคร/รูปถ่ายฉบับจริง<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">5<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -005<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายสีหราช บุญประดิษฐ</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">แผน ก แบบ
+  ก2</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">ใบรับรองแพทย์<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">6<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -006<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายวสันต์ ยอดสวัสดิ์</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">แผน ก แบบ
+  ก2</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">เซ็นต์รับรองสำเนาใบปริญญาบัตร<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">7<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -007<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายไชยวงค์ ทองเสนา</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">แผน ก แบบ
+  ก2</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">-<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:8;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">8<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -008<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวณัฎฐณิชา กัณหะสิริ</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข<o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">สละสิทธิ์<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:9;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">9<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -009<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวธมนวรรณ นาคเสนอินทร์</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข<o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">-<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:10;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">10<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -010<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายชัยนรินท์ ฉัตรกุล ณ
+  อยุธยา</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข<o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">รูปถ่ายฉบับจริง<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:11;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">11<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -011<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวกานต์ชนิต พัฒนะอิ่ม</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข<o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">-<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:12;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">12<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -012<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวกนกวรรณ พงษ์แก้ว</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">แผน ก แบบ
+  ก2</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">ประกาศนียบัตร<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:13;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">13<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -013<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวสดชื่น รัตนวิบูลย์</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">แผน ก แบบ
+  ก2</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">เซ็นต์รับรองสำเนาใบผลการเรียน/ประกาศนียบัตร<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:14;height:.25in">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">14<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -014<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นายวรสิทธิ์ จันทรจิรวงศ์</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">แผน ก แบบ
+  ก2</span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">เซ็นต์รับรองสำเนา/ใบประกาศนียบัตร<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:15;mso-yfti-lastrow:yes;height:16.9pt">
+  <td width="59" nowrap="" valign="top" style="width:44.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0in 5.4pt 0in 5.4pt;height:16.9pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">15<o:p></o:p></span></p>
+  </td>
+  <td width="107" nowrap="" valign="top" style="width:80.45pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:16.9pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -015<o:p></o:p></span></p>
+  </td>
+  <td width="186" nowrap="" valign="top" style="width:139.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:16.9pt">
+  <p class="MsoNormal" style="text-align:justify"><span lang="TH" style="font-size:
+  14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;">นางสาวปาริฉัตร ชัยศิลป์</span><span style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="120" valign="top" style="width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:16.9pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">แผน ข</span><span style="font-size:14.0pt;font-family:
+  &quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="224" valign="top" style="width:168.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:16.9pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;Times New Roman&quot;">ใบประกาศนียบัตร<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-right: -0.1pt; text-align: justify;"><span lang="TH" style="font-size:14.0pt;
+font-family:&quot;TH SarabunPSK&quot;,&quot;sans-serif&quot;;letter-spacing:.1pt">&nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-right: -0.05pt;"><span lang="TH" style="font-size:
+15.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span lang="TH" style="font-size:15.0pt;font-family:&quot;TH Niramit AS&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">ประกาศ ณ วันที่ &nbsp;</span><span style="font-size:14.0pt;
+font-family:&quot;TH Niramit AS&quot;">21 &nbsp;<span lang="TH">มิถุนายน &nbsp;2559</span><o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span style="font-size:14.0pt;
+font-family:&quot;TH Niramit AS&quot;"><span lang="TH"><br></span></span></p><p class="MsoNormal"><b><span style="font-family: &quot;TH Niramit AS&quot;;">&nbsp;&nbsp;<span lang="TH">ร่าง</span></span></b><span lang="TH"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-family: &quot;TH Niramit AS&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="72" height="72" src="file:///C:/Users/Admin/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" v:shapes="_x0000_i1025">&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p><p class="MsoNormal" align="center" style="margin-right: -35.5pt; text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;; letter-spacing: -0.9pt;">ประกาศโครงการเปิดสอนหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม (ภาคพิเศษ)</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;; letter-spacing: -0.9pt;"><o:p></o:p></span></b></p><p class="MsoNormal" align="center" style="margin-right: -0.1pt; text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p><p class="MsoNormal" align="center" style="margin-right: -0.1pt; text-align: center; line-height: 10.2px;"><b><span lang="TH" style="font-size: 14pt; line-height: 15.8667px; font-family: &quot;TH Niramit AS&quot;;">เรื่อง รายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ ประจำภาคต้น(รอบ2) ปีการศึกษา&nbsp;</span></b><b><span style="font-size: 14pt; line-height: 15.8667px; font-family: &quot;TH Niramit AS&quot;;">2559<o:p></o:p></span></b></p><p class="MsoNormal" align="center" style="margin-right: -37.95pt; text-align: center; line-height: 10.2px;"><span lang="TH" style="font-size: 14pt; line-height: 15.8667px; font-family: &quot;TH Niramit AS&quot;;">---------------------------------------------------------------------------------------------</span><span style="font-size: 10pt; line-height: 11.3333px; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></p><p class="MsoNormal" style="text-align: justify;"><span lang="TH" style="font-family: &quot;TH Niramit AS&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="TH" style="font-size: 15pt; font-family: &quot;TH Niramit AS&quot;; letter-spacing: 0.1pt;">โครงการเปิดสอนหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม</span><span style="font-size: 15pt; font-family: &quot;TH Niramit AS&quot;; letter-spacing: 0.1pt;"><o:p></o:p></span></p><p class="MsoNormal" style="text-align: justify;"><span lang="TH" style="font-size: 15pt; font-family: &quot;TH Niramit AS&quot;; letter-spacing: -0.1pt;">(ภาคพิเศษ) ขอประกาศ</span><span lang="TH" style="font-size: 15pt; font-family: &quot;TH Niramit AS&quot;;">รายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ ประจำภาคต้น(รอบ2)&nbsp;&nbsp;ปีการศึกษา&nbsp;</span><span style="font-size: 15pt; font-family: &quot;TH Niramit AS&quot;;">2559&nbsp;<span lang="TH">โดยมีรายชื่อดังต่อไปนี้</span></span><span style="font-family: &quot;TH Niramit AS&quot;; letter-spacing: 0.1pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-right: -0.1pt; text-align: justify; line-height: 10.2px;"><span style="font-size: 9pt; line-height: 10.2px; font-family: &quot;TH Niramit AS&quot;; letter-spacing: 0.1pt;"><o:p>&nbsp;</o:p></span></p><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="696" style="width: 7.25in; margin-left: -0.3in; border-collapse: collapse;"><tbody><tr style="height: 0.25in;"><td width="59" nowrap="" valign="top" style="width: 44pt; border: 1pt solid windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">ลำดับที่</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p></td><td width="107" nowrap="" valign="top" style="width: 80.45pt; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-style: solid solid solid none; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">เลขที่ผู้สมัคร</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p></td><td width="186" nowrap="" valign="top" style="width: 139.5pt; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-style: solid solid solid none; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">ชื่อ - นามสกุล</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p></td><td width="120" nowrap="" valign="top" style="width: 1.25in; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-style: solid solid solid none; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">แผนการเรียน</span></b><b><span style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;"><o:p></o:p></span></b></p></td><td width="224" valign="top" style="width: 168.05pt; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-style: solid solid solid none; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><b><span lang="TH" style="font-size: 14pt; font-family: &quot;TH Niramit AS&quot;;">หมายเหตุ<o:p></o:p></span></b></p></td></tr><tr style="height: 0.25in;"><td width="59" nowrap="" valign="top" style="width: 44pt; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-style: none solid solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">1<o:p></o:p></span></p></td><td width="107" nowrap="" valign="top" style="width: 80.45pt; border-style: none solid solid none; border-bottom-width: 1pt; border-bottom-color: windowtext; border-right-width: 1pt; border-right-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">MEiPT -001<o:p></o:p></span></p></td><td width="186" valign="top" style="width: 139.5pt; border-style: none solid solid none; border-bottom-width: 1pt; border-bottom-color: windowtext; border-right-width: 1pt; border-right-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" style="text-align: justify;"><span lang="TH" style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">นางสาวภคนันท์ เจริญกิจมงคล</span><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;"><o:p></o:p></span></p></td><td width="120" valign="top" style="width: 1.25in; border-style: none solid solid none; border-bottom-width: 1pt; border-bottom-color: windowtext; border-right-width: 1pt; border-right-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><span lang="TH" style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">แผน ก แบบก2</span><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;"><o:p></o:p></span></p></td><td width="224" valign="top" style="width: 168.05pt; border-style: none solid solid none; border-bottom-width: 1pt; border-bottom-color: windowtext; border-right-width: 1pt; border-right-color: windowtext; padding: 0in 5.4pt; height: 0.25in;"><p class="MsoNormal" align="center" style="text-align: center;"><span lang="TH" style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif;">-<o:p></o:p></span></p></td></tr></tbody></table><p class="MsoNormal" style="margin-right: -0.1pt; text-align: justify;"><span lang="TH" style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif; letter-spacing: 0.1pt;">&nbsp;</span><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif; letter-spacing: 0.1pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-right: -0.1pt; text-align: justify;"><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif; letter-spacing: 0.1pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" style="margin-right: -0.1pt; text-align: justify;"><span lang="TH" style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif; letter-spacing: 0.1pt;">กำหนดการสอบสัมภาษณ์ 3 กรกฎาคม 2559&nbsp;&nbsp;&nbsp;เวลา</span><span style="font-size: 14pt; font-family: &quot;TH SarabunPSK&quot;, sans-serif; letter-spacing: 0.1pt;">&nbsp;13.00&nbsp;<span lang="TH">น. เป็นต้นไป.</span></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span style="font-size:11.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ธัญญะ&nbsp; เกียรติวัฒน์<o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin: 0in -0.05pt 0.0001pt 85.05pt; text-indent: -1.65pt;"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14.0pt;
+font-family:&quot;TH Niramit AS&quot;">(<span lang="TH">รองศาสตราจารย์ ดร.ธัญญะ
+เกียรติวัฒน์</span>)<o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-left: 1.5in; text-indent: 0.5in;"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ประธานโครงการเปิดสอนหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต</span><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p></o:p></span></p><p class="MsoNormal" align="center" style="font-size: 12px; font-weight: normal; margin-bottom: 0.0001pt; text-align: center;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-left: 2in; text-indent: 0.5in;"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม
+ภาคพิเศษ<o:p></o:p></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-left: 2in; text-indent: 0.5in;"><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><br></span></p><p class="MsoNormal" style="font-size: 12px; font-weight: normal; margin-left: 2in; text-indent: 0.5in;"><br></p><p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span lang="TH" style="font-size:14.0pt;
+font-family:&quot;TH Niramit AS&quot;">โครงการหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต มหาบัณฑิต
+สาขาวิชาเทคโนโลยีการผลิตทางอุตสาหกรรม (ภาคพิเศษ)</span></b><b><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p></o:p></span></b></p><div style="mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 1.0pt 0in">
+
+<p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center; border: none; padding: 0in;"><b><span lang="TH" style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;">คณะวิศวกรรมศาสตร์&nbsp; มหาวิทยาลัยเกษตรศาสตร์</span></b><b><span style="font-size:14.0pt;font-family:&quot;TH Niramit AS&quot;"><o:p></o:p></span></b></p>
+
+</div><p class="MsoNormal" align="center" style="margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size:7.0pt;
+font-family:&quot;TH Niramit AS&quot;"><o:p>&nbsp;</o:p></span></b></p><p class="MsoNormal" align="cente</p>
+
+											
+
+										</div>
+
+										<a class="button" style="margin-top: 15px;" href="informationdetail.php?id=12">อ่านต่อ →</a>
+
+									</div>
+
+								</div>
+
+																<div class="column one-third article_box">
+
+									<div class="article_box">
+
+										<div class="photo">
+
+											<a href="informationdetail.php?id=6"><img class="scale-with-grid" src="ssupload/1469591987-3.jpg" alt="Powerful admin panel"/></a>
+
+										</div>
+
+										<div class="desc"  style="max-height: 100px; overflow: hidden; word-wrap: break-word;">
+
+											<a href="informationdetail.php?id=6"><h5>การรับสมัครนิสิตใหม่ ประจำภาคปลาย 2559</h5></a>
+
+											<p><p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm;line-height:21.75pt;mso-outline-level:4;background:white;
+vertical-align:baseline"><span lang="TH" style="font-size:16.0pt;font-family:
+&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#468F42">การรับสมัครนิสิตใหม่ ประจำภาคปลาย&nbsp;</span><span style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#468F42">2559<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><b><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">หลักสูตร
+:</span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;<span lang="TH">วิศวกรรมศาสตรมหาบัณฑิต สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม ภาคพิเศษ</span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm"><br>
+<b><span lang="TH">จำนวนที่จะรับ :</span></b>&nbsp;<span lang="TH">แผน ก แบบ ก</span>2
+(<span lang="TH">ทำวิทยานิพนธ์ รับ5</span>&nbsp;<span lang="TH">คน) และ แผน ข
+(การศึกษาค้นคว้าอิสระ รับ 5</span>&nbsp;<span lang="TH">คน)</span>&nbsp;</span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm"><b><span lang="TH">คุณสมบัติของผู้สมัคร :</span></b></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เป็นผู้สำเร็จการศึกษาระดับปริญญาตรีด้านสาขาวิศวกรรมศาสตร
+และสาขาวิทยาศาสตร์ หรือสาขาอื่นๆที่เกี่ยวข้องหรือเทียบเท่า เช่น
+อุตสาหกรรมศาสตรบัณฑิต (อส.บ.)</span><span style="font-size:16.0pt;font-family:
+&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; มีประสบการณ์ทำงานหลังจากสำเร็จการศึกษาระดับปริญญาตรีแล้ว
+อย่างน้อย </span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">2 <span lang="TH">ปี นับถึงวันยื่นใบสมัคร (ในกรณีที่ประสบการณ์ทำงานไม่ถึง </span>2 <span lang="TH">ปี ต้องผ่านเกณฑ์การสอบข้อเขียน)</span></span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"> <span style="border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">เกรดเฉลี่ย </span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">2.00 <span lang="TH">ขึ้นไป</span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm"><br>
+<b><span lang="TH">ระยะเวลาในการรับสมัคร :</span></b></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <span lang="TH">ตั้งต่</span></span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm">วันที่ 20</span><span lang="TH" style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">&nbsp;กันยายน - 22 พฤศจิกายน 2559</span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <span lang="TH">ในกรณีที่ไม่มีประสบการณ์ทำงานต้องสอบข้อเขียนและสอบสัมภาษณ์</span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm"><br>
+<b><span lang="TH">แบบฟอร์มการสมัคร :</span></b></span><span style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ดาว์นโหลดแบบฟอร์มการสมัครและแนวข้อสอบได้จากเว็บไซต์ของโครงการ</span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;</span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#560A0B;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm"><a href="http://www.meipt.eng.ku.ac.th/ssupload/1456883911-%E0%B9%83%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%2059.doc">แบบฟอร์มสำหรับผู้สมัคร</a></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;background:white;vertical-align:
+baseline"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm"><br>
+<b><span lang="TH">รายละเอียดการสมัคร :</span></b></span><span style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span lang="TH" style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">ขั้นตอนการสมัคร</span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">1.<span lang="TH">สมัครด้วยตนเอง</span></span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;<span lang="TH">นำเอกสารประกอบการสมัคร
+สมัครได้ ณ ที่ทำการโครงการฯ อาคารบุญสมสุวชิรัตน์ (ตึกโยธา) ชั้น </span>8 <span lang="TH">ห้อง </span>9810</span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E">-&nbsp;<span lang="TH">ผู้สนใจขอรับใบสมัคร
+และสมัครสอบได้ตั้งแต่ วันที่ 20</span></span><span lang="TH" style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi">&nbsp;กันยายน - 22 พฤศจิกายน 2559 </span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E">ณ ห้องธุรการ ป.โท ชั้น </span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E">8 <span lang="TH">อาคาร </span>9 <span lang="TH">คณะวิศวกรรมศาสตร์ ตั้งแต่เวลา </span>08.30 - 16.30 <span lang="TH">น.</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">2.<span lang="TH">สมัครทางอีเมล์</span></span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;<span lang="TH">โดยสแกนหลักฐานการชำระค่าสมัครและเอกสารประกอบการสมัคร
+ส่งมาที </span>meipt.eng@gmail.com</span><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">3.<span lang="TH">สมัครทางไปรษณีย์</span></span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E">-&nbsp;<span lang="TH">จัดส่งหลักฐานการชำระค่าสมัครเอกสารประกอบการสมัครมาที่
+โครงการเปิดสอนหลักสูตรวิศวกรรมศาสตรมหาบัณฑิต สาขาเทคโนโลยีการผลิตทาง อุตสาหกรรม
+ภาคพิเศษ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตบางเขน </span>50 <span lang="TH">ถนนงามวงศ์วาน แขวงลาดยาว เขตจตุจักร กรุงเทพฯ </span>10900 (<span lang="TH">ส่งแบบลงทะเบียน ประทับตราภายในวันที่ 20 พฤศจิกายน 2559 เท่านั้น)</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">4.<span lang="TH">การชำระค่าธรรมเนียมการสมัคร</span></span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E">-&nbsp;<span lang="TH">ค่าธรรมเนียมการสมัคร
+</span>500 <span lang="TH">บาท (ไม่รวมค่าธรรมเนียมของธนาคาร)</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ชำระด้วยตนเอง ณ ที่ทำการโครงการฯ อาคารบุญสมสุวชิรัตน์ (ตึกโยธา) ชั้น </span>8
+<span lang="TH">ห้องโครงการ&nbsp;</span>9810</span><span style="font-size:16.0pt;font-family:
+&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ใช้ใบ </span><a href="http://www.meipt.eng.ku.ac.th/ssupload/1456986824-b05%20pay-in.xlsx">Pay-in</a> <span lang="TH">นำไปชำระผ่านธนาคารทหารไทยได้ทุกสาขา</span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ส่งเอกสารการสมัครและเอกสารการชำระค่าสมัครให้โครงการฯ อย่างครบถ้วน</span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">รอรับ </span>E-mail <span lang="TH">หรือโทรศัพท์
+ตอบกลับยืนยันการสมัครจากเจ้าหน้าที่ เป็นอันเสร็จขั้นตอนการสมัคร</span></span><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span lang="TH" style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">หลักฐานการสมัคร :</span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ใบสมัครโครงการปริญญาโท สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม จำนวน </span>1
+<span lang="TH">ฉบับ (ติดรูปถ่ายขนาด </span>1 <span lang="TH">นิ้ว ถ่ายไว้ไม่เกิน </span>6
+<span lang="TH">เดือน)</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">สำเนาใบคะแนน (</span>Transcript) <span lang="TH">จำนวน </span>1 <span lang="TH">ฉบับ</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">สำเนาหนังสือรับรองคุณวุฒิ (หนังสือรับรองการจบ) จำนวน </span>1 <span lang="TH">ฉบับ</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">สำเนาใบปริญญาบัตร จำนวน </span>1 <span lang="TH">ฉบับ)</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">สำเนาบัตรประจำตัวประชาชน จำนวน </span>1 <span lang="TH">ฉบับ</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">สำเนาทะเบียนบ้าน จำนวน </span>1 <span lang="TH">ฉบับ (สำเนาใบเปลี่ยนชื่อ </span>?
+<span lang="TH">นามสกุล ถ้ามี)</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">หนังสือรับรองประสบการณ์การทำงาน
+คือหนังสือรับรองว่าผู้สมัครทำงานในตำแหน่งใดและระบุระยะเวลาที่เข้าทำงานจนถึงปัจจุบัน
+จำนวน </span>1 <span lang="TH">ฉบับ</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">เอกสารการชำระเงินค่าธรรมเนียมการสมัคร</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ผู้สมัครรับรองสำเนาถูกต้องในสำเนาเอกสารทุกฉบับ
+สำหรับผู้ที่ยานใบสมัครทางอีเมล์ ให้นำเอกสารตัวจริงมาเพื่อการตรวจสอบด้วย
+ในวันสอบคัดเลือก</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span lang="TH" style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">ค่าใช้จ่ายตลอดหลักสูตร :</span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ค่าใช้จ่าย เหมาจ่าย</span>&nbsp;</span><b><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:red;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">58,000</span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;color:#34495E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm">&nbsp;<span lang="TH">บาท (ต่อภาคการศึกษา)</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><b><span lang="TH" style="font-size:
+16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm">สอบถาม :</span></b><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;
+mso-bidi-theme-font:major-bidi;color:#34495E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-right:0cm;mso-line-height-alt:15.0pt;
+background:white;vertical-align:baseline"><span style="font-size:16.0pt;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi;
+color:#34495E;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;<span lang="TH">ผู้สนใจสมัครสามารถซื้อใบสมัครและสอบถามรายละเอียดเพิ่มเติมได้ที่
+คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ </span>? 2011 | <span lang="TH">โทร : </span>02-797-0999
+<span lang="TH">ต่อ </span>2033 | E-mail : meipt.eng@com <span lang="TH">อาคารบุญสมสุวชิรัตน์(ตึก
+</span>9) <span lang="TH">ห้องธุรการ ป.โท สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม
+(ภาคพิเศษ) ชั้น </span>8 <span lang="TH">คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์
+จตุจักร กรุงเทพฯ </span>10900<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:16.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi"><o:p>&nbsp;</o:p></span></p></p>
+
+											
+
+										</div>
+
+										<a class="button" style="margin-top: 15px;" href="informationdetail.php?id=6">อ่านต่อ →</a>
+
+									</div>
+
+								</div>
+
+																
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+
+			
+					<!-- Features, Testimonials etc -->
+
+					<div class="section " style="padding:40px 0;">
+
+						<div class="section_wrapper clearfix">
+
+							<div class="items_group clearfix">
+
+								
+
+								<div class="column one-second column">
+
+									<h3>อัตลักษณ์ของมหาวิทยาลัยเกษตรศาสตร์ MV IDKU</h3>
+
+									<h5>อัตลักษณ์ของมหาวิทยาลัยเกษตรศาสตร์ MV IDKU</h5>
+
+									<p><h1 class="yt watch-title-container" style="margin: 0px 0px 13px; padding: 0px; border: 0px; font-weight: normal; font-size: 24px; display: table-cell; vertical-align: top; width: 824px; color: rgb(34, 34, 34); word-wrap: break-word; font-family: Roboto, arial, sans-serif; background: rgb(255, 255, 255);"><span id="eow-title" class="watch-title " dir="ltr" title="อัตลักษณ์ของมหาวิทยาลัยเกษตรศาสตร์ MV IDKU" style="margin: 0px; padding: 0px; border: 0px; background: transparent;">อัตลักษณ์ของมหาวิทยาลัยเกษตรศาสตร์ MV IDKU</span></h1></p>
+
+								</div>
+
+								<div class="column one-second youtube">
+
+									<div class="article_video">
+
+										<iframe class="scale-with-grid" width="430" height="250" src="https://www.youtube.com/embed/PPN82FBEbgg" allowfullscreen>
+
+										</iframe>
+
+									</div>
+
+								</div>
+
+								<div class="column one divider">
+
+									<hr style="margin: 0 0 0px; border:none; width:0; height:0;"/>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- end Features, Testimonials etc -->
+					
+					<!-- Features, Testimonials etc -->
+
+					<div class="section " style="padding:40px 0;">
+
+						<div class="section_wrapper clearfix">
+
+							<div class="items_group clearfix">
+
+								
+
+								<div class="column one-second column">
+
+									<h3>มหาวิทยาลัยเกษตรศาสตร์</h3>
+
+									<h5>มหาวิทยาลัยเกษตรศาสตร์</h5>
+
+									<p><span style=\"\\&quot;color:\" rgb(51,=\"\" 51,=\"\" 51);=\"\" font-family:=\"\" roboto,=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 13px;=\"\" line-height:=\"\" 17px;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);\\\"=\"\">มหาวิทยาลัยเกษตรศาสตร์</span></p>
+
+								</div>
+
+								<div class="column one-second youtube">
+
+									<div class="article_video">
+
+										<iframe class="scale-with-grid" width="430" height="250" src="https://www.youtube.com/embed/rH9FGDGrcvM" allowfullscreen>
+
+										</iframe>
+
+									</div>
+
+								</div>
+
+								<div class="column one divider">
+
+									<hr style="margin: 0 0 0px; border:none; width:0; height:0;"/>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- end Features, Testimonials etc -->
+					
+
+
+
+					<!-- Portfolio -->
+
+					
+
+				</div>
+
+				<!-- .four-columns - sidebar -->
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<!-- #Footer -->
+
+					<div class="Our_clients_slider">
+
+			<div class="container">
+
+				<div class="column one">
+
+					<a href="#" class="slider_control slider_control_prev"></a>
+
+					<a href="#" class="slider_control slider_control_next"></a>
+
+					<div class="inside">
+
+						<ul>
+
+														<li>
+
+							<div class="slide-wrapper">
+
+								<a target="_blank" href="https://std.regis.ku.ac.th/" title="เกรดku"><img width="200" height="65" src="ssupload/1443595929-logograde-ku.png" class="scale-with-grid wp-post-image" alt="clients_1"/></a>
+
+							</div>
+
+							</li>
+														<li>
+
+							<div class="slide-wrapper">
+
+								<a target="_blank" href="http://www.ku.ac.th/" title="5"><img width="200" height="65" src="ssupload/1443596041-logokasat.png" class="scale-with-grid wp-post-image" alt="clients_1"/></a>
+
+							</div>
+
+							</li>
+														<li>
+
+							<div class="slide-wrapper">
+
+								<a target="_blank" href="http://www.eng.ku.ac.th/" title="4"><img width="200" height="65" src="ssupload/1443596016-logoengku.png" class="scale-with-grid wp-post-image" alt="clients_1"/></a>
+
+							</div>
+
+							</li>
+														<li>
+
+							<div class="slide-wrapper">
+
+								<a target="_blank" href="http://www.grad.ku.ac.th/index2.php" title="3"><img width="200" height="65" src="ssupload/1443595995-logogradku.png" class="scale-with-grid wp-post-image" alt="clients_1"/></a>
+
+							</div>
+
+							</li>
+														<li>
+
+							<div class="slide-wrapper">
+
+								<a target="_blank" href="https://sp.regis.ku.ac.th:8443/" title="ลงทะเบียนonline"><img width="200" height="65" src="ssupload/1443595977-logospku.png" class="scale-with-grid wp-post-image" alt="clients_1"/></a>
+
+							</div>
+
+							</li>
+							
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+<footer id="Footer" class="clearfix" style="background-color: #560a0b;">
+
+		<!-- .Our_clients_slider -->
+
+		
+
+
+
+		
+
+
+
+		<div class="copyrights">
+
+			<div class="container">
+
+				<div class="column one">
+
+					<p>
+
+						<span class="copy">&copy; 2015 <strong>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</strong>โทร : 02-797-0999 ต่อ 2033,02-940-5822<br> อาคารบุญสมสุวชิรัตน์(ตึก 9) ห้องธุรการ ป.โท สาขาเทคโนโลยีการผลิตทางอุตสาหกรรม (ภาคพิเศษ) ชั้น 8 คณะวิศวกรรมศาสตร มหาวิทยาลัยเกษตรศาสตร์ จตุจักร กรุงเทพฯ 10900</span>
+
+						
+
+					</p>
+
+					
+
+				</div>
+
+			</div>
+
+		</div>
+
+		</footer>
+
+	</div>
+
+
+
+	
+
+	
+
+
+
+	<script type='text/javascript' src='js/jquery/jquery.js'></script>
+
+	<script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+
+	<script type='text/javascript' src='js/doptg/libraries/js/jquery.mousewheel.js'></script>
+
+	<script type='text/javascript' src='js/doptg/libraries/js/jquery.jscrollpane.min.js'></script>
+
+	<script type='text/javascript' src='js/doptg/assets/js/jquery.dop.ThumbnailGallery.js'></script>
+
+	<script type='text/javascript' src='rs-plugin/js/jquery.themepunch.tools.min.js'></script>
+
+	<script type='text/javascript' src='rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
+
+	<script type='text/javascript' src='js/hoverIntent.js'></script>
+
+	<script type='text/javascript'>
+
+	/* <![CDATA[ */
+
+	var uberMenuSettings = {"speed":"300","trigger":"hoverIntent","orientation":"horizontal","transition":"slide","hoverInterval":"20","hoverTimeout":"400","removeConflicts":"on","autoAlign":"off","noconflict":"off","fullWidthSubs":"off","androidClick":"off","iOScloseButton":"off","loadGoogleMaps":"off","repositionOnLoad":"off"};
+
+	/* ]]> */
+
+	</script>
+
+	<script type='text/javascript' src='js/ubermenu.min.js'></script>
+
+	<script type='text/javascript' src='js/jquery.form.min.js'></script>
+
+
+
+	<script type='text/javascript' src='js/jquery/ui/core.min.js'></script>
+
+	<script type='text/javascript' src='js/jquery/ui/widget.min.js'></script>
+
+	<script type='text/javascript' src='js/jquery/ui/mouse.min.js'></script>
+
+	<script type='text/javascript' src='js/jquery/ui/sortable.min.js'></script>
+
+	<script type='text/javascript' src='js/jquery/ui/tabs.min.js'></script>
+
+	<script type='text/javascript' src='js/jquery/ui/accordion.min.js'></script>
+
+	<script type='text/javascript' src='js/sliders/responsiveslides.js'></script>
+
+	<script type='text/javascript' src='js/sliders/jquery.jcarousel.min.js'></script>
+
+	<script type='text/javascript' src='js/mfn.menu.js'></script>
+
+	<script type='text/javascript' src='js/jquery.plugins.js'></script>
+
+	<script type='text/javascript' src='js/scripts.js'></script>
+
+	<script type='text/javascript' src='js/twitter.js'></script>
+
+	
+
+
+
+	<script type="text/javascript">
+
+
+
+		/******************************************
+
+			-	PREPARE PLACEHOLDER FOR SLIDER	-
+
+		******************************************/
+
+		
+
+
+
+		var setREVStartSize = function() {
+
+			var	tpopt = new Object();
+
+				tpopt.startwidth = 1200;
+
+				tpopt.startheight = 480;
+
+				tpopt.container = jQuery('#rev_slider_3_1');
+
+				tpopt.fullScreen = "off";
+
+				tpopt.forceFullWidth="off";
+
+
+
+			tpopt.container.closest(".rev_slider_wrapper").css({height:tpopt.container.height()});tpopt.width=parseInt(tpopt.container.width(),0);tpopt.height=parseInt(tpopt.container.height(),0);tpopt.bw=tpopt.width/tpopt.startwidth;tpopt.bh=tpopt.height/tpopt.startheight;if(tpopt.bh>tpopt.bw)tpopt.bh=tpopt.bw;if(tpopt.bh<tpopt.bw)tpopt.bw=tpopt.bh;if(tpopt.bw<tpopt.bh)tpopt.bh=tpopt.bw;if(tpopt.bh>1){tpopt.bw=1;tpopt.bh=1}if(tpopt.bw>1){tpopt.bw=1;tpopt.bh=1}tpopt.height=Math.round(tpopt.startheight*(tpopt.width/tpopt.startwidth));if(tpopt.height>tpopt.startheight&&tpopt.autoHeight!="on")tpopt.height=tpopt.startheight;if(tpopt.fullScreen=="on"){tpopt.height=tpopt.bw*tpopt.startheight;var cow=tpopt.container.parent().width();var coh=jQuery(window).height();if(tpopt.fullScreenOffsetContainer!=undefined){try{var offcontainers=tpopt.fullScreenOffsetContainer.split(",");jQuery.each(offcontainers,function(e,t){coh=coh-jQuery(t).outerHeight(true);if(coh<tpopt.minFullScreenHeight)coh=tpopt.minFullScreenHeight})}catch(e){}}tpopt.container.parent().height(coh);tpopt.container.height(coh);tpopt.container.closest(".rev_slider_wrapper").height(coh);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);tpopt.container.css({height:"100%"});tpopt.height=coh;}else{tpopt.container.height(tpopt.height);tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);}
+
+		};
+
+
+
+		/* CALL PLACEHOLDER */
+
+		setREVStartSize();
+
+
+
+
+
+		var tpj=jQuery;
+
+		tpj.noConflict();
+
+		var revapi3;
+
+
+
+		tpj(document).ready(function() {
+
+
+
+		if(tpj('#rev_slider_3_1').revolution == undefined){
+
+			revslider_showDoubleJqueryError('#rev_slider_3_1');
+
+		}else{
+
+		   revapi3 = tpj('#rev_slider_3_1').show().revolution(
+
+			{	
+
+										dottedOverlay:"none",
+
+				delay:6000,
+
+				startwidth:1200,
+
+				startheight:480,
+
+				hideThumbs:200,
+
+
+
+				thumbWidth:100,
+
+				thumbHeight:50,
+
+				thumbAmount:3,
+
+				
+
+										
+
+				simplifyAll:"off",
+
+
+
+				navigationType:"none",
+
+				navigationArrows:"solo",
+
+				navigationStyle:"round",
+
+
+
+				touchenabled:"on",
+
+				onHoverStop:"on",
+
+				nextSlideOnWindowFocus:"off",
+
+
+
+				swipe_threshold: 0.7,
+
+				swipe_min_touches: 1,
+
+				drag_block_vertical: false,
+
+				
+
+										
+
+										
+
+				keyboardNavigation:"off",
+
+
+
+				navigationHAlign:"center",
+
+				navigationVAlign:"bottom",
+
+				navigationHOffset:0,
+
+				navigationVOffset:20,
+
+
+
+				soloArrowLeftHalign:"left",
+
+				soloArrowLeftValign:"center",
+
+				soloArrowLeftHOffset:20,
+
+				soloArrowLeftVOffset:0,
+
+
+
+				soloArrowRightHalign:"right",
+
+				soloArrowRightValign:"center",
+
+				soloArrowRightHOffset:20,
+
+				soloArrowRightVOffset:0,
+
+
+
+				shadow:0,
+
+				fullWidth:"on",
+
+				fullScreen:"off",
+
+
+
+										spinner:"spinner0",
+
+										
+
+				stopLoop:"off",
+
+				stopAfterLoops:-1,
+
+				stopAtSlide:-1,
+
+
+
+				shuffle:"off",
+
+
+
+				autoHeight:"off",
+
+				forceFullWidth:"off",
+
+				
+
+				
+
+				hideTimerBar:"on",
+
+				hideThumbsOnMobile:"off",
+
+				hideNavDelayOnMobile:1500,
+
+				hideBulletsOnMobile:"off",
+
+				hideArrowsOnMobile:"off",
+
+				hideThumbsUnderResolution:0,
+
+
+
+										hideSliderAtLimit:0,
+
+				hideCaptionAtLimit:0,
+
+				hideAllCaptionAtLilmit:0,
+
+				startWithSlide:0					});
+
+
+
+
+
+
+
+							}
+
+		});	/*ready*/
+
+
+
+	</script>
+
+
+
+
+
+</body>
+
+</html>
+
+<url>http://www.meipt.eng.ku.ac.th/</url><pagerank>0.0009901017889035772</pagerank>

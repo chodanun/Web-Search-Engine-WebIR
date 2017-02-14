@@ -1,0 +1,1144 @@
+<!-- <?phpPHP
+if (! isset($_COOKIE["chkeduserv"])){
+	setcookie("chkeduserv","Y",time( )+86400);
+	$_COOKIE["chkeduserv"] ="N";
+}
+?>  -->
+
+<head>
+<link rel="stylesheet" href="popup.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv=Page-Exit content=blendTrans(Duration=1) />
+<title>ฝ่ายบริการการศึกษา มหาวิทยาลัยเกษตรศาสตร์</title>
+<style type="text/css">
+<!--
+a:link {
+	color: #003366;
+	text-decoration: none;
+}
+a:visited {
+	color: #00336;
+	text-decoration: none;
+}
+a:hover {
+	color: #339900;
+	text-decoration: underline;
+}
+a:active {
+	color: #990000;
+	text-decoration: none;
+}
+.input {
+	BORDER-RIGHT: #BFCCD8 1px solid;
+	BORDER-TOP: #BFCCD8 1px solid;
+	FONT-SIZE: xx-small;
+	BACKGROUND: #FFFFEA;
+	BORDER-LEFT: #BFCCD8 1px solid;
+	BORDER-BOTTOM: #BFCCD8 1px solid;
+}
+.date_head {
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+	color: #FFFFF0;
+	font-weight: bold;
+}
+.search_title {
+	color: #FFB23F;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+	font-weight: bold;
+}
+.menu_pop {
+	color: #003366;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+	font-weight: bold;
+}
+.list_new_top {
+	color: #3F663F;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+}
+.date_to_new {
+	color: #3F668C;
+	font-family: "MS Sans Serif";
+	font-size: 14px;
+}
+.new_front {
+	font-size: 14px;
+	color: #003366;
+	font-family: "MS Sans Serif";
+	font-style: normal;
+	font-weight: bold;
+}
+#Layer1 {
+	position:absolute;
+	left:552px;
+	top:314px;
+	width:103px;
+	height:57px;
+	z-index:1;
+	overflow: auto;
+	visibility: visible;
+}
+.bottom_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url(/images/bg-line.jpg);
+	margin-top: 0px;
+}
+body,td,th {
+	font-family: MS Sans Serif;
+	font-size: 14px;
+}
+.style4 {font-size: 14px; color: #003366; font-family: "MS Sans Serif";}
+.style7 {font-size: 13px}
+.style9 {
+	color: #0066FF;
+}
+-->
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<!--script src="popup.js"></script-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script language="JavaScript">function mmLoadMenus() {
+  if (window.mm_menu_0303101642_0) return;
+  window.mm_menu_0303101642_0 = new Menu("root",100,17,"",11,"#FFFFFF","#F79320","#F79320","#FFFFFF","left","middle",3,0,200,-5,7,true,false,true,0,true,true);
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่&nbsp;47</li>","location='/annual_47/'");
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่&nbsp;46</li>","window.open('/annual_46/', '_parent');");
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่&nbsp;45</li>","window.open('/annual_45/', '_parent');");
+  mm_menu_0303101642_0.addMenuItem("<li>ครั้งที่ 44</li>","window.open('/001/udomkati/vichakarn_44/index.htm', '_parent');");
+   mm_menu_0303101642_0.hideOnMouseOut=true;
+   mm_menu_0303101642_0.bgColor='#555555';
+   mm_menu_0303101642_0.menuBorder=0;
+   mm_menu_0303101642_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0303101642_0.menuBorderBgColor='#FF9900';
+
+window.mm_menu_0303105909_0 = new Menu("root",97,17,"",11,"#FFFFFF","#F79320","#F79320","#FFFFFF","left","middle",3,0,200,-5,7,true,false,true,0,true,true);
+  mm_menu_0303105909_0.addMenuItem("<li>ครั้งที่&nbsp;12</li>","window.open('/eduserv/curriculum/market_course/market12/index.htm', '_parent');");
+  mm_menu_0303105909_0.addMenuItem("<li>ครั้งที่&nbsp;11</li>","window.open('/eduserv/curriculum/market_course/market11/index.htm', '_parent');");
+  mm_menu_0303105909_0.addMenuItem("<li>ครั้งที่&nbsp;10</li>","window.open('/001/encourage/link/marketten.htm', '_parent');");
+   mm_menu_0303105909_0.hideOnMouseOut=true;
+   mm_menu_0303105909_0.bgColor='#555555';
+   mm_menu_0303105909_0.menuBorder=0;
+   mm_menu_0303105909_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0303105909_0.menuBorderBgColor='#FF9900';
+} // mmLoadMenus()
+</script>
+
+<script language="JavaScript" src="../mm_menu.js"></script>
+<script language="JavaScript" type="text/javascript">
+var d=new Date();
+var monthname=new Array("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+var dayname=new Array("อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์");
+var Year_Show = d.getFullYear()+543;
+
+<!-- var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();-->
+var TODAY = "วัน"+ dayname[d.getDay()] +"ที่ " + d.getDate() +" "+ monthname[d.getMonth()]  + " พ.ศ. " + Year_Show;
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function clearsearch() {
+
+		alert (document.frmSearch.keyword.value);
+
+}
+//  End -->
+</script>
+<script language="JavaScript1.2">
+	function makevisible(cur,which){
+		strength=(which==0)? 1 : 0.5
+		if (cur.style.MozOpacity)
+			cur.style.MozOpacity=strength
+		else if (cur.filters)
+			cur.filters.alpha.opacity=strength*100
+		}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- //window.open("./pramern_smile/pop_smile.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=500,height=375,left=250,top=175");
+//window.open("popup.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=350,height=210,left=250,top=175");
+//window.open("popup_dadday.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=350,height=210,left=250,top=175");
+//window.open("new_year.htm","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=393,height=309,left=250,top=175");
+//window.open("pop.html","","toolbar=No,menubar=No,location=No,scrollbars=Yo,resizable=No,status=Yo,width=393,height=309,left=250,top=175");
+-->
+</SCRIPT>
+<script type="text/javascript">
+<!--
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<script language="JavaScript" src="../mm_menu.js"></script>
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/gif" href="http://eduserv.ku.ac.th/images/favicon.gif" />
+<style type="text/css">
+<!--
+.style12 {color: #0066CC}
+-->
+</style>
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+</head>
+
+<body leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" onLoad="MM_showHideLayers('Layer1','','inherit')"   style="-webkit-filter: grayscale(15%); filter:  grayscale(15%); ">
+<div id="watermarklogo" style="position:absolute;"></div>
+
+</head>
+
+<!--
+<script language="JavaScript1.2">mmLoadMenus();</script>
+ <a href="javascript:;" name="link1" id="link_VK" onMouseOver="MM_showMenu(window.mm_menu_0218110747_0,100,21,null,'link1')" onMouseOut="MM_startTimeout();">การประชุมวิชาการ</a>
+-->
+
+<!-- <script src="/include/webband.js">
+</script> //-->
+<script language="JavaScript1.2">mmLoadMenus();</script>
+
+
+<!--    popup ///////////////////  -->
+<div id="boxes">
+  <div style="top: 199.5px;  display: none;" id="dialog" class="window"> 
+  
+    <div id="lorem">
+<img src="popbg.jpg">
+    </div>
+   					 <div id="popupfoot"> <a href="#" class="close agree"> <img src="popbtn.jpg"></a></div>
+  </div>
+  <div style="; font-size: 32pt; color:white; display: none; opacity: 0.8;" id="mask"></div>
+</div>
+<!--    popup //////////  -->
+
+<a name="top" id="top"></a>
+<form action="../index.php?method=search" method="post" enctype="application/x-www-form-urlencoded" name="frmSearch" id="frmSearch">
+  <table width="870" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" >
+  <tr><td> <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+      <td width="900"  height="120" valign="bottom" background="images/header.jpg">
+        <div align="right" ><font size=2><b>
+          <script language="JavaScript" type="text/javascript">
+      document.write(TODAY);	</script></b></font>      </div></td>
+    </tr>
+    </table></td></tr>
+	  <td colspan="3"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" >
+
+       <tr class="date_head" bgcolor="#777777">
+         <td width="77" bgcolor="#777777"><div id='cssmenu'>
+<ul>
+   <li><a href='../index.php'><span>หน้าหลัก</span></a></li>
+
+   <li><a href='../index.php?method=about'><span>เกี่ยวกับเรา</span></a></li>
+      <li><a href='http://www.eduserv.ku.ac.th/person_v1-2.php'><span>โครงสร้างหน่วยงาน</span></a></li>
+      <li><a href='../index.php?method=downloads'><span>แบบฟอร์ม</span></a></li>
+   <li class='last'><a href='../index.php?method=contactus'><span>ติดต่อเรา</span></a></li>
+
+</ul>
+</div></td>
+         </tr>
+      </table></td>
+    </tr>
+	<tr>
+      <td colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="date_to_new"><tr align="left" valign="top"><td rowspan="7" align="left" bordercolor="#FFFFFF"  ><table width="200" border="0" cellpadding="0" cellspacing="3" bgcolor="#ffffff" class="date_to_new" ><tr><td bgcolor="#FFFFFF"><div align="center">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="date_to_new">
+          <tr align="left" valign="top">
+            <td rowspan="7" align="left" bordercolor="#FFFFFF"  ><table width="200" border="0" cellpadding="0" cellspacing="3" bgcolor="#ffffff" class="date_to_new" >
+
+				  <tr>
+                  <td width="194" height="42" bgcolor="#C8C8A6" ><div align="center"><a href="http://eduserv.ku.ac.th/index.php?method=data_curri/committee/curriculum_committee"><img src="http://eduserv.ku.ac.th/data_curri/committee/eduCommitteeLogo.jpg" width="190" border="0"/></a></div></td>
+                </tr>
+                <tr>
+                  <td width="194" height="42" bgcolor="#2CC9CD"><div align="center" class="date_head">งานพัฒนาหลักสูตรและการสอน</div></td>
+                </tr>
+
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=curriculum">การพัฒนาหลักสูตร/การสอน</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="https://www.regis.ku.ac.th/cpctrt/curriculum" target="_blank">ข้อมูลสารสนเทศหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/academics 2008/index.html" target="_blank">หลักสูตรระดับปริญญาตรี</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://www.grad.ku.ac.th/academics/index.php" target="_blank">หลักสูตรระดับบัณฑิตศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=ku_law">ข้อบังคับว่าด้วยการศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../001/encourage/link/report.htm" target="_blank">แบบรายงานฯ มคอ./สมอ.</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/organization/curriculum/standard.htm" target="_blank">เกณฑ์มาตรฐานหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=data_curri/manual_general" target="_blank">คู่มือหมวดวิชาศึกษาทั่วไป</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/album/images/58tqf_manual/Ex1.pdf" target="_blank">คู่มือบริหารคุณภาพการศึกษา มก.</a></td>
+                </tr>                
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/trainCR">อบรม/สัมมนาหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="https://phpweb.cpc.ku.ac.th:8443/workflow/index.php" target="_blank">ระบบสนับสนุนกระบวนการขออนุมัติหลักสูตร</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://www.mua.go.th/users/bhes/MUA_CURR/CurrCer.html" target="_blank">วันที่ สกอ.รับรองหลักสูตร</a></td>
+                </tr>                
+              <!--  <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/Phase_II/Search/">ระบบสืบค้นรายวิชา (อยู่ระหว่างการปรับปรุงข้อมูล)</a></td>
+                </tr> -->
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="https://tqf.cpe.ku.ac.th/" target="_blank">ระบบ มคอ.ออนไลน</a>์</td>
+                </tr>
+              <!--  <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/curri_research.html" target="_blank">รายงานผลการวิจัยสถาบัน ปี 2554 - 2555</a></td>
+                </tr> -->
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/001/Q&A/QAcurri.php" target="_blank">ถาม-ตอบ</a></td>
+                </tr>
+                <tr>
+                  <td height="42" bgcolor="#2CC9CD" class="date_head"><div align="center" class="date_head">การรับรองคุณวุฒิ </div></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><div align="center">
+                      <p align="center"><a href="https://phpweb.cpc.ku.ac.th:8443/workflow/index.php?menu=archive" target="_blank"> <img src="/images/ku_logo.gif" width="48" height="50" border="0" title="สกอ"></a><a href="http://www.mua.go.th/users/bhes/bhes5/Curr%20Tranfer2554/page%20curr/"><img src="/images/sko_logo.gif" width="48" height="50" border="0" title="ก.พ."></a><a href="http://203.21.42.34/acc/index.html"></a><a href="http://www.otepc.go.th/"></a><a href="http://203.21.42.34/acc/index.html"><img src="/images/kp_logo.jpg" width="48" height="50" border="0" title="ก.พ."></a><a href="http://203.146.206.27/qual55p/menu.php"><img src="/images/kcs_logo.jpg" width="48" height="50" border="0" title="ก.ค.ศ."></a>
+                      <span class="style7"><span class="style12"><strong>ก.พ.</strong></span></span>
+<p align="left"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000"><a href="/data_curri/OCSC/ก.พ.รับรองคุณวุฒิปี 55.pdf">ก.พ.รับรองคุณวุฒิปี 55</a></font><br>
+<img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000"><a href="/data_curri/OCSC/ก.พ.รับรองคุณวุฒิปี 53.pdf">ก.พ.รับรองคุณวุฒิปี 53</a></font><br>
+</p>
+
+                      <span class="style7"><span class="style12"><strong>แนวปฏิบัติการรับรองคุณวุฒิ กคศ.</strong></span></span><br>
+                      <p align="left"><span class="style7"> <a href="/data_curri/qualification.pdf" target="_blank" class="style9"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000">ฉบับที่ 1 </font></a><br>
+                            <a href="/data_curri/qualification_2.pdf" target="_blank" class="style9"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000">ฉบับที่ 2</font><font color="#000000"></font></a></span><a href="/data_curri/qualification_2.pdf" target="_blank" class="style9"> </a><br>
+                            <a href="/data_curri/CommissionOnTeacher.pdf" target="_blank" class="style9"><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000">ประกาศสำนักงานเลขาธิการ<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คุรุสภา </font><font color="#000000"></font></a><a href="/data_curri/qualification_2.pdf" target="_blank" class="style9"> </a><br>
+                              <img src="../images/arrow_head.png" width="8" height="8" hspace="4" /> <font color="#000000"><a href="/data_curri/KPS_Bundit.pdf">ขึ้นทะเบียนครูผ่านระบบ KSP BUNDIT</a></font> <img src='../images/new_icon.gif'><br>
+                              <img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><font color="#000000"><a href="/data_curri/DegreeNeed.pdf">ประเภทวิชาและสาขาวิชาขาดแคลน</a></font> <img src='../images/new_icon.gif'></p>
+                  </div></td>
+                </tr>
+                <tr>
+                  <td height="42" bgcolor="#2CC9CD" class="date_head"><div align="center" class="date_head">แนะแนวการศึกษา</div></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=eduserv/curriculum/announce/market" target="_parent">ตลาดนัดหลักสูตร</a> </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/school" target="_parent">โครงการแนะแนวเชิงรุก</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=eduserv/curriculum/announce/visitor" target="_parent">การเยี่ยมชมมหาวิทยาลัย</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="../index.php?method=eduserv/curriculum/announce/education" target="_parent">รับนักเรียนเข้าศึกษาต่อ</a> </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/index.php?method=eduserv/curriculum/announce/AdvLearn">โครงการเรียนล่วงหน้า</a> </td>
+                </tr>
+				  <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/58guidance.pdf" target='_blank'>เอกสารแนะแนวการศึกษา </a>&nbsp;<img src='../images/new_icon.gif'></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://eduserv.ku.ac.th/introKU.pdf" target='_blank'>หนังสือแนะนำ มก.</a>&nbsp;<img src='../images/new_icon.gif'></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="http://reg.registrar.ku.ac.th/quota-admission/">ปฏิทินโครงการรับตรง  มก.<img src='../images/new_icon.gif'></a></td>
+                </tr>
+                <tr>
+                  <td height="48" bgcolor="#2CC9CD"><div align="center" class="date_head">ส่งเสริมและพัฒนาทางวิชาการ</div></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://eduserv.ku.ac.th/idealgrad/"><img src="/images/sm_eduserve.jpg" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/annual" target="_parent">การประชุมวิชาการ &nbsp; </a><img src="../images/icon_upd.gif"></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=manual_kn">หนังสือคู่มือ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/trainVK" target="_parent">อบรม/สัมมนาวิชาการ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/Sammatiti" target="_parent">สัมมาทิฐิกองบริการการศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/personnel" target="_parent">สัมนาบุคลากรกองบริการการศึกษา</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/album/images/source/gallery.php?path=album/images/55Seminar_4jobs/" target="_parent">สัมมาทิฐิ 4 หน่วยงานสนับสนุน </a></td>
+                </tr>
+                <tr>
+                  <td height="48" bgcolor="#2CC9CD"><div align="center" class="date_head">ส่งเสริมและพัฒนาสื่อการสอน</div></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://www.cyberlab.lh1.ku.ac.th/index.html" target="_blank"><img src="/images/kucyberlab.png" border="0" align="middle"></a></div></td>
+                </tr>
+                <!--               <tr>
+                <td><img src="images/arrow_head.png" width="8" height="8" hspace="4" /><a href="organization/media/room/html/index.php" target="_parent">ระบบการจองห้องคอมฯ</a></td>
+              </tr> -->
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" /><a href="/qa/index.php" target="_parent">ข้อมูลประกันคุณภาพ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/album/images/53Equipment/" target="_parent">โครงการใช้ทรัพยากรร่วมกัน</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="../index.php?method=eduserv/curriculum/announce/trainMD" target="_parent">อบรม/สัมมนางานสื่อ</a></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/poster_online/index.php" target="_parent">ระบบโปสเตอร์ออนไลน์</a></td>
+                </tr>
+                <tr>
+                  <td height="47" bgcolor="#2CC9CD"><div align="center" class="date_head">สหกิจศึกษา</div></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://www.co-op.psd.ku.ac.th/" target="_blank"><img src="/images/coop.png" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/arrow_head.png" width="8" height="8" hspace="4" border="0" /><a href="http://eduserv.ku.ac.th/mua_coop/index.php" target="_parent">ระบบสารสนเทศสหกิจศึกษา</a></td>
+                </tr>
+                <tr height="10">
+                  <td><!-- <img src="images/line2.png" width="162" height="2"/>--></td>
+                </tr>
+              </table>
+                <br>
+                <table width="98%" border="0" cellpadding="0" cellspacing="3">
+                  <tr>
+                    <td align="center"><a href="http://eduserv.ku.ac.th/km" target="_blank"><img src="/images/logo_km.jpg" border="1"></a></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              <br>
+                <p align="center"><br>
+              </p></td>
+            <td width="100%" bordercolor="#FFFFFF" class="date_to_new"><p align="center">
+<img src="theking.jpg" width="490" height="609">
+            
+
+
+ </p>
+
+                                <style>
+.text_curriculum {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#000000;
+}
+</style>
+
+<link href="curri_page.css" rel="stylesheet" type="text/css"><style type="text/css">
+<!--
+.style1 {color:#000000; font-size: 12px;}
+.style2 {font-size: 12px}
+-->
+</style>
+<body bgcolor="#F3EFE0" text="#000000" link="#000000" vlink="#000000" alink="#CC3300">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" bordercolor="#0da7b9" >
+        <tr>
+          <td colspan="2" bgcolor="#0da7b9"><div align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong>การพัฒนาหลักสูตร/การสอน</strong></font></div></td>
+        </tr>
+        <tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /> รายงานสรุปจำนวนหลักสูตร </strong></font></td>
+        </tr>      
+<!--	//ยกเลิก ให้ k.นภาพร สทป.+กองแผน ทำ (พี่จุ๋มแจ้งในประชุมบุคลากร 3สค59)//
+		<tr>
+        	<td bgcolor="#0da7b9">&nbsp;</td>
+        	<td><font color="#3300FF">ตารางแผนจำนวน <a href="data_curri/statistic/web/planStudent.html">[นิสิตใหม่/นิสิตทั้งหมด/ผู้สำเร็จการศึกษา]</a> ปีการศึกษา 2561-2565</font> <img src="images/new_icon.gif" alt="" /></td>
+        </tr>      -->
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum">จำนวนหลักสูตรที่เปิดสอน<br>- ปีการศึกษา 2557 [<a href="data_curri/statistic/รายชื่อหลักสูตรมก.(เปิดสอน)30กย2557.pdf">ภาคต้น</a>]  [<a href="data_curri/statistic/sum_57.pdf">ภาคปลาย</a>]<br>- ปีการศึกษา 2558 [<a href="data_curri/statistic/รายชื่อหลักสูตรมก.(เปิดสอน2558)230958(แยกคณะ-กลุ่มสาขา-ส่งกองแผน).pdf">ภาคต้น</a>] [<a href="data_curri/statistic/รายชื่อหลักสูตรมก.(เปิดสอน2-2558)(แยกคณะ-กลุ่มสาขา).pdf">ภาคปลาย</a>]  <img src="images/new_icon.gif" alt="" /></td>
+	    </tr>                       
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum">จำนวนหลักสูตรที่อนุมัติ<br>
+		    - ข้อมูล ณ 31 พ.ค.58 : [<a href="data_curri/statistic/รายชื่อหลักสูตรมก.-รวม2558(31พค58).pdf">รวม</a>]  [<a href="data_curri/statistic/รายชื่อหลักสูตรภาษาไทย2558(31พค58).pdf">ภาษาไทย</a>]  [<a href="data_curri/statistic/รายชื่อหลักสูตรนานาชาติ2558.(31พค58).pdf">นานาชาติ</a>] 
+          <br>- ข้อมูล ณ 31 ก.ค.58 : [<a href="data_curri/statistic/รายชื่อหลักสูตรมก.ปีการศึกษา2557(แยกกลุ่มสาขา-1มิย57-31กค58)ส่งประกัน.pdf">รวม</a>] [<a href="data_curri/statistic/รายชื่อหลักสูตรภาษาไทย ณ 31 กค.58.pdf">ภาษาไทย</a>]  [<a href="data_curri/statistic/รายชื่อหลักสูตรนานาชาติ ณ 31 กค.58.pdf">นานาชาติ</a>]  
+          <br>
+          - ข้อมูล ณ 31 ก.ค.59 : [<a href="data_curri/statistic/รายชื่อหลักสูตร มก.-อนุมัติ-.ปีการศึกษา2558(รวม)31072559.pdf">รวม</a>] [<a href="data_curri/statistic/รายชื่อหลักสูตร มก.-อนุมัติ-.ปีการศึกษา2558(ภาษาไทย)31072559.pdf">ภาษาไทย</a>]  [<a href="data_curri/statistic/รายชื่อหลักสูตร มก.-อนุมัติ-ปีการศึกษา2558 (นานาชาติ) 31072559.pdf">นานาชาติ</a>] <img src="images/new_icon.gif" alt="" />          </td>
+	    </tr>        
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum">จำนวนหลักสูตรที่ได้รับอนุมัติ  [<a href="data_curri/statistic/จำนวนหลักสูตร 55-57.pdf">ปีการศึกษา 55-57</a>]</td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><a href="data_curri/statistic/สรุปการปรับปรุง-ใหม่หลักสูตร ปีการศึกษา 2558(2สค59).pdf">สรุปผลการดำเนินการเกี่ยวกับหลักสูตร ปีการศึกษา 2558 (ส.ค.58-ก.ค.59)</a></td>
+	    </tr>
+
+
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+        <tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> การประกันคุณภาพภายในระดับอุดมศึกษา ปีการศึกษา 2557</span></strong></font></td>
+        </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/album/images/58tqf_manual/Ex1.pdf" target="_blank">คู่มือการบริหารคุณภาพการศึกษา มก. พ.ศ. 2558 </a><strong><font color="#990000"><img src="images/new_icon.gif" alt="" /></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/IQA/notice%20iqa22122557.pdf" target="_blank">ประกาศฯ หลักเกณฑ์และแนวปฎิบัติเกี่ยวกับการประกันคุณภาพภายในระดับอุดมศึกษา 2557 </a><strong><font color="#990000"><img src="images/new_icon.gif" alt="" /></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/IQA/iqa manual2557.pdf" target="_blank">คู่มือการประกันคุณภาพการศึกษาภายในระดับอุดมศึกษา 2557</a><strong><font color="#990000"> <img src="images/new_icon.gif" alt="" /></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/IQA/template tqf7 (1มคอ.7และIQA 24 nov) - 10 ธค 57.docx" target="_blank">แบบฟอร์มการรายงานผลการดำเนินงานของหลักสูตร  </a><strong><font color="#990000"><img src="images/new_icon.gif" alt="" /></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+        <tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;</span></strong></font></td>
+        </tr>
+        <tr>
+          <td width="1%" bgcolor="#0da7b9">&nbsp;</td>
+          <td width="99%"><font color='red'> <a href="001/ISCED/code_สกอ.pdf">ตารางรหัสหลักสูตร สกอ.</a></font>&nbsp;<img src="images/new_icon.gif"> &nbsp; ที่มา :<a href='http://www.data3.mua.go.th/dataS/'>คลังข้อมูล สกอ.</a></td>
+        </tr>           
+        <tr>
+          <td width="1%" bgcolor="#0da7b9">&nbsp;</td>
+          <td width="99%"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><span class="style44">การดำเนินงานขออนุมัติหลักสูตรใหม่/ปรับปรุง โครงการพิเศษ และหมวดวิชาศึกษาทั่วไป<br />
+          </span><span class="style3"><a href="data_curri/FlowCurri_new.v1.pdf">[ขั้นตอนการเสนอฯ]</a> &nbsp; &nbsp; <span class="style62">
+          <a href="data_curri/FlowCurri_detail.pdf">[&nbsp;ขั้นตอนการดำเนินงาน<a href="data_curri/คำแนะนำการจัดทำ มคอ02072557.pdf"><img src="images/update_icon.gif"/></a>] &nbsp; &nbsp; [<a href="http://eduserv.ku.ac.th/data_curri/CalendarCurri.pdf">ปฏิทินการเสนอฯ</a><strong><font color="#990000"><img src="images/new_icon.gif" /></font></strong>] </span><br>
+          </span></span><a href="http://www.planning.ku.ac.th/planning/index.php" class="style2">- คู่มือการเสนอ/แบบฟอร์มเอกสารโครงการภาคพิเศษ</a><span class="text_curriculum"><span class="style3"><br>
+          <strong><font color="#990000"><span class="text_curriculum"></font></strong></span></span></font></td>
+        </tr>        <tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+          <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44">&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;<br />
+          </span>
+              <span class="style3">
+          <a href="data_curri/paperlistFor_newcur_Nov58.doc">[&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3651;&#3627;&#3617;&#3656;]</a> &nbsp; &nbsp; [ <a href="data_curri/paperlistForimprove_cur_Nov58.doc">&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3611;&#3619;&#3633;&#3610;&#3611;&#3619;&#3640;&#3591;</a>]</span></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+          <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/organization/cooperative/data/guidelines1.pdf">แนวปฏิบัติในการพัฒนาและปรับปรุงหลักสูตร  ของมหาวิทยาลัยเกษตรศาสตร์ </a><span class="style45"><img src="images/new_icon.gif"/></span></font></td>
+        </tr>
+        <tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+          <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif">คำแนะนำในการจัดทำหลักสูตร<br>
+            <a href="data_curri/Suggestion-MKA2-06-2558.pdf"> - [ตัวอย่างการจัดทำ]</a> &nbsp; &nbsp; <a href="data_curri/tqf2_manual.pdf">[ภาคผนวก]</a><br>
+          <a href="data_curri/คำแนะนำการจัดทำ มคอ-เกณฑ์มาตรฐาน2558.pdf">- [ตัวอย่างการจัดทำ-ปรับแก้ไขตามเกณฑ์ฯ 2558]</a><br>
+		  <a href="data_curri/คำแนะนำการจัดทำ มคอ-เกณฑ์มาตรฐาน2558-30กย59.pdf">- [ตัวอย่างการจัดทำ-ปรับแก้ไขตามเกณฑ์ฯ 2558]_30 ก.ย.59</a> <img src="images/update_icon.gif"/></font></td>
+        </tr>
+        <tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+          <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3612;&#3621;&#3585;&#3634;&#3619;&#3648;&#3619;&#3637;&#3618;&#3609;&#3619;&#3641;&#3657;&#3586;&#3629;&#3591;&#3617;&#3585;.(&#3607;&#3640;&#3585;&#3619;&#3632;&#3604;&#3633;&#3610;).pdf" target="_top">&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3612;&#3621;&#3585;&#3634;&#3619;&#3648;&#3619;&#3637;&#3618;&#3609;&#3619;&#3641;&#3657; &#3586;&#3629;&#3591; &#3617;&#3585;. &#3607;&#3640;&#3585;&#3619;&#3632;&#3604;&#3633;&#3610; </a><span class="style45"><img src="images/new_icon.gif"/></span></font></td>
+        </tr>
+        <tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+          <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/ex_cover.pdf">&#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591;&#3585;&#3634;&#3619;&#3614;&#3636;&#3617;&#3614;&#3660;&#3611;&#3585;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619; &#3593;&#3610;&#3633;&#3610;&#3626;&#3656;&#3591; &#3626;&#3585;&#3629;.</a></font></td>
+        </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+          <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Exam_Bibliography_2558.pdf" target="_blank">&#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591;&#3610;&#3619;&#3619;&#3603;&#3634;&#3609;&#3640;&#3585;&#3619;&#3617;&#3612;&#3621;&#3591;&#3634;&#3609;&#3607;&#3634;&#3591;&#3623;&#3636;&#3594;&#3634;&#3585;&#3634;&#3619;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</a></font> <img src="images/update_icon.gif"/></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><span class="style45"><a href="data_curri/chart-mka_10-55.pdf" target="_blank">&#3586;&#3633;&#3657;&#3609;&#3605;&#3629;&#3609;&#3585;&#3634;&#3619;&#3604;&#3635;&#3648;&#3609;&#3636;&#3609;&#3591;&#3634;&#3609;&#3585;&#3634;&#3619;&#3586;&#3629;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;&#3586;&#3629;&#3591;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660;&#3605;&#3634;&#3617;&#3585;&#3619;&#3629;&#3610; &#3617;&#3588;&#3629;.</a></span></span></font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/credit.pdf" target="_blank">&#3585;&#3634;&#3619;&#3588;&#3636;&#3604;&#3588;&#3635;&#3609;&#3623;&#3603;&#3592;&#3635;&#3609;&#3623;&#3609;&#3594;&#3633;&#3656;&#3623;&#3650;&#3617;&#3591;&#3586;&#3629;&#3591;&#3627;&#3609;&#3656;&#3623;&#3618;&#3585;&#3636;&#3605;</a> </font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="style3"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="data_curri/table_curri_invised_2558.pdf" target="_blank">&#3605;&#3634;&#3619;&#3634;&#3591;&#3648;&#3623;&#3621;&#3634;&#3649;&#3612;&#3609;&#3591;&#3634;&#3609;&#3585;&#3634;&#3619;&#3611;&#3619;&#3633;&#3610;&#3611;&#3619;&#3640;&#3591;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3634;&#3617;&#3619;&#3629;&#3610;&#3619;&#3632;&#3618;&#3632;&#3648;&#3623;&#3621;&#3634;</a></span></font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="style3"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="http://eduserv.ku.ac.th/index.php?method=data_curri/manual_general">&#3588;&#3641;&#3656;&#3617;&#3639;&#3629;&#3627;&#3617;&#3623;&#3604;&#3623;&#3636;&#3594;&#3634;&#3624;&#3638;&#3585;&#3625;&#3634;&#3607;&#3633;&#3656;&#3623;&#3652;&#3611;</a> &nbsp;</span> </font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/tabledata.pdf" target="_blank">&#3605;&#3634;&#3619;&#3634;&#3591;&#3649;&#3626;&#3604;&#3591;&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3586;&#3629;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3651;&#3627;&#3617;&#3656;&#3648;&#3614;&#3639;&#3656;&#3629;&#3609;&#3635;&#3648;&#3626;&#3609;&#3629;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3614;&#3636;&#3592;&#3634;&#3619;&#3603;&#3634;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;</a> </font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/index.php?method=ISCED" target="_parent">&#3585;&#3634;&#3619;&#3619;&#3632;&#3610;&#3640;&#3619;&#3627;&#3633;&#3626; ISCED &#3614;&#3619;&#3657;&#3629;&#3617;&#3585;&#3633;&#3610;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3651;&#3627;&#3617;&#3656;</a>&nbsp;</font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/consider_course.pdf" target="_blank" class="style3 style24">&#3585;&#3634;&#3619;&#3614;&#3636;&#3592;&#3634;&#3619;&#3603;&#3634;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3627;&#3619;&#3639;&#3629;&#3651;&#3627;&#3657;&#3588;&#3623;&#3634;&#3617;&#3648;&#3627;&#3655;&#3609;&#3594;&#3629;&#3610;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3586;&#3629;&#3591;&#3626;&#3606;&#3634;&#3610;&#3633;&#3609;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;</a> </font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="eduserv/curriculum/data/no_16256.pdf" target="_blank" class="style3 style24">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3651;&#3609;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3656;&#3629;&#3626;&#3635;&#3609;&#3633;&#3585;&#3591;&#3634;&#3609;&#3588;&#3603;&#3632;&#3585;&#3619;&#3619;&#3617;&#3585;&#3634;&#3619;&#3585;&#3634;&#3619;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;</a></font></td>
+		</tr>
+	<!--	<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="eduserv/curriculum/data/report_smo07.pdf" target="_blank">&#3585;&#3634;&#3619;&#3619;&#3634;&#3618;&#3591;&#3634;&#3609;&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3649;&#3621;&#3632;&#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634; &#3619;&#3634;&#3618;&#3616;&#3634;&#3588;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634; </a><a href="001/encourage/link/report.htm">(&#3626;&#3617;&#3629;.07)</a></font></td>
+		</tr> -->
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="index.php?method=eduserv/curriculum/data/datalink_TQF7">&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3626;&#3619;&#3640;&#3611;&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;ประกอบการรายงาน&#3586;&#3629;&#3591;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;ตามแบบ &#3617;&#3588;&#3629;.7 <strong><font color="#990000"><img src="images/new_icon.gif" alt=""  border="0"/></font></strong></a></font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="001/data%20pdf/&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3651;&#3609;&#3585;&#3634;&#3619;&#3609;&#3635;&#3648;&#3626;&#3609;&#3629;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3656;&#3629;%20&#3626;&#3585;&#3629;..pdf" target="_blank">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3651;&#3609;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;&#3605;&#3656;&#3629;&#3626;&#3635;&#3609;&#3633;&#3585;&#3591;&#3634;&#3609;&#3588;&#3603;&#3632;&#3585;&#3619;&#3619;&#3617;&#3585;&#3634;&#3619;&#3585;&#3634;&#3619;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;</a></font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="research.html" target="_blank">&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3612;&#3621;&#3585;&#3634;&#3619;&#3623;&#3636;&#3592;&#3633;&#3618;&#3626;&#3606;&#3634;&#3610;&#3633;&#3609;&#3611;&#3619;&#3632;&#3585;&#3629;&#3610;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3656;&#3629;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;</a></font></td>
+		</tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif">&#3649;&#3610;&#3610;&#3615;&#3629;&#3619;&#3660;&#3617;&#3605;&#3656;&#3634;&#3591;&#3654;<a href="index.php?method=downloads" target="_blank"> [Download]</a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+		  <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><img src="data_curri/bullet.gif" width="16" height="13" /><strong> &#3611;&#3599;&#3636;&#3607;&#3636;&#3609;&#3585;&#3634;&#3619;&#3611;&#3619;&#3632;&#3594;&#3640;&#3617; </strong></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://www.gad.ku.ac.th/PDF/Calender_meet/59/Meeting2559.pdf" target="_blank">ปฏิทินการประชุมคณะกรรมการบริหาร มก. พ.ศ. 2559</a></font></td>
+	    </tr>
+<!--		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://www.gad.ku.ac.th/PDF/Calender_meet/d-58.pdf" target="_blank">&#3611;&#3599;&#3636;&#3607;&#3636;&#3609;&#3585;&#3634;&#3619;&#3611;&#3636;&#3604;&#3619;&#3633;&#3610;&#3648;&#3619;&#3639;&#3656;&#3629;&#3591;&#3648;&#3626;&#3609;&#3629;&#3648;&#3586;&#3657;&#3634;&#3607;&#3637;&#3656;&#3611;&#3619;&#3632;&#3594;&#3640;&#3617;&#3588;&#3603;&#3610;&#3604;&#3637; &#3611;&#3619;&#3632;&#3592;&#3635;&#3611;&#3637; 2558</a></font></td>
+	    </tr> -->
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://www.gad.ku.ac.th/PDF/Calender_meet/59/CloseMeeting2559.pdf" target="_blank">ปฏิทินการปิดรับเรื่องเข้าที่ประชุมคณะกรรมการบริหาร มก. พ.ศ. 2559</a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+		  <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /> &#3585;&#3619;&#3629;&#3610;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;&#3649;&#3627;&#3656;&#3591;&#3594;&#3634;&#3605;&#3636; (TQF:HEd)</strong></font></td>
+        </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/NQF/NQF01.pdf" target="_blank">&#3585;&#3619;&#3629;&#3610;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;&#3649;&#3627;&#3656;&#3591;&#3594;&#3634;&#3605;&#3636; &#3614;.&#3624;. 2552 </a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/NQF/NQF02.pdf" target="_blank">&#3626;&#3634;&#3619;&#3632;&#3626;&#3635;&#3588;&#3633;&#3597;&#3586;&#3629;&#3591;&#3585;&#3619;&#3629;&#3610;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;&#3649;&#3627;&#3656;&#3591;&#3594;&#3634;&#3605;&#3636;</a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/NQF/NQF_2552.pdf" target="_blank">&#3649;&#3609;&#3623;&#3607;&#3634;&#3591;&#3585;&#3634;&#3619;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3605;&#3634;&#3617;&#3585;&#3619;&#3629;&#3610;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;&#3649;&#3627;&#3656;&#3591;&#3594;&#3634;&#3605;&#3636; &#3614;.&#3624;. 2552 &#3649;&#3621;&#3632;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;&#3649;&#3609;&#3610;&#3607;&#3657;&#3634;&#3618; </a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style39">&#3649;&#3610;&#3610; &#3617;&#3588;&#3629;.</span> <a href="data_curri/NQF/MKA_1.pdf">[ <strong>1</strong> ]</a> <a href="data_curri/NQF/MKA_2.doc">[<strong> 2</strong> ]</a> <a href="data_curri/NQF/MKA_3.doc">[ <strong>3</strong> ]</a> <a href="data_curri/NQF/MKA_4.doc">[ <strong>4</strong> ]</a> <a href="data_curri/NQF/MKA_5.doc">[ <strong>5</strong> ] </a><a href="data_curri/NQF/MKA_6.doc">[ <strong>6</strong> ]</a> <a href="data_curri/NQF/MKA_7.doc">[ <strong>7</strong> ]</a> <span class="text_curriculum"><span class="style27"><span class="style43">&nbsp;<br>
+	      (หลักสูตรที่ทำ มคอ. 2 ให้จัดทำแบบรายงานฯ มคอ. 01-06 แทน แบบรายงานฯ สมอ. 01-06)</span></span></span>  <span class="text_curriculum"><span class="style27"><span class="style43"> <a href="http://eduserv.ku.ac.th/001/encourage/link/report.htm">[Download]</a></span> </span></span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><strong>&#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591; :</strong> &#3585;&#3634;&#3619;&#3648;&#3586;&#3637;&#3618;&#3609;&#3650;&#3588;&#3619;&#3591;&#3626;&#3619;&#3657;&#3634;&#3591;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;  &#3585;&#3619;&#3603;&#3637;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3617;&#3637;&#3617;&#3634;&#3585;&#3585;&#3623;&#3656;&#3634; 1 &#3649;&#3610;&#3610;/&#3649;&#3612;&#3609;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634; (&#3651;&#3609;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619; &#3617;&#3588;&#3629;. 2  &#3627;&#3617;&#3623;&#3604;&#3607;&#3637;&#3656; 2 &#3586;&#3657;&#3629; 3)</span> <span class="style44"><a href="data_curri/Ex_structure_mka2.doc" target="_blank"><img src="data_curri/icon_word.gif" width="16" height="16" border="0" /></a></span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><strong>&#3611;&#3619;&#3632;&#3585;&#3634;&#3624; :</strong> &#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3626;&#3634;&#3586;&#3634; <a href="http://www.mua.go.th/users/tqf-hed/news/news6.php" target="_blank">[<span class="text_curriculum"><span class="style27">&#3648;&#3594;&#3639;&#3656;&#3629;&#3617;&#3650;&#3618;&#3591;&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3592;&#3634;&#3585;</span></span><span class="style41">&#3648;&#3623;&#3655;&#3610; &#3626;&#3585;&#3629;.]</span></a></span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><strong>&#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591; : </strong>&#3585;&#3634;&#3619;&#3614;&#3633;&#3602;&#3609;&#3634;&#3619;&#3634;&#3618;&#3621;&#3632;&#3648;&#3629;&#3637;&#3618;&#3604;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619; / &#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;&#3649;&#3621;&#3632;&#3585;&#3634;&#3619;&#3619;&#3634;&#3618;&#3591;&#3634;&#3609;&#3612;&#3621; <a href="http://www.mua.go.th/users/tqf-hed/news/news6.php" target="_blank">[<span class="text_curriculum"><span class="style27">&#3648;&#3594;&#3639;&#3656;&#3629;&#3617;&#3650;&#3618;&#3591;&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3592;&#3634;&#3585;</span></span><span class="style41">&#3648;&#3623;&#3655;&#3610; &#3626;&#3585;&#3629;.]</span></a> </span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><b>KPI :</b><br>
+      <!--    - การปรับแก้ไขตัวบ่งชี้ 2558 <a href='data_curri/KPI-2558-0.pdf'><img src="data_curri/icon_pdf.gif" width="16" height="16" border="0" /></a><br> -->
+- &#3605;&#3633;&#3623;&#3610;&#3656;&#3591;&#3594;&#3637;&#3657;&#3612;&#3621;&#3585;&#3634;&#3619;&#3604;&#3635;&#3648;&#3609;&#3636;&#3609;&#3591;&#3634;&#3609;&#3605;&#3634;&#3617;&#3585;&#3619;&#3629;&#3610;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634; (เดิม) <a href="data_curri/KPI(12).pdf" target="_blank"><img src="data_curri/icon_pdf.gif" width="16" height="16" border="0" /></a> &#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591; </span><a href="data_curri/&#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591;&#3605;&#3633;&#3623;&#3610;&#3656;&#3591;&#3594;&#3637;&#3657;.doc" target="_blank"><img src="data_curri/icon_word.gif" width="16" height="16" border="0" /></a></font><br>
+		  - ตัวบ่งชี้ผลการดำเนินงานตามกรอบมาตรฐานคุณวุฒิระดับอุดมศึกษา 2558 <a href='data_curri/KPI-2558.pdf'><img src="data_curri/icon_pdf.gif" width="16" height="16" border="0" /></a> <img src="images/update_icon.gif"/>
+		  <br>
+          </td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><a href="data_curri/NQF/มคอ7_กำหนดการ.pdf">กำหนดการจัดทำ มคอ. ประจำปี 2557.</a></span></font></td>
+	    </tr>     
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="style44"><a href="data_curri/NQF/NQF_2558-3.pdf">แนวทางการปฏิบัติตามกรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ (ฉบับที่ 3) พ.ศ. 2558</a></span></font></td>
+	    </tr>           
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font face="Arial, Helvetica, sans-serif"><strong><font color="#990000"><img src="data_curri/bullet.gif" width="16" height="13" /></font></strong><font color="#990000"><strong> &#3648;&#3585;&#3603;&#3601;&#3660;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</strong></font></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="001/data%20pdf/page80-107.pdf" target="_blank">&#3586;&#3657;&#3629;&#3588;&#3635;&#3606;&#3634;&#3617;-&#3588;&#3635;&#3605;&#3629;&#3610;&#3607;&#3637;&#3656;&#3648;&#3585;&#3637;&#3656;&#3618;&#3623;&#3586;&#3657;&#3629;&#3591;&#3585;&#3633;&#3610;&#3648;&#3585;&#3603;&#3601;&#3660;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;</a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><p><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3614;&#3619;&#3632;&#3619;&#3634;&#3594;&#3585;&#3620;&#3625;&#3598;&#3637;&#3585;&#3634;</span></strong></font></p></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://www.gad.ku.ac.th/PDF/Criterion_KU/academic_gown2550.pdf" target="_blank">&#3614;&#3619;&#3632;&#3619;&#3634;&#3594;&#3585;&#3620;&#3625;&#3598;&#3637;&#3585;&#3634;&#3623;&#3656;&#3634;&#3604;&#3657;&#3623;&#3618;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634;&#3651;&#3609;&#3626;&#3634;&#3586;&#3634;&#3623;&#3636;&#3594;&#3634; &#3629;&#3633;&#3585;&#3625;&#3619;&#3618;&#3656;&#3629;&#3626;&#3635;&#3627;&#3619;&#3633;&#3610;&#3626;&#3634;&#3586;&#3634;&#3623;&#3636;&#3594;&#3634; &#3649;&#3621;&#3632;&#3588;&#3619;&#3640;&#3618;&#3623;&#3636;&#3607;&#3618;&#3600;&#3634;&#3609;&#3632;&#3586;&#3629;&#3591;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660; &#3614;.&#3624;. 2550</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/&#3585;&#3619;&#3603;&#3637;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634;&#3652;&#3617;&#3656;&#3617;&#3637;.pdf" target="_blank">&#3585;&#3619;&#3603;&#3637;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634;&#3652;&#3617;&#3656;&#3617;&#3637;&#3651;&#3609;&#3614;&#3619;&#3632;&#3619;&#3634;&#3594;&#3585;&#3620;&#3625;&#3598;&#3637;&#3585;&#3634;&#3586;&#3629;&#3591;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618; </a><strong><font color="#990000"><img src="images/new_icon.gif" /></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634;</span></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/namedeegree_2549.pdf" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634; &#3614;.&#3624;. 2549</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/name_degree_2.pdf" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634; (&#3593;&#3610;&#3633;&#3610;&#3607;&#3637;&#3656; 2) &#3614;.&#3624;. 2551</a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/name_degree_3.pdf" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634; (&#3593;&#3610;&#3633;&#3610;&#3607;&#3637;&#3656; 3) &#3614;.&#3624;. 2551</a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/namedegree_4.pdf" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634; (&#3593;&#3610;&#3633;&#3610;&#3607;&#3637;&#3656; 4) &#3614;.&#3624;. 2552</a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/namedegree_5.pdf" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3594;&#3639;&#3656;&#3629;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634; (&#3593;&#3610;&#3633;&#3610;&#3607;&#3637;&#3656; 5) &#3614;.&#3624;. 2553</a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font face="Arial, Helvetica, sans-serif"><img src="data_curri/bullet.gif" width="16" height="13" /><font color="#990000"><strong> &#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3648;&#3619;&#3637;&#3618;&#3609;&#3585;&#3634;&#3619;&#3626;&#3629;&#3609;</strong></font></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/001/curriculum/knowledge2025.pdf" target="_blank">Body of Knowledge and New Foundational Requirements for Curriculum Development</a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3650;&#3588;&#3619;&#3591;&#3585;&#3634;&#3619;&#3616;&#3634;&#3588;&#3614;&#3636;&#3648;&#3624;&#3625;</span></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/calendar_open.pdf" target="_blank">&#3611;&#3599;&#3636;&#3607;&#3636;&#3609;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3586;&#3629;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3648;&#3611;&#3636;&#3604;&#3626;&#3629;&#3609;&#3650;&#3588;&#3619;&#3591;&#3585;&#3634;&#3619;&#3616;&#3634;&#3588;&#3614;&#3636;&#3648;&#3624;&#3625; &#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_book/project%20work.pdf" target="_blank">&#3649;&#3612;&#3609;&#3616;&#3641;&#3617;&#3636;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3586;&#3629;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3650;&#3588;&#3619;&#3591;&#3585;&#3634;&#3619;&#3614;&#3636;&#3648;&#3624;&#3625;&#3619;&#3632;&#3604;&#3633;&#3610;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634;&#3605;&#3619;&#3637;&#3649;&#3621;&#3632;&#3610;&#3633;&#3603;&#3601;&#3636;&#3605;&#3624;&#3638;&#3585;&#3625;&#3634;</a></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/organization/curriculum/data/regular.pdf" target="_blank">&#3619;&#3632;&#3648;&#3610;&#3637;&#3618;&#3610;&#3623;&#3656;&#3634;&#3604;&#3657;&#3623;&#3618;&#3585;&#3634;&#3619;&#3610;&#3619;&#3636;&#3627;&#3634;&#3619;&#3650;&#3588;&#3619;&#3591;&#3585;&#3634;&#3619;&#3614;&#3636;&#3648;&#3624;&#3625;&#3586;&#3629;&#3591;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660; &#3614;.&#3624;. 2547</a><br />
+              <a href="http://eduserv.ku.ac.th/organization/curriculum/data/graduate.pdf">&#3585;&#3634;&#3619;&#3621;&#3591;&#3607;&#3632;&#3648;&#3610;&#3637;&#3618;&#3609;&#3648;&#3619;&#3637;&#3618;&#3609;&#3612;&#3656;&#3634;&#3609;&#3619;&#3632;&#3610;&#3610;&#3648;&#3588;&#3619;&#3639;&#3629;&#3586;&#3656;&#3634;&#3618;&#3586;&#3629;&#3591;&#3650;&#3588;&#3619;&#3591;&#3585;&#3634;&#3619;&#3616;&#3634;&#3588;&#3614;&#3636;&#3648;&#3624;&#3625; &#3619;&#3632;&#3604;&#3633;บบัณฑิตศึกษา</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://www.planning.ku.ac.th/planning/index.php" class="style2"> คู่มือการเสนอ/แบบฟอร์มเอกสารโครงการภาคพิเศษ</a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+
+
+
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</span></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/organization/curriculum/data/research_teacherGrad.pdf" target="_blank">ผลงานทางวิชาการและจำนวนผู้ทรงคุณวุฒิพิเศษระดับบัณฑิตศึกษา</a></font> <img src="images/new_icon.gif" /></td>
+	    </tr>        
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/organization/curriculum/data/&#3649;&#3612;&#3609;&#3616;&#3641;&#3617;&#3636;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;.doc" target="_blank">&#3605;&#3633;&#3623;&#3629;&#3618;&#3656;&#3634;&#3591;&#3649;&#3612;&#3609;&#3616;&#3641;&#3617;&#3636;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</a></font></td>
+	    </tr>
+		<tr>
+          <td height="23" bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/organization/curriculum/data/&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3648;&#3619;&#3639;&#3656;&#3629;&#3591;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3612;&#3641;&#3657;&#3619;&#3633;&#3610;&#3612;&#3636;&#3604;&#3594;&#3629;&#3610;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3649;&#3621;&#3632;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;.doc" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3648;&#3619;&#3639;&#3656;&#3629;&#3591;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3649;&#3621;&#3632;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3612;&#3641;&#3657;&#3619;&#3633;&#3610;&#3612;&#3636;&#3604;&#3594;&#3629;&#3610;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619; &#3605;&#3634;&#3617;&#3648;&#3585;&#3603;&#3601;&#3660;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3631; &#3614;.&#3624;. 2548</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/teacher_cc.pdf" target="_blank">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3585;&#3634;&#3619;&#3649;&#3605;&#3656;&#3591;&#3605;&#3633;&#3657;&#3591;&#3612;&#3641;&#3657;&#3648;&#3594;&#3637;&#3656;&#3618;&#3623;&#3594;&#3634;&#3597;&#3648;&#3593;&#3614;&#3634;&#3632;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="001/Curriculum/data_book/569.pdf">&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3592;&#3635;&#3609;&#3623;&#3609;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3634;&#3617;&#3648;&#3585;&#3603;&#3601;&#3660;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634; &#3614;.&#3624;.2548</a> </span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/international.pdf" target="_blank">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3585;&#3619;&#3603;&#3637;&#3592;&#3635;&#3609;&#3623;&#3609;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3609;&#3634;&#3609;&#3634;&#3594;&#3634;&#3605;&#3636;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/check_teacher.pdf">&#3585;&#3634;&#3619;&#3605;&#3619;&#3623;&#3592;&#3626;&#3629;&#3610;&#3588;&#3640;&#3603;&#3626;&#3617;&#3610;&#3633;&#3605;&#3636;&#3586;&#3629;&#3591;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3607;&#3637;&#3656;&#3585;&#3635;&#3621;&#3633;&#3591;&#3648;&#3585;&#3625;&#3637;&#3618;&#3603;&#3629;&#3634;&#3618;&#3640;&#3619;&#3634;&#3594;&#3585;&#3634;&#3619;</a> </font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/standard48-edit-55.pdf">&#3588;&#3635;&#3594;&#3637;&#3657;&#3649;&#3592;&#3591;&#3648;&#3614;&#3636;&#3656;&#3617;&#3648;&#3605;&#3636;&#3617; &quot;&#3611;&#3619;&#3632;&#3626;&#3610;&#3585;&#3634;&#3619;&#3603;&#3660;&#3651;&#3609;&#3585;&#3634;&#3619;&#3607;&#3635;&#3623;&#3636;&#3592;&#3633;&#3618;&quot; &#3586;&#3629;&#3591;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619; (&#3607;&#3637;&#3656; &#3624;&#3608; 0506(4)/&#3623;.866 &#3621;&#3623;. 18 &#3585;.&#3588;. 5555 &#3649;&#3621;&#3632; &#3624;&#3608; 0506(4)/2591 &#3621;&#3623;. 15 &#3585;.&#3614;. 2556)</a> <strong><font color="#990000"><img src="images/new_icon.gif" /></font></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/file-2.pdf">แนวปฏิบัติในการพิจารณาหลักสูตรระดับปริญญาตรีที่มีแขนงวิชา/กลุ่มวิชาของสถาบันอุดมศึกษา</a><strong><font color="#990000"><img src="images/new_icon.gif" /></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3617;&#3605;&#3636;&#3607;&#3637;&#3656;&#3611;&#3619;&#3632;&#3594;&#3640;&#3617;&#3588;&#3603;&#3610;&#3604;&#3637;/&#3626;&#3616;&#3634;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3607;&#3637;&#3656;&#3648;&#3585;&#3637;&#3656;&#3618;&#3623;&#3585;&#3633;&#3610;&#3585;&#3634;&#3619;&#3648;&#3626;&#3609;&#3629;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;</span></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">03-09-55</span></a> &nbsp;<a href="data_curri/selected 96.pdf" target="_blank">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3585;&#3634;&#3619;&#3621;&#3591;&#3607;&#3632;&#3648;&#3610;&#3637;&#3618;&#3609;&#3648;&#3619;&#3637;&#3618;&#3609;&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634; Selected Topic (xxxxxx96)</a></span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">06-02-55</span></a> &nbsp;<a href="http://eduserv.ku.ac.th/001/News/document/550301_MultiProgram.pdf" target="_blank">&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3588;&#3623;&#3634;&#3617;&#3627;&#3617;&#3634;&#3618;&#3649;&#3621;&#3632;&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3614;&#3636;&#3592;&#3634;&#3619;&#3603;&#3634;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3614;&#3627;&#3640;&#3623;&#3636;&#3607;&#3618;&#3634;&#3585;&#3634;&#3619;</a> </span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum">05-04-53</span><a href="data_curri/chart-mka.pdf" target="_blank"> &nbsp;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3607;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3634;&#3617;&#3585;&#3619;&#3629;&#3610;&#3617;&#3634;&#3605;&#3619;&#3600;&#3634;&#3609;&#3588;&#3640;&#3603;&#3623;&#3640;&#3602;&#3636;&#3619;&#3632;&#3604;&#3633;&#3610;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634;&#3649;&#3627;&#3656;&#3591;&#3594;&#3634;&#3605;&#3636; &#3614;.&#3624;. 2552 (&#3617;&#3588;&#3629;.)<br />
+&#3649;&#3621;&#3632;&#3586;&#3633;&#3657;&#3609;&#3605;&#3629;&#3609;&#3585;&#3634;&#3619;&#3604;&#3635;&#3648;&#3609;&#3636;&#3609;&#3591;&#3634;&#3609;&#3585;&#3634;&#3619;&#3586;&#3629;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;&#3586;&#3629;&#3591;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660; </a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum">08-12-52</span><a href="data_curri/chart-mka.pdf" target="_blank"> &nbsp;</a><a href="data_curri/5-y-Measure.pdf" target="_blank">&#3617;&#3634;&#3605;&#3619;&#3585;&#3634;&#3619;&#3626;&#3656;&#3591;&#3648;&#3626;&#3619;&#3636;&#3585;&#3634;&#3619;&#3611;&#3619;&#3633;&#3610;&#3611;&#3619;&#3640;&#3591;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3605;&#3634;&#3617;&#3619;&#3629;&#3610; 5 &#3611;&#3637; &#3649;&#3621;&#3632;&#3585;&#3619;&#3632;&#3610;&#3623;&#3609;&#3585;&#3634;&#3619;&#3605;&#3619;&#3623;&#3592;&#3626;&#3629;&#3610;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;</a><a href="data_curri/chart-mka.pdf" target="_blank">&#3636;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum">23-02-52</span><a href="data_curri/close_curri.pdf" target="_blank">&nbsp;&nbsp;&#3617;&#3605;&#3636;&#3607;&#3637;&#3656;&#3611;&#3619;&#3632;&#3594;&#3640;&#3617;&#3626;&#3616;&#3634;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3637;&#3656;&#3618;&#3623;&#3585;&#3633;&#3610;&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3651;&#3609;&#3585;&#3634;&#3619;&#3611;&#3636;&#3604;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">15-12-51</span> &#3585;&#3634;&#3619;&#3605;&#3619;&#3623;&#3592;&#3626;&#3629;&#3610;&#3588;&#3640;&#3603;&#3626;&#3617;&#3610;&#3633;&#3605;&#3636;&#3586;&#3629;&#3591;&#3612;&#3641;&#3657;&#3648;&#3586;&#3657;&#3634;&#3624;&#3638;&#3585;&#3625;&#3634;&#3649;&#3621;&#3632;&#3585;&#3634;&#3619;&#3586;&#3629;&#3648;&#3614;&#3636;&#3656;&#3617;&#3648;&#3605;&#3636;&#3617;&#3648;&#3591;&#3639;&#3656;&#3629;&#3609;&#3652;&#3586;&#3651;&#3609;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">08-01-50</span></a><a href="data_curri/no.00361.pdf" target="_blank">&nbsp;&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3648;&#3585;&#3637;&#3656;&#3618;&#3623;&#3585;&#3633;&#3610;&#3585;&#3634;&#3619;&#3605;&#3619;&#3623;&#3592;&#3626;&#3629;&#3610;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634; และกาารเปิดสอนรายวิชา</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">04-12-49</span></a> &nbsp;<a href="data_curri/no.16774.pdf" target="_blank">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3651;&#3609;&#3585;&#3634;&#3619;&#3611;&#3619;&#3633;&#3610;&#3611;&#3619;&#3640;&#3591;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;&#3607;&#3637;&#3656;&#3617;&#3637;&#3585;&#3634;&#3619;&#3586;&#3629;&#3651;&#3594;&#3657;&#3619;&#3656;&#3623;&#3617;&#3585;&#3633;&#3609;&#3651;&#3609;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">04-12-49</span>&nbsp;</a>&nbsp;<a href="data_curri/no.16773.pdf" target="_blank">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3651;&#3609;&#3585;&#3634;&#3619;&#3649;&#3626;&#3604;&#3591;&#3588;&#3635;&#3629;&#3608;&#3636;&#3610;&#3634;&#3618;&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;&#3651;&#3609;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3649;&#3621;&#3632;&#3585;&#3634;&#3619;&#3648;&#3586;&#3637;&#3618;&#3609;&#3592;&#3635;&#3609;&#3623;&#3609;&#3627;&#3609;&#3656;&#3623;&#3618;&#3585;&#3636;&#3605; &#3623;&#3636;&#3594;&#3634;&#3626;&#3633;&#3617;&#3617;&#3609;&#3634;&#3649;&#3621;&#3632;&#3623;&#3636;&#3594;&#3634;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634;&#3588;&#3657;&#3609;&#3588;&#3623;&#3657;&#3634;&#3629;&#3636;&#3626;&#3619;&#3632;&#3651;&#3609;&#3585;&#3634;&#3619;&#3586;&#3629;&#3648;&#3611;&#3636;&#3604;/&#3611;&#3619;&#3633;&#3610;&#3611;&#3619;&#3640;&#3591;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</a> </font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">04-04-48</span></a> &nbsp;<a href="data_curri/opencurri_4985.pdf" target="_blank">&#3623;&#3636;&#3594;&#3634;&#3595;&#3657;&#3635;&#3595;&#3657;&#3629;&#3609;, &#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3585;&#3634;&#3619;&#3648;&#3611;&#3636;&#3604;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3651;&#3627;&#3617;&#3656; &#3611;.&#3605;&#3619;&#3637;, &#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3616;&#3634;&#3619;&#3632;&#3591;&#3634;&#3609;&#3629;&#3634;&#3592;&#3634;&#3619;&#3618;&#3660;&#3611;&#3619;&#3632;&#3592;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;</a> </span></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="data_curri/check_student_1.pdf" target="_blank"><span class="text_curriculum">06-01-29</span></a></span> <span class="text_curriculum">&nbsp;<a href="data_curri/manual_update_498-496.pdf">&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3585;&#3634;&#3619;&#3585;&#3635;&#3627;&#3609;&#3604;&#3623;&#3636;&#3594;&#3634;&#3614;&#3639;&#3657;&#3609;&#3600;&#3634;&#3609; &#3648;&#3619;&#3639;&#3656;&#3629;&#3591;&#3648;&#3593;&#3614;&#3634;&#3632;&#3607;&#3634;&#3591; &#3626;&#3633;&#3617;&#3617;&#3609;&#3634; &#3611;&#3633;&#3597;&#3627;&#3634;&#3614;&#3636;&#3648;&#3624;&#3625; (&#3619;&#3627;&#3633;&#3626; 9 &#3605;&#3633;&#3623;&#3585;&#3621;&#3634;&#3591;)</a></span></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /> รวม<span class="style3">&#3611;&#3619;&#3632;&#3585;&#3634;&#3624;กระทรวงศึกษาธิการ / กกอ. / สกอ. </span></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/pragad%20SKA.pdf" target="_blank">&#3627;&#3621;&#3633;&#3585;&#3648;&#3585;&#3603;&#3601;&#3660;&#3649;&#3621;&#3632;&#3649;&#3609;&#3623;&#3611;&#3599;&#3636;&#3610;&#3633;&#3605;&#3636;&#3648;&#3585;&#3637;&#3656;&#3618;&#3623;&#3585;&#3633;&#3610;&#3585;&#3634;&#3619;&#3614;&#3636;&#3592;&#3634;&#3619;&#3603;&#3634;&#3611;&#3619;&#3632;&#3648;&#3617;&#3636;&#3609;&#3588;&#3640;&#3603;&#3616;&#3634;&#3614;&#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634;&#3609;&#3629;&#3585;&#3607;&#3637;&#3656;&#3605;&#3633;&#3657;&#3591;&#3586;&#3629;&#3591;&#3626;&#3606;&#3634;&#3610;&#3633;&#3609;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634; &#3614;.&#3624;. 2552 </a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/place 8-3-13.pdf" target="_blank">&#3649;&#3609;&#3623;&#3607;&#3634;&#3591;&#3585;&#3634;&#3619;&#3648;&#3614;&#3636;&#3656;&#3617;&#3611;&#3619;&#3632;&#3626;&#3636;&#3607;&#3608;&#3636;&#3616;&#3634;&#3614;&#3585;&#3634;&#3619;&#3651;&#3594;&#3657;&#3611;&#3619;&#3632;&#3650;&#3618;&#3594;&#3609;&#3660;&#3629;&#3634;&#3588;&#3634;&#3619;&#3586;&#3629;&#3591;&#3626;&#3606;&#3634;&#3610;&#3633;&#3609;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634; </a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Bachelor.pdf" target="_blank">&#3649;&#3609;&#3623;&#3607;&#3634;&#3591;&#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3588;&#3623;&#3610;&#3619;&#3632;&#3604;&#3633;&#3610;&#3611;&#3619;&#3636;&#3597;&#3597;&#3634;&#3605;&#3619;&#3637; 2 &#3611;&#3619;&#3636;&#3597;&#3597;&#3634;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Bachelor.pdf" target="_blank">&#3611;&#3619;&#3632;&#3585;&#3634;&#3624;&#3585;&#3619;&#3632;&#3607;&#3619;&#3623;&#3591;&#3624;&#3638;&#3585;&#3625;&#3634;&#3608;&#3636;&#3585;&#3634;&#3619; &#3623;&#3656;&#3634;&#3604;&#3657;&#3623;&#3618;&#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634;&#3609;&#3629;&#3585;&#3607;&#3637;&#3656;&#3605;&#3633;&#3657;&#3591;&#3586;&#3629;&#3591;&#3626;&#3606;&#3634;&#3610;&#3633;&#3609;&#3629;&#3640;&#3604;&#3617;&#3624;&#3638;&#3585;&#3625;&#3634; &#3614;.&#3624;. 2552</a> </font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Distance_education.pdf" target="_blank">&#3648;&#3585;&#3603;&#3601;&#3660;&#3585;&#3634;&#3619;&#3611;&#3619;&#3632;&#3648;&#3617;&#3636;&#3609;&#3588;&#3640;&#3603;&#3616;&#3634;&#3614;&#3585;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634;&#3619;&#3632;&#3610;&#3610;&#3585;&#3634;&#3619;&#3624;&#3638;&#3585;&#3625;&#3634;&#3607;&#3634;&#3591;&#3652;&#3585;&#3621;</a></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Distance_education.pdf" target="_blank">รวม กฎกระทรวง ประกาศ / มติ กกอ. / หลักเกณฑ์และแนวปฏิบัติ - เล่ม 3 (ปี 54-56) </a><strong><font color="#990000"><img src="images/new_icon.gif" alt=""  border="0"/></font></strong></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Distance_education.pdf" target="_blank">รวม กฎกระทรวง ประกาศ / มติ กกอ. / หลักเกณฑ์และแนวปฏิบัติ - เล่ม 2 (ปี 52-54) </a></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9" class="text_curriculum">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/Distance_education.pdf" target="_blank">รวม กฏกระทรวง ประกาศ / มติ กกอ. /หลักเกณฑ์และแนวปฏิบัติ - เล่ม 1 (ปี 47 - 51) </a></font></td>
+	    </tr>
+		<tr>
+		  <td colspan="2" class="text_curriculum">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3585;&#3634;&#3619;&#3651;&#3594;&#3657;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3619;&#3656;&#3623;&#3617;</span></strong></font><font face="Arial, Helvetica, sans-serif"></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td><font face="Arial, Helvetica, sans-serif"><span class="text_curriculum"><a href="data_curri/file-1.pdf" target="_blank">&#3649;&#3609;&#3623;&#3607;&#3634;&#3591;&#3585;&#3634;&#3619;&#3610;&#3619;&#3636;&#3627;&#3634;&#3619;&#3592;&#3633;&#3604;&#3585;&#3634;&#3619;&#3607;&#3634;&#3591;&#3623;&#3636;&#3594;&#3634;&#3585;&#3634;&#3619; &#3585;&#3634;&#3619;&#3651;&#3594;&#3657;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3619;&#3656;&#3623;&#3617;&#3585;&#3633;&#3609;&#3619;&#3632;&#3627;&#3623;&#3656;&#3634;&#3591;&#3588;&#3603;&#3632;&#3649;&#3621;&#3632;&#3623;&#3636;&#3607;&#3618;&#3634;&#3648;&#3586;&#3605;&#3585;&#3619;&#3603;&#3637;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3607;&#3637;&#3656;&#3651;&#3585;&#3621;&#3657;&#3648;&#3588;&#3637;&#3618;&#3591;&#3585;&#3633;&#3609;&#3627;&#3619;&#3639;&#3629;&#3595;&#3657;&#3635;&#3595;&#3657;&#3629;&#3609; &#3649;&#3621;&#3632;&#3617;&#3634;&#3605;&#3619;&#3585;&#3634;&#3619;&#3621;&#3604;&#3592;&#3635;&#3609;&#3623;&#3609;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3651;&#3627;&#3657;&#3609;&#3657;&#3629;&#3618;&#3621;</a></span><span class="style1"><a href="data_curri/file-1.pdf" target="_blank">ง</a></span></font></td>
+	    </tr>
+		<tr>
+		  <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/new open.pdf" target="_blank">&#3585;&#3634;&#3619;&#3586;&#3629;&#3629;&#3609;&#3640;&#3617;&#3633;&#3605;&#3636;&#3648;&#3611;&#3636;&#3604;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3651;&#3627;&#3617;&#3656;&#3649;&#3621;&#3632;&#3585;&#3634;&#3619;&#3609;&#3635;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;&#3648;&#3604;&#3636;&#3617;&#3652;&#3611;&#3648;&#3611;&#3636;&#3604;&#3626;&#3629;&#3609;&#3605;&#3656;&#3634;&#3591;&#3623;&#3636;&#3607;&#3618;&#3634;&#3648;&#3586;&#3605;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/file-3.pdf" target="_blank">แนวปฏิบัติการใช้หลักสูตรร่วมกันของมหาวิทยาลัยเกษตรศาสตร์</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/TQF2_Seperate-2558.pdf" target="_blank">การพิจารณาแยกจัดทำเล่มหลักสูตร (มคอ.2) การใช้เล่มหลักสูตรเดียวกัน 2558</a></font></td>
+	    </tr>        
+		<tr>
+		  <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td colspan="2"><font color="#990000" face="Arial, Helvetica, sans-serif"><strong><img src="data_curri/bullet.gif" width="16" height="13" /><span class="style3"> &#3586;&#3657;&#3629;&#3617;&#3641;&#3621;/&#3626;&#3606;&#3636;&#3605;&#3636;/&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;</span></strong></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="001/Curriculum/step_consum.html" target="_blank">&#3626;&#3619;&#3640;&#3611;&#3588;&#3623;&#3634;&#3617;&#3585;&#3657;&#3634;&#3623;&#3627;&#3609;&#3657;&#3634;&#3585;&#3634;&#3619;&#3604;&#3635;&#3648;&#3609;&#3636;&#3609;&#3591;&#3634;&#3609;&#3614;&#3636;&#3592;&#3634;&#3619;&#3603;&#3634;&#3627;&#3621;&#3633;&#3585;&#3626;&#3641;&#3605;&#3619;/&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="http://eduserv.ku.ac.th/001/Curriculum/PDF/subject_ku_56.pdf" target="_blank">&#3619;&#3634;&#3618;&#3623;&#3636;&#3594;&#3634;&#3607;&#3637;&#3656;&#3648;&#3611;&#3636;&#3604;&#3626;&#3629;&#3609;&#3651;&#3609;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660;</a></font></td>
+	    </tr>
+		<tr>
+          <td bgcolor="#0da7b9">&nbsp;</td>
+		  <td class="text_curriculum"><font face="Arial, Helvetica, sans-serif"><a href="data_curri/list_curri.pdf">&#3650;&#3588;&#3619;&#3591;&#3585;&#3634;&#3619;&#3614;&#3636;&#3648;&#3624;&#3625;&#3586;&#3629;&#3591;&#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3585;&#3625;&#3605;&#3619;&#3624;&#3634;&#3626;&#3605;&#3619;&#3660;</a> </font></td>
+	    </tr>
+		<tr>
+	      <td colspan="2">&nbsp;</td>
+	    </tr>
+		<tr>
+          <td height="38" colspan="2"><font face="Arial, Helvetica, sans-serif"><img src="data_curri/bullet.gif" width="16" height="13" /> <a href="http://eduserv.ku.ac.th/index.php?method=curri_other" ><font color="#990000"><strong>&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3648;&#3614;&#3636;&#3656;&#3617;&#3648;&#3605;&#3636;&#3617;&#3607;&#3637;&#3656;&#3648;&#3585;&#3637;&#3656;&#3618;&#3623;&#3586;&#3657;&#3629;&#3591;</strong></font></a></font></td>
+	    </tr>
+		<tr>
+		  <td height="26" colspan="2">&nbsp;</td>
+	    </tr>
+		<!-- <tr>
+		  <td height="38" colspan="2" bgcolor="#F9EABD"><div align="right"><font color="#003300" size="-1" face="Arial, Helvetica, sans-serif">&#3611;&#3619;&#3633;&#3610;&#3611;&#3619;&#3640;&#3591;&#3621;&#3656;&#3634;&#3626;&#3640;&#3604;  12 มกราคม 2558</font> </div></td>
+	    </tr> -->
+
+    </table></td>
+  </tr>
+</table>
+                                <table width="497" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="487"><a href="http://eduserv.ku.ac.th/organization/potent57/index.php" class="style7"></a></td>
+                  </tr>
+              </table></td>
+            <td width="155" rowspan="7" bordercolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="3" bgcolor="#ffffff">
+                <tr>
+                  <td height="41" bgcolor="#FFFFFF" class="style4"><div align="center">
+				<br>
+                          <img src="../images/eduservKU150.png" width="150" height="150" alt="QReduserve"></div>
+                      <br></td>
+                </tr>
+                <tr>
+                  <td height="41" bgcolor="#2CC9CD" class="style4"><div align="center" class="date_head">คู่มือจรรยาบรรณอาจารย์ มหาวิทยาลัยเกษตรศาสตร์</div></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.eduserv.ku.ac.th/manual_kn.php" target="_blank"><img src="../images/manner53.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.eduserv.ku.ac.th/54comment/"><img src="../images/RR.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                <tr>
+                  <td><a href="http://eduserv.ku.ac.th/54resources/" target="_blank"><img src="../images/EDU.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td height="40"><a href="http://eduserv.ku.ac.th/album/images/55project/" target="_blank"><img src="../images/banner_Dr.jpg" width="155" height="40" border="0"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://eduserv.ku.ac.th/LearningCenter/" target="_parent"><img src="../images/lct_02.jpg" width="155" height="40" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://advisor.ku.ac.th" target="_parent"><img src="http://eduserv.ku.ac.th/advisor/advisor.jpg" width="155" height="40" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><div align="center"><a href="http://ku-pod.ku.ac.th/"><img src="/images/ku-pod.jpg" border="0"></a></div></td>
+                </tr>
+             <!--   <tr>
+                  <td><div align="center"><a href="http://203.146.206.27/qual55p/menu.php"><img src="/images/kks.jpg" border="0"></a></div>
+                      <br></td>
+                </tr> -->
+                <tr>
+                  <td height="46" bgcolor="#2CC9CD"><div align="center" class="date_head">เว็บไซต์ข่าวการศึกษา</div></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.dailynews.co.th/Content/education" target="_blank"><img src="../images/New_Dailynews.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.thairath.co.th/tags/ทีมข่าวการศึกษา" target="_blank"><img src="../images/New_Thairath.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.matichon.co.th/inbound-education.php" target="_blank"><img src="../images/New_matichon.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.norsorpor.com/education.html" target="_blank"><img src="../images/New_NSP.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.eduzones.com/" target="_blank"><img src="../images/New_EDUZONE.jpg" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td bgcolor="#FFFFFF"><div align="center">
+                      <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','155','height','119','src','../80yrs_book/king80','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','../80yrs_book/king80' ); //end AC code
+        </script>
+                      <noscript>
+                      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="155" height="119">
+                        <param name="movie" value="../80yrs_book/king80.swf" />
+                        <param name="quality" value="high" />
+                        <embed src="../80yrs_book/king80.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="155" height="119"></embed>
+                      </object>
+                      </noscript>
+                    </div>
+                      <br></td>
+                </tr>
+                <tr>
+                  <td height="44" bgcolor="#2CC9CD" class="date_head"><div align="center" class="date_head">เว็บไซต์หน่วยงาน มก. </div></td>
+                </tr>
+                <tr>
+                  <td><select name="quick_link" class="input" onChange="MM_jumpMenu('parent',this,0)">
+                      <option selected>ลิงค์ด่วน </option>
+                      <option value="http://www.registrar.ku.ac.th/Calender/calendar.htm">ปฏิทินการศึกษา</option>
+                      <option value="http://calendar.ku.ac.th">ปฏิทินกิจกรรม มก.</option>
+                      <option value="http://eduserv.ku.ac.th/phpEventCalendar/index.php">ปฏิทินกิจกรรม กบศ.</option>
+                      <option value="http://pr.ku.ac.th/">ประชาสัมพันธ์ มก.</option>
+                      <option value="https://acc3d.ku.ac.th/">ระบบบัญชี 3 มิติ</option>
+                      <option value="https://www.regis.ku.ac.th/">ระบบสารสนเทศนิสิต</option>
+                      <option value="https://emeeting.ku.ac.th/">ระบบประชุมอิเล็กทรอนิกส์ </option>
+                      <option value="http://eoffice.ku.ac.th/">ระบบหนังสือเวียน</option>
+                      <option value="https://eassess.ku.ac.th/">ระบบประเมินอิเล็กทรอนิกส์</option>
+                      <option value="http://www.lib.ku.ac.th/">ห้องสมุด</option>
+                      <option value="http://www.cpc.ku.ac.th/">บริการคอมพิวเตอร์</option>
+                      <option value="http://www.qa.ku.ac.th/">สำนักประกันคุณภาพ</option>
+                      <option value="http://www.grad.ku.ac.th/ ">บัณฑิตวิทยาลัย</option>
+                      <option value="http://www.inf.ku.ac.th/">สถานพยาบาล มก.</option>
+                      <option value="http://kubook.ku.ac.th/">ศูนย์หนังสือ มก.</option>
+                      <option value="http://ku-press.ku.ac.th/">สำนักพิมพ์ มก.</option>
+                      <option value="http://www.ku.ac.th/agriculture/">สารสนเทศเกษตร</option>
+                      <option value="http://eduserv.ku.ac.th/bandit/033.html">เครือข่ายสถาบันอุดมศึกษา</option>
+                      <option value="http://ku-numthai.rdi.ku.ac.th/">เกษตรศาสตร์นำไทย</option>
+                      <option value="http://kumis.cpc.ku.ac.th/~psdsad/links-index.html">นานาสาระลิงค์</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td><a href="http://edutainment.ku.ac.th/@live/index.php" target="_blank"><img src="../images/live_small.gif" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://kucon.lib.ku.ac.th/kucon/index.html" target="_blank"><img src="../images/Ku40logo.gif" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://webmail.ku.ac.th/" target="_blank"><img src="../images/webmail.png" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://nisit.kasetsart.org/" target="_blank"><img src="../images/transcript.gif" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.sa.ku.ac.th/" target="_blank"><img src="../images/lnk-nisit.png" border="1"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.registrar.ku.ac.th/" target="_blank"><img src="../images/lnk-regis.png" border="1"  /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://directory.ku.ac.th/"><img src="../images/lnk_nama.jpg" border="0"  /></a></td>
+                </tr>
+                <tr>
+                  <td><!--
+<a href="http://gilw121.lh1.ku.ac.th/sarabun/" target="_blank"><img src="images/eoffice.png" width="162" height="66" border="0" style="filter:alpha(opacity=20);-moz-opacity:0.2" onMouseover="makevisible(this,0)" onMouseout="makevisible(this,1)" /></a>-->                  </td>
+                </tr>
+                <tr height="10">
+                  <td><!-- <img src="images/line2.png" width="162" height="2"/>-->                  </td>
+                </tr>
+              </table>
+                <br>
+                <br>
+                <table border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="date_head">วิทยาเขต</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              <p>&nbsp; </p></td>
+          </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+          <tr align="left" valign="top"> </tr>
+        </table>
+        <p align="left"><a href="/data_curri/qualification.pdf" target="_blank" class="style9"><font color="#000000"></font></a></p>
+                </div></td>
+              </tr>
+      </table>
+              </td>
+          </tr>
+      </table></td>
+	</tr>
+  </table>
+  Page generated in 1477732571.2227 seconds.  <div align="center"><span class="bottom_text">ฝ่ายบริการการศึกษา สำนักทะเบียนและประมวลผล  อาคารระพีสาคริก <br>
+    มหาวิทยาลัยเกษตรศาสตร์ 50 ถนนงามวงศ์วาน แขวงลาดยาว เขตจตุจักร กรุงเทพฯ 10900<br>
+  โทรศัพท์ 0 2118 0143, โทรสาร 0 2118 0143, Web Master : <a href="mailto:psd.esd@ku.ac.th">psd.esd@ku.ac.th</a></span>  </div>
+</form>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html><url>http://eduserv.ku.ac.th/index.php?method=curriculum</url><pagerank>0.0009728710854839056</pagerank>

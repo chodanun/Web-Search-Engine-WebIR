@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Grading Services System&nbsp;:&nbsp;Kasetsart University</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+<!--
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+ 
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+ 
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function Validate_Login (theForm)
+{
+if (theForm.UserName.value =="")
+	{
+	alert ("กรุณาป้อนรหัสบัญชี");
+	theForm.UserName.focus();
+	return (false);
+}
+if (theForm.Password.value =="")
+	{
+	alert ("กรุณาป้อนรหัสผ่าน");
+	theForm.Password.focus();
+	return (false);
+}
+return (true);
+}   
+//-->
+</SCRIPT>	
+</head>
+<body class="body">
+<table class="table-main" border="0" >
+<tr><td>
+<table class="table-subMain" border="0" >
+<tr>
+<td class="logo"><img src="image/logo.gif" width="100" height="100" border="0" alt="Logo" /></td>
+<td class="sysName">
+	<table width="100%" style="border-collapse:collapse">
+	<tr>
+	<td align="center" valign="center" ><FONT SIZE="+2" COLOR="white"><B>Grading Services System<br>Kasetsart University</B></FONT></td>                  
+	<td style="width:150px" valign="bottom" align="right">&nbsp;<FONT SIZE="-1" COLOR="white">ไทย / <A HREF="GSTU_login_E_.php"><FONT SIZE="-1" COLOR="white">Eng</FONT></A></td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+<table class="table-main" border="0" width="100%">
+<tr>
+<td valign="TOP">
+<form id="form1" METHOD="POST" onSubmit="return Validate_Login(this)" name="form1">
+<table class="table-search" style="border:5px double #666;">
+<tr><td class="tableName" colspan="2" align=center>เข้าสู่ระบบ</td></tr>
+<tr>
+<td class="searchName">ชื่อผู้ใช้:</td>
+<td class="searchField"><INPUT TYPE="text" NAME="UserName" maxlength="11"  value=''></td>
+</tr>
+<tr>
+<td class="searchName">รหัสผ่าน:</td>
+<td class="searchField"><INPUT TYPE=password NAME="Password"></td>
+</tr>
+<tr>
+<td class="searchName">วิทยาเขต:</td>
+<td class="searchField">
+<SELECT NAME="zone" width=100>
+<option value='0' selected >บางเขน</option>
+<option value='1'>กำแพงแสน</option>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td class="searchName"><FONT SIZE="-1" COLOR="">ป้อนเลขที่เห็นด้านล่าง</FONT>:</td>
+<td class="searchField"><input name="captcha" type="text"></td>
+</tr>
+<tr>
+<td class="searchName">&nbsp;</td>
+<td class="searchField"><img src="image_capt.php" /></td>
+</tr>
+<tr>
+<td colspan="2"  align=center class="commandCenter">
+<INPUT TYPE="submit" value="เข้าสู่ระบบ">
+</td>
+</tr>
+</table>
+</form>
+</td>
+<td valign="TOP">
+<table class="table-showdata" style="border-style:outset; border-color:#660000">
+
+<tr>
+<td class="datacenter"><u><label id="190InfTxt_Announcement"><FONT SIZE="+2" COLOR="red">ประกาศ</FONT></label></u></td>
+</tr>
+<tr><td class="noData"><BR></td></tr>
+<!--
+<tr><td class="noData"><font color="blue">ขอเชิญนิสิตทุกระดับการศึกษา เข้าประเมินความพึงพอใจของนิสิต<br>ต่อมหาวิทยาลัยเกษตรศาสตร์ ปีการศึกษา 2556 ระยะที่ 2 <br>ตั้งแต่ 11 กุมภาพันธ์ - 2 มีนาคม 2557 ที่ <br><A HREF="https://regis.ku.ac.th/AssessKU-V2" target="_blank">https://regis.ku.ac.th/AssessKU-V2</A></u><br><br><font  color="red" size="-1">* สำหรับนิสิตระดับปริญญาตรีที่เข้าประเมิน จะนับเป็น 2 ชั่วโมงกิจกรรมใน<br> transcript กิจกรรมของนิสิต *</font></font><br>
+		<font  color="red" size="-1">** นิสิตที่เข้าประเมินในระยะที่ 1 แล้ว (2-30 ธันวาคม 2556)<br> จะไม่สามารถเข้าประเมินได้ **</font><br>...
+</td></tr>
+ 
+ <tr><td class="noData"><font color="blue">ขอปิดบริการระบบเกรดออนไลน์<br><u>วันเสาร์-อาทิตย์ที่ 7-8 มิ.ย. 57 เวลา 9:00-24:00น.<BR><FONT SIZE="" COLOR="">และ</FONT><BR>วันเสาร์-อาทิตย์ที่ 14-15 มิ.ย. 57 เวลา 9:00-22:00น.</u><br>เนื่องจากปรับปรุงระบบเครือข่าย</font><br>
+		<font  color="blue" size="-1">สำนักบริการคอมพิวเตอร์ขออภัยในความไม่สะดวกมา ณ โอกาสนี้</font><br>...
+</td></tr>
+	
+
+<tr><td class="noData"><font color="blue">The system will be out of service for database maintenance on <u>Saturday Aug 17, 2013 to Sunday Aug 18, 2013<br>during 7:00 - 16:00</u></font><br>
+		<font color="blue" size=-1>We must apologize for the inconvenience.</font><br>...
+</td></tr>
+ --> 
+<!-- <tr>
+<td align="center"><FONT SIZE="+1" COLOR="blue">ขอความร่วมมือนิสิตในการกรอกแบบประเมิน<BR>"การเรียนการสอนของ<U>ภาคต้น ปีการศึกษา 2557</U> ครั้งที่ 2"</FONT><br><b><font color='red' size='+2'>**ทุกรายวิชาที่นิสิตลงทะเบียนเรียน**</font></b><BR>
+<BR>ได้ที่เว็บไซต์ <A HREF="https://eassess.ku.ac.th/">ระบบประเมินการเรียนการสอน</A><BR>เพื่อประโยชน์ในการวางแผนการเรียนการสอนของนิสิตต่อไป   <BR><BR>
+</td>
+</tr> -->
+
+ </table>
+<br>
+<u>หมายเหตุ</u> การใช้เครือข่ายที่ไม่ใช่ของมหาวิทยาลัยเกษตรศาสตร์ ต้องเปิดโปรแกรม VPN ก่อนเปิดระบบ											
+<br><br>
+** <a href="https://regis.ku.ac.th/grade/q1.php?System=3">แบบประเมินความพึงพอใจการใช้ระบบ</a> **
+<br><br><br>
+</td>
+<td valign="TOP">
+<table class="table-session">
+<tr>
+<td>
+	<table class="table-session">
+	<tr>
+	<td>
+		<table class="table-session" style="border-style:dashed; border-color:#003366">
+		<tr><td class="tableName" nowrap>คุณสมบัติขั้นต่ำของเครื่องที่ใช้</td></tr>
+		<tr><td nowrap>1.&nbsp;เครื่องที่ใช้&nbsp;Window&nbsp;xp&nbsp;หรือสูงกว่า</td></tr>
+		<tr><td nowrap>2.&nbsp;RAM&nbsp;256&nbsp;M</td></tr>
+		<tr><td nowrap>3.&nbsp;Browser : IE7 - IE9, Firefox, &nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;Chrome, Safari</td></tr>
+		</table>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<table class="table-session">
+		<tr><td  class="tableName">Download</td></tr>
+		<tr><td><a href="https://grade.ku.ac.th/gstu/Document/UM_KUG2_student.pdf" target="_parent" class="text-mainMenu">คู่มือการใช้งานสำหรับนิสิต</a></td></tr>
+		<tr><td><a href="https://vpn.ku.ac.th/" target="_parent" class="text-mainMenu">วิธีการติดตั้งโปรแกรม&nbsp;VPN</a></td></tr>
+		<tr><td><a href="http://ftp.ku.ac.th/" target="_blank" class="text-mainMenu">โปรแกรมที่เกี่ยวข้อง</a></td></tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr><td colspan="3" class="pageCode">KUG0010104</td></tr>
+<tr><td colspan="3" class="copyright"><font class="text-copyright">&copy; 2553 สำนักทะเบียนและประมวลผล มหาวิทยาลัยเกษตรศาสตร์</font></td></tr>
+
+</table>
+</td></tr>
+</table>
+<p align="center"><img src="image/RapidSSL_SEAL.gif" height="50" width="90"></p>
+</body>
+</html>
+<url>https://grade-std.ku.ac.th/GSTU_login_.php</url><pagerank>0.0009777461137684957</pagerank>

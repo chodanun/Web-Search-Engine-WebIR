@@ -1,0 +1,2155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Description" content="Welcome to Kasetsart University."/>
+<META NAME="keywords" CONTENT="มหาวิทยาลัย ,มก. ,มหาลัย ,ม , เกษตร, เกษตรศาสตร์, มหาวิทยาลัยเกษตร, ม.เกษตร, ม.เกษตรศาสตร์, ม.เกษตรฯ, นนทรี, ลูกนนทรี, วิทยาเขตบางเขน, วิทยาเขตกำแพงแสน, วิทยาเขตศรีราชา, วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร,
+ ตราประจำมหาวิทยาลัย, ดินแดนแห่งรอยยิ้ม, คณะเกษตร, คณะเศรษฐศาสตร์, คณะบริหารธุรกิจ, คณะสถาปัตยกรรมศาสตร์, คณะประมง, คณะสังคมศาสตร์, คณะมนุษยศาสตร์, คณะสัตวแพทยศาสตร์, คณะวนศาสตร์, คณะอุตสาหกรรมเกษตร, คณะวิทยาศาสตร์, คณะเทคนิคการสัตวแพทย์, คณะวิศวกรรมศาสตร์, คณะสิ่งแวดล้อม, คณะศึกษาศาสตร์,บัณฑิตวิทยาลัย, สำนักงานอธิการบดี, สถาบันวิจัยและพัฒนาแห่ง มก., สำนักทะเบียนและประมวลผล, สถาบันค้นคว้าและพัฒนาผลิตภัณฑ์อาหาร, สำนักบริการคอมพิวเตอร์, สถาบันค้นคว้า ,พัฒนาผลิตผลทางการเกษตร , อุตสาหกรรมเกษตร, สำนักพิพิธภัณฑ์ , วัฒนธรรมการเกษตร, สถาบันค้นคว้า, พัฒนาระบบนิเวศเกษตร,       สำนักส่งเสริม ,ฝึกอบรม ,สถาบันอินทรีจันทรสถิตย์เพื่อการค้นคว้า ,พัฒนาพืชศาสตร์, สำนักหอสมุด ,สถาบันวิทยาการขั้นสูงแห่งมหาวิทยาลัยเกษตรศาสตร์ ,สำนักพิมพ์มหาวิทยาลัยเกษตรศาสตร์, ศูนย์นานาชาติสิรินธรเพื่อการวิจัยพัฒนา , ถ่ายทอดเทคโนโลยี,       สถานีวิทยุมหาวิทยาลัยเกษตรศาสตร์, มูลนิธิโครงการหลวง, มูลนิธิมหาวิทยาลัยเกษตรศาสตร์,       สหกรณ์ออมทรัพย์มหาวิทยาลัยเกษตรศาสตร์, ร้านสหกรณ์มหาวิทยาลัยเกษตรศาสตร์ จำกัด, วิจัย, สถาบันวิทยาการขั้นสูงแห่งมหาวิทยาลัยเกษตรศาสตร์ , มหาวิทยาลัยวิจัยชั้นนำของโลกด้านการเกษตรอาหาร เทคโนโลยี , นวัตกรรม, ข้อมูลงานวิจัย,กะเสด, ม.กะเสด,  KU, Kasetsart University, Kasetsart, University, KU, NRU, เครือข่ายนนทรี, International Studies Center, THE GRADUATE SCHOOL KASETSART UNIVERSITY, The International Affairs Division KU ,Land  of  Smile, Nonsri ,Bangkhen Campus, Kamphaeng Saen Campus, Si Racha Campus, Chalermphrakiat Sakon Nakhon Province Campus,  Office of the Registrar, Kasetsart University Research and Development Institute ,Office of Computer Services ,Institution of Food Research and Product Development ,Office of Agricultural Museum and Culture,Kasetsart Agricultural Agro-Industrial Product Improvement Institute , Office of Extension and Training, Office of Kasetsart University Library ,Office of the President, Sports Office ,General Affairs Division ,Office of Internal Auditing ,Council officials, Personal Division, Public Relation of Kasetsart University, Student Affair Division, Office of the Legal Kasersart University, Finance Division, The Office of Property Management, Education Service Division, Quality Assurance Kasetsart Unniversity, Planning Division, Office of Academic Services, International Affair Division ,Kasetsart University Press ,Vehicle Building and Physical Plant Division, International Studies Center ,Imfirmary of Kasetsart University ,Other agencies, Research, Research University ,Center of Excellence ,KU , Kasetsart University, Kasetsart, University, Kasetsart U, มหาวิทยาลัยเกษตรศาสตร์, มหาวิทยาลัย เกษตรศาสตร์, มหาวิทยาลัยเกษตร , เกษตรศาสตร์, ม.เกษตรศาสตร์, ม. เกษตรศาสตร์, ม.เกษตร, ม. เกษตร, เกษตร, บางเขน, กำแพงแสน, ศรีราชา, สกลนคร, KU NRU, KU Online, KU Journal, KONEX , "/>
+<meta name="robots" content="ALL" />
+
+
+<meta property="og:title" content= ":: Kasetsart University ::">
+<meta property="og:image" content ="http://www.ku.ac.th/web2012/resources/template2/ui/images/logoKU.jpg">
+<meta property="og:image:width" content="100" />
+<meta property="og:image:height" content="100" />  
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+/* function disableCtrlKeyCombination(e) {
+    var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'j');
+    var key;
+    var isCtrl;
+ 
+    if(window.event) {
+      key = window.event.keyCode;
+      if(window.event.ctrlKey) {
+        isCtrl = true;
+      } else {
+        isCtrl = false;
+      }
+    } else {
+      key = e.which;
+      if(e.ctrlKey) {
+        isCtrl = true;
+      } else {
+        isCtrl = false;
+      }
+    }    
+    if(isCtrl) {
+      for(i=0; i<forbiddenKeys.length; i++) {
+        if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+          return false;
+        }
+      }
+    }
+    return true;
+  } 
+ 
+  function click(e) {
+    if(document.all) {
+      if(event.button == 2) {
+        return false;
+      }
+    }
+    if(document.layers) {
+      if(e.which == 3) {
+        return false;
+      }
+    }
+  }  
+ 
+  if(document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+ 
+  if(document) {
+    document.onmousedown=click;    
+    document.onkeypress=disableCtrlKeyCombination;
+    document.onkeydown=disableCtrlKeyCombination;
+    document.oncontextmenu=function() { return false; };
+  } 
+*/
+
+
+</script>
+<title>.:: Kasetsart University ::.</title>
+</head>
+
+
+
+
+		
+<link href="resources/template2/ui/css/style-font.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/style-global.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/style-button.css" rel="stylesheet" type="text/css" />
+
+<link href="resources/template2/ui/css/jquery/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-custom.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-dialog.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-tabs.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-datepicker.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-validationEngine.css" rel="stylesheet" type="text/css" />
+
+
+
+<script type="text/javascript" src="resources/template2/ui/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/template2/ui/js/jquery-ui-1.10.3.custom.js"></script>
+
+<script type="text/javascript" src="resources/template2/ui/slider/js/jssor.core.js"></script>
+<script type="text/javascript" src="resources/template2/ui/slider/js/jssor.utils.js"></script>
+<script type="text/javascript" src="resources/template2/ui/slider/js/jssor.slider.js"></script>
+
+<link rel="stylesheet" href="resources/web/css/stylenewver.css" />
+<script>
+$(document).ready(function ($) {
+	//Reference http://www.jssor.com/development/slider-with-caption.html
+    //Reference http://www.jssor.com/development/reference-ui-definition.html#captiondefinition
+    //Reference http://www.jssor.com/development/tool-caption-transition-viewer.html
+
+    var _CaptionTransitions = [
+    //CLIP|LR
+    {$Duration: 900, $Clip: 3, $Easing: $JssorEasing$.$EaseInOutCubic },
+    //CLIP|TB
+    {$Duration: 900, $Clip: 12, $Easing: $JssorEasing$.$EaseInOutCubic },
+
+    //ZMF|10
+    {$Duration: 600, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+
+    //ZML|R
+    {$Duration: 600, $Zoom: 11, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 0.6, $Opacity: 2 },
+    //ZML|B
+    {$Duration: 600, $Zoom: 11, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $ScaleVertical: 0.6, $Opacity: 2 },
+
+    //ZMS|B
+    {$Duration: 700, $Zoom: 1, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $ScaleVertical: 0.6, $Opacity: 2 },
+
+    //RTT|10
+    {$Duration: 700, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+
+    //RTTL|R
+    {$Duration: 700, $Zoom: 11, $Rotate: 1, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 0.6, $Opacity: 2, $Round: { $Rotate: 0.8} },
+    //RTTL|B
+    {$Duration: 700, $Zoom: 11, $Rotate: 1, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleVertical: 0.6, $Opacity: 2, $Round: { $Rotate: 0.8} },
+
+    //RTTS|R
+    {$Duration: 700, $Zoom: 1, $Rotate: 1, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Zoom: $JssorEasing$.$EaseInQuad, $Rotate: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseOutQuad }, $ScaleHorizontal: 0.6, $Opacity: 2, $Round: { $Rotate: 1.2} },
+    //RTTS|B
+    {$Duration: 700, $Zoom: 1, $Rotate: 1, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInQuad, $Zoom: $JssorEasing$.$EaseInQuad, $Rotate: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseOutQuad }, $ScaleVertical: 0.6, $Opacity: 2, $Round: { $Rotate: 1.2} },
+
+    //R|IB
+    {$Duration: 900, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInOutBack }, $ScaleHorizontal: 0.6, $Opacity: 2 },
+    //B|IB
+    {$Duration: 900, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInOutBack }, $ScaleVertical: 0.6, $Opacity: 2 },
+
+    ];
+
+    var options = {
+        $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+        $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+        $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+        $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
+
+        $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+        $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+        $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+        //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+        //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+        $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+        $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+        $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+        $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+        $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+        $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+        $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+            $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+            $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+            $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+            $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+        },
+
+        $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+            $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+            $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+            $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+            $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+            $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+            $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+            $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+            $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+        },
+
+        $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+            $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+            $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+        }
+    };
+    var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+    //responsive code begin
+    //you can remove responsive code if you don't want the slider scales while window resizes
+    function ScaleSlider() {
+        var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+        if (parentWidth)
+            jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 730));
+        else
+            window.setTimeout(ScaleSlider, 30);
+    }
+
+    ScaleSlider();
+
+    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+        $(window).bind('resize', ScaleSlider);
+    }
+});
+
+
+ function doSearch() {
+ 				//alert(11);
+                document.formSearch.action = 'http://www.ku.ac.th/web2012/index.php?c=adms&m=searchweb&page=ค้นหาข้อมูล&load=tab5&lang=thai&ip=0';
+                document.formSearch.submit();
+            }
+</script>
+
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+
+
+	<script type="text/javascript" src="resources/js/js1/lib/jquery.jcarousel.min.js"></script>	
+	<script type="text/javascript" src="resources/js/js1/tabs.js"></script>
+	<script type="text/javascript" src="resources/js/js1/jquery.slideshow.lite-0.5.3.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.core.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.widget.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.position.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.autocomplete.js"></script>
+	<script language="JavaScript" src="resources/colorbox/jquery.colorbox.js"></script>
+
+	 
+		
+	
+	<!-- CSS Fancybox -->
+	<!--<link href="resources/css/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css">-->
+	
+	<!-- JS Fancybox -->
+<!--	<script src="resources/js/jquery.cycle.all.min.js" type="text/javascript"></script>
+	<script src="resources/js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+	<script src="resources/js/superfish.js" type="text/javascript"></script>-->
+	
+
+	
+	
+<SCRIPT src="resources/js/urchin.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>_uacct = "UA-2245169-1";urchinTracker();</SCRIPT>
+	
+<script type="text/javascript" src="resources/js/flowplayer-3.2.11.min.js"></script>
+	
+	<!--<script type="text/javascript" charset="tis-620">
+		$(document).ready(function(){
+			$("#slideshow2").slideshow();
+			$("#slideshow").slideshow({
+				pauseSeconds: 4,
+				height: 200,
+				width: 688,
+				/*caption: false*/
+			});
+			$("#slideshow3").slideshow({
+				pauseSeconds: 4,
+				height: 145,
+				width: 235,
+				caption: false
+			});
+		});
+	</script>-->
+	
+	<link rel="stylesheet" href="resources/colorbox.css">
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('.first-and-second-carousel').jcarousel({
+				/*wrap: 'circular'*/
+			});
+		});
+		$(document).ready(function(){	
+		$(".viewdetail").colorbox({width:"590", height:"500", iframe:true, scrolling: true});
+			});
+	</script>
+
+<style type="text/css">
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+	font-size:14px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding-left: 10px;
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+
+.jssorb01 div {
+    background-color: gray;
+}
+
+    .jssorb01 div:hover, .jssorb01 .av:hover {
+        background-color: #d3d3d3;
+    }
+
+.jssorb01 .av {
+    background-color: #fff;
+}
+
+.jssorb01 .dn, .jssorb01 .dn:hover {
+    background-color: #555555;
+}
+
+ .jssora02l, .jssora02r, .jssora02ldn, .jssora02rdn
+ {
+ 	position: absolute;
+ 	cursor: pointer;
+ 	display: block;
+     background: url(resources/template2/img/a02.png) no-repeat;
+     overflow:hidden;
+ }
+ .jssora02l { background-position: -3px -33px; }
+ .jssora02r { background-position: -63px -33px; }
+ .jssora02l:hover { background-position: -123px -33px; }
+ .jssora02r:hover { background-position: -183px -33px; }
+ .jssora02ldn { background-position: -243px -33px; }
+ .jssora02rdn { background-position: -303px -33px; }
+
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+	<div class="top-detail">
+		<div>มหาวิทยาลัยเกษตรศาสตร์   มุ่งสร้างศาสตร์แห่งแผ่นดิน   เพื่อความกินดีอยู่ดีของชาติ</div>
+		<div class="txt-right " >
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716155501&page1=ลิงค์ที่เกี่ยวข้อง&page=นิสิต&load=&lang=thai&ip=4&id=47" class="forntcolorstyle1">นิสิต</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716151101&page1=ลิงค์ที่เกี่ยวข้อง&page=อาจารย์&load=&lang=thai&ip=14&id=91" class="forntcolorstyle1">อาจารย์</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716152240&page1=ลิงค์ที่เกี่ยวข้อง&page=บุคลากร&load=&lang=thai&ip=15&id=92" class="forntcolorstyle1">บุคลากร</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716153035&page1=ลิงค์ที่เกี่ยวข้อง&page=ผู้ปกครอง&load=&lang=thai&ip=16&id=93" class="forntcolorstyle1">ผู้ปกครอง</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716155501&page1=ลิงค์ที่เกี่ยวข้อง&page=ศิษย์เก่า&load=&lang=thai&ip=9&id=94" class="forntcolorstyle1">ศิษย์เก่า</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120808130738&page1=ทุนระดับปริญญาตรี&page=ทุน&load=&lang=thai&ip=25&id=140"  class="forntcolorstyle1">ทุน</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710172150&page1=แผนที่ มก.&page=เบอร์โทรศัพท์และแผนที่&load=&lang=thai&ip=20&id=63"  class="forntcolorstyle1">แผนที่ มก.</a>
+			&nbsp;
+			<a href="#"><img src="resources/template2/ui/images/lang/th.png" alt="" align="absmiddle"/></a>
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_eng&time=20120710175321&page1=เธชเธกเธธเธ”เนเธ—เธฃเธจเธฑเธเธ—เน&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&load=&lang=eng&ip=21&id=65"><img src="resources/template2/ui/images/lang/en.png" alt="" align="absmiddle"/></a>		</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="header">
+		<div class="hleft">
+			<img src="resources/template2/ui/images/logo72.png" onClick="window.open('resources/images/ku72.gif','pop','scrollbars=no,top=0,left=0,width=650,height=700');"/>
+			<a href="http://www.ku.ac.th/web2012/" class="forntcolorstyle2"><img src="resources/template2/ui/images/logo.png" border="0"/></a>
+		</div>
+		<form name="formSearch" method="post" action="#" class="form-search-page">
+		<div class="hright">
+			<div>
+				<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710181040&page1=โทรฉุกเฉิน&page=โทรศัพท์และแผนที่&load=&lang=thai&ip=18&id=66"  class="forntcolorstyle2">โทรฉุกเฉิน</a>
+				/
+				<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710175321&page1=สมุดโทรศัพท์
+&page=โทรศัพท์และแผนที่&load=&lang=thai&ip=19&id=65" class="forntcolorstyle2">สมุดโทรศัพท์</a>
+				/
+				<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710174922&page1=แผนผังเว็บไซต์
+&page=โทรศัพท์และแผนที่&load=&lang=thai&ip=21&id=64" class="forntcolorstyle2">แผนผังเว็บไซต์</a>
+				&nbsp;&nbsp;&nbsp;
+				
+				<input type="text" name="name" id="name"  size="22" placeholder="ค้นหาข้อมูล"/>
+				<a href="#" class="btn none btn-primary btn-large btn-search-large" style="margin-left: -7px;padding: 8px 14px 7px;" onClick="javascript:doSearch();"></a>
+				
+			</div>
+		</div>
+		</form>
+	</div>
+	
+	<div class="clear"></div>
+	<!--<div class="menu">
+		<ul>
+			<li><a href="#">5555</a>
+					<ul><li>1111</li><li>3333</li></ul>
+			</li>
+		</ul>
+	</div>-->
+
+	
+	<div class="menu-top">
+		<div class="menu-box">
+			<div class="menu-box-blue">
+				<ul>
+					<li>
+	                    <a href="http://www.ku.ac.th/web2012/" class="forntcolorstyle2">หน้าหลัก</a>
+                     </li>
+                 </ul>
+             </div>
+	     </div>
+<!--	</div>
+ 
+
+	<div class="menu-top">  -->
+		<div class="menu-box">
+			<div class="menu-box-green">
+				<ul>
+					<li>
+						<a href="#" class="forntcolorstyle2">เกี่ยวกับ มก.</a>
+													<ul>
+													<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627112951&load=&lang=thai&ip=1&id=9&page=ประวัติมหาวิทยาลัยเกษตรศาสตร์&page1="  class="forntcolorstyle3">ประวัติมหาวิทยาลัยเกษตรศาสตร์</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627113237&load=&lang=thai&ip=1&id=10&page=ปรัชญา วิสัยทัศน์ พันธกิจ&page1="  class="forntcolorstyle3">ปรัชญา วิสัยทัศน์ พันธกิจ</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627124210&load=&lang=thai&ip=1&id=18&page=สัญลักษณ์มหาวิทยาลัยเกษตรศาสตร์&page1="  class="forntcolorstyle3">สัญลักษณ์มหาวิทยาลัยเกษตรศาสตร์</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20130815100152&load=&lang=thai&ip=1&id=171&page=สภามหาวิทยาลัย&page1="  class="forntcolorstyle3">สภามหาวิทยาลัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20130815101758&load=&lang=thai&ip=1&id=175&page=คณะผู้บริหารมหาวิทยาลัย&page1="  class="forntcolorstyle3">คณะผู้บริหารมหาวิทยาลัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20130815095918&load=&lang=thai&ip=1&id=170&page=โครงสร้างองค์กร&page1="  class="forntcolorstyle3">โครงสร้างองค์กร</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627130236&load=&lang=thai&ip=1&id=30&page=วิทยาเขต&page1="  class="forntcolorstyle3">วิทยาเขต</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627130503&load=&lang=thai&ip=1&id=196&page=พัฒนาวิชาการ&page1="  class="forntcolorstyle3">ข้อมูลสถิติ</a></li>
+								</ul>
+									</li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-sky">
+				<ul>
+					<li>
+						<a href="#" class="forntcolorstyle2">การเข้าศึกษา</a>
+										<ul >
+									<li ><a href="http://admission.ku.ac.th/"  class="forntcolorstyle3">ระบบรับสมัครเข้าศึกษา มก.</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120725105307&load=&lang=thai&ip=3&id=120&page=การรับเข้าศึกษาในระดับปริญญาตรี&page1="  class="forntcolorstyle3">การรับเข้าศึกษาในระดับปริญญาตรี</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627142407&load=&lang=thai&ip=3&id=40&page=ทำไมต้องมหาวิทยาลัยเกษตรศาสตร์&page1="  class="forntcolorstyle3">ทำไมต้องมหาวิทยาลัยเกษตรศาสตร์</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627150823&load=&lang=thai&ip=3&id=42&page=ระดับปริญญาตรี&page1="  class="forntcolorstyle3">คุณสมบัติผู้สมัคร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120711133445&load=&lang=thai&ip=3&id=68&page=หลักสูตรบัณฑิตศึกษา&page1="  class="forntcolorstyle3">หลักสูตรที่เปิดรับสมัคร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=selcon_th&time=20120819005023"  class="forntcolorstyle3">ค้นหาข้อมูลหลักสูตร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120705163803&load=&lang=thai&ip=3&id=61&page=ติดต่อสอบถาม&page1="  class="forntcolorstyle3">ติดต่อสอบถาม</a></li>
+								</ul>
+									</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-purple">
+				<ul>
+					<li>
+						<a href="#" class="forntcolorstyle2">คณะและหลักสูตร</a>
+						
+											<ul>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727111120&load=&lang=thai&ip=2&id=129&page=บางเขน&page1="  class="forntcolorstyle3">บางเขน</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727111407&load=&lang=thai&ip=2&id=130&page=วิทยาเขตกำแพงแสน&page1="  class="forntcolorstyle3">วิทยาเขตกำแพงแสน</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727112309&load=&lang=thai&ip=2&id=132&page=วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร&page1="  class="forntcolorstyle3">วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727111810&load=&lang=thai&ip=2&id=131&page=วิทยาเขตศรีราชา&page1="  class="forntcolorstyle3">วิทยาเขตศรีราชา</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120810154421&load=&lang=thai&ip=2&id=151&page=สถาบันสมทบ&page1="  class="forntcolorstyle3">สถาบันสมทบ</a></li>
+								</ul>
+									</li>
+				
+				</ul>
+			</div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-orange">
+			<ul>
+				<li>
+					<a href="#"  class="forntcolorstyle2">หน่วยงาน</a>
+									<ul>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120723101456&load=&lang=thai&ip=23&id=114&page=บางเขน&page1="  class="forntcolorstyle3">บางเขน</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120723101646&load=&lang=thai&ip=23&id=115&page=วิทยาเขตกำแพงแสน&page1="  class="forntcolorstyle3">วิทยาเขตกำแพงแสน</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120806152033&load=&lang=thai&ip=23&id=134&page=วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร&page1="  class="forntcolorstyle3">วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120723101717&load=&lang=thai&ip=23&id=116&page=วิทยาเขตศรีราชา&page1="  class="forntcolorstyle3">วิทยาเขตศรีราชา</a></li>
+								</ul>
+								</li>
+			</ul>
+			</div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-red">
+			<ul>
+				<li>
+					<a href="#" class="forntcolorstyle2">วิจัย</a>
+									<ul>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120808161306&load=&lang=thai&ip=8&id=85&page=งานวิจัย&page1="   class="forntcolorstyle3">งานวิจัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120806165935&load=&lang=thai&ip=8&id=139&page=ข้อมูลงานวิจัย&page1="   class="forntcolorstyle3">ข้อมูลงานวิจัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120816102632&load=&lang=thai&ip=8&id=155&page=รางวัลนักวิจัย/ผลงานวิจัย&page1="   class="forntcolorstyle3">รางวัลนักวิจัย/ผลงานวิจัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20140502104040&load=&lang=thai&ip=8&id=179&page=ผลงาน/ผลิตภัณฑ์งานวิจัย&page1="   class="forntcolorstyle3">ผลงาน/ผลิตภัณฑ์งานวิจัย</a></li>
+								</ul>
+								</li>
+			</ul></div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-blue">
+			<ul>
+				<li>
+					<a href="#"  class="forntcolorstyle2">ติดต่อ</a>
+									<ul>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120705002135&load=&lang=thai&ip=11&id=57&page=ติดต่อสอบถาม&page1="  class="forntcolorstyle3">ติดต่อสอบถาม</a></li>
+								</ul>
+								</li>
+			</ul>
+			</div>
+		</div>
+	</div><br/>			
+				
+		<div class="mainbody_bg">    <div id="sidebar_left">  
+        	<div class="top bg1"><h2>เบอร์โทรศัพท์และแผนที่</h2></div>
+        	<div class="middle">
+                <div id="categories">
+                	<ul class="main">
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710181040&load=''&lang=thai&ip=19&id=66&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=โทรฉุกเฉิน">โทรฉุกเฉิน</a></li>
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710175321&load=''&lang=thai&ip=19&id=65&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=สมุดโทรศัพท์">สมุดโทรศัพท์</a></li>
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710172150&load=''&lang=thai&ip=19&id=63&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=แผนที่ มก.">แผนที่ มก.</a></li>
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_map&time=20120914124438&lang1=th&load=&lang=eng&ip=20&id=158&page=&page&load=''&lang=thai&ip=19&id=158&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=ค้นหาข้อมูลตึก มก.">ค้นหาข้อมูลตึก มก.</a></li>
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20160418094819&load=''&lang=thai&ip=19&id=193&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=การเดินทางมา มก.">การเดินทางมา มก.</a></li>
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20160418141535&load=''&lang=thai&ip=19&id=194&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=แนะนำโรงแรมที่พักบริเวณ มก.">แนะนำโรงแรมที่พักบริเวณ มก.</a></li>
+											<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710174922&load=''&lang=thai&ip=19&id=64&page=เน€เธเธญเธฃเนเนเธ—เธฃเธจเธฑเธเธ—เนเนเธฅเธฐเนเธเธเธ—เธตเน&page1=แผนผังเว็บไซต์">แผนผังเว็บไซต์</a></li>
+					 
+								
+								
+								
+                    	
+                    </ul>
+                </div>
+            </div><!-- end class middle -->
+            <div class="bottom"></div>        
+        
+    </div><!-- end sidebar_left -->
+<div id="content1">
+<!-- conten_main1 menu Lv.1 th -->
+     <div id="banner_slide_inside"><img src="resources/upload/content/1341914259_img.jpg" width="100%" height="180" /></div>     <div class="breadcrumb">
+     <a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=runpage&page=home&load=&lang=thai" title="Back to Home">หน้าแรก</a>
+     <span class="navigation-pipe">&gt;</span>
+     <span class="navigation-pipe"><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710175321&page1=สมุดโทรศัพท์&page=เบอร์โทรศัพท์และแผนที่&load=&lang=thai&ip=19&id=65">เบอร์โทรศัพท์และแผนที่</a>&nbsp;&gt;&nbsp;</span><span class="navigation_page" > <a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710175321&page1=สมุดโทรศัพท์&page=เบอร์โทรศัพท์และแผนที่&load=&lang=thai&ip=19&id=65">สมุดโทรศัพท์</a></span>	</div> 
+	<div  align="right"><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Loader" type="text/javascript"></script>  
+				<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>  
+				<a name="fb_share" type="button_count" share_url="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710175321&page1=%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%A8%E0%B8%B1%E0%B8%9E%E0%B8%97%E0%B9%8C&page=%E0%B9%80%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%A8%E0%B8%B1%E0%B8%9E%E0%B8%97%E0%B9%8C%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88&load=&lang=thai&ip=19&id=65">แชร์หน้านี้</a>
+		 </div>
+<p></p>
+	<div id="content1edit">
+	
+	    	<h1 class="text_green">สมุดโทรศัพท์</h1>
+	        <p ><p>
+	<style type="text/css">
+.st_t{
+	border-bottom:solid #006666 3px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #669999;
+}
+.st_s{
+	border-bottom:solid #006666 1px;
+	font-weight: normal;
+	background-color: #ddede8;
+}
+.st_d{
+	border-bottom:solid #006666 1px;
+	font-weight: normal;
+	background-color:#eef7f5;
+}	</style>
+</p>
+<p>
+	&nbsp;</p>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+	<tbody>
+		<tr>
+			<td class="st_t" height="30" width="60%">
+				<div class="style2">
+					<strong><span style="color: rgb(255, 255, 255);">&nbsp; หน่วยงาน </span></strong></div>
+			</td>
+			<td class="st_t" width="14%">
+				<div align="center" class="style2">
+					<strong><span style="color: rgb(255, 255, 255);">หมายเลขโทรศัพท์ภายใน</span></strong></div>
+			</td>
+			<td class="st_t" width="26%">
+				<div align="center" class="style2">
+					<strong><span style="color: rgb(255, 255, 255);">หมายเลขโทรศัพท์ภายนอก</span></strong></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; มหาวิทยาลัยเกษตรศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1285</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2579 0113, 0 2579-0840, 0 2579 0870, 0 942 8200 45, 0 942 8491 9, 0 2942 8500-11</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; วิทยาเขตกำแพงแสน</td>
+			<td align="left" class="st_d">
+				&nbsp; 3001-3</td>
+			<td class="st_d">
+				0 2942 8010-9, 0 3428 1053-6</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; วิทยาเขตศรีราชา</td>
+			<td align="left" class="st_d">
+				&nbsp; 2600</td>
+			<td class="st_d">
+				0 3835 4580-4</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; วิทยาเขตเฉลิมพระเกียรติ จ.สกลนคร</td>
+			<td align="left" class="st_d">
+				&nbsp; 2564</td>
+			<td class="st_d">
+				0 4275 4088-107</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานอธิการบดี บางเขน</td>
+			<td align="left" class="st_d">
+				&nbsp; 4613-4</td>
+			<td class="st_d">
+				0 2942 8856</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานวิทยาเขตกำแพงแสน</td>
+			<td align="left" class="st_d">
+				&nbsp; 3257</td>
+			<td class="st_d">
+				0 3435 1391</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานวิทยาเขตศรีราชา</td>
+			<td align="left" class="st_d">
+				&nbsp; 2611-3</td>
+			<td class="st_d">
+				0 3835 4584-6</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานวิทยาเขตเฉลิมพระเกียรติ จ.สกลนคร</td>
+			<td align="left" class="st_d">
+				&nbsp; 4011-3</td>
+			<td class="st_d">
+				0 4275 4088-107, 0 2942 8995-6</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานโครงการจัดตั้งวิทยาเขตกระบี่</td>
+			<td align="left" class="st_d">
+				&nbsp; 4041-3</td>
+			<td class="st_d">
+				0 2942 8689-90</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานโครงการจัดตั้งวิทยาเขตลพบุรี</td>
+			<td align="left" class="st_d">
+				&nbsp; 4031-3</td>
+			<td class="st_d">
+				0 2942 8128</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักงานโครงการจัดตั้งวิทยาเขตสุพรรณบุรี</td>
+			<td align="left" class="st_d">
+				&nbsp; 4036-8</td>
+			<td class="st_d">
+				0 2942 8129</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สภาข้าราชการ</td>
+			<td align="left" class="st_d">
+				&nbsp; 4616-7</td>
+			<td class="st_d">
+				0 2942 8155-6</td>
+		</tr>
+		<tr>
+			<td class="st_s" colspan="3" valign="top">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะเกษตร</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1291-3</td>
+			<td class="st_d" valign="top">
+				0 2579 0588, 0 2579 6130 :ภายใน&nbsp;1291, 1292&nbsp;โทรสาร 0 2579 6152 <a href="mailto:agr.bk@ku.ac.th">E-mail: agr.bk@ku.ac.th</a> <!-- phpcounter --></td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะเกษตร กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 3300-2</td>
+			<td class="st_d" valign="top">
+				0 3435 1406</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะทรัพยากรธรรมชาติและอุตสาหกรรมเกษตร วิทยาเขตเฉลิมพระเกียรติ จ.สกลนคร</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 2200-2</td>
+			<td class="st_d" valign="top">
+				0 4272 5000, 0 4272 5036 โทรสาร 0 4272 5037</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะทรัพยากรและสิ่งแวดล้อม</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 2757-8</td>
+			<td class="st_d" valign="top">
+				0 3835 4587</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะบริหารธุรกิจ</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1448</td>
+			<td class="st_d" valign="top">
+				0 2942 8777</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะประมง</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1383</td>
+			<td class="st_d" valign="top">
+				0 2579 5578</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะมนุษยศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1438-9</td>
+			<td class="st_d" valign="top">
+				0 2942 8881-4</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวนศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1402, 1407</td>
+			<td class="st_d" valign="top">
+				0 2579 0170</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวิทยาการจัดการ วิทยาเขตศรีราชา</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 2852-3</td>
+			<td class="st_d" valign="top">
+				0 3835 2381, 0 3835 4580-4</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวิทยาศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1415, 1700</td>
+			<td class="st_d" valign="top">
+				0 2562 5555 , 0 2562 5444</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวิทยาศาสตร์และวิศวกรรมศาสตร์ วิทยาเขตเฉลิมพระเกียรติ จ.สกลนคร</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 2200-2</td>
+			<td class="st_d" valign="top">
+				0 4272 5000, 0 4272 5033 โทรสาร 0 4272 5034</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวิศวกรรมศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1030-1</td>
+			<td class="st_d" valign="top">
+				0 2797 0999</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวิศวกรรมศาสตร์ กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 3500-3</td>
+			<td class="st_d" valign="top">
+				0 3435 1897, 0 3428 1074</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะวิศวกรรมศาสตร์ วิทยาเขตศรีราชา</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 2802</td>
+			<td class="st_d" valign="top">
+				0 3835 4850-1, 0 3835 4580-4</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะศิลปศาสตร์และวิทยาการจัดการ วิทยาเขตเฉลิมพระเกียรติ จ.สกลนคร</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 4200-2</td>
+			<td class="st_d" valign="top">
+				0 4272 5000, 0 4272 5039 โทรสาร. 0 4272 5040</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะศิลปศาสตร์และวิทยาศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 3600-4</td>
+			<td class="st_d" valign="top">
+				0 3428 1058, 0 3428 1105-6</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะศึกษาศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1811</td>
+			<td class="st_d" valign="top">
+				0 2942 8268-9</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะศึกษาศาสตร์ กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 3570</td>
+			<td class="st_d" valign="top">
+				0 3435 1898</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะเศรษฐศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1538</td>
+			<td class="st_d" valign="top">
+				0 2940 7133</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะสถาปัตยกรรมศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 4052</td>
+			<td class="st_d" valign="top">
+				0 2940 5413</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะสังคมศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1562-8</td>
+			<td class="st_d" valign="top">
+				0 2561 3480</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะสัตวแพทยศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1061-5</td>
+			<td class="st_d" valign="top">
+				0 2579 0524</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะสัตวแพทยศาสตร์ กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 3450-2</td>
+			<td class="st_d" valign="top">
+				0 3435 1901-3</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะอุตสาหกรรมเกษตร</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1755-8</td>
+			<td class="st_d" valign="top">
+				0 2562 5000 โทรสาร 0 2562 5001</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; บัณฑิตวิทยาลัย</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1184-6</td>
+			<td class="st_d" valign="top">
+				0 2942 8445-9</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; วิทยาลัยสิ่งแวดล้อม</td>
+			<td align="left" class="st_d" valign="top">
+				&nbsp; 1465</td>
+			<td class="st_d" valign="top">
+				0 2579 2116</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; คณะเทคนิคการสัตวแพทย์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; -</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2579 8572-5</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; วิทยาลัยการชลประทาน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; -</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2583 8333</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; วิทยาลัยพยาบาลบรมราชชนนีนพรัตน์วชิระ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; -</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2540 6500-4</td>
+		</tr>
+		<tr>
+			<td class="st_s" colspan="3" valign="top">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองกลาง</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4601-12</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8152-3</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองการเจ้าหน้าที่</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4801-16</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8163</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองกิจการนิสิต</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1256-7</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8304-6</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองคลัง</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4301-25</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8147</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองบริการการศึกษา</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4901-10</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8166-8</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองแผนงาน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4701-18</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8158-60</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองยานพาหนะอาคารและสถานที่</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1574-5</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8981-4</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองวิเทศสัมพันธ์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4151-9</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8172</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองบริการการศึกษา กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 3259</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 3435 1395</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; กองธุรการ กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 3127</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 3435 1878</td>
+		</tr>
+		<tr>
+			<td class="st_s" colspan="3" valign="top">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักการกีฬา</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1583</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8771</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักทะเบียนและประมวลผล</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1365, 1369</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8200</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักบริการคอมพิวเตอร์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 2501, 2522-3</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2562 0951-7</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักพิพิธภัณฑ์และวัฒนธรรมการเกษตร</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1077</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8711-2 ต่อ 126</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักส่งเสริมและฝึกอบรม บางเขน<br />
+				&nbsp; อาคาร 1 ฝ่ายพัฒนาสื่อ-โรงพิมพ์-สถานีวิทยุ มก.<br />
+				&nbsp; อาคารวิทยบริการ ฝ่ายบริหาร<br />
+				&nbsp; อาคารวิทยบริการ ฝ่ายฝึกอบรม<br />
+				&nbsp; บริการตอบรับอัตโนมัติตลอด 24 ชม.</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1623-1633 Fax : 119<br />
+					&nbsp; 2031 Fax : 408<br />
+					&nbsp; 2030</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2972 8460, 0 2579 2294<br />
+				0 2579 2294, 0 2579 3025<br />
+				0 2942 8822, 0 2942 8831<br />
+				0 2942 8820</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักส่งเสริมและฝึกอบรม กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 3823-4</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 3435 1400</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักหอสมุด บางเขน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1477, 1777</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8616</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักหอสมุด กำแพงแสน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 3802-4</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 3428 1088</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักงานบริการวิชาการ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 2050-1</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8822 ต่อ 113-115 และ 117</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักงานทรัพย์สิน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1264, 1771-2</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8704, 0 2561 4749-50</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักประกันคุณภาพ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4920-24</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8299</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; หน่วยตรวจสอบภายใน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4821-5</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8164</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถานีวิทยุ มก.</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1623-33</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8070-2</td>
+		</tr>
+		<tr>
+			<td class="st_s" colspan="3" valign="top">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันค้นคว้าและพัฒนาผลิตผลทางการเกษตรและอุตสาหกรรมเกษตร</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1610-7</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8600-3</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันค้นคว้าและพัฒนาเทคโนโลยีการผลิตทางอุตสาหกรรม (RDIPT)</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1095</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8566-71</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันค้นคว้าและพัฒนาผลิตภัณฑ์อาหาร</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1255</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8629-35</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันค้นคว้าและพัฒนาระบบนิเวศเกษตร</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1232-3</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2579 6959</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันภาษาศาสตร์และวัฒนธรรมศึกษาราชนครินทร์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1145</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8788</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันวิจัยและพัฒนาแห่งมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1288, 1792</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2579 0032</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันสุวรรณวาจกกสิกิจเพื่อการค้นคว้าและพัฒนาปศุสัตว์และผลิตภัณฑ์สัตว์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 3760-1</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8188</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันอินทรีจันทรสถิตย์เพื่อการค้นคว้าและพัฒนาพืชศาสตร์</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1125-7</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2562 0630-2</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันวิศวกรรมป้องกันอัคคีภัย</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1852</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8930</td>
+		</tr>
+		<tr>
+			<td class="st_s" colspan="3" valign="top">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์การศึกษานานาชาติ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1190-1</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2562 0985</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์นานาชาติสิรินธรเพื่อการวิจัยพัฒนาและถ่ายทอดเทคโนโลยี</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1777 ต่อ 502</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2940 5836-40</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์วิจัยและพัฒนาระบบเกษตรกรรม (DORUS Center)</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 2073</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 7623</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์นอร์ดิกศึกษา</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4102</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8725</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบัน CIRAD</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 2080</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 7627</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์ฝึกอบรมวนศาสตร์ชุมชนแห่งภูมิภาคเอเชียและแปซิฟิก</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; -</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2940 5700</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์วิจัยป่าไม้</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 1413</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2561 4761</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; โครงการหลักสูตร SLUSE ภาคพิเศษ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 2040</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8932</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; โครงการพัฒนาสื่อการศึกษา</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; -</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2579 2400</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; ศูนย์วิชาบูรณาการ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4014, 4016-8</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8996</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สำนักงานคณะกรรมการพัฒนาการปฏิบัติราชการ</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; 4775</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2940 7199</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถาบันวิศวกรรมพลังงาน</td>
+			<td align="left" class="st_d" valign="top">
+				<div align="left">
+					&nbsp; -</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8697, 0 2940 5913</td>
+		</tr>
+		<tr>
+			<td class="st_s" colspan="3" valign="top">
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+	<tbody>
+		<tr>
+			<td colspan="3" height="30" valign="center">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_t" colspan="3" height="30" valign="center">
+				<strong><span style="color: rgb(255, 255, 255);">&nbsp;มหาวิทยาลัยเกษตรศาสตร์</span></strong></td>
+		</tr>
+		<tr>
+			<td class="st_s" height="20" width="50%">
+				<strong>&nbsp; หน่วยงาน </strong></td>
+			<td class="st_s" style="text-align: center;" width="25%">
+				<strong>หมายเลขโทรศัพท์ภายใน</strong></td>
+			<td class="st_s" style="text-align: center;" width="25%">
+				<strong>หมายเลขโทรศัพท์ภายนอก</strong></td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ประชาสัมพันธ์</td>
+			<td class="st_d">
+				&nbsp; 4111-6</td>
+			<td class="st_d">
+				0 2942 8181-3</td>
+		</tr>
+		<tr>
+			<td class="st_d" colspan="3" height="20">
+				<strong>&nbsp; หน่วยประสานงาน</strong></td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารจักรพันธ์เพ็ญศิริ</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1238</div>
+			</td>
+			<td class="st_d">
+				0 2579 5869</td>
+		</tr>
+		<!--
+        <tr >
+            <td bgcolor="#FFFFFF"><strong>ศูนย์วิทยุคมนาคม มก. </strong></td>
+            <td bgcolor="#FFFFFF">1704, 1706 </td>
+            <td bgcolor="#FFFFFF">0-2942-7003</td>
+        </tr>
+        -->
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารยิมเนเซียม</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1592</div>
+			</td>
+			<td class="st_d">
+				0 2562 0959</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารวิทยบริการ</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 2001-2</div>
+			</td>
+			<td class="st_d">
+				0 2942 8843</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารวิทยพัฒนา</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1264, 1771-2</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารศูนย์กิจกรรม มก.</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1236</div>
+			</td>
+			<td class="st_d">
+				0 2562 0980-2</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารศูนย์เรียนรวม 1</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1571</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารศูนย์เรียนรวม 2</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1579</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารศูนย์เรียนรวม 3</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1671-2</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารสารนิเทศ 50 ปี</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 4001-2</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารหอประชุม</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1227</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; อาคารพุทธเกษตร</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1598</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สนามอินทรีจันทรสถิตย์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1464</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" colspan="3" height="20">
+				<strong>&nbsp; หน่วยบริการ</strong></td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; KU GREEN</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1940</div>
+			</td>
+			<td class="st_d">
+				0 2942 8795-7</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; KUHOME</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 0-2579-0010-15</div>
+			</td>
+			<td class="st_d">
+				0 2579 0010-5</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; โครงการหลวง</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1235, 1325</div>
+			</td>
+			<td class="st_d">
+				0 2942 8656-9</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; โรงเรียนสาธิตแห่งมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1530</div>
+			</td>
+			<td class="st_d">
+				0 2942 8810</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ร้านพันธุ์ไม้มหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1773</div>
+			</td>
+			<td class="st_d">
+				0 2561 4753</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ร้านสหกรณ์มหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1581</div>
+			</td>
+			<td class="st_d">
+				0 2579 3206</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ศูนย์ผลิตภัณฑ์นมมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1348</div>
+			</td>
+			<td class="st_d">
+				0 2579 9594</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ศูนย์หนังสือมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 2004-7</div>
+			</td>
+			<td class="st_d">
+				0 2942 8618</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" valign="top">
+				&nbsp; สถานพยาบาลมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1138-9, 1278 1281-2</div>
+			</td>
+			<td class="st_d" valign="top">
+				0 2942 8200</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สถานีวิทยุมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1623-33</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สนามอินทรีจันทรสถิตย์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1464</div>
+			</td>
+			<td class="st_d">
+				&nbsp; -</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สระว่ายน้ำจุฬาภรณวลัยลักษณ์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1262</div>
+			</td>
+			<td class="st_d">
+				0 2579 2744</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สหกรณ์ออมทรัพย์มหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1580,2091-4</div>
+			</td>
+			<td class="st_d">
+				0 2579 5561-5</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; สำนักพิมพ์มหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 2019-21</div>
+			</td>
+			<td class="st_d">
+				0 2940 5501-2</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; หอประวัติมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp; 1560</div>
+			</td>
+			<td class="st_d">
+				0 2942 7272 กด 0</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ธนาคารกรุงศรีอยุธยา จำกัด มหาชน สาขาย่อยมหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td class="st_d">
+				0 2561 3490-1</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ธนาคารทหารไทย จำกัด มหาชน สาขามหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td class="st_d">
+				0 2940 5728-9</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ธนาคารออมสิน สาขามหาวิทยาลัยเกษตรศาสตร์</td>
+			<td class="st_d">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td class="st_d">
+				0 2562 0716</td>
+		</tr>
+		<tr>
+			<td class="st_d" colspan="3" height="20">
+				<strong>&nbsp; แจ้งเหตุฉุกเฉิน</strong></td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20" width="620">
+				&nbsp; ศูนย์เกษตรรวมใจ ประตูงามวงศ์วาน 1</td>
+			<td class="st_d" width="143">
+				&nbsp; 1597</td>
+			<td class="st_d" width="261">
+				0 2579 5526</td>
+		</tr>
+		<tr>
+			<td class="st_d" height="20">
+				&nbsp; ศูนย์เกษตรรวมใจ ประตูงามวงศ์วาน 2</td>
+			<td class="st_d">
+				&nbsp; 1260, 1460</td>
+			<td class="st_d">
+				0 2579 5526</td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffff" colspan="3">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_t" colspan="3" height="30" valign="center">
+				<span style="color: rgb(255, 255, 255);"><strong>&nbsp; วิทยาเขตกำแพงแสน </strong></span></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="st_s" height="20" width="65%">
+								<strong>&nbsp; หน่วยงาน </strong></td>
+							<td class="st_s" width="35%">
+								<strong>โทรศัพท์</strong></td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ประชาสัมพันธ์</td>
+							<td class="st_d">
+								&nbsp; 3105, 3112</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; หน่วยประสานงาน</td>
+							<td class="st_d">
+								&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; อาคารศูนย์มหาวิทยาลัย</td>
+							<td class="st_d">
+								&nbsp; 3118-21</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; อาคารศูนย์เรียนรวม 1, 2</td>
+							<td class="st_d">
+								&nbsp; 3860-2</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ประตูมาลัยแมน</td>
+							<td class="st_d">
+								&nbsp; 3178</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ประตูชลประทาน</td>
+							<td class="st_d">
+								&nbsp; 3179</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ประตูจันทรุเบกษา</td>
+							<td class="st_d">
+								&nbsp; 3182</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; หน่วยบริการ</td>
+							<td class="st_d">
+								&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; โครงการหลวง</td>
+							<td class="st_d">
+								&nbsp; 3853</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ที่ทำการไปรษณีย์</td>
+							<td class="st_d">
+								&nbsp; 3118-21 ต่อ 105</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ธนาคารไทยพาณิชย์ สาขาย่อยมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน</td>
+							<td class="st_d">
+								&nbsp; 3855</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; แฟลตข้าราชการ</td>
+							<td class="st_d">
+								&nbsp; 3222-3</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ร้านสหกรณ์</td>
+							<td class="st_d">
+								&nbsp; 3850</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ศูนย์หนังสือมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน</td>
+							<td class="st_d">
+								&nbsp; 3857</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; สถานพยาบาล</td>
+							<td class="st_d">
+								&nbsp; 3291</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; สระว่ายน้ำ</td>
+							<td class="st_d">
+								&nbsp; 3293</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; สหกรณ์ออมทรัพย์</td>
+							<td class="st_d">
+								&nbsp; 3852</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; แจ้งเหตุฉุกเฉิน</td>
+							<td class="st_d">
+								&nbsp; 3191</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffff" colspan="3">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_t" colspan="3" height="30" valign="center">
+				<span style="color: rgb(255, 255, 255);"><strong>&nbsp; วิทยาเขตศรีราชา</strong></span></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="st_s" height="20" width="65%">
+								<strong>&nbsp; หน่วยงาน </strong></td>
+							<td class="st_s" width="35%">
+								<strong>โทรศัพท์</strong></td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; ประชาสัมพันธ์</td>
+							<td class="st_d">
+								&nbsp; 2620</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20">
+								&nbsp; หน่วยประสานงาน</td>
+							<td class="st_d">
+								&nbsp; 2041</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffff" colspan="3">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="st_t" colspan="3" height="30">
+				<span style="color: rgb(255, 255, 255);"><strong><span class="style2">&nbsp; วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</span></strong></span></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="st_s" height="20" width="65%">
+								<strong>&nbsp; หน่วยงาน </strong></td>
+							<td class="st_s" width="35%">
+								<strong>โทรศัพท์</strong></td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; สำนักงานวิทยาเขต</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1210-12, 0 4272 5005<br />
+								&nbsp; โทรสาร 0-4272-5013</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; สำนักวิทยบริการ</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 5500-5510<br />
+								&nbsp; โทรสาร 0 4272 5044</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; สถาบันวิจัยและพัฒนามหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 2472 5000 ต่อ 1800, 0 4272 5021<br />
+								&nbsp;โทรสาร 0 4272 5022</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; โครงการปริญญาบริหารธุรกิจมหาบัณฑิต</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1706, 0 4272 5019<br />
+								&nbsp; โทรสาร 0 4272 5020</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; โครงการสาธารณสุขศาสตรบัณฑิต (ต่อเนื่อง) ภาคพิเศษ</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1700, 0 4272 5023<br />
+								&nbsp; โทรสาร 0 4272 5024</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารบริหาร (ร.ป.ภ.) อาคารชุดพักอาศัย (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1630</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารเรียนรวม (แม่บ้าน)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1648</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารเรียนรวม (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1631</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารหอพักนิสิตชาย (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1634, 0-4272-5028</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารหอพักนิสิตหญิง (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1635, 0-4272-5030</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารปฏิบัติการรวม (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1636, 0-4272-5032</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารวิทยาศาสตร์และเทคโนโลยี (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1637</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารวิทยาศาสตร์และเทคโนโลยี (แม่บ้าน)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1677</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารเทคโนโลยีสารสนเทศ (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1639, 0-4272-5042</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารโรงอาหาร (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1638</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารโรงอาหาร (แม่บ้าน)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1646</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; สถานีวิทยุ มก.ฉกส.</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5071-75</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; โรงผลิตน้ำดื่มนนทรีอีสาน</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4272 5000 ต่อ 1735, 0 4272 5087</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp;</td>
+							<td class="st_d" valign="top">
+								&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; ธนาคารกรุงศรีอยุธนา จำกัด (มหาชน) สาขาย่อยมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตเฉลิมพระเกียรติจังหวัด สกลนคร</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4275 4228, 0 4275 4229</td>
+						</tr>
+						<tr>
+							<td class="st_d" height="20" valign="top">
+								&nbsp; อาคารชุดพักอาศัย (ร.ป.ภ.)</td>
+							<td class="st_d" valign="top">
+								&nbsp; 0 4275 5000 ต่อ 1632, 1633, 0 4272 5025-7</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p></p>
+			<p></p>
+			 	<p style="margin-right:0px; margin-bottom:0px; font-size:12px; color:#5B5B5B" align="right">แท็ก : </p>
+			 <p class="date">&nbsp;&nbsp;|&nbsp;&nbsp;วันที่บันทึก&nbsp;01/12/2015&nbsp;เวลา&nbsp;10:00</p>
+			<p class="date" style="width:70%;" align="right">หน่วยงานที่รับผิดชอบ : &nbsp;			งานประชาสัมพันธ์ มก.			 </p>
+			 <p><a class="viewdetail" href="http://www.ku.ac.th/web2012/index.php?c=adms&m=recommend&l=th&id=33"><strong style="margin-left:625px;">ข้อเสนอแนะบทความ</strong></a></p>
+	</div><!-- end id content -->
+	
+			
+	  
+</div><!-- end mainbody -->
+</div>			<br/></div></div>
+			
+<div class="footer">
+	<div class="fcontent">
+		<div>
+			<a href="https://www.facebook.com/KasetsartUniversity"><img src="resources/template2/ui/images/social/facebook_circle_color-32.png" /></a>
+		<!--	<a href="#"><img src="resources/template2/ui/images/social/twitter_circle_color-32.png" /></a>  -->
+		<!--	<a href="#"><img src="resources/template2/ui/images/social/linkedin_circle_color-32.png" /></a>  -->
+		<!--	<a href="#"><img src="resources/template2/ui/images/social/youtube_circle_color-32.png" /></a> -->
+			<br/><br/>
+			เลขที่ 50 ถนนงามวงศ์วาน แขวงลาดยาว เขตจตุจักร กรุงเทพฯ 10900<br/>
+	<!--			โทรศัพท์ +66 (0) 2579 0113, +66 (0) 2942    8500-11 -->
+	                โทรศัพท์ +66 (0) 2942 8200-45
+		 <!--BEGIN WEB STAT CODE-->
+	   <script language="javascript1.1" src="http://hits.truehits.in.th/data/p0026724.js" type="text/javascript"></script>
+         <!-- END WEBSTAT CODE -->
+		 </div>
+		<div>
+			<table border="0" align="right">
+				<tr>
+					<td valign="bottom" rowspan="2">
+						<div style="height: 63px;"><img src="resources/template2/ui/images/measurements2.png" /></div>
+					</td>
+					<td colspan="2" align="left" style="color: #222;">
+						<b>Your IP: </b>
+						158.108.180.5	
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom">
+						<div style="height: 41px;"><img src="resources/template2/ui/images/validate2.png" /></div>
+					</td>
+					<td valign="bottom" align="left">
+						<div style="background-color: #bebcbd;height: 41px;width: 130px;">
+							<img src="resources/template2/ui/images/small_logo_background_left2.png" />
+							<div style="width:70%; margin-top:5px;" ><span style="font-size:10px; "><strong style="color:#EEEEEE">&nbsp;Status: </strong><font color="#00FF00">IPv6-ON</font></span>
+							<br />
+							<span style="font-size:10px;"><strong style="color:#EEEEEE">&nbsp;Last: </strong><font color="#00FF00" size="-3">2012-08-26</font></span></div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="bottom-nav">
+	<div class="bottom-detail">
+		Copyright &#169; 2015 Kasetsart University
+| ติดต่อผู้ดูแลระบบ : <a href="#"  class="forntcolorstyle1">www@ku.ac.th</a>
+	</div>
+</div>
+</body>
+</html></html>

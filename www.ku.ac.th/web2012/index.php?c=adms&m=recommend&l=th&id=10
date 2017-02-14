@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874" />
+<title>Untitled Document</title>
+
+	<link href="http://www.ku.ac.th/web2012/util/css/validationEngine.jquery_1.css" rel="stylesheet" type="text/css" />	<script type='text/javascript' src='util/js/jquery-1.7.2.js'></script>
+	<script type='text/javascript' src='resources/js/jquery.validationEngine1.js'></script>
+	<script type='text/javascript' src='resources/js/jquery/jquery.validationEngine-th.js'></script>
+	
+	<script type="text/javascript" charset="utf-8"> 
+	$(document).ready(function() {
+	
+		jQuery("#formID").validationEngine();
+		jQuery("#formID1").validationEngine();
+		
+	} );
+	
+	
+
+	
+	
+	
+	function doSave() {
+				if( $('#formID').validationEngine('validate') )
+						{		
+								if(document.getElementById("message").value == ''){
+									alert("กรุณากรอกข้อมูล");
+									return false;
+								}
+								
+									//document.formID.action = 'http://www.ku.ac.th/web2012/index.php?c=adms&m=addrecommend&l=th';
+									document.formID.submit();
+							
+					}
+			}
+	function doSave1() {
+				if( $('#formID1').validationEngine('validate') )
+						{		
+							//	alert(33);
+								if(document.getElementById("message2").value == ''){
+									alert("กรุณากรอกข้อมูล");
+									return false;
+								}
+								
+									//document.formID.action = 'http://www.ku.ac.th/web2012/index.php?c=adms&m=addrecommend&l=eng';
+									document.formID1.submit();
+							
+					}
+			}
+	</script>
+	
+	
+	
+<script type="text/javascript">
+<!--
+function new_captcha()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+
+document.getElementById('captcha').src = 'resources/captcha/image.php?x='+ c_miliseconds;
+
+}
+function test(){
+	alert(11);
+}
+-->
+</script>
+
+</head>
+<body onLoad="new_captcha();">
+<table width="100%" border="0">
+  <tr>
+    <td><div style="margin-left:30px"><u>ข้อเสนอแนะบทความ</u></div>
+
+	<div style="margin-left:30px;"> 
+	
+												<form id="formID"  name="formID" method="post" >
+												<input name="datetime" type="hidden" id="datetime" value="2016-09-18 23:08:45" />
+												<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																								<input type="hidden" name="con_id" id="con_id" value="10" />
+												<input type="hidden" name="mainmenu" id="mainmenu" value="1" />
+												<input type="hidden" name="menu" id="menu" value="10" />
+												<input type="hidden" name="lang" id="lang" value="th" />
+												<tr>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												  </tr>
+													<tr>
+													<td width="30%" height="30" valign="middle">เมนูหลัก</td>
+													<td>เกี่ยวกับ มก.</td>
+												  </tr>
+													  <tr>
+														<td width="30%" height="30" valign="middle">เรื่อง</td>
+														<td>ปรัชญา วิสัยทัศน์ พันธกิจ</td>
+													  </tr>
+													  													    <tr>
+														<td width="30%" height="30" valign="middle">ชื่อผู้แจ้ง</td>
+														<td><input name="name" type="text" class="validate[required] text-input" id="name" value="" size="50" maxlength="50" /></td>
+													  </tr>
+													  <tr>
+														<td width="30%" height="30" valign="middle">เบอร์ติดต่อ</td>
+														<td><input name="phone" type="text" class="validate[required] text-input" id="phone" size="50" maxlength="30" value=" " /></td>
+													  </tr>
+													  <tr>
+														<td width="30%" height="30" valign="middle">อีเมล์</td>
+														<td><input name="mail" type="text" class="validate[required] text-input" id="mail" size="50" maxlength="50" value="" /></td>
+													  </tr>
+													  <tr>
+														<td width="30%" height="96" valign="middle">ข้อเสนอแนะ</td>
+														<td><textarea cols="50" rows="5" name="message" id="message" ></textarea></td>
+													  </tr>
+													  <tr>
+													    <td height="30" valign="middle">&nbsp;</td>
+													    <td><img border="0" id="captcha" src="resources/captcha/image.php" alt="">
+ &nbsp;</td>
+											      </tr>
+													  <tr>
+													    <td height="30" valign="middle">Validation Code</td>
+													    <td><input type="text" id="security_code" name="security_code" value="" class="validate[required] text-input"></td>
+											      </tr>
+													  <tr>
+													    <td height="30" valign="middle">&nbsp;</td>
+													    <td></td>
+											      </tr>
+													  <tr>
+													    <td height="30" valign="middle">&nbsp;</td>
+													    <td><label>
+														  <input type="button" name="Submit" value="Submit"   onClick="javascript:doSave();" />
+													      <input type="reset" name="Submit2" value="Reset" />
+													    </label></td>
+											      </tr>
+											</table>
+												</form>
+	</div>
+	</td>
+  </tr>
+</table>
+</body>
+</html>

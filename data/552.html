@@ -1,0 +1,715 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>คู่มือการศึกษาสำหรับนิสิตรหัส 58</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+<style type="text/css">
+<!--
+.style12 {font-size: 16px; color: #FFFFFF; font-family: "MS Sans Serif";}
+.style9 {font-family: "MS Sans Serif"; font-size: 14; font-weight: bold; color: #FFFFFF; }
+.style19 {	color: #000000;
+	font-weight: bold;
+}
+.style15 {	font-size: 14px;
+	font-family: "MS Sans Serif";
+}
+.style17 {color: #000000}
+.style20 {font-family: "MS Sans Serif"; font-size: 14; font-weight: bold; color: #000000; }
+.style4 {	color: #000000;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "MS Sans Serif";
+}
+.style7 {font-family: "MS Sans Serif"; font-size: 14px; color: #000000; font-weight: bold; }
+.style23 {font-size: 14px; font-family: "MS Sans Serif"; font-weight: bold; }
+.style32 {font-size: 14; color: #000000; font-family: "MS Sans Serif"; }
+.style35 {color: #0000FF}
+.style38 {font-family: "MS Sans Serif"; font-size: 14; font-weight: bold; color: #0000FF; }
+.style39 {font-size: 16px; font-family: "MS Sans Serif"; color: #0000FF; }
+.style41 {font-size: 16px; font-family: "MS Sans Serif"; }
+.style34 {font-family: "MS Sans Serif"}
+.style43 {
+	font-size: 16px;
+	color: #0000FF;
+}
+a:link {
+	color: #660033;
+}
+a:hover {
+	color: #6666FF;
+}
+a:active {
+	color: #000000;
+}
+.style51 {font-size: 16px; font-family: "MS Sans Serif"; color: #000000;}
+.style53 {font-size: 14px; color: #000000; font-family: "MS Sans Serif";}
+body {
+	background-color: #FFFFFF;
+}
+.style54 {
+	font-size: 14px;
+	font-family: "MS Sans Serif";
+	color: #660033;
+	font-weight: bold;
+}
+-->
+</style>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_jumpMenuGo(selName,targ,restore){ //v3.0
+  var selObj = MM_findObj(selName); if (selObj) MM_jumpMenu(targ,selObj,restore);
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_scanStyles(obj, prop) { //v9.0
+  var inlineStyle = null; var ccProp = prop; var dash = ccProp.indexOf("-");
+  while (dash != -1){ccProp = ccProp.substring(0, dash) + ccProp.substring(dash+1,dash+2).toUpperCase() + ccProp.substring(dash+2); dash = ccProp.indexOf("-");}
+  inlineStyle = eval("obj.style." + ccProp);
+  if(inlineStyle) return inlineStyle;
+  var ss = document.styleSheets;
+  for (var x = 0; x < ss.length; x++) { var rules = ss[x].cssRules;
+	for (var y = 0; y < rules.length; y++) { var z = rules[y].style;
+	  if(z[prop] && (rules[y].selectorText == '*[ID"' + obj.id + '"]' || rules[y].selectorText == '#' + obj.id)) {
+        return z[prop];
+  }  }  }  return "";
+}
+
+function MM_getProp(obj, prop) { //v8.0
+  if (!obj) return ("");
+  if (prop == "L") return obj.offsetLeft;
+  else if (prop == "T") return obj.offsetTop;
+  else if (prop == "W") return obj.offsetWidth;
+  else if (prop == "H") return obj.offsetHeight;
+  else {
+    if (typeof(window.getComputedStyle) == "undefined") {
+	    if (typeof(obj.currentStyle) == "undefined"){
+		    if (prop == "P") return MM_scanStyles(obj,"position");
+        else if (prop == "Z") return MM_scanStyles(obj,"z-index");
+        else if (prop == "V") return MM_scanStyles(obj,"visibility");
+	    } else {
+	      if (prop == "P") return obj.currentStyle.position;
+        else if (prop == "Z") return obj.currentStyle.zIndex;
+        else if (prop == "V") return obj.currentStyle.visibility;
+	    }
+    } else {
+	    if (prop == "P") return window.getComputedStyle(obj,null).getPropertyValue("position");
+      else if (prop == "Z") return window.getComputedStyle(obj,null).getPropertyValue("z-index");
+      else if (prop == "V") return window.getComputedStyle(obj,null).getPropertyValue("visibility");
+    }
+  }
+}
+
+function MM_dragLayer(objId,x,hL,hT,hW,hH,toFront,dropBack,cU,cD,cL,cR,targL,targT,tol,dropJS,et,dragJS) { //v9.01
+  //Copyright 2005-2006 Adobe Macromedia Software LLC and its licensors. All rights reserved.
+  var i,j,aLayer,retVal,curDrag=null,curLeft,curTop,IE=document.all;
+  var NS=(!IE&&document.getElementById); if (!IE && !NS) return false;
+  retVal = true; if(IE && event) event.returnValue = true;
+  if (MM_dragLayer.arguments.length > 1) {
+    curDrag = document.getElementById(objId); if (!curDrag) return false;
+    if (!document.allLayers) { document.allLayers = new Array();
+      with (document){ if (NS) { var spns = getElementsByTagName("span"); var all = getElementsByTagName("div");
+        for (i=0;i<spns.length;i++) if (MM_getProp(spns[i],'P')) allLayers[allLayers.length]=spns[i];}
+        for (i=0;i<all.length;i++) {
+	        if (MM_getProp(all[i],'P')) allLayers[allLayers.length]=all[i]; 
+        }
+    } }
+    curDrag.MM_dragOk=true; curDrag.MM_targL=targL; curDrag.MM_targT=targT;
+    curDrag.MM_tol=Math.pow(tol,2); curDrag.MM_hLeft=hL; curDrag.MM_hTop=hT;
+    curDrag.MM_hWidth=hW; curDrag.MM_hHeight=hH; curDrag.MM_toFront=toFront;
+    curDrag.MM_dropBack=dropBack; curDrag.MM_dropJS=dropJS;
+    curDrag.MM_everyTime=et; curDrag.MM_dragJS=dragJS;
+  
+    curDrag.MM_oldZ = MM_getProp(curDrag,'Z');
+    curLeft = MM_getProp(curDrag,'L');
+    if (String(curLeft)=="NaN") curLeft=0; curDrag.MM_startL = curLeft;
+    curTop = MM_getProp(curDrag,'T');
+    if (String(curTop)=="NaN") curTop=0; curDrag.MM_startT = curTop;
+    curDrag.MM_bL=(cL<0)?null:curLeft-cL; curDrag.MM_bT=(cU<0)?null:curTop-cU;
+    curDrag.MM_bR=(cR<0)?null:curLeft+cR; curDrag.MM_bB=(cD<0)?null:curTop+cD;
+    curDrag.MM_LEFTRIGHT=0; curDrag.MM_UPDOWN=0; curDrag.MM_SNAPPED=false; //use in your JS!
+    document.onmousedown = MM_dragLayer; document.onmouseup = MM_dragLayer;
+    if (NS) document.captureEvents(Event.MOUSEDOWN|Event.MOUSEUP);
+    } else {
+    var theEvent = ((NS)?objId.type:event.type);
+    if (theEvent == 'mousedown') {
+      var mouseX = (NS)?objId.pageX : event.clientX + document.body.scrollLeft;
+      var mouseY = (NS)?objId.pageY : event.clientY + document.body.scrollTop;
+      var maxDragZ=null; document.MM_maxZ = 0;
+      for (i=0; i<document.allLayers.length; i++) { aLayer = document.allLayers[i];
+        var aLayerZ = MM_getProp(aLayer,'Z');
+        if (aLayerZ > document.MM_maxZ) document.MM_maxZ = aLayerZ;
+        var isVisible = (MM_getProp(aLayer,'V')).indexOf('hid') == -1;
+        if (aLayer.MM_dragOk != null && isVisible) with (aLayer) {
+          var parentL=0; var parentT=0;
+          if (NS) { parentLayer = aLayer.parentNode;
+            while (parentLayer != null && parentLayer != document && MM_getProp(parentLayer,'P')) {
+              parentL += parseInt(MM_getProp(parentLayer,'L')); parentT += parseInt(MM_getProp(parentLayer,'T'));
+              parentLayer = parentLayer.parentNode;
+              if (parentLayer==document) parentLayer = null;
+          } } else if (IE) { parentLayer = aLayer.parentElement;       
+            while (parentLayer != null && MM_getProp(parentLayer,'P')) {
+              parentL += MM_getProp(parentLayer,'L'); parentT += MM_getProp(parentLayer,'T');
+              parentLayer = parentLayer.parentElement; } }
+          var tmpX=mouseX-((MM_getProp(aLayer,'L'))+parentL+MM_hLeft);
+          var tmpY=mouseY-((MM_getProp(aLayer,'T'))+parentT+MM_hTop);
+          if (String(tmpX)=="NaN") tmpX=0; if (String(tmpY)=="NaN") tmpY=0;
+          var tmpW = MM_hWidth;  if (tmpW <= 0) tmpW += MM_getProp(aLayer,'W');
+          var tmpH = MM_hHeight; if (tmpH <= 0) tmpH += MM_getProp(aLayer,'H');
+          if ((0 <= tmpX && tmpX < tmpW && 0 <= tmpY && tmpY < tmpH) && (maxDragZ == null
+              || maxDragZ <= aLayerZ)) { curDrag = aLayer; maxDragZ = aLayerZ; } } }
+      if (curDrag) {
+        document.onmousemove = MM_dragLayer;
+        curLeft = MM_getProp(curDrag,'L');
+        curTop = MM_getProp(curDrag,'T');
+        if (String(curLeft)=="NaN") curLeft=0; if (String(curTop)=="NaN") curTop=0;
+        MM_oldX = mouseX - curLeft; MM_oldY = mouseY - curTop;
+        document.MM_curDrag = curDrag;  curDrag.MM_SNAPPED=false;
+        if(curDrag.MM_toFront) {
+          var newZ = parseInt(document.MM_maxZ)+1;
+          eval('curDrag.'+('style.')+'zIndex=newZ');
+          if (!curDrag.MM_dropBack) document.MM_maxZ++; }
+        retVal = false; if(!NS) event.returnValue = false;
+    } } else if (theEvent == 'mousemove') {
+      if (document.MM_curDrag) with (document.MM_curDrag) {
+        var mouseX = (NS)?objId.pageX : event.clientX + document.body.scrollLeft;
+        var mouseY = (NS)?objId.pageY : event.clientY + document.body.scrollTop;
+        var newLeft = mouseX-MM_oldX; var newTop  = mouseY-MM_oldY;
+        if (MM_bL!=null) newLeft = Math.max(newLeft,MM_bL);
+        if (MM_bR!=null) newLeft = Math.min(newLeft,MM_bR);
+        if (MM_bT!=null) newTop  = Math.max(newTop ,MM_bT);
+        if (MM_bB!=null) newTop  = Math.min(newTop ,MM_bB);
+        MM_LEFTRIGHT = newLeft-MM_startL; MM_UPDOWN = newTop-MM_startT;
+        if (NS){style.left = newLeft + "px"; style.top = newTop + "px";}
+        else {style.pixelLeft = newLeft; style.pixelTop = newTop;}
+        if (MM_dragJS) eval(MM_dragJS);
+        retVal = false; if(!NS) event.returnValue = false;
+    } } else if (theEvent == 'mouseup') {
+      document.onmousemove = null;
+      if (NS) document.releaseEvents(Event.MOUSEMOVE);
+      if (NS) document.captureEvents(Event.MOUSEDOWN); //for mac NS
+      if (document.MM_curDrag) with (document.MM_curDrag) {
+        if (typeof MM_targL =='number' && typeof MM_targT == 'number' &&
+            (Math.pow(MM_targL-(MM_getProp(document.MM_curDrag,'L')),2)+
+             Math.pow(MM_targT-(MM_getProp(document.MM_curDrag,'T')),2))<=MM_tol) {
+          if (NS) {style.left = MM_targL + "px"; style.top = MM_targT + "px";}
+          else {style.pixelLeft = MM_targL; style.pixelTop = MM_targT;}
+          MM_SNAPPED = true; MM_LEFTRIGHT = MM_startL-MM_targL; MM_UPDOWN = MM_startT-MM_targT; }
+        if (MM_everyTime || MM_SNAPPED) eval(MM_dropJS);
+        if(MM_dropBack) {style.zIndex = MM_oldZ;}
+        retVal = false; if(!NS) event.returnValue = false; }
+      document.MM_curDrag = null;
+    }
+    if (NS) document.routeEvent(objId);
+  } return retVal;
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('pic/fresh135x129.gif','pic/prize2-135-129.gif');MM_dragLayer('SubMenu3-5','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')">
+<div id="SubMenu3-1" style="position: absolute; width: 436px; height: 391px; z-index: 23; left: -1px; top: 174px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000; visibility: hidden;">
+  <table width="417" border="0" id="TSubCurri">
+    <tr>
+      <td width="411" bgcolor="#FFCC00"><span class="style7"> <a href="Curriculum-B/BThai/BThai-02ChemE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','show','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมเคมี</a>(ภาคปกติ และ ภาคพิเศษ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-03CE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','show','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมโยธา</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BThai/BThai-18SG.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','show','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมสำรวจและสารสนเทศภูมิศาสตร์</a>(ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-04CPE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','show','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมคอมพิวเตอร์</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BInterThai/BThai-19SK.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','show','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมซอฟต์แวร์และความรู้</a>(นานาชาติ)  </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99" class="style7"><a href="Curriculum-B/BThai/BThai-05EE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','show','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมไฟฟ้า</a>(ภาคปกติ และ ภาคพิเศษ)</td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BThai/BThai-06IE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','show','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมอุตสาหการ</a> (ภาคปกติ และ ภาคพิเศษ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-08ME.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','show','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมเครื่องกล</a>(ภาคปกติ และ ภาคพิเศษ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BInterThai/BThai-08ME-IUP.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','show','SubMenu3-1-211-2','','hide')">วิศวกรรมเครื่องกล</a>(นานาชาติ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-09CE-WRE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','show','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมโยธา-ทรัพยากรน้ำ</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BThai/BThai-10EnE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','show','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมสิ่งแวดล้อม</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-11EME.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','show','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมไฟฟ้าเครื่องกลการผลิต</a>(ภาคปกติ และ ภาคพิเศษ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BInterThai/BThai-11EME-IUP.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','show','SubMenu3-2-208-2','','hide','SubMenu3-2-211-2','','hide')">วิศวกรรมไฟฟ้าเครื่องกลการผลิต</a>(นานาชาติ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-13MatE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','show','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมวัสดุ</a>(ภาคปกติ และ ภาคพิเศษ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFCC00"><span class="style7"><a href="Curriculum-B/BThai/BThai-15AeroE.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','show','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">วิศวกรรมการบินและอวกาศ</a>(ภาคปกติ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFF99"><span class="style7"><a href="Curriculum-B/BThai/BThai-25AT.pdf" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','show','SubMenu3-1-226','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide','SubMenu3-1-208-2','','hide','SubMenu3-1-211-2','','hide')">การจัดการเทคโนโลยีการบิน</a>(ภาคพิเศษ)</span></td>
+    </tr>
+     <tr>
+       <td height="18" bgcolor="#FFCC00" class="style7"><a href="Curriculum-B/BThai/BThai-ENG-Courses.pdf">รายวิชาคณะวิศวกรรมศาสตร์</a>         <tr>
+      <td height="24" bgcolor="#FFFF99" class="style7"><a href="Curriculum-B/BThai/BThai-Other-Courses.pdf">รายวิชานอกคณะวิศวกรรมศาสตร์</a></tr>
+    <tr>    
+  </table>
+    </tr>  
+</div>
+<div id="LMenu" style="position: absolute; width: 773px; height: 33px; z-index: 1; left: 2px; top: 100px; background-color: #00FFFF; layer-background-color: #00FFFF; border: 1px none #000000; visibility: visible;">
+  <table width="766" border="0" cellspacing="0">
+    <tr bgcolor="#FF9900">
+      <td width="127" height="22" bgcolor="#00FFFF" class="style12"><div align="center"><span class="style20"><span class="style9 style17"><span class="style4"><span class="style19"><a href="javascript:;" class="style12" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','show','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','show','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หน้าหลัก</a></span></span></span></span></div></td>
+      <td width="77" bgcolor="#00FFFF">&nbsp;</td>
+      <td width="313" bgcolor="#00FFFF"><div align="center" class="style9 style17"><span class="style20"><span class="style4"><span class="style19"><a href="javascript:;" class="style12" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">แนะนำคณะวิศวกรรมศาสตร์</a></span></span></span></div></td>
+      <td width="39" bgcolor="#00FFFF">&nbsp;</td>
+      <td width="151" bgcolor="#00FFFF"><div align="center"><span class="style12"><span class="style9 style17"><span class="style4"><span class="style19"><a href="javascript:;" class="style12" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หลักสูตร </a></span></span></span></span></div></td>
+      <td width="47" bgcolor="#00FFFF">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="Linetop1" style="position:absolute; width:773px; height:100px; z-index:33; left: 1px; top: 0px; visibility: visible;"><img src="pic/FName3.jpg" width="773" height="100"></div>
+<div id="SubMenu3" style="position: absolute; width: 777px; height: 52px; z-index: 22; left: -3px; top: 122px; background-color: #FFCC00; layer-background-color: #FFCC00; border: 1px none #000000; visibility: hidden;">
+  <table width="777" height="30" border="0">
+    <tr>
+      <td align="center"><strong>ระดับปริญญาตรี</strong></td>
+      <td align="center"><span class="style19">ระดับปริญญาโท</span></td>
+      <td align="center"><strong>ระดับปริญญาเอก</strong></td>
+    </tr>
+    <tr>
+      <td width="112" align="center" bgcolor="#FFFF00"><div align="center"><span class="style19"><a href="javascript:;" name="link6" class="style15" id="link3" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','show','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">ฉบับภาษาไทย</a> </span> </div></td>
+      <td width="121" align="center" bgcolor="#66FFFF"><div align="center"><span class="style23"><a href="javascript:;" name="link6" class="style15" id="link3" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','show','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">ฉบับภาษาไทย</a></span></div></td>
+
+      <td width="124" align="center" bgcolor="#FF99FF" class="style54"><div align="center"><a href="#" onMouseOver="MM_showHideLayers('SubMenu3-5','','show')">ฉบับภาษาไทย</a></div>      </td>
+    </tr>
+  </table>
+</div>
+<div id="SubMenu1" style="position:absolute; width:775px; height:115px; z-index:20; left: 0px; top: 122px; background-color: #FFCC33; layer-background-color: #FFCC33; border: 1px none #000000; font-weight: bold; visibility: hidden;">
+  <div align="right">
+    <table width="751" height="32" border="0" cellspacing="0">
+      <tr align="right">
+        <td valign="baseline"><span class="style15">
+          <select name="menuIntro1" id="select4" onChange="MM_jumpMenu('parent',this,1)">
+            <option value="home.htm">ข้อมูลเกี่ยวกับคณะวิศวกรรมศาสตร์</option>
+            <option value="Intro/ENG1/1-History.pdf">ประวัติความเป็นมาของคณะฯ</option>
+            <option value="Intro/ENG1/3-Polycy.pdf">นโยบาย ปรัชญาและปณิธานของคณะฯ</option>
+            <option value="Intro/ENG1/4-Manage.pdf">การบริหารงานของคณะฯ</option>
+          </select>
+          <input name="GIntro1" type="button" id="GIntro13" onClick="MM_jumpMenuGo('menuIntro1','parent',1)" value="Go">
+        </span></td>
+      </tr>
+      <tr align="right">
+        <td valign="baseline"><span class="style15">
+          <select name="menuIntro2" id="select3" onChange="MM_jumpMenu('parent',this,1)">
+            <option value="home.htm" selected>งานด้านการศึกษาและหลักสูตร</option>
+            <option value="Intro/ENG2/ENG2-02.pdf">สาขาวิชาวิศวกรรมเคมี</option>
+            <option value="Intro/ENG2/ENG2-03.pdf">สาขาวิชาวิศวกรรมโยธา</option>
+            <option value="Intro/ENG2/ENG2-18.pdf">สาขาวิชาวิศวกรรมสำรวจและสารสนเทศภูมิศาสตร์</option>
+            <option value="Intro/ENG2/ENG2-04.pdf">สาขาวิชาวิศวกรรมคอมพิวเตอร์</option>
+            <option value="Intro/ENG2/ENG2-19.pdf">สาขาวิชาวิชาวิศวกรรมซอฟต์แวร์และความรู้</option>
+            <option value="Intro/ENG2/ENG2-05.pdf">สาขาวิชาวิศวกรรมไฟฟ้า</option>
+            <option value="Intro/ENG2/ENG2-06.pdf">สาขาวิชาวิศวกรรมอุตสาหการ</option>
+            <option value="Intro/ENG2/ENG2-08.pdf">สาขาวิชาวิศวกรรมเครื่องกล</option>
+            <option value="Intro/ENG2/ENG2-09.pdf">สาขาวิชาวิศวกรรมโยธา-ทรัพยากรน้ำ</option>
+            <option value="Intro/ENG2/ENG2-10.pdf">สาขาวิชาวิศวกรรมสิ่งแวดล้อม</option>
+            <option value="Intro/ENG2/ENG2-11.pdf">สาขาวิชาวิศวกรรมไฟฟ้าเครื่องกลการผลิต</option>
+            <option value="Intro/ENG2/ENG2-13.pdf">สาขาวิชาวิศวกรรมวัสดุ</option>
+            <option value="Intro/ENG2/ENG2-15.pdf">สาขาวิชาวิศวกรรมการบินและอวกาศ</option>
+            <option value="Intro/ENG2/ENG2-15-1.pdf">สาขาวิชาวิศวกรรมการบินและอวกาศและบริหารธุรกิจ</option>
+            <option value="Intro/ENG2/ENG2-14.pdf">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+            <option value="Intro/ENG2/ENG2-16.pdf">สาขาวิชาวิศวกรรมความปลอดภัย</option>
+            <option value="Intro/ENG2/ENG2-17.pdf">สาขาวิชาวิศวกรรมโครงสร้างพื้นฐานและการบริหาร</option>
+            <option value="Intro/ENG2/ENG2-20.pdf">สาขาวิชาเทคโนโลยีการผลิตทางอุตสาหกรรม</option>
+            <option value="Intro/ENG2/ENG2-22.pdf">สาขาวิชาการจัดการวิศวกรรม</option>
+            <option value="Intro/ENG2/ENG2-23.pdf">สาขาวิชาวิศวกรรมป้องกันอัคคีภัย</option>
+            <option value="Intro/ENG2/ENG2-37.pdf">สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสารสำหรับระบบฝังตัว</option>
+            <option value="Intro/ENG2/ENG2-33.pdf">โครงการศึกษาพิเศษ</option>
+            <option value="Intro/ENG2/ENG2-28.pdf">แนวทางการศึกษาต่อ</option>
+            <option value="Intro/ENG2/ENG2-36.pdf">ระบบอาจารย์ที่ปรึกษา</option>
+            <option value="Intro/ENG2/ENG2-31.pdf">กิจกรรมของนิสิต</option>
+            <option value="Intro/ENG2/ENG2-32.pdf">ทุนการศึกษา</option>
+            <option value="Intro/ENG2/ENG2-35.pdf">ศูนย์คอมพิวเตอร์วิศวกรรม</option>
+            <option value="Intro/ENG2/ENG2-29.pdf">ห้องสมุด</option>
+            <option value="Intro/ENG2/ENG2-30.pdf">ศูนย์การเรียนรู้ด้วยตนเอง</option>
+            <option value="Intro/ENG2/ENG2-39.pdf">สาขาวิชาการจัดการเทคโนโลยีการบิน</option>
+            <option value="Intro/ENG2/ENG2-40.pdf">สาขาวิชาเทคโนโลยีโครงสร้างเพื่อสิ่งแวดล้อมสรรค์สร้าง (ภาคพิเศษ)</option>
+            <option value="Curriculum-M/MInterThai/MInterThai-30AseE.pdf">สาขาวิชาวิศวกรรมสิ่งแวดล้อมขั้นนสูงและยั่งยืน (หลักสูตรนานาชาติ)</option>
+            <option value="home.htm">งานด้านการศึกษาและหลักสูตร</option>
+          </select>
+          <input name="GIntro2" type="button" id="GIntro23" onClick="MM_jumpMenuGo('menuIntro2','parent',1)" value="Go">
+        </span></td>
+      </tr>
+      <tr align="right">
+        <td valign="baseline"><span class="style15">
+          <select name="menuIntro3" id="menuIntro3" onChange="MM_jumpMenu('parent',this,1)">
+            <option value="home.htm" selected>ระเบียบการศึกษา ระเบียบว่าด้วยวินัยนิสิต และข้อบังคับที่ควรทราบ</option>
+            <option value="Intro/ENG3/ENG3-09.pdf">ระเบียบการสอบ</option>
+            <option value="Intro/ENG4/ENG4-09.pdf">ระเบียบว่าด้วยวินัยของนิสิต</option>
+            <option value="Intro/ENG4/ENG4-10.pdf">ระเบียบการแต่งกายของนิสิต</option>
+            <option value="Intro/ENG4/ENG4-27.pdf">รางวัลและประกาศเกียรติคุณนิสิตที่มีการแต่งกาย และความประพฤติดีเด่น</option>
+            <option value="Intro/ENG4/ENG4-26.pdf">ระเบียบการแต่งกายของนิสิตในรายวิชากิจกรรมพลศึกษา</option>
+            <option value="Intro/ENG4/ENG4-14.pdf">ระเบียบเกี่ยวกับการฝึกงาน และบทลงโทษนิสิตฝึกงานภาคฤดูร้อน</option>
+            <option value="Intro/ENG4/ENG4-23.pdf">ข้อบังคับว่าด้วยการแต่งกายของนิสิตปริญญาตรี มหาวิทยาลัยเกษตรศาสตร์</option>
+            <option value="Intro/ENG4/ENG4-22.pdf">ระดับโทษทางวินัยกรณีนิสิตส่อทุจริตหรือทำการทุจริตในการสอบ</option>
+          </select>
+          <input name="GIntro3" type="button" id="GIntro3" onClick="MM_jumpMenuGo('menuIntro3','parent',1)" value="Go">
+        </span></td>
+      </tr>
+      <tr align="right">
+        <td valign="baseline"><span class="style15">
+          <select name="menuIntro4" id="menuIntro4" onChange="MM_jumpMenu('parent',this,1)">
+            <option value="home.htm" selected>ภาคผนวก</option>
+            <option value="Intro/ENG4/ENG4-01.pdf">การยื่นใบคำร้องของนิสิต</option>
+            <option value="Intro/ENG4/ENG4-02.pdf">การลาป่วย ลากิจ และลาพักการศึกษาของนิสิต</option>
+            <option value="Intro/ENG4/ENG4-03.pdf">การลงทะเบียนเรียน</option>
+            <option value="Intro/ENG4/ENG4-06.pdf">การลงทะเบียนเรียนวิชานอกหลักสูตร</option>
+            <option value="Intro/ENG4/ENG4-15.pdf">หลักเกณฑ์การพิจารณาให้ทุนสนับสนุนนิสิตไปฝึกงาน ทำวิจัยหรือโครงงาน ณ ต่างประเทศ </option>
+            <option value="Intro/ENG4/ENG4-11.pdf">การจอดรถยนต์ภายในคณะวิศวกรรมศาสตร์</option>
+            <option value="Intro/ENG4/ENG4-18.pdf">จรรยาบรรณวิศวกร</option>
+            <option value="Intro/ENG4/ENG4-24.pdf">ขั้นตอนการยื่นใบคำร้อง ต่อหน่วยทะเบียนและประเมินผลการศึกษา</option>
+            <option value="Intro/ENG4/ENG4-25.pdf">การแยกสังกัดสาขาวิชา </option>
+            <option value="Intro/ENG4/ENG4-16.pdf">หลักเกณฑ์การพิจารณาให้ทุนสนับสนุนไปฝึกงาน / ปฏิบัติงานโครงการสหกิจศึกษา ณ ต่างประเทศ</option>
+          </select>
+          <input name="GIntro4" type="button" id="GIntro4" onClick="MM_jumpMenuGo('menuIntro4','parent',1)" value="Go">
+        </span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="SubMenu2" style="position:absolute; width:773px; height:1px; z-index:21; left: 0px; top: 122px; background-color: #FFCC00; layer-background-color: #FFCC00; border: 1px none #000000; visibility: hidden; font-weight: bold;">
+  <table width="756" height="30" border="0">
+    <tr>
+      <td width="756" align="center"><form name="form4">
+          <span class="style15">
+          <select name="menu4" class="style15" onChange="MM_jumpMenu('parent',this,1)">
+            <option value="home.htm">โปรดเลือก....</option>
+            <option value="residence/202-ChemE.pdf">ภาควิชาวิศวกรรมเคมี</option>
+            <option value="residence/203-CE.pdf">ภาควิชาวิศวกรรมโยธา</option>
+            <option value="residence/218-SG.pdf">สาขาวิชาวิศวกรรมสำรวจและสารสนเทศภูมิศาสตร์</option>
+            <option value="residence/204-CPE.pdf">ภาควิชาวิศวกรรมคอมพิวเตอร์</option>
+            <option value="residence/204-CPE.pdf">สาขาวิชาวิศวกรรมซอฟต์แวร์และความรู้</option>
+            <option value="residence/205-EE.pdf">ภาควิชาวิศวกรรมไฟฟ้า</option>
+            <option value="residence/206-IE.pdf">ภาควิชาวิศวกรรมอุตสาหการ</option>
+            <option value="residence/208-ME.pdf">ภาควิชาวิศวกรรมเครื่องกล</option>
+            <option value="residence/209-WRE.pdf">ภาควิชาวิศวกรรมทรัพยากรน้ำ</option>
+            <option value="residence/210-EnE.pdf">ภาควิชาวิศวกรรมสิ่งแวดล้อม</option>
+            <option value="residence/211-EME.pdf">สาขาวิชาวิศวกรรมไฟฟ้าเครื่องกลการผลิต</option>
+            <option value="residence/213-MatE.pdf">ภาควิชาวิศวกรรมวัสดุ</option>
+            <option value="residence/215-AeroE.pdf">ภาควิชาวิศวกรรมการบินและอวกาศ</option>
+            <option value="residence/225-AT.pdf">สาขาวิชาเทคโนโลยีการบิน</option>
+            <option value="residence/226-AM.pdf">สาขาวิชาการจัดการการบิน</option>
+            <option value="residence/214-MCPE-IT.pdf">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+            <option value="residence/217-IEM.pdf">สาขาวิศวกรรมโครงสร้างพื้นฐานและการบริหาร</option>
+            <option value="residence/222-EM.pdf">สาขาวิชาการจัดการวิศวกรรม</option>
+            <option value="residence/216-SE.pdf">สาขาวิชาวิศวกรรมความปลอดภัย</option>
+            <option value="residence/223-FPE.pdf">สาขาวิชาวิศวกรรมป้องกันอัคคีภัย</option>
+            <option value="residence/220-IPT.pdf">สาขาวิชาเทคโนโลยีการผลิตทางอุตสาหกรรม</option>
+            <option value="residence/227-ICTES.pdf">สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสารสำหรับระบบฝังตัว</option>
+            <option value="residence/225-ATM.pdf">การจัดการเทคโนโลยีการบิน</option>
+          </select>
+          <input type="button" name="Button4" value="Go" onClick="MM_jumpMenuGo('menu4','parent',1)">
+      </span></form></td>
+    </tr>
+  </table>
+</div>
+<div id="LMenu-0" style="position:absolute; width:773px; height:22px; z-index:1; left: 1px; top: 98px; visibility: hidden; font-weight: bold;">
+  <table width="766" border="0" cellspacing="0">
+    <tr bgcolor="#FFCCFF" class="style17">
+      <td width="216" height="22" bgcolor="#FFCC00" class="style12"><div align="center" class="style17"><span class="style39"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','show','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','show','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หน้าหลัก</a></span></div></td>
+      <td width="362" bgcolor="#FFFFFF"><div align="center" class="style32"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">แนะนำคณะวิศวกรรมศาสตร์</a></span></div></td>
+      <td width="182" bgcolor="#FFFFFF"><div align="center" class="style17"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หลักสูตร </a></span></div></td>
+    </tr>
+  </table>
+</div>
+<div id="LMenu-1" style="position:absolute; width:773px; height:22px; z-index:1; left: 1px; top: 98px; visibility: hidden; font-weight: bold;">
+  <table width="772" border="0" cellspacing="0">
+    <tr bgcolor="#FFCCFF" class="style51">
+      <td width="197" height="22" bgcolor="#FFFFFF" class="style12"><div align="center" class="style35"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','show','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','show','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หน้าหลัก</a></span></div></td>
+      <td width="381" bgcolor="#FFCC33"><div align="center" class="style38"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">แนะนำคณะวิศวกรรมศาสตร์</a></span></div></td>
+      <td width="188" bgcolor="#FFFFFF"><div align="center" class="style35"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หลักสูตร </a></span></div></td>
+      </tr>
+  </table>
+</div>
+<div id="LMenu-2" style="position: absolute; width: 769px; height: 22px; z-index: 2; left: -1px; top: 98px; font-weight: bold; visibility: hidden;">
+  <table width="777" border="0" cellspacing="0">
+    <tr bgcolor="#FFCCFF">
+      <td width="182" height="22" bgcolor="#FFFFFF" class="style12"><div align="center"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','show','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','show','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หน้าหลัก</a></span></div></td>
+      <td width="396" bgcolor="#FFFFFF"><div align="center" class="style9 style35  style43"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">แนะนำคณะวิศวกรรมศาสตร</a><span class="style34"><a href="javascript:;" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">์</a></span></div></td>
+      <td width="185" bgcolor="#FFFFFF"><div align="center"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หลักสูตร </a></span></div></td>
+    </tr>
+  </table>
+</div>
+<div id="LMenu-3" style="position: absolute; width: 770px; height: 22px; z-index: 1; left: 1px; top: 98px; font-weight: bold; visibility: hidden;">
+  <table width="774" border="0" cellspacing="0">
+    <tr bgcolor="#FFCCFF">
+      <td width="189" height="22" bgcolor="#FFFFFF" class="style12"><div align="center"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','show','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','show','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หน้าหลัก</a></span></div></td>
+      <td width="389" bgcolor="#FFFFFF"><div align="center" class="style20"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">แนะนำคณะวิศวกรรมศาสตร์</a></span></div></td>
+      <td width="190" bgcolor="#FFCC00"><div align="center"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หลักสูตร </a></span></div></td>
+    </tr>
+  </table>
+</div>
+<div id="LMenu-4" style="position:absolute; width:773px; height:22px; z-index:1; left: 1px; top: 98px; font-weight: bold; visibility: hidden;">
+  <table width="770" border="0" cellspacing="0">
+    <tr bgcolor="#FFCCFF">
+      <td width="210" height="22" bgcolor="#FFFFFF" class="style12"><div align="center"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','show','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','show','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หน้าหลัก</a></span></div></td>
+      <td width="360" bgcolor="#FFFFFF"><div align="center" class="style39"><span class="style35"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">แนะนำคณะวิศวกรรมศาสตร</a></span><a href="javascript:;" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','hide','SubMenu1','','show','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','show','LMenu-2','','hide','LMenu-3','','hide','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','show','address','','show','Contact','','show','RightLayer','','show','teacher','','show','scholarship','','show','graduate','','show','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">์</a></div></td>
+      <td width="194" bgcolor="#FFFFFF"><div align="center"><span class="style41"><a href="javascript:;" class="style35" onMouseOver="MM_showHideLayers('SubMenu3-2','','hide','SubMenu3-1','','hide','LMenu','','hide','Linetop1','','show','Logo','','show','SubMenu3','','show','SubMenu1','','hide','SubMenu2','','hide','LMenu-0','','hide','LMenu-1','','hide','LMenu-2','','hide','LMenu-3','','show','LMenu-4','','hide','SubMenu4','','hide','http','','show','Building','','hide','LeftLayer','','hide','address','','hide','Contact','','hide','RightLayer','','hide','teacher','','hide','scholarship','','hide','graduate','','hide','SubMenu3-3','','hide','SubMenu3-4','','hide','SubMenu3-1-203','','hide','SubMenu3-1-202','','hide','SubMenu3-1-218','','hide','SubMenu3-1-204','','hide','SubMenu3-1-219','','hide','SubMenu3-1-205','','hide','SubMenu3-1-206','','hide','SubMenu3-1-208','','hide','SubMenu3-1-209','','hide','SubMenu3-1-210','','hide','SubMenu3-1-211','','hide','SubMenu3-1-213','','hide','SubMenu3-1-215','','hide','SubMenu3-1-225','','hide','SubMenu3-1-226','','hide','SubMenu3-1-207','','hide','SubMenu3-2-202','','hide','SubMenu3-2-203','','hide','SubMenu3-2-218','','hide','SubMenu3-2-204','','hide','SubMenu3-2-219','','hide','SubMenu3-2-205','','hide','SubMenu3-2-206','','hide','SubMenu3-2-208','','hide','SubMenu3-2-209','','hide','SubMenu3-2-210','','hide','SubMenu3-2-211','','hide','SubMenu3-2-213','','hide','SubMenu3-2-215','','hide','SubMenu3-2-225','','hide','SubMenu3-2-226','','hide','SubMenu3-2-207','','hide','SubMenu3-5','','hide','SubMenu3-6','','hide')">หลักสูตร </a></span></div></td>
+    </tr>
+  </table>
+</div>
+<div id="SubMenu4" style="position:absolute; width:773px; height:34px; z-index:32; left: 0px; top: 122px; background-color: #FFCC00; layer-background-color: #FFCC00; border: 1px none #000000; font-weight: bold; visibility: hidden;">
+  <table width="756" height="30" border="0">
+    <tr>
+      <td width="756" align="center"><form name="form5">
+          <span class="style15"><select name="menu5" onChange="MM_jumpMenu('parent',this,1)">
+            <option value="home.htm" selected>โปรดเลือก...</option>
+            <option value="Song/SadoodeePrakiat.mp3">สดุดีพระเกียรติ</option>
+            <option value="Song/RomNontri.mp3">ร่มนนทรี</option>
+            <option value="Song/KasetsartKwun.mp3">เกษตรศาสตร์ขวัญ</option>
+            <option value="Song/NontriSooKwun.mp3">นนทรีสู่ขวัญ</option>
+            <option value="Song/MarchKasetsart.mp3">มาร์ชเกษตรศาสตร์</option>
+            <option value="Song/ArnajakKagee.mp3">อาณาจักรขจี</option>
+            <option value="Song/ChuenCheewunKwunKaset.mp3">ชื่นชีวันขวัญเกษตร</option>
+            <option value="Song/LaLaewDanKajee.mp3">ลาแล้วแดนขจี</option>
+            <option value="Song/PrasartDongTarn.mp3">ปราสาทดงตาล V1</option>
+            <option value="Song/Song01.mp3">ปราสาทดงตาล V2</option>
+            <option value="Song/Song11.mp3">ปราสาทดงตาล-ทำนอง</option>
+            <option value="Song/Song02.mp3">วิศวดงตาล-V1</option>
+            <option value="Song/WisavaDongtarn.mp3">วิศวดงตาล-V2</option>
+            <option value="Song/RumwongDongtarn.mp3">รำวงดงตาล</option>
+            <option value="Song/LaLaewDongtarn.mp3">ลาแล้วดงตาล-V1</option>
+            <option value="Song/Song10.mp3">ลาแล้วดงตาล-V2</option>
+            <option value="Song/Song12.mp3">ลาแล้วดงตาล-ทำนอง</option>
+          </select>
+      </span></form></td>
+    </tr>
+  </table>
+</div>
+<div id="http" style="position:absolute; width:120px; height:10px; z-index:35; top: 76px; left: 590px; visibility: visible; font-weight: bold;"><span class="style15"><a href="http://www.eng.ku.ac.th/"><img src="pic/http.psd.gif" width="179" height="19"></a></span></div>
+<div id="Building" style="position:absolute; width:773px; height:200px; z-index:11; top: 140px; left: 1px; font-weight: bold;"><img src="pic/Building60Year.jpg" width="775" height="204"></div>
+<div id="LeftLayer" style="position:absolute; width:251px; height:219px; z-index:18; top: 595px; left: 264px; visibility: visible; font-weight: bold;">
+  <div id="address" style="position:absolute; width:233px; height:25px; z-index:1; left: 15px; top: 10px;"><img src="pic/address.gif" width="226" height="72"> </div>
+  <div id="Contact" style="position:absolute; width:240px; height:83px; z-index:2; left: 10px; top: 112px;"><img src="pic/ask226x72.gif" width="226" height="72"></div>
+<img src="pic/e-faculty250x200.gif" width="250" height="214"></div>
+<div id="RightLayer" style="position: absolute; width: 778px; height: 215px; z-index: 19; left: 4px; top: 385px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000; font-weight: bold; visibility: visible;">
+  <div id="teacher" style="position: absolute; width: 144px; height: 137px; z-index: 8; top: 33px; left: 48px;">
+    <table width="177" height="139" border="0" bordercolor="#EBE9ED">
+      <tr>
+        <td width="171"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','pic/fresh135x129.gif',1)"><img src="pic/ico.jpg" name="Image10" width="121" height="121" border="0"></a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="scholarship" style="position: absolute; width: 342px; height: 136px; z-index: 7; top: 34px; left: 180px;">
+    <table width="322" height="137" border="0" bordercolor="#EBE9ED">
+      <tr>
+        <td width="316"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','pic/prize2-135-129.gif',1)"><img src="pic/prize1-135x129.gif" name="Image11" width="340" height="132" border="0"></a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="graduate" style="position: absolute; width: 167px; height: 140px; z-index: 6; top: 34px; left: 529px;">
+    <table width="160" height="139" border="0" bordercolor="#EBE9ED">
+      <tr>
+        <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="190" height="134" id="FlashID" title="graduate2-135x129">
+          <param name="movie" value="pic/graduate2-135x129.swf">
+          <param name="quality" value="high">
+          <param name="wmode" value="opaque">
+          <param name="swfversion" value="8.0.35.0">
+          <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+          <param name="expressinstall" value="Scripts/expressInstall.swf">
+          <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="pic/graduate2-135x129.swf" width="190" height="134">
+            <!--<![endif]-->
+            <param name="quality" value="high">
+            <param name="wmode" value="opaque">
+            <param name="swfversion" value="8.0.35.0">
+            <param name="expressinstall" value="Scripts/expressInstall.swf">
+            <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+            <div>
+              <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+            </div>
+            <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+        </object></td>
+      </tr>
+    </table>
+  </div>
+  <div id="L1" style="position: absolute; width: 359px; height: 22px; z-index: 9; left: 170px; top: 7px; font-family: ; overflow: hidden;"MS Sans Serif"; font-weight: bold;"><font  color=black>
+    <marquee bgcolor="yellow" behavior="alternate"width="520" height="25">
+      <span class="style34"> ผลิตบัณฑิตคุณภาพดี เทคโนโลยีก้าวหน้า พึ่งพาตนเอง                          </span>
+    </marquee>
+  </font></div>
+</div>
+<div id="SubMenu3-3" style="position:absolute; width:349px; height:512px; z-index:28; left: 241px; top: 172px; background-color: #0099FF; layer-background-color: #0099FF; border: 1px none #000000; font-weight: bold; visibility: hidden;">
+  <table width="347" border="0" id="TSubCurri">
+    <tr>
+      <td width="338" bgcolor="#00CCFF" class="style53"> <span class="style15"><a href="Curriculum-M/MThai/MThai-02ChemE.pdf" target="_blank" class="style15">วิศวกรรมเคมี</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style15"><a href="Curriculum-M/MInterThai/MInterThai-02ChemE.pdf" target="_blank" class="style15">วิศวกรรมเคมี </a>(นานาชาติ) </td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-03CE.pdf" target="_blank" class="style15">วิศวกรรมโยธา</a> <span class="style17">(ภาคปกติ)</span></span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-17IEM.pdf" target="_blank" class="style15">วิศวกรรมโครงสร้างพื้นฐานและการบริหาร</a> (ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"> <span class="style15"><a href="Curriculum-M/MThai/MThai-04CPE.pdf" target="_blank">วิศวกรรมคอมพิวเตอร์ </a>(ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"> <span class="style15"><a href="Curriculum-M/MThai/MThai-14IT.pdf" target="_blank">เทคโนโลยีสารสนเทศ</a> (ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"> <span class="style15"><a href="Curriculum-M/MThai/MThai-05EE.pdf" target="_blank">วิศวกรรมไฟฟ้า</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MInterThai/MInterThai-27ICTES.pdf" target="_blank">เทคโนโลยีสารสนเทศและการสื่อสารสำหรับระบบฝังตัว</a> (นานาชาติ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-06IE.pdf" target="_blank">วิศวกรรมอุตสาหการ</a>(ภาคปกติ)</span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MInterThai/MInterThai-06IE.pdf" target="_blank">วิศวกรรมอุตสาหการ</a> (นานาชาติ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><a href="Curriculum-M/MThai/MThai-22Em.pdf"><span class="style15">การจัดการวิศวกรรม (ภาคปกติ  และ ภาคพิเศษ) </span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MInterThai/MInterThai-22EM.pdf" target="_blank">การจัดการวิศวกรรม</a> (นานาชาติ) </span> </td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-08ME.pdf" target="_blank">วิศวกรรมเครื่องกล</a></span>(ภาคปกติ) </td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-09WRE.pdf" target="_blank">วิศวกรรมทรัพยากรน้ำ</a>(ภาคปกติ และ ภาคพิเศษ)</span> </td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-10EnE.pdf" target="_blank">วิศวกรรมสิ่งแวดล้อม</a> (ภาคปกติ และ ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MInterThai/MInterThai-10EnE.pdf" target="_blank">วิศวกรรมสิ่งแวดล้อม</a> (นานาชาติ)</span> </td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-15AeroE.pdf" target="_blank">วิศวกรรมการบินและอวกาศ</a> (ภาคปกติ และภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-16SE.pdf" target="_blank">วิศวกรรมความปลอดภัย</a> (ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-23FPE.pdf" target="_blank">วิศวกรรมป้องกันอัคคีภัย</a> (ภาคพิเศษ) </span> </td>
+    </tr>
+    <tr>
+      <td bgcolor="#00CCFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-20IPT.pdf" target="_blank">เทคโนโลยีการผลิตทางอุตสาหกรรม</a> (ภาคพิเศษ) </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#66FFFF" class="style53"><span class="style15"><a href="Curriculum-M/MThai/MThai-13MatE.pdf" target="_blank">วิศวกรรมวัสดุ</a> (ภาคปกติ) </span></td>
+    </tr>
+    </tr>
+      <td bgcolor="#00CCFF" class="style53"><a href="Curriculum-M/MThai/MThai-29STBE.pdf"><span class="style15"><u>เทคโนโลยีโครงสร้างเพื่อสิ่งแวดล้อมสรรค์สร้าง</u>  (ภาคพิเศษ) </span></a></td>
+    </tr>
+    <tr>
+        <td bgcolor="#66FFFF" class="style53"><span class="stle15"><a href="Curriculum-M/MInterThai/MInterThai-30AseE.pdf" target="_blank">วิศวกรรมสิ่งแวดล้อมชั้นสูงและยั่งยืน</a> (นานาชาติ) </span></td>
+    </tr>
+    </tr>   
+  </table>
+</div>
+<div id="SubMenu3-5" style="position: absolute; width: 270px; height: 255px; z-index: 30; left: 506px; top: 172px; background-color: #FF33CC; layer-background-color: #FF33CC; border: 1px none #000000; font-weight: bold; visibility: hidden;">
+  <table width="271" height="232" border="0" id="TSubCurri2">
+    <tr>
+      <td width="265" bgcolor="#FF66FF"><a href="Curiiculum-D/DThai/DThai-02ChemE.pdf"><span class="style15">วิศวกรรมเคมี(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF99FF" class="style53"><a href="Curiiculum-D/DInterThai/DInterThai-02ChemE.pdf"><span class="style15">วิศวกรรมเคมี (นานาชาติ) </span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF66FF"><a href="Curiiculum-D/DThai/DThai-03CE.pdf"><span class="style15">วิศวกรรมโยธา(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF99FF"><a href="Curiiculum-D/DThai/DThai-04CPE.pdf"><span class="style15">วิศวกรรมคอมพิวเตอร์ (ภาคพิเศษ) </span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF66FF"><a href="Curiiculum-D/DThai/DThai-05EE.pdf"><span class="style15">วิศวกรรมไฟฟ้า(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF99FF"><a href="Curiiculum-D/DThai/DThai-06IE.pdf"><span class="style15">วิศวกรรมอุตสาหการ(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF66FF"><a href="Curiiculum-D/DInterThai/DInterThai-06IE.pdf"><span class="style15">วิศวกรรมอุตสาหการ (นานาชาติ) </span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF99FF"><a href="Curiiculum-D/DThai/DThai-08ME.pdf"><span class="style15">วิศวกรรมเครื่องกล(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF66FF"><a href="Curiiculum-D/DThai/DThai-09WRE.pdf"><span class="style15">วิศวกรรมทรัพยากรน้ำ(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td height="22" bgcolor="#FF99FF"><a href="Curiiculum-D/DThai/DThai-10EnE.pdf"><span class="style15">วิศวกรรมสิ่งแวดล้อม(ภาคปกติ)</span></a></td>
+    </tr>
+    <tr>
+      <td height="24" bgcolor="#FF66FF"><a href="Curiiculum-D/DThai/DThai-13MatE.pdf"><span class="style15">วิศวกรรมวัสดุ(ภาคปกติ)</span></a></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+  </script>
+</body>
+</html>
+<url>http://www.eng.ku.ac.th/IntroEng2015/home.html</url><pagerank>0.001045996509752756</pagerank>

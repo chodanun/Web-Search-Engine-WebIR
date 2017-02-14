@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>::ปรับปรุงข้อมูลอาจารย์ผู้สอน::</title>
+<meta http-equiv="content-type" content="text/html; charset=tis-620" />
+<LINK REL="shortcut icon" HREF="img/favimp_2.ico" type="image/x-icon">
+<link href="../Templates/assess_style.css" rel="stylesheet" type="text/css">
+<link href="../Templates/css_assess.css" rel="stylesheet" type="text/css">
+<link href="upd_teacher.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+ <div class="banner"></div>
+</div>
+<div id="topnav_home">
+<!--  <ul id="topnavlist">
+   
+</ul>-->
+</div>
+<!------------   left   body  ------>
+<div id="gutter"></div>
+<div id="col1">
+  <h2>&nbsp;</h2>
+  <div id="navcontainer">
+    <ul id="navlist">
+      <li><a href="document/maunal_teacher_staff.pdf">คู่มือการใช้งานระบบสำหรับ<u>เจ้าหน้าที่</u></a></li>
+	  <li><a href="#">คู่มือการใช้งานระบบสำหรับ<u>อาจารย์</u></a></li><br/>
+	  <!--<li><a href="#">รายชื่อผู้รับผิดชอบปรับปรุงข้อมูลผู้สอน</a></li>-->
+         ** ถ้าต้องการดู<font color="red"><u>รายชื่อผู้รับผิดชอบปรับปรุงข้อมูลผู้สอน</u></font> กรุณาล็อกอินเข้าระบบ **
+	  <br/><br/><li><a href="document/data_security_teacher.pdf">คู่มือการควบคุมการเข้าถึงและใช้งานระบบสารสนเทศ</a></li>
+    </ul>
+	
+  </div>
+   <h2><div style="margin-bottom:0px;margin-top:10px">ข้อตกลง</div></h2>
+  <div id="notice">
+	1. ต้องใส่ <u>ลำดับที่</u>อาจารย์ผู้สอน
+	 <ul>ลำดับที่ 1 ของอาจารย์ผู้สอน  ในแต่ละหมู่ จะมีสิทธิ์ในการกรอกคะแนนใน<u>ระบบเกรดออนไลน์</u></ul>
+	 <ul>ทุกลำดับที่ ของอาจารย์ผู้สอน  ในแต่ละหมู่ จะมีสิทธิ์ใน<u>การประเมินการเรียนการสอน</u></ul>
+	 <ul>ในหมู่เดียวกัน  จะมี <u>ลำดับที่ผู้สอนซ้ำกันไม่ได้</u></ul>
+	 2. หมู่เรียนที่ยังไม่ได้ระบุอาจาย์ผู้สอน หรือระบุว่า <u>อ.ในภาควิชา</u> จะไม่มีสิทธิ์ในการกรอกคะแนนใน<br/><u>ระบบเกรดออนไลน์</u><br/><br/>
+	 3. หลังจากปรับปรุงข้อมูลอาจารย์ผู้สอนเสร็จแล้ว 
+	 <ul>สำหรับระบบประเมินการเรียนการสอน นิสิต และ อาจารย์ผู้สอน สามารถเข้าประเมินได้ทันที</ul>
+	 <ul>สำหรับระบบเกรดออนไลน์ ระบบจะทำการปรับปรุงข้อมูลเพื่ิิอให้อาจารย์กรอกคะแนนได้ ทุก 1 ชั่วโมง  โดยเริ่มที่ 08:30 น,</ul>
+	 <ul>เช่น ถ้ามีการปรับปรุงข้อมูลผู้สอน<br/>
+	 เวลา 08:45 น.  ผู้สอนจะสามารถกรอกคะแนน ได้ตั้งแต่เวลา 09:30 น. เป็นต้นไป <br/>
+	 เวลา 10:00 น.  ผู้สอนจะสามารถกรอกคะแนน ได้ตั้งแต่เวลา 10:30 น. เป็นต้นไป <br/>
+	 </ul>
+  </div>
+</div>
+<!------------  center  body  ------>
+<div id="col2">
+	  <h2><div align="center">ล็อกอินเข้าสู่ระบบ</div></h2>
+	<!-----------------  start  header --------------------------------->
+	<div align="center"><font color="red"><strong></strong></font></div><br />	<form name="form1" action="index.php" method="post">
+	<table align="center" width="43%"   border="0"  cellpadding="0" cellspacing="0" class="table">
+	<tr ><td width="46%">&nbsp;</td> 
+	<td width="54%">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td width="46%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;Username :: </td>
+	  <td align="left"><input  type="text" name="user"  class="frm"/></td>
+	</tr>
+	<tr>
+	  <td align="left">&nbsp;&nbsp;&nbsp;&nbsp;Password &nbsp;:: </td>
+	  <td align="left"><input  type="password" name="pass"  class="frm" /></td>
+	</tr>
+	<tr>
+	  <td align="left">&nbsp;&nbsp;&nbsp;&nbsp;Campus &nbsp;::</td>
+	  <td align="left"><select name="zone" id="zone">
+					  <option value="0" >บางเขน</option>
+					  <option value="1" >กำแพงแสน</option>
+					  <option value="2" >ศรีราชา</option>
+					  <option value="3" >สกลนคร</option>
+					</select></td>
+	</tr><tr>
+	<td>&nbsp;</td> <td><input type="submit" name="submit" value="submit" /></td></tr>
+	</table>
+	</form> 
+	<!--</br><div  align="center" style="width=50%"><font size="3">** การเข้าใช้งานระบบ ให้ล็อกอินด้วย ชื่อผู้ใช้เดียวกับโปรแกรม  Oracle Jinitiator **</font></div>-->
+	 <h2><div align="center" style="margin-top:30px;">ข่าวประชาสัมพันธ์</div></h2>
+ 
+	</div> <!-- div of center  body -->
+<!------------  right  body  ------>
+<div id="col3">
+  <h2>Link ที่เกี่ยวข้อง</h2>
+   <div id="navcontainer">
+  <ul id="navlist">
+    <li><a href="http://www.eassess.ku.ac.th/" target="_blank">ระบบประเมินการเรียนการสอน</a></li>
+    <li><a href="https://grade.ku.ac.th/gss/KUG0010104_Login.aspx" target="_blank">ระบบเกรดออนไลน์</a></li>
+    <li><a href="https://std.regis.ku.ac.th/" target="_blank">ระบบสารสนเทศนิสิต</a></li>
+  </ul>
+  </div>
+  <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla congue, velit tristique mattis auctor, velit elit euismod diam, a interdum tortor enim eget ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>-->
+ <!-- <form action="http://www.free-css.com/" method="post">
+    <fieldset>
+    <legend>Search</legend>
+    <div> <span>
+      <label for="txtsearch"> <img src="img/search.gif" alt="search" /> :search</label>
+      </span> <span>
+      <input type="text" value="demo only" name="txtsearch" title="Text input: search" id="txtsearch" size="25" />
+      </span> </div>
+    </fieldset>
+  </form>-->
+</div>
+<div id="footer">
+  พัฒนาโดยฝ่ายสารสนเทศ  สำนักบริการคอมพิวเตอร์  <font color="#FFFFFF">version 2.0 &copy; 2013 </font></div>
+</body>
+</html>
+<url>https://eassess.ku.ac.th/updata_teacher/index.php</url><pagerank>0.0011313095047330815</pagerank>

@@ -1,0 +1,318 @@
+<HTML>
+<HEAD>
+<TITLE>แบบประเมินความพึงพอใจ</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function taLimit() {
+	var taObj=event.srcElement;
+	if (taObj.value.length==taObj.maxLength*1) return false;
+}
+
+function taCount(visCnt) { 
+	var taObj=event.srcElement;
+	if (taObj.value.length>taObj.maxLength*1) taObj.value=taObj.value.substring(0,taObj.maxLength*1);
+	if (visCnt) visCnt.innerText=taObj.maxLength-taObj.value.length;
+}
+
+function isEmpty(aTextField) {
+   if ((aTextField.value.length==0) ||
+   (aTextField.value==null) ||
+	   (aTextField.value.charAt(0) == ' ')) {
+      return true;
+   }
+   else { return false; }
+}
+
+function setAlert(){
+	if(arguments[0].type=="text" || arguments[0].type=="select-one" || arguments[0].type=="textarea"){
+		arguments[0].style.borderColor="#FF9999";
+		arguments[0].style.backgroundColor="#FFE1E1";
+	}
+}
+function setNormal(){
+	if(arguments[0].type=="text" || arguments[0].type=="select-one" || arguments[0].type=="textarea"){
+		arguments[0].style.borderColor="#3670A7";
+		arguments[0].style.backgroundColor="#FFFFFF";
+	}
+}
+function setAlertRadio(){
+		arguments[0].style.borderColor="#FF9999";
+		arguments[0].style.backgroundColor="#FFE1E1";
+}
+function setNormalRadio(){	
+		arguments[0].style.borderColor="#FFFFFF";
+		arguments[0].style.backgroundColor="#FFFFFF";
+}
+
+				 
+function ValidateInfo(theForm){
+	var passItem = new Array("remark");
+
+	var j=0;
+	var passForm = true;
+	go_empty = new Array();
+	for(var i=0;i<theForm.length;i++){
+
+		//alert(theForm[i].name);
+
+			if(theForm[i].name == passItem[j]){
+				setNormal(theForm[i]);
+				j++;
+			}else if(theForm[i].name != passItem[j]){
+				 if(isEmpty(theForm[i])&&theForm[i].disabled==false){
+					setAlert(theForm[i]);
+					go_empty.push(theForm[i]);
+					passForm = false;		
+					//alert(theForm[i].name+' = '+passItem[j]);
+					//break;
+				}else if((!isEmpty(theForm[i]))&&theForm[i].disabled==false){
+					 setNormal(theForm[i]);
+				}
+				if(theForm[i].type == "radio") {
+					if(theForm[i].name != theForm[i-1].name) {
+					   var radiogroup = theForm[theForm[i].name]; // get the whole set of radio buttons.
+					   var itemchecked = false;			   
+					   for(var k = 0 ; k < radiogroup.length ; k++) {						
+							if(radiogroup[k].checked) {
+								itemchecked = true;
+								break;
+							}						
+						}				   
+  					    if(itemchecked) { 
+							for(var k = 0 ; k < radiogroup.length ; k++) {							
+								setNormalRadio(radiogroup[k]);
+						    }
+						}else{	
+						    for(var k = 0 ; k < radiogroup.length ; k++) {							
+								setAlertRadio(radiogroup[k]);
+						    }
+							go_empty.push(theForm[i]);
+							passForm = false;	
+						}
+					}
+				}
+			}		
+	}
+		
+	return passForm;
+}
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="#f0f0ef">
+<CENTER><H3>แบบประเมินความพึงพอใจในการใช้งานระบบลงทะเบียนเรียนนิสิต มก.</H3>
+<FORM method="post" action="save_qn.php" onsubmit="return ValidateInfo(this);">
+<TABLE border=0>
+<TR>
+	<TD width=150><FONT SIZE="2" COLOR="">1. ชั้นปี</FONT></TD>
+	<TD><select NAME="Class" ><option value="1" >ปี 1</option>
+														<option value="2" >ปี 2</option>
+														<option value="3" >ปี 3</option>
+														<option value="4" >ปี 4</option>
+														<option value="5" >ปี 4 ขึ้นไป</option>
+			 </select>
+</TR>
+<TR><TD valign=top><font face="" SIZE="2" color=#000000>2. คณะ</font></TD><TD valign=top><select NAME="Office"><option value=''>[select]</option><option value="B-A">B - เกษตร</option><option value="B-Y">B - โครงการสหวิทยาการ</option><option value="B-N">B - บริหารธุรกิจ</option><option value="B-X">B - บัณฑิตวิทยาลัย</option><option value="B-B">B - ประมง</option><option value="B-L">B - มนุษยศาสตร์</option><option value="B-C">B - วนศาสตร์</option><option value="B-O">B - วิทยาลัยสิ่งแวดล้อม</option><option value="B-D">B - วิทยาศาสตร์</option><option value="B-E">B - วิศวกรรมศาสตร์</option><option value="B-Q">B - ศิลปศาสตร์และวิทยาศาสตร์</option><option value="B-F">B - ศึกษาศาสตร์</option><option value="B-G">B - เศรษฐศาสตร์</option><option value="B-R">B - สถาปัตยกรรมศาสตร์</option><option value="B-H">B - สังคมศาสตร์</option><option value="B-I">B - สัตวแพทยศาสตร์</option><option value="B-J">B - สำนักส่งเสริมและฝึกอบรม </option><option value="B-T">B - สิ่งแวดล้อม</option><option value="B-K">B - อุตสาหกรรมเกษตร</option><option value="I-P">I - เทคนิคการสัตวแพทย์</option><option value="I-X">I - บัณฑิตวิทยาลัย</option><option value="I-M">I - วิทยาลัยการชลประทาน</option><option value="I-W">I - วิทยาลัยพยาบาลบรมราชชนนี นพรัตน์วชิระ</option><option value="K-A">K - เกษตร กำแพงแสน</option><option value="K-Z">K - ข้ามมหาวิทยาลัย </option><option value="K-Y">K - โครงการสหวิทยาการ</option><option value="K-X">K - บัณฑิตวิทยาลัย</option><option value="K-B">K - ประมง</option><option value="K-U">K - ม.เกษตรศาสตร์</option><option value="K-S">K - วิทยาศาสตร์การกีฬา</option><option value="K-E">K - วิศวกรรมศาสตร์ กำแพงแสน</option><option value="K-Q">K - ศิลปศาสตร์และวิทยาศาสตร์</option><option value="K-F">K - ศึกษาศาสตร์และพัฒนศาสตร์</option><option value="K-H">K - สังคมศาสตร์</option><option value="K-I">K - สัตวแพทยศาสตร์</option><option value="L-X">L - บัณฑิตวิทยาลัย</option><option value="L-G">L - เศรษฐศาสตร์</option><option value="P-D">P - การจัดการโรงแรมและท่องเที่ยว ภาคพิเศษ</option><option value="P-V">P - โครงการจัดตั้งวิทยาเขตสุพรรณบุรี</option><option value="P-N">P - บริหารธุรกิจ</option><option value="P-X">P - บัณฑิตวิทยาลัย</option><option value="P-C">P - พลศึกษา (ต่อเนื่อง) ภาคพิเศษ</option><option value="P-B">P - วิทยาศาสตร์การกีฬา (หลักสูตร 2 ปี)</option><option value="P-A">P - วิทยาศาสตร์การกีฬา (หลักสูตร 4 ปี)</option><option value="P-F">P - ศึกษาศาสตร์</option><option value="R-A">R - เกษตร</option><option value="R-N">R - บริหารธุรกิจ</option><option value="R-X">R - บัณฑิตวิทยาลัย</option><option value="R-B">R - ประมง</option><option value="R-L">R - มนุษยศาสตร์</option><option value="R-C">R - วนศาสตร์</option><option value="R-D">R - วิทยาศาสตร์</option><option value="R-E">R - วิศวกรรมศาสตร์</option><option value="R-F">R - ศึกษาศาสตร์</option><option value="R-G">R - เศรษฐศาสตร์</option><option value="R-H">R - สังคมศาสตร์</option><option value="R-K">R - อุตสาหกรรมเกษตร</option> </select></TD></TR><TR>
+	<TD><FONT SIZE="2" COLOR="">3. เพศ</FONT></TD>
+	<TD>	<INPUT type=radio name="Sex" value=1><FONT SIZE="2" COLOR="">ชาย</FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<INPUT type=radio name="Sex" value=2><FONT SIZE="2" COLOR="">หญิง</FONT>
+	</TD>
+</TR>
+
+ <TR>
+ <TD>
+ <FONT SIZE="2" COLOR="">4. สถานที่ใช้งาน</FONT>
+ </TD>
+	<TD>
+ <SCRIPT LANGUAGE="JavaScript">
+ <!--
+	function place(id){
+		var va1= document.getElementById(id);
+		if(va1.id=='Place1'){
+			//alert('Place1');		
+			document.getElementById('Room').disabled=false;
+			document.getElementById('Room').style.backgroundColor="#ffffff";
+			document.getElementById('Room').focus();
+			document.getElementById('Floor').disabled=false;
+			document.getElementById('Floor').style.backgroundColor="#ffffff";
+			document.getElementById('Build').disabled=false;
+			document.getElementById('Build').style.backgroundColor="#ffffff";
+
+			document.getElementById('Other').value='';
+			document.getElementById('Other').disabled=true;
+			document.getElementById('Other').style.backgroundColor="#dddddd";
+		}else if(va1.id=='Place2'){
+			//alert('Place2');		
+			document.getElementById('Room').value='';
+			document.getElementById('Room').disabled=true;
+			document.getElementById('Room').style.backgroundColor="#dddddd";
+			document.getElementById('Floor').value='';
+			document.getElementById('Floor').disabled=true;
+			document.getElementById('Floor').style.backgroundColor="#dddddd";
+			document.getElementById('Build').value='';
+			document.getElementById('Build').disabled=true;
+			document.getElementById('Build').style.backgroundColor="#dddddd";
+
+			document.getElementById('Other').disabled=false;
+			document.getElementById('Other').focus();
+			document.getElementById('Other').style.backgroundColor="#ffffff";
+		}else{
+			alert('bb');		
+		}
+	}
+ //-->
+ </SCRIPT>
+		<INPUT type=radio name="Place" id="Place1" value=1 OnClick="JavaScript:place(this.id);">
+		<FONT SIZE="2" COLOR="">ม.เกษตร&nbsp;&nbsp;
+				
+		ห้อง <INPUT type=text name="Room" id="Room" size=20 maxLength="30" disabled>
+		ชั้น <INPUT type=text name="Floor" id="Floor" size=5 maxLength="3" disabled>
+				
+		อาคาร <INPUT type=text name="Build" id="Build" size=50 maxLength="70" disabled></FONT><br>
+		
+<INPUT type=radio name="Place" id="Place2" value=2 OnClick="JavaScript:place(this.id);">
+<FONT SIZE="2" COLOR="">
+		อื่น ๆ</FONT>
+				<INPUT type=text name="Other" id="Other" size=104 maxLength="100" disabled>
+	</TD>
+</TR>
+</TABLE>
+<TABLE border=1  cellspacing="1" cellpadding="1" width="40%" BGCOLOR="#ffffff">
+<TR height=30 BGCOLOR="#D7D7D7">
+	<TD align=center ><FONT SIZE="2" COLOR=""><B>รายการประเมิน</B></FONT></TD>
+	<TD align=center width="90"><FONT SIZE="2" COLOR=""><B>ดีมาก</B></FONT></TD>
+	<TD align=center width="90"><FONT SIZE="2" COLOR=""><B>ดี</B></FONT></TD>
+	<TD align=center ><FONT SIZE="2" COLOR=""><B>ปานกลาง</B></FONT></TD>
+	<TD align=center width="90"><FONT SIZE="2" COLOR=""><B>น้อย</B></FONT></TD>
+	<TD align=center width="90"><FONT SIZE="2" COLOR=""><B>น้อยมาก</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#CC8899">
+	<TD align=left COLSPAN=6><dd><FONT SIZE="2" COLOR="">1. กระบวนการ/ขั้นตอนการใช้งานระบบลงทะเบียนเรียน</FONT></TD>
+</TR>
+<TR height=30>
+<TD><FONT SIZE="2" COLOR="">1.1 การล็อกอินเข้าใช้งานระบบมีความสะดวกรวดเร็ว</FONT></TD>
+	<TD align=center><INPUT type=radio name=a1 value=5></TD>
+	<TD align=center><INPUT type=radio name=a1 value=4></TD>
+	<TD align=center><INPUT type=radio name=a1 value=3></TD>
+	<TD align=center><INPUT type=radio name=a1 value=2></TD>
+	<TD align=center><INPUT type=radio name=a1 value=1></TD>
+</TR>
+<TR height=30>
+	<TD nowrap><FONT SIZE="2" COLOR="">1.2 มีการตอบสนองอย่างรวดเร็ว เมื่อเรียกใช้งานแถบเครื่องมือและเมนูต่าง ๆ</FONT></TD>
+	<TD align=center><INPUT type=radio name=a2 value=5></TD>
+	<TD align=center><INPUT type=radio name=a2 value=4></TD>
+	<TD align=center><INPUT type=radio name=a2 value=3></TD>
+	<TD align=center><INPUT type=radio name=a2 value=2></TD>
+	<TD align=center><INPUT type=radio name=a2 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">1.3 ความสะดวกรวดเร็วในการเข้าถึงข้อมูลต่าง ๆ</FONT></TD>
+	<TD align=center><INPUT type=radio name=a3 value=5></TD>
+	<TD align=center><INPUT type=radio name=a3 value=4></TD>
+	<TD align=center><INPUT type=radio name=a3 value=3></TD>
+	<TD align=center><INPUT type=radio name=a3 value=2></TD>
+	<TD align=center><INPUT type=radio name=a3 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">1.4 สามารถเรียนรู้การใช้งานได้ง่าย</FONT></TD>
+	<TD align=center><INPUT type=radio name=a4 value=5></TD>
+	<TD align=center><INPUT type=radio name=a4 value=4></TD>
+	<TD align=center><INPUT type=radio name=a4 value=3></TD>
+	<TD align=center><INPUT type=radio name=a4 value=2></TD>
+	<TD align=center><INPUT type=radio name=a4 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">1.5 ความเหมาะสมของการเชื่อมโยงหน้าเว็บเพจต่าง ๆ</FONT></TD>
+	<TD align=center><INPUT type=radio name=a5 value=5></TD>
+	<TD align=center><INPUT type=radio name=a5 value=4></TD>
+	<TD align=center><INPUT type=radio name=a5 value=3></TD>
+	<TD align=center><INPUT type=radio name=a5 value=2></TD>
+	<TD align=center><INPUT type=radio name=a5 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">1.6 ความเหมาะสมในการทำงานของระบบโดยรวม</FONT></TD>
+	<TD align=center><INPUT type=radio name=a6 value=5></TD>
+	<TD align=center><INPUT type=radio name=a6 value=4></TD>
+	<TD align=center><INPUT type=radio name=a6 value=3></TD>
+	<TD align=center><INPUT type=radio name=a6 value=2></TD>
+	<TD align=center><INPUT type=radio name=a6 value=1></TD>
+</TR>
+<TR BGCOLOR="#CC8899">
+	<TD align=left COLSPAN=6><dd><FONT SIZE="2" COLOR="">2. คุณภาพการให้บริการ</FONT></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">2.1 ความถูกต้องของการคำนวณผลลัพธ์ สมบูรณ์ ครบถ้วน</FONT></TD>
+	<TD align=center><INPUT type=radio name=a7 value=5></TD>
+	<TD align=center><INPUT type=radio name=a7 value=4></TD>
+	<TD align=center><INPUT type=radio name=a7 value=3></TD>
+	<TD align=center><INPUT type=radio name=a7 value=2></TD>
+	<TD align=center><INPUT type=radio name=a7 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">2.2 ระบบรักษาความปลอดภัยสำหรับการใช้งานระบบ</FONT></TD>
+	<TD align=center><INPUT type=radio name=a8 value=5></TD>
+	<TD align=center><INPUT type=radio name=a8 value=4></TD>
+	<TD align=center><INPUT type=radio name=a8 value=3></TD>
+	<TD align=center><INPUT type=radio name=a8 value=2></TD>
+	<TD align=center><INPUT type=radio name=a8 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">2.3 มีความถูกต้องในการบันทึก แก้ไขหรือยกเลิก</FONT></TD>
+	<TD align=center><INPUT type=radio name=a9 value=5></TD>
+	<TD align=center><INPUT type=radio name=a9 value=4></TD>
+	<TD align=center><INPUT type=radio name=a9 value=3></TD>
+	<TD align=center><INPUT type=radio name=a9 value=2></TD>
+	<TD align=center><INPUT type=radio name=a9 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">2.4 แสดงความผิดพลาดได้อย่างชัดเจนเพื่อให้สะดวกต่อการแก้ไข</FONT></TD>
+	<TD align=center><INPUT type=radio name=a10 value=5></TD>
+	<TD align=center><INPUT type=radio name=a10 value=4></TD>
+	<TD align=center><INPUT type=radio name=a10 value=3></TD>
+	<TD align=center><INPUT type=radio name=a10 value=2></TD>
+	<TD align=center><INPUT type=radio name=a10 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">2.5 มีระบบการป้องกันความผิดพลาดจากผู้ใช้</FONT></TD>
+	<TD align=center><INPUT type=radio name=a11 value=5></TD>
+	<TD align=center><INPUT type=radio name=a11 value=4></TD>
+	<TD align=center><INPUT type=radio name=a11 value=3></TD>
+	<TD align=center><INPUT type=radio name=a11 value=2></TD>
+	<TD align=center><INPUT type=radio name=a11 value=1></TD>
+</TR>
+<TR height=30>
+	<TD><FONT SIZE="2" COLOR="">2.6 ความสะดวกรวดเร็วของการใช้งานระบบโดยรวม</FONT></TD>
+	<TD align=center><INPUT type=radio name=a12 value=5></TD>
+	<TD align=center><INPUT type=radio name=a12 value=4></TD>
+	<TD align=center><INPUT type=radio name=a12 value=3></TD>
+	<TD align=center><INPUT type=radio name=a12 value=2></TD>
+	<TD align=center><INPUT type=radio name=a12 value=1></TD>
+</TR>
+<TR BGCOLOR="#CC8899">
+	<TD align=left COLSPAN=6><dd><FONT SIZE="2" COLOR="">3. ข้อเสนอแนะ</FONT></TD>
+</TR>
+<TR height=30>
+	<TD COLSPAN=6>
+
+<!-- <TEXTAREA NAME="" ROWS="3" COLS="90" maxlength="250" size="200" onkeypress="return taLimit()" onkeyup="return taCount(myCounter1)"></TEXTAREA>
+			<BR>You have <B><SPAN id=myCounter1>300</SPAN></B> characters remaining 
+for your description... -->
+
+	<TEXTAREA NAME="remark" ROWS="4" COLS="140" maxLength="300" size="300" onkeypress="return taLimit()" onkeyup="return taCount(myCounter1)"></TEXTAREA>
+	<BR><FONT SIZE="2" COLOR="">พิมพ์ได้ <B><SPAN id=myCounter1>300</SPAN></B> ตัวอักษร<font>
+	</TD>
+</TR>
+</TABLE>
+<!-- ระบบสารสนเทศนิสิต					$System = 1 -->
+<!-- ระบบประเมินอิเล็คทรอนิกส์ 		$System = 2 -->
+<!-- ระบบบริการเกรดออนไลน์	 		$System = 3 -->
+<INPUT TYPE="hidden" NAME="System" value="4"><INPUT TYPE="submit" value=Submit><INPUT TYPE="reset" value=Clear>
+</form>
+</CENTER>
+</BODY>
+</HTML><url>https://www.regis.ku.ac.th/grade/q3.php?system=4</url><pagerank>0.0009777461137684957</pagerank>

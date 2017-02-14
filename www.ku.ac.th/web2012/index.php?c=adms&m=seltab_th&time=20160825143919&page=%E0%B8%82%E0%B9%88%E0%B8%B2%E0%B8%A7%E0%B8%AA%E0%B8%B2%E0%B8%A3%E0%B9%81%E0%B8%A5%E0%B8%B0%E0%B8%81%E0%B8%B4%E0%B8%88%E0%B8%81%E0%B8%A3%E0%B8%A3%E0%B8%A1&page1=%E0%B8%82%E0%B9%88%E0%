@@ -1,0 +1,662 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Description" content="Welcome to Kasetsart University."/>
+<META NAME="keywords" CONTENT="มหาวิทยาลัย ,มก. ,มหาลัย ,ม , เกษตร, เกษตรศาสตร์, มหาวิทยาลัยเกษตร, ม.เกษตร, ม.เกษตรศาสตร์, ม.เกษตรฯ, นนทรี, ลูกนนทรี, วิทยาเขตบางเขน, วิทยาเขตกำแพงแสน, วิทยาเขตศรีราชา, วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร,
+ ตราประจำมหาวิทยาลัย, ดินแดนแห่งรอยยิ้ม, คณะเกษตร, คณะเศรษฐศาสตร์, คณะบริหารธุรกิจ, คณะสถาปัตยกรรมศาสตร์, คณะประมง, คณะสังคมศาสตร์, คณะมนุษยศาสตร์, คณะสัตวแพทยศาสตร์, คณะวนศาสตร์, คณะอุตสาหกรรมเกษตร, คณะวิทยาศาสตร์, คณะเทคนิคการสัตวแพทย์, คณะวิศวกรรมศาสตร์, คณะสิ่งแวดล้อม, คณะศึกษาศาสตร์,บัณฑิตวิทยาลัย, สำนักงานอธิการบดี, สถาบันวิจัยและพัฒนาแห่ง มก., สำนักทะเบียนและประมวลผล, สถาบันค้นคว้าและพัฒนาผลิตภัณฑ์อาหาร, สำนักบริการคอมพิวเตอร์, สถาบันค้นคว้า ,พัฒนาผลิตผลทางการเกษตร , อุตสาหกรรมเกษตร, สำนักพิพิธภัณฑ์ , วัฒนธรรมการเกษตร, สถาบันค้นคว้า, พัฒนาระบบนิเวศเกษตร,       สำนักส่งเสริม ,ฝึกอบรม ,สถาบันอินทรีจันทรสถิตย์เพื่อการค้นคว้า ,พัฒนาพืชศาสตร์, สำนักหอสมุด ,สถาบันวิทยาการขั้นสูงแห่งมหาวิทยาลัยเกษตรศาสตร์ ,สำนักพิมพ์มหาวิทยาลัยเกษตรศาสตร์, ศูนย์นานาชาติสิรินธรเพื่อการวิจัยพัฒนา , ถ่ายทอดเทคโนโลยี,       สถานีวิทยุมหาวิทยาลัยเกษตรศาสตร์, มูลนิธิโครงการหลวง, มูลนิธิมหาวิทยาลัยเกษตรศาสตร์,       สหกรณ์ออมทรัพย์มหาวิทยาลัยเกษตรศาสตร์, ร้านสหกรณ์มหาวิทยาลัยเกษตรศาสตร์ จำกัด, วิจัย, สถาบันวิทยาการขั้นสูงแห่งมหาวิทยาลัยเกษตรศาสตร์ , มหาวิทยาลัยวิจัยชั้นนำของโลกด้านการเกษตรอาหาร เทคโนโลยี , นวัตกรรม, ข้อมูลงานวิจัย,กะเสด, ม.กะเสด,  KU, Kasetsart University, Kasetsart, University, KU, NRU, เครือข่ายนนทรี, International Studies Center, THE GRADUATE SCHOOL KASETSART UNIVERSITY, The International Affairs Division KU ,Land  of  Smile, Nonsri ,Bangkhen Campus, Kamphaeng Saen Campus, Si Racha Campus, Chalermphrakiat Sakon Nakhon Province Campus,  Office of the Registrar, Kasetsart University Research and Development Institute ,Office of Computer Services ,Institution of Food Research and Product Development ,Office of Agricultural Museum and Culture,Kasetsart Agricultural Agro-Industrial Product Improvement Institute , Office of Extension and Training, Office of Kasetsart University Library ,Office of the President, Sports Office ,General Affairs Division ,Office of Internal Auditing ,Council officials, Personal Division, Public Relation of Kasetsart University, Student Affair Division, Office of the Legal Kasersart University, Finance Division, The Office of Property Management, Education Service Division, Quality Assurance Kasetsart Unniversity, Planning Division, Office of Academic Services, International Affair Division ,Kasetsart University Press ,Vehicle Building and Physical Plant Division, International Studies Center ,Imfirmary of Kasetsart University ,Other agencies, Research, Research University ,Center of Excellence ,KU , Kasetsart University, Kasetsart, University, Kasetsart U, มหาวิทยาลัยเกษตรศาสตร์, มหาวิทยาลัย เกษตรศาสตร์, มหาวิทยาลัยเกษตร , เกษตรศาสตร์, ม.เกษตรศาสตร์, ม. เกษตรศาสตร์, ม.เกษตร, ม. เกษตร, เกษตร, บางเขน, กำแพงแสน, ศรีราชา, สกลนคร, KU NRU, KU Online, KU Journal, KONEX , "/>
+<meta name="robots" content="ALL" />
+
+
+<meta property="og:title" content= "อบรม กล้องจุลทรรศน์อิเล็กตรอน HITACHI">
+<meta property="og:image" content ="http://www.ku.ac.th/web2012/resources/upload/content/1472111380_img.jpg">
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="124" />  
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+/* function disableCtrlKeyCombination(e) {
+    var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'j');
+    var key;
+    var isCtrl;
+ 
+    if(window.event) {
+      key = window.event.keyCode;
+      if(window.event.ctrlKey) {
+        isCtrl = true;
+      } else {
+        isCtrl = false;
+      }
+    } else {
+      key = e.which;
+      if(e.ctrlKey) {
+        isCtrl = true;
+      } else {
+        isCtrl = false;
+      }
+    }    
+    if(isCtrl) {
+      for(i=0; i<forbiddenKeys.length; i++) {
+        if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+          return false;
+        }
+      }
+    }
+    return true;
+  } 
+ 
+  function click(e) {
+    if(document.all) {
+      if(event.button == 2) {
+        return false;
+      }
+    }
+    if(document.layers) {
+      if(e.which == 3) {
+        return false;
+      }
+    }
+  }  
+ 
+  if(document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+ 
+  if(document) {
+    document.onmousedown=click;    
+    document.onkeypress=disableCtrlKeyCombination;
+    document.onkeydown=disableCtrlKeyCombination;
+    document.oncontextmenu=function() { return false; };
+  } 
+*/
+
+
+</script>
+<title>.:: Kasetsart University ::.</title>
+</head>
+
+
+
+
+		
+<link href="resources/template2/ui/css/style-font.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/style-global.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/style-button.css" rel="stylesheet" type="text/css" />
+
+<link href="resources/template2/ui/css/jquery/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-custom.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-dialog.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-tabs.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-modify-datepicker.css" rel="stylesheet" type="text/css" />
+<link href="resources/template2/ui/css/jquery/jquery-validationEngine.css" rel="stylesheet" type="text/css" />
+
+
+
+<script type="text/javascript" src="resources/template2/ui/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/template2/ui/js/jquery-ui-1.10.3.custom.js"></script>
+
+<script type="text/javascript" src="resources/template2/ui/slider/js/jssor.core.js"></script>
+<script type="text/javascript" src="resources/template2/ui/slider/js/jssor.utils.js"></script>
+<script type="text/javascript" src="resources/template2/ui/slider/js/jssor.slider.js"></script>
+
+<link rel="stylesheet" href="resources/web/css/stylenewver.css" />
+<script>
+$(document).ready(function ($) {
+	//Reference http://www.jssor.com/development/slider-with-caption.html
+    //Reference http://www.jssor.com/development/reference-ui-definition.html#captiondefinition
+    //Reference http://www.jssor.com/development/tool-caption-transition-viewer.html
+
+    var _CaptionTransitions = [
+    //CLIP|LR
+    {$Duration: 900, $Clip: 3, $Easing: $JssorEasing$.$EaseInOutCubic },
+    //CLIP|TB
+    {$Duration: 900, $Clip: 12, $Easing: $JssorEasing$.$EaseInOutCubic },
+
+    //ZMF|10
+    {$Duration: 600, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+
+    //ZML|R
+    {$Duration: 600, $Zoom: 11, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 0.6, $Opacity: 2 },
+    //ZML|B
+    {$Duration: 600, $Zoom: 11, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $ScaleVertical: 0.6, $Opacity: 2 },
+
+    //ZMS|B
+    {$Duration: 700, $Zoom: 1, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $ScaleVertical: 0.6, $Opacity: 2 },
+
+    //RTT|10
+    {$Duration: 700, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+
+    //RTTL|R
+    {$Duration: 700, $Zoom: 11, $Rotate: 1, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 0.6, $Opacity: 2, $Round: { $Rotate: 0.8} },
+    //RTTL|B
+    {$Duration: 700, $Zoom: 11, $Rotate: 1, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleVertical: 0.6, $Opacity: 2, $Round: { $Rotate: 0.8} },
+
+    //RTTS|R
+    {$Duration: 700, $Zoom: 1, $Rotate: 1, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Zoom: $JssorEasing$.$EaseInQuad, $Rotate: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseOutQuad }, $ScaleHorizontal: 0.6, $Opacity: 2, $Round: { $Rotate: 1.2} },
+    //RTTS|B
+    {$Duration: 700, $Zoom: 1, $Rotate: 1, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInQuad, $Zoom: $JssorEasing$.$EaseInQuad, $Rotate: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseOutQuad }, $ScaleVertical: 0.6, $Opacity: 2, $Round: { $Rotate: 1.2} },
+
+    //R|IB
+    {$Duration: 900, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInOutBack }, $ScaleHorizontal: 0.6, $Opacity: 2 },
+    //B|IB
+    {$Duration: 900, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInOutBack }, $ScaleVertical: 0.6, $Opacity: 2 },
+
+    ];
+
+    var options = {
+        $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+        $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+        $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+        $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
+
+        $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+        $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+        $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+        //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+        //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+        $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+        $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+        $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+        $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+        $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+        $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+        $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+            $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+            $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+            $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+            $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+        },
+
+        $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+            $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+            $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+            $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+            $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+            $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+            $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+            $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+            $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+        },
+
+        $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+            $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+            $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+        }
+    };
+    var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+    //responsive code begin
+    //you can remove responsive code if you don't want the slider scales while window resizes
+    function ScaleSlider() {
+        var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+        if (parentWidth)
+            jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 730));
+        else
+            window.setTimeout(ScaleSlider, 30);
+    }
+
+    ScaleSlider();
+
+    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+        $(window).bind('resize', ScaleSlider);
+    }
+});
+
+
+ function doSearch() {
+ 				//alert(11);
+                document.formSearch.action = 'http://www.ku.ac.th/web2012/index.php?c=adms&m=searchweb&page=ค้นหาข้อมูล&load=tab5&lang=thai&ip=0';
+                document.formSearch.submit();
+            }
+</script>
+
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+
+
+	<script type="text/javascript" src="resources/js/js1/lib/jquery.jcarousel.min.js"></script>	
+	<script type="text/javascript" src="resources/js/js1/tabs.js"></script>
+	<script type="text/javascript" src="resources/js/js1/jquery.slideshow.lite-0.5.3.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.core.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.widget.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.position.js"></script>
+	<script src="resources/Autocomplete/ui/jquery.ui.autocomplete.js"></script>
+	<script language="JavaScript" src="resources/colorbox/jquery.colorbox.js"></script>
+
+	 
+		
+	
+	<!-- CSS Fancybox -->
+	<!--<link href="resources/css/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css">-->
+	
+	<!-- JS Fancybox -->
+<!--	<script src="resources/js/jquery.cycle.all.min.js" type="text/javascript"></script>
+	<script src="resources/js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+	<script src="resources/js/superfish.js" type="text/javascript"></script>-->
+	
+
+	
+	
+<SCRIPT src="resources/js/urchin.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>_uacct = "UA-2245169-1";urchinTracker();</SCRIPT>
+	
+<script type="text/javascript" src="resources/js/flowplayer-3.2.11.min.js"></script>
+	
+	<!--<script type="text/javascript" charset="tis-620">
+		$(document).ready(function(){
+			$("#slideshow2").slideshow();
+			$("#slideshow").slideshow({
+				pauseSeconds: 4,
+				height: 200,
+				width: 688,
+				/*caption: false*/
+			});
+			$("#slideshow3").slideshow({
+				pauseSeconds: 4,
+				height: 145,
+				width: 235,
+				caption: false
+			});
+		});
+	</script>-->
+	
+	<link rel="stylesheet" href="resources/colorbox.css">
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('.first-and-second-carousel').jcarousel({
+				/*wrap: 'circular'*/
+			});
+		});
+		$(document).ready(function(){	
+		$(".viewdetail").colorbox({width:"590", height:"500", iframe:true, scrolling: true});
+			});
+	</script>
+
+<style type="text/css">
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+	font-size:14px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding-left: 10px;
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+
+.jssorb01 div {
+    background-color: gray;
+}
+
+    .jssorb01 div:hover, .jssorb01 .av:hover {
+        background-color: #d3d3d3;
+    }
+
+.jssorb01 .av {
+    background-color: #fff;
+}
+
+.jssorb01 .dn, .jssorb01 .dn:hover {
+    background-color: #555555;
+}
+
+ .jssora02l, .jssora02r, .jssora02ldn, .jssora02rdn
+ {
+ 	position: absolute;
+ 	cursor: pointer;
+ 	display: block;
+     background: url(resources/template2/img/a02.png) no-repeat;
+     overflow:hidden;
+ }
+ .jssora02l { background-position: -3px -33px; }
+ .jssora02r { background-position: -63px -33px; }
+ .jssora02l:hover { background-position: -123px -33px; }
+ .jssora02r:hover { background-position: -183px -33px; }
+ .jssora02ldn { background-position: -243px -33px; }
+ .jssora02rdn { background-position: -303px -33px; }
+
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+	<div class="top-detail">
+		<div>มหาวิทยาลัยเกษตรศาสตร์   มุ่งสร้างศาสตร์แห่งแผ่นดิน   เพื่อความกินดีอยู่ดีของชาติ</div>
+		<div class="txt-right " >
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716155501&page1=ลิงค์ที่เกี่ยวข้อง&page=นิสิต&load=&lang=thai&ip=4&id=47" class="forntcolorstyle1">นิสิต</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716151101&page1=ลิงค์ที่เกี่ยวข้อง&page=อาจารย์&load=&lang=thai&ip=14&id=91" class="forntcolorstyle1">อาจารย์</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716152240&page1=ลิงค์ที่เกี่ยวข้อง&page=บุคลากร&load=&lang=thai&ip=15&id=92" class="forntcolorstyle1">บุคลากร</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716153035&page1=ลิงค์ที่เกี่ยวข้อง&page=ผู้ปกครอง&load=&lang=thai&ip=16&id=93" class="forntcolorstyle1">ผู้ปกครอง</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120716155501&page1=ลิงค์ที่เกี่ยวข้อง&page=ศิษย์เก่า&load=&lang=thai&ip=9&id=94" class="forntcolorstyle1">ศิษย์เก่า</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120808130738&page1=ทุนระดับปริญญาตรี&page=ทุน&load=&lang=thai&ip=25&id=140"  class="forntcolorstyle1">ทุน</a>
+			/
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710172150&page1=แผนที่ มก.&page=เบอร์โทรศัพท์และแผนที่&load=&lang=thai&ip=20&id=63"  class="forntcolorstyle1">แผนที่ มก.</a>
+			&nbsp;
+			<a href="#"><img src="resources/template2/ui/images/lang/th.png" alt="" align="absmiddle"/></a>
+			<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=seltab_eng&time=20160825143919&page=&page1=&load=tab&lang=eng&ip=10&id=2532&id1=0"><img src="resources/template2/ui/images/lang/en.png" alt="" align="absmiddle"/></a>		</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="header">
+		<div class="hleft">
+			<img src="resources/template2/ui/images/logo72.png" onClick="window.open('resources/images/ku72.gif','pop','scrollbars=no,top=0,left=0,width=650,height=700');"/>
+			<a href="http://www.ku.ac.th/web2012/" class="forntcolorstyle2"><img src="resources/template2/ui/images/logo.png" border="0"/></a>
+		</div>
+		<form name="formSearch" method="post" action="#" class="form-search-page">
+		<div class="hright">
+			<div>
+				<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710181040&page1=โทรฉุกเฉิน&page=โทรศัพท์และแผนที่&load=&lang=thai&ip=18&id=66"  class="forntcolorstyle2">โทรฉุกเฉิน</a>
+				/
+				<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710175321&page1=สมุดโทรศัพท์
+&page=โทรศัพท์และแผนที่&load=&lang=thai&ip=19&id=65" class="forntcolorstyle2">สมุดโทรศัพท์</a>
+				/
+				<a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120710174922&page1=แผนผังเว็บไซต์
+&page=โทรศัพท์และแผนที่&load=&lang=thai&ip=21&id=64" class="forntcolorstyle2">แผนผังเว็บไซต์</a>
+				&nbsp;&nbsp;&nbsp;
+				
+				<input type="text" name="name" id="name"  size="22" placeholder="ค้นหาข้อมูล"/>
+				<a href="#" class="btn none btn-primary btn-large btn-search-large" style="margin-left: -7px;padding: 8px 14px 7px;" onClick="javascript:doSearch();"></a>
+				
+			</div>
+		</div>
+		</form>
+	</div>
+	
+	<div class="clear"></div>
+	<!--<div class="menu">
+		<ul>
+			<li><a href="#">5555</a>
+					<ul><li>1111</li><li>3333</li></ul>
+			</li>
+		</ul>
+	</div>-->
+
+	
+	<div class="menu-top">
+		<div class="menu-box">
+			<div class="menu-box-blue">
+				<ul>
+					<li>
+	                    <a href="http://www.ku.ac.th/web2012/" class="forntcolorstyle2">หน้าหลัก</a>
+                     </li>
+                 </ul>
+             </div>
+	     </div>
+<!--	</div>
+ 
+
+	<div class="menu-top">  -->
+		<div class="menu-box">
+			<div class="menu-box-green">
+				<ul>
+					<li>
+						<a href="#" class="forntcolorstyle2">เกี่ยวกับ มก.</a>
+													<ul>
+													<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627112951&load=&lang=thai&ip=1&id=9&page=ประวัติมหาวิทยาลัยเกษตรศาสตร์&page1="  class="forntcolorstyle3">ประวัติมหาวิทยาลัยเกษตรศาสตร์</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627113237&load=&lang=thai&ip=1&id=10&page=ปรัชญา วิสัยทัศน์ พันธกิจ&page1="  class="forntcolorstyle3">ปรัชญา วิสัยทัศน์ พันธกิจ</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627124210&load=&lang=thai&ip=1&id=18&page=สัญลักษณ์มหาวิทยาลัยเกษตรศาสตร์&page1="  class="forntcolorstyle3">สัญลักษณ์มหาวิทยาลัยเกษตรศาสตร์</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20130815100152&load=&lang=thai&ip=1&id=171&page=สภามหาวิทยาลัย&page1="  class="forntcolorstyle3">สภามหาวิทยาลัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20130815101758&load=&lang=thai&ip=1&id=175&page=คณะผู้บริหารมหาวิทยาลัย&page1="  class="forntcolorstyle3">คณะผู้บริหารมหาวิทยาลัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20130815095918&load=&lang=thai&ip=1&id=170&page=โครงสร้างองค์กร&page1="  class="forntcolorstyle3">โครงสร้างองค์กร</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627130236&load=&lang=thai&ip=1&id=30&page=วิทยาเขต&page1="  class="forntcolorstyle3">วิทยาเขต</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627130503&load=&lang=thai&ip=1&id=196&page=พัฒนาวิชาการ&page1="  class="forntcolorstyle3">ข้อมูลสถิติ</a></li>
+								</ul>
+									</li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-sky">
+				<ul>
+					<li>
+						<a href="#" class="forntcolorstyle2">การเข้าศึกษา</a>
+										<ul >
+									<li ><a href="http://admission.ku.ac.th/"  class="forntcolorstyle3">ระบบรับสมัครเข้าศึกษา มก.</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120725105307&load=&lang=thai&ip=3&id=120&page=การรับเข้าศึกษาในระดับปริญญาตรี&page1="  class="forntcolorstyle3">การรับเข้าศึกษาในระดับปริญญาตรี</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627142407&load=&lang=thai&ip=3&id=40&page=ทำไมต้องมหาวิทยาลัยเกษตรศาสตร์&page1="  class="forntcolorstyle3">ทำไมต้องมหาวิทยาลัยเกษตรศาสตร์</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120627150823&load=&lang=thai&ip=3&id=42&page=ระดับปริญญาตรี&page1="  class="forntcolorstyle3">คุณสมบัติผู้สมัคร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120711133445&load=&lang=thai&ip=3&id=68&page=หลักสูตรบัณฑิตศึกษา&page1="  class="forntcolorstyle3">หลักสูตรที่เปิดรับสมัคร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=selcon_th&time=20120819005023"  class="forntcolorstyle3">ค้นหาข้อมูลหลักสูตร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120705163803&load=&lang=thai&ip=3&id=61&page=ติดต่อสอบถาม&page1="  class="forntcolorstyle3">ติดต่อสอบถาม</a></li>
+								</ul>
+									</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-purple">
+				<ul>
+					<li>
+						<a href="#" class="forntcolorstyle2">คณะและหลักสูตร</a>
+						
+											<ul>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727111120&load=&lang=thai&ip=2&id=129&page=บางเขน&page1="  class="forntcolorstyle3">บางเขน</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727111407&load=&lang=thai&ip=2&id=130&page=วิทยาเขตกำแพงแสน&page1="  class="forntcolorstyle3">วิทยาเขตกำแพงแสน</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727112309&load=&lang=thai&ip=2&id=132&page=วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร&page1="  class="forntcolorstyle3">วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120727111810&load=&lang=thai&ip=2&id=131&page=วิทยาเขตศรีราชา&page1="  class="forntcolorstyle3">วิทยาเขตศรีราชา</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120810154421&load=&lang=thai&ip=2&id=151&page=สถาบันสมทบ&page1="  class="forntcolorstyle3">สถาบันสมทบ</a></li>
+								</ul>
+									</li>
+				
+				</ul>
+			</div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-orange">
+			<ul>
+				<li>
+					<a href="#"  class="forntcolorstyle2">หน่วยงาน</a>
+									<ul>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120723101456&load=&lang=thai&ip=23&id=114&page=บางเขน&page1="  class="forntcolorstyle3">บางเขน</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120723101646&load=&lang=thai&ip=23&id=115&page=วิทยาเขตกำแพงแสน&page1="  class="forntcolorstyle3">วิทยาเขตกำแพงแสน</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120806152033&load=&lang=thai&ip=23&id=134&page=วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร&page1="  class="forntcolorstyle3">วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</a></li>
+									<li ><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120723101717&load=&lang=thai&ip=23&id=116&page=วิทยาเขตศรีราชา&page1="  class="forntcolorstyle3">วิทยาเขตศรีราชา</a></li>
+								</ul>
+								</li>
+			</ul>
+			</div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-red">
+			<ul>
+				<li>
+					<a href="#" class="forntcolorstyle2">วิจัย</a>
+									<ul>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120808161306&load=&lang=thai&ip=8&id=85&page=งานวิจัย&page1="   class="forntcolorstyle3">งานวิจัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120806165935&load=&lang=thai&ip=8&id=139&page=ข้อมูลงานวิจัย&page1="   class="forntcolorstyle3">ข้อมูลงานวิจัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120816102632&load=&lang=thai&ip=8&id=155&page=รางวัลนักวิจัย/ผลงานวิจัย&page1="   class="forntcolorstyle3">รางวัลนักวิจัย/ผลงานวิจัย</a></li>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20140502104040&load=&lang=thai&ip=8&id=179&page=ผลงาน/ผลิตภัณฑ์งานวิจัย&page1="   class="forntcolorstyle3">ผลงาน/ผลิตภัณฑ์งานวิจัย</a></li>
+								</ul>
+								</li>
+			</ul></div>
+		</div>
+		<div class="menu-box">
+			<div class="menu-box-blue">
+			<ul>
+				<li>
+					<a href="#"  class="forntcolorstyle2">ติดต่อ</a>
+									<ul>
+									<li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=linkmenu_th&time=20120705002135&load=&lang=thai&ip=11&id=57&page=ติดต่อสอบถาม&page1="  class="forntcolorstyle3">ติดต่อสอบถาม</a></li>
+								</ul>
+								</li>
+			</ul>
+			</div>
+		</div>
+	</div><br/>			
+				
+		<div class="mainbody_bg">
+
+    <div id="sidebar_left">  
+        	<div class="top bg1"><h2>ข่าว กิจกรรม</h2></div>
+        	<div class="middle">
+                <div id="categories">
+                	<ul class="main">
+		
+												
+							 
+								  <li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&page=เธเนเธฒเธงเธชเธฒเธฃเนเธฅเธฐเธเธดเธเธเธฃเธฃเธก&page1=ข่าวมหาวิทยาลัย&load=tab&lang=thai&ip=10&id=87">ข่าวมหาวิทยาลัย</a></li>
+						    						
+							 
+								  <li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&page=เธเนเธฒเธงเธชเธฒเธฃเนเธฅเธฐเธเธดเธเธเธฃเธฃเธก&page1=ข่าวนิสิต&load=tab&lang=thai&ip=10&id=88">ข่าวนิสิต</a></li>
+						    						
+							 
+								  <li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&page=เธเนเธฒเธงเธชเธฒเธฃเนเธฅเธฐเธเธดเธเธเธฃเธฃเธก&page1=ข่าวประชุม/สัมมนา/อบรม&load=tab&lang=thai&ip=10&id=89">ข่าวประชุม/สัมมนา/อบรม</a></li>
+						    						
+							 
+								  <li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&page=เธเนเธฒเธงเธชเธฒเธฃเนเธฅเธฐเธเธดเธเธเธฃเธฃเธก&page1=ข่าวการศึกษา&load=tab&lang=thai&ip=10&id=126">ข่าวการศึกษา</a></li>
+						    						
+							 
+								  <li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&page=เธเนเธฒเธงเธชเธฒเธฃเนเธฅเธฐเธเธดเธเธเธฃเธฃเธก&page1=ข่าวการรับรางวัล&load=tab&lang=thai&ip=10&id=128">ข่าวการรับรางวัล</a></li>
+						    						
+							 
+								  <li><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&page=เธเนเธฒเธงเธชเธฒเธฃเนเธฅเธฐเธเธดเธเธเธฃเธฃเธก&page1=ข่าวถ่ายทอดสด&load=tab&lang=thai&ip=10&id=127">ข่าวถ่ายทอดสด</a></li>
+						     
+								
+								
+								
+                    	
+                    </ul>
+                </div>
+            </div><!-- end class middle -->
+            <div class="bottom"></div>        
+        
+    </div><!-- end sidebar_left -->
+
+<div id="content1">
+<!-- conten_main2 Event News En -->
+                    
+        <div class="breadcrumb"><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=runpage&page=home&load=&lang=thai" title="กลับไปหน้าหลัก">หน้าหลัก</a>
+        <span class="navigation-pipe">&gt;</span>
+ <span class="navigation-pipe"><a href="#">ข่าว กิจกรรม</a></span>&nbsp;&gt;&nbsp;<span class="navigation-pipe"><a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=viewallnews&time=20120714023326&page1=ข่าวประชุม/สัมมนา/อบรม&page=ข่าว กิจกรรม&load=tab&lang=thai&ip=10&id=89">ข่าวประชุม/สัมมนา/อบรม</a></span>&nbsp;&gt;&nbsp;<span class="navigation_page" > <a href="http://www.ku.ac.th/web2012/index.php?c=adms&m=seltab_th&time=20160825143919&page=&page1=&load=tab&lang=thai&ip=10&id=2532&id1=0">อบรม กล้องจุลทรรศน์อิเล็กตรอน HITACHI</a></span>			
+        </div> 
+<div  align="right"><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Loader" type="text/javascript"></script>  
+				<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>  
+				<a name="fb_share" type="button_count" share_url="http://www.ku.ac.th/web2012/index.php?c=adms&m=seltab_th&time=20160825143919&page=%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1&page1=%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1&ip=10&load=tab&lang=thai&id=2532&id1=0">แชร์หน้านี้</a>
+		 </div>
+<p></p>
+
+<div id="content1edit">
+
+	     	<h1 class="text_green">อบรม กล้องจุลทรรศน์อิเล็กตรอน HITACHI</h1>
+
+        <p><p color:="" font-size:="" lucida="" style="text-align: center;" text-align:="">
+	<strong><span style="font-size:14px;"><span arial="" style="font-family: ">โครงการฝึกอบรมเรื่อง</span></span></strong></p>
+<p color:="" font-size:="" lucida="" style="text-align: center;" text-align:="">
+	<strong><span style="font-size:14px;"><span arial="" style="font-family: ">กล้องจุลทรรศน์อิเล็กตรอน HITACHI&nbsp;</span><span arial="" style="font-family: ">(&ldquo;HITACHI&rdquo; FE-SEM and TEM workshop)&nbsp;</span></span></strong></p>
+<p color:="" font-size:="" lucida="" style="text-align: center;" text-align:="">
+	<strong><span style="font-size:14px;"><span arial="" style="font-family: ">วันพฤหัสบดีที่ 20 ตุลาคม พ.ศ. 2559</span></span></strong></p>
+<p color:="" font-size:="" lucida="" style="text-align: center;" text-align:="">
+	<span style="font-size:14px;"><span arial="" style="font-family: ">ณ&nbsp; อาคารปฏิบัติการวิจัยกลาง&nbsp; ฝ่ายเครื่องมือและวิจัยทางวิทยาศาสตร์&nbsp;สถาบันวิจัยและพัฒนาแห่งมหาวิทยาลัยเกษตรศาสตร์</span></span></p>
+<p color:="" font-size:="" lucida="" style="text-align: center;" text-align:="">
+	<span style="font-size:14px;"><span style="color: rgb(255, 0, 0);">(โดยไม่เสียค่าใช้จ่าย)</span></span></p>
+<p color:="" font-size:="" lucida="" style="text-align: center;" text-align:="">
+	<a href="/web2012/resources/upload/content/files/program_hitachi.pdf">รายละเอียด</a> | &nbsp;<a href="/web2012/resources/upload/content/files/form_hitachi.doc">ใบสมัคร</a></p>
+<p color:="" font-size:="" lucida="" style="font-family: " text-align:="">
+	&nbsp;</p>
+<p color:="" font-size:="" lucida="" style="text-align: right;" text-align:="">
+	<span style="font-size:12px;">ที่มา :&nbsp;<span arial="" style="font-family: "> สถาบันวิจัยและพัฒนาแห่งมหาวิทยาลัยเกษตรศาสตร์, 25 สิงหาคม 2559</span></span></p></p>
+		<p></p>
+		<p style="margin-right:0px; margin-bottom:0px; font-size:12px; color:#5B5B5B" align="right">แท็ก : </p>
+        <p class="date">&nbsp;&nbsp;|&nbsp;&nbsp;วันที่บันทึก  25/08/2016&nbsp;&nbsp;เวลา  14:39</p>
+	<p class="date" style="width:70%;" align="right">หน่วยงานที่รับผิดชอบ : &nbsp;		ผู้ดูแลระบบ</p>
+  </div>
+	
+    </div><!-- end id content -->
+	
+		
+			
+	
+  
+</div><!-- end mainbody -->
+			<br/></div></div>
+			
+<div class="footer">
+	<div class="fcontent">
+		<div>
+			<a href="https://www.facebook.com/KasetsartUniversity"><img src="resources/template2/ui/images/social/facebook_circle_color-32.png" /></a>
+		<!--	<a href="#"><img src="resources/template2/ui/images/social/twitter_circle_color-32.png" /></a>  -->
+		<!--	<a href="#"><img src="resources/template2/ui/images/social/linkedin_circle_color-32.png" /></a>  -->
+		<!--	<a href="#"><img src="resources/template2/ui/images/social/youtube_circle_color-32.png" /></a> -->
+			<br/><br/>
+			เลขที่ 50 ถนนงามวงศ์วาน แขวงลาดยาว เขตจตุจักร กรุงเทพฯ 10900<br/>
+	<!--			โทรศัพท์ +66 (0) 2579 0113, +66 (0) 2942    8500-11 -->
+	                โทรศัพท์ +66 (0) 2942 8200-45
+		 <!--BEGIN WEB STAT CODE-->
+	   <script language="javascript1.1" src="http://hits.truehits.in.th/data/p0026724.js" type="text/javascript"></script>
+         <!-- END WEBSTAT CODE -->
+		 </div>
+		<div>
+			<table border="0" align="right">
+				<tr>
+					<td valign="bottom" rowspan="2">
+						<div style="height: 63px;"><img src="resources/template2/ui/images/measurements2.png" /></div>
+					</td>
+					<td colspan="2" align="left" style="color: #222;">
+						<b>Your IP: </b>
+						158.108.180.5	
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom">
+						<div style="height: 41px;"><img src="resources/template2/ui/images/validate2.png" /></div>
+					</td>
+					<td valign="bottom" align="left">
+						<div style="background-color: #bebcbd;height: 41px;width: 130px;">
+							<img src="resources/template2/ui/images/small_logo_background_left2.png" />
+							<div style="width:70%; margin-top:5px;" ><span style="font-size:10px; "><strong style="color:#EEEEEE">&nbsp;Status: </strong><font color="#00FF00">IPv6-ON</font></span>
+							<br />
+							<span style="font-size:10px;"><strong style="color:#EEEEEE">&nbsp;Last: </strong><font color="#00FF00" size="-3">2012-08-26</font></span></div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="bottom-nav">
+	<div class="bottom-detail">
+		Copyright &#169; 2015 Kasetsart University
+| ติดต่อผู้ดูแลระบบ : <a href="#"  class="forntcolorstyle1">www@ku.ac.th</a>
+	</div>
+</div>
+</body>
+</html></html>

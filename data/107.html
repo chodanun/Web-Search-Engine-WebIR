@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temp_Gerd.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META NAME="Author" CONTENT="Geotechnical Engineering Research and Development Center (GERD)">
+<META NAME="Keywords" lang="en"  CONTENT="Kaset, Thai, GERD, gerd, GERD KU, Geotechnical Engineering, Soil Engineering, Soil, Geotechnical, research center, Dam Engineering, Dam, Foundation, Structure, Landslide, Slop Stability, Earthquake, Dam Safety, Soil Improvement, Survey">
+<META NAME="Keywords" lang="th"  CONTENT="à¹à¸à¸©à¸à¸£à¸¨à¸²à¸ªà¸à¸£à¹, à¹à¸à¸¢, à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µ, à¸à¸à¸à¸µ, à¸à¸à¸à¸µà¹à¸¥à¸°à¸à¸²à¸à¸£à¸²à¸, à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢, à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¹à¸à¸·à¹à¸­à¸, à¹à¸à¸·à¹à¸­à¸, à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸²à¸à¸£à¸²à¸, à¸à¸²à¸à¸£à¸²à¸, à¸à¸²à¸à¸£à¸²à¸à¹à¸¥à¸°à¹à¸à¸£à¸à¸ªà¸£à¹à¸²à¸à¸à¸´à¸, à¸à¸´à¸à¸à¸¥à¹à¸¡, à¹à¸ªà¸à¸µà¸¢à¸£à¸ à¸²à¸à¸à¸­à¸à¸¥à¸²à¸à¸à¸´à¸, à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§, à¸à¸£à¸±à¸à¸à¸£à¸¸à¸à¸à¸¸à¸à¸ à¸²à¸à¸à¸´à¸, à¸à¸²à¸£à¸ªà¸³à¸£à¸§à¸à¸à¸±à¹à¸à¸à¸´à¸, à¹à¸à¸à¸à¸³à¸¥à¸­à¸à¸à¸±à¹à¸à¸à¸´à¸, à¸à¸¥à¸¨à¸²à¸ªà¸à¸£à¹à¸à¸­à¸à¸à¸´à¸">
+<META NAME="Description" CONTENT="à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢à¹à¸¥à¸°à¸à¸±à¸à¸à¸²à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µà¹à¸¥à¸°à¸à¸²à¸à¸£à¸²à¸ à¸¡à¸µà¸¥à¸±à¸à¸©à¸à¸°à¸à¸­à¸ "à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢à¹à¸à¸µà¹à¸¢à¸§à¸à¸²à¸à¸à¸´à¹à¸¨à¸©à¹à¸à¸à¸²à¸°à¸à¸²à¸" à¸à¸µà¹à¸ªà¸²à¸¡à¸²à¸£à¸à¸à¸³à¹à¸à¸´à¸à¸à¸²à¸£à¹à¸«à¹à¸¡à¸µà¸à¸£à¸°à¸ªà¸´à¸à¸à¸´à¸ à¸²à¸ à¹à¸¥à¸°à¹à¸à¸´à¸à¸à¸£à¸°à¹à¸¢à¸à¸à¹à¸à¹à¸­à¸ªà¸±à¸à¸à¸¡à¹à¸¥à¸° à¸¢à¸±à¸à¸à¸³à¹à¸«à¹à¹à¸à¸´à¸à¸à¸£à¸£à¸¢à¸²à¸à¸²à¸¨à¸à¸²à¸à¸§à¸´à¸à¸²à¸à¸²à¸£à¸à¹à¸²à¸à¹ à¸à¸­à¸à¸à¸²à¸à¸à¸µà¹à¸¢à¸±à¸à¹à¸à¹à¸à¸³à¹à¸à¸´à¸à¸à¸²à¸£à¸à¸£à¸°à¸ªà¸²à¸à¸à¸²à¸à¸à¸±à¸à¸«à¸à¹à¸§à¸¢à¸à¸²à¸à¸à¹à¸²à¸à¹ à¹à¸à¸·à¹à¸­à¸ªà¸£à¹à¸²à¸à¸à¸²à¸à¸§à¸´à¸à¸±à¸¢à¸à¸µà¹à¸ªà¸²à¸¡à¸²à¸£à¸à¸à¸³à¹à¸à¸à¸à¸´à¸à¸±à¸à¸´à¹à¸à¹à¸à¸£à¸´à¸">
+<link rel="shortcut icon" href="/images/Structure/gerd.ico">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢à¹à¸¥à¸°à¸à¸±à¸à¸à¸²à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µà¹à¸¥à¸°à¸à¸²à¸à¸£à¸²à¸ à¸¡à¸«à¸²à¸§à¸´à¸à¸¢à¸²à¸¥à¸±à¸¢à¹à¸à¸©à¸à¸£à¸¨à¸²à¸ªà¸à¸£à¹</title>
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<link href="/Templates/style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style3 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style5 {color: #FF0000}
+.style6 {color: #990000}
+.style51 {	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23574503-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageview', '/Paper/Paper_Gerd/Trip_Report_Myanmar_Earthquake.pdf']);
+  _gaq.push(['_trackPageview', '/News/Knowledge/à¹à¸à¸à¹à¸à¹à¸¥à¸¢à¸µà¸à¸²à¸£à¸à¸±à¸à¸à¸²à¸£à¸ à¸±à¸¢à¸à¸´à¸à¸à¸¥à¹à¸¡.pdf']);
+  _gaq.push(['_trackPageview', '/News/Knowledge/à¸à¸²à¸£à¸­à¸­à¸à¹à¸à¸à¸£à¸°à¸à¸à¸à¹à¸­à¸à¸à¸±à¸à¸à¹à¸³à¸à¹à¸§à¸¡ à¸¡à¸.pdf']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23574503-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body bgcolor="#e1f0f0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="952" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1" background="/images/Structure/line3.jpg">&nbsp;</td>
+    <td width="950">
+    <table border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr height="208"><!--à¸à¸£à¸­à¸à¹à¸«à¸à¹-->
+    <td><img src="/images/Structure/H1.jpg" width="292" height="208" /></td>
+    <td><img src="/images/Structure/H2.jpg" width="658" height="208" /></td> 
+  </tr>
+  <tr height="43">
+    <td><img src="/images/Structure/H3.jpg" width="292" height="43" /></td>
+    <td><a href="/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M1','','/images/Structure/M1_2.jpg',1)"><img src="/images/Structure/M1_1.jpg" alt="Home" name="M1" width="97" height="43" border="0" id="M1" /></a><a href="/About_us/About_us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M2','','/images/Structure/M2_2.jpg',1)"><img src="/images/Structure/M2_1.jpg" alt="About us" name="M2" width="82" height="43" border="0" id="M2" /></a><a href="/News/News.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M3','','/images/Structure/M3_2.jpg',1)"><img src="/images/Structure/M3_1.jpg" alt="News" name="M3" width="62" height="43" border="0" id="M3" /></a><a href="/Paper/Paper.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M4','','/images/Structure/M4_2.jpg',1)"><img src="/images/Structure/M4_1.jpg" alt="Paper" name="M4" width="61" height="43" border="0" id="M4" /></a><a href="/Presentations/Presentations.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M5','','/images/Structure/M5_2.jpg',1)"><img src="/images/Structure/M5_1.jpg" alt="Presentation" name="M5" width="106" height="43" border="0" id="M5" /></a><a href="/Library/Library.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M6','','/images/Structure/M6_2.jpg',1)"><img src="/images/Structure/M6_1.jpg" alt="Library" name="M6" width="68" height="43" border="0" id="M6" /></a><a href="/Graduate/Graduate.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('M7','','/images/Structure/M7_2.jpg',1)"><img src="/images/Structure/M7_1.jpg" alt="Graduate School at KU" name="M7" width="182" height="43" border="0" id="M7" /></a></td>
+  </tr>
+    <tr valign="top">
+    <!--à¸à¹à¸²à¸¢ à¹à¸à¸¥à¸·à¹à¸­à¸à¹à¸«à¸§--><td background="/images/Structure/Menu_L_BG.gif"><!-- InstanceBeginEditable name="EditRegion2" -->
+      <table width="292" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/images/Structure/L5.jpg" width="292" height="62" /></td>
+        </tr>
+        <tr>
+          <td><a href="/soildb/index.html" target="_blank"><img src="/soildb/Show_SoilDB.gif" alt="à¹à¸à¹à¸²à¸ªà¸¹à¹à¸£à¸°à¸à¸" width="292" height="137" /></a></td>
+        </tr>
+		 <tr>
+          <td><img src="/images/Structure/L4M.jpg" width="292" height="14" /></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" background="images/Structure/Menu_L_BG2.jpg">
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/3x3.gif" width="3" height="3" /></td>
+              <td width="10"></td>
+            </tr>  
+            <tr>
+              <td width="10">&nbsp;</td>
+              <td bgcolor="#FFFFFF"><div align="center">
+                <p><a href="/News/01 News/Earthquake_Dambreak_Dailynew_31Aug2009/EQ_Dailynew090831.html" target="_parent"><img src="/News/01 News/Earthquake_Dambreak_Dailynew_31Aug2009/DamBreak.jpg" width="195" height="241" /></a></p>
+                <p>à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§..<span class="style3"> 'à¹à¸à¸·à¹à¸­à¸à¹à¸à¸</span>' à¹à¸¡à¹à¸à¹à¸²à¸¢?!!!</p>
+              </div></td>
+              <td width="10">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸/flag_red.gif" width="16" height="16" />&nbsp;<a href="/News/01 News/Earthquake_Dambreak_Dailynew_31Aug2009/EQ_Dailynew090831.html" target="_parent">à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§ à¸¡à¸µà¸à¸¥à¸à¸³à¹à¸«à¹à¹à¸à¸·à¹à¸­à¸à¹à¸à¸ à¸à¸£à¸´à¸à¸«à¸£à¸·à¸­??</a></td>
+              <td>&nbsp;</td>
+            </tr> 
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸/flag_green.gif" width="16" height="16" />&nbsp;<a href="Paper/Paper_Other/Mairaing/à¸à¸´à¸à¸à¸¥à¹à¸¡à¸ à¸±à¸¢à¸à¸´à¸à¸±à¸à¸´à¸à¸£à¸£à¸¡à¸à¸²à¸à¸´à¸à¸µà¹à¹à¸à¸¥à¹à¸à¸±à¸§_à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸ªà¸²à¸£.pdf" target="_blank">à¸à¸´à¸à¸à¸¥à¹à¸¡ à¸à¸·à¸­à¸­à¸°à¹à¸£ ??</a></td>
+              <td>&nbsp;</td>
+            </tr> 
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>  
+            <tr>
+              <td>&nbsp;</td>
+              <td><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸/flag_white.gif" width="16" height="16" />&nbsp;<a href="/Paper/Paper_Other/NCCE11/060.pdf" target="_blank">à¸à¸£à¸¸à¸à¹à¸à¸à¸¯ à¸à¸£à¸¸à¸à¸à¸±à¸§à¸à¸²à¸à¸à¸²à¸£à¸ªà¸¹à¸à¸à¹à¸³à¸à¸²à¸à¸²à¸¥ ??</a></td>
+              <td>&nbsp;</td>
+            </tr>
+               <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>            
+          </table></td>
+        </tr>
+        <tr>
+          <td><img src="/images/Structure/L4M.jpg" width="292" height="14" /></td>
+        </tr>
+        <tr>
+          <td><img src="/images/Structure/L6.jpg" width="292" height="62" /></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" background="images/Structure/Menu_L_BG2.jpg">
+             <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸//flag_red.gif" width="16" height="16" /><a href="/News/2015_May/à¸£à¸²à¸¢à¸à¸²à¸à¸à¸²à¸£à¸ªà¸³à¸£à¸§à¸à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸à¸²à¸¥.pdf">&nbsp;à¸£à¸²à¸¢à¸à¸²à¸à¸à¸²à¸£à¸ªà¸³à¸£à¸§à¸à¸à¸²à¸à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡: à¸à¸£à¸à¸µà¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸à¸²à¸¥</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸//flag_orange.gif" width="16" height="16" /><a href="/Paper/Paper_Gerd/Trip_Report_Myanmar_Earthquake.pdf" target="_blank">&nbsp;The 6.8 Magnitude of Earthquake in The Union of Myanmar</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><a href="/Paper/Paper_Gerd/GERD_SI53_01.pdf" target="_blank"><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸/flag_blue.gif" width="16" height="16" />&nbsp;à¸à¸¹à¹à¸¡à¸·à¸­à¸à¸²à¸£à¸à¹à¸­à¸ªà¸£à¹à¸²à¸à¹à¸¥à¸°à¹à¸à¸§à¸à¸²à¸à¹à¸à¹à¹à¸à¸à¸±à¸à¸«à¸² à¸à¸²à¸£à¸à¹à¸­à¸ªà¸£à¹à¸²à¸à¹à¸ªà¸²à¹à¸à¹à¸¡à¸à¸´à¸-à¸à¸µà¹à¸¡à¸à¸à¹ :à¸à¸£à¸à¸µà¸¨à¸¶à¸à¸©à¸²à¹à¸à¹à¸à¸£à¸à¸à¸²à¸£à¸£à¸°à¸à¸²à¸¢à¸à¹à¸³à¸à¸£à¸´à¹à¸§à¸à¸ªà¸à¸²à¸¡à¸à¸´à¸à¸ªà¸¸à¸§à¸£à¸£à¸à¸ à¸¹à¸¡à¸´ </a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><a href="/Paper/Paper_Gerd/GERD_DE52_01.pdf" target="_blank"><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸/flag_red.gif" width="16" height="16" />&nbsp;à¹à¸­à¸à¸²à¸ªà¹à¸à¸à¸²à¸£à¸à¸´à¸à¸±à¸à¸´à¸à¸­à¸à¹à¸à¸·à¹à¸­à¸à¸¨à¸£à¸µà¸à¸à¸£à¸´à¸à¸à¸£à¹</a></td>
+              <td>&nbsp;</td>
+            </tr>
+             <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><a href="/Paper/Paper_Gerd/GERD_DE51_01.pdf" target="_blank"><img src="images/icon/à¹à¸¥à¸·à¸­à¸à¸à¹à¸­à¸/flag_orange.gif" width="16" height="16" />&nbsp;à¸à¸¤à¸à¸´à¸à¸£à¸£à¸¡à¹à¸à¸·à¹à¸­à¸à¸«à¸´à¸à¸à¸¡à¸à¸­à¸à¸à¸£à¸µà¸à¸à¸²à¸à¸«à¸à¹à¸² : à¸ªà¸ à¸²à¸§à¸°à¸à¸à¸à¸´à¹à¸¥à¸°à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="10"></td>
+              <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+              <td width="10"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td align="right"><a href="/Paper/Paper.html" target="_parent"><img src="images/icon/more_04.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­" width="44" height="13" /></a></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr><tr>
+          <td><img src="/images/Structure/L4M.jpg" width="292" height="14" /></td>
+        </tr>
+        <tr>
+          <td><img src="/images/Structure/L_7.jpg" width="292" height="62" /></td>
+        </tr>
+         <tr>
+              <td><a href="/Paper/1_Dams.html" target="_parent"><img src="/images/Structure/Menu_L 09-1H.jpg" name="Menu_L09-1" width="292" height="32" border="0" id="Menu_L09-1" /></a></td>
+            </tr>
+            <tr>
+              <td><a href="/Paper/2_Foundation.html" target="_blank"><img src="/images/Structure/Menu_L 09-2H.jpg" name="Menu_L09-2" width="292" height="32" border="0" id="Menu_L09-2" /></a></td>
+            </tr>
+              <td><a href="/Paper/3_Landslide.html" target="_blank"><img src="/images/Structure/Menu_L 09-3H.jpg" name="Menu_L09-3" width="292" height="32" border="0" id="Menu_L09-3" /></a></td>
+            </tr>
+            <tr>
+              <td><a href="/Paper/4_Earthquake.html" target="_blank"><img src="/images/Structure/Menu_L 09-4H.jpg" name="Menu_L09-4" width="292" height="32" border="0" id="Menu_L09-4" /></a></td>
+            </tr>
+             <tr>
+              <td><a href="/Paper/5_Improvement.html" target="_blank"><img src="/images/Structure/Menu_L 09-5H.jpg" name="Menu_L09-5" width="292" height="32" border="0" id="Menu_L09-5" /></a></td>
+             </tr>
+            <tr>
+              <td><a href="/Paper/6_Geotechnical.html" target="_blank"><img src="/images/Structure/Menu_L 09-6H.jpg" name="Menu_L09-6" width="292" height="57" border="0" id="Menu_L09-6" /></a></td>
+            </tr>
+              <tr>
+              <td><a href="/Paper/7_Unsaturated.html" target="_parent"><img src="/images/Structure/Menu_L 09-9H.jpg" name="Menu_L09-9" width="292" height="32" border="0" id="Menu_L09-9" /></a></td>
+              </tr>
+              <tr>
+          <td><img src="/images/Structure/L4M.jpg" width="292" height="14" /></td>
+        </tr>       
+        <tr><td><img src="/images/Structure/L_8.jpg" width="292" height="62" /></td>
+        </tr>
+         <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" background="images/Structure/Menu_L_BG2.jpg">
+            <tr>
+              <td width="10">&nbsp;</td>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+                  <td><img src="/images/10x10.jpg" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                  <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html"><img src="/Library/Sofeware_Gerd/kuslope_m.jpg" alt="KU Slope 2.1" width="135" height="101" /></a></td>
+                  <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html"><img src="/Library/Sofeware_Gerd/plaxis_m.jpg" alt="PLAXIS V.8" width="135" height="101" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html"><img src="/Library/Sofeware_Gerd/geo_studio_m.jpg" alt="GeoStudio 2007 Basic edition" width="135" height="101" /></a></td>
+                  <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html"><img src="/Library/Sofeware_Gerd/rockpack_m.jpg" alt="RockPack" width="135" height="101" /></a></td>
+                </tr>
+                <tr>
+                  <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html"><img src="/Library/Sofeware_Gerd/midas_m.jpg" alt="MIDAS: Midas GTS " width="135" height="101" /></a></td>
+                  <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html"><img src="/Library/Sofeware_Gerd/strand7_m.jpg" alt="Strand 7" width="135" height="101" /></a></td>
+                </tr>
+              </table></td>
+              <td width="10">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><a href="/Library/Sofeware_Gerd/Sofeware_Gerd.html" target="_parent"><img src="images/icon/more_04.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­" width="44" height="13" /></a></td>
+              <td>&nbsp;</td>
+            </tr>  
+          </table></td>
+        </tr>
+        <tr>
+          <td><img src="/images/Structure/L4M.jpg" width="292" height="14" /></td>
+        </tr> 
+        <tr>
+          <td background="images/Structure/Menu_L_BG2.jpg" class="bottom">&nbsp;&nbsp;à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢à¹à¸¥à¸°à¸à¸±à¸à¸à¸²à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µà¹à¸¥à¸°à¸à¸²à¸à¸£à¸²à¸<br>
+&nbsp;&nbsp;à¸­à¸²à¸à¸²à¸£à¸à¸¸à¸à¸ªà¸¡ à¸ªà¸¸à¸§à¸à¸´à¸£à¸±à¸à¸à¹ (à¸­à¸²à¸à¸²à¸£ 9) à¸à¸±à¹à¸ 9 à¸«à¹à¸­à¸ 9903<br>
+&nbsp;&nbsp;à¸à¸à¸°à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸¨à¸²à¸ªà¸à¸£à¹ à¸¡à¸«à¸²à¸§à¸´à¸à¸¢à¸²à¸¥à¸±à¸¢à¹à¸à¸©à¸à¸£à¸¨à¸²à¸ªà¸à¸£à¹  à¸à¸²à¸à¹à¸à¸<br>
+&nbsp;&nbsp;50 à¸à¸à¸à¸à¸²à¸¡à¸§à¸à¸¨à¹à¸§à¸²à¸  à¸¥à¸²à¸à¸¢à¸²à¸§  à¸à¸à¸¸à¸à¸±à¸à¸£ à¸à¸£à¸¸à¸à¹à¸à¸à¸¯   10900<br>
+&nbsp;&nbsp;à¹à¸à¸£à¸¨à¸±à¸à¸à¹/ à¹à¸à¸£à¸ªà¸²à¸£ : 0-2579-2265<br>
+&nbsp;&nbsp;(à¹à¸à¸£à¸ à¸²à¸¢à¹à¸ ) : 0-2942-8555  à¸à¹à¸­ 1313, 1139<br>
+&nbsp;&nbsp;E-mail : gerd_ku@yahoo.com , gerd@ku.ac.th<br></td>
+        </tr> 
+        <tr>
+          <td><img src="/images/Structure/L4S.jpg" /></td>
+        </tr>
+      </table>
+    <!-- InstanceEndEditable --></td>
+    <!--à¸à¸§à¸² body-->
+    <td bgcolor="#e1f0f0"><!-- InstanceBeginEditable name="EditRegion1" -->
+      <table width="658" border="0" cellspacing="0" cellpadding="0">
+               <tr>
+          <td><img src="/images/Structure/T14.jpg" width="658" height="43" /></td>
+        </tr>        
+        <tr>
+          <td valign="top" bgcolor="#e1f0f0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="160"><img src="/images/10x10.gif" width="10" height="10" /></td>
+              <td width="498"><img src="/images/10x10.gif" width="10" height="10" /></td>
+           </tr>
+           <tr>
+              <td align="center"><div align="left"><a href="/Downloads/Soil Investigation Checklist.pdf"><img src="/Downloads/form_soilborring.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p> <span class="font_Ruddy">à¹à¸à¸à¸à¸­à¸£à¹à¸¡ à¸à¸²à¸£à¸à¸£à¸§à¸à¸ªà¸­à¸à¸à¸²à¸£à¹à¸à¸²à¸°à¸ªà¸³à¸£à¸§à¸à¸à¸´à¸à¹à¸à¸ªà¸à¸²à¸¡</span></p>
+                <p>&nbsp;</p>
+                <p>à¹à¸à¸¢ à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢à¹à¸¥à¸°à¸à¸±à¸à¸à¸²à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µà¹à¸¥à¸°à¸à¸²à¸à¸£à¸²à¸ <a href="/Downloads/Soil Investigation Checklist.pdf"><img src="/images/icon/New_icons_19.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="30" height="11" /></a><br />
+                </p></td>
+            </tr>  
+            <tr><td colspan="2"><img src="/images/Structure/Sline.gif" /></td></tr>
+           <tr>
+              <td align="center"><div align="left"><a href="/News/2015_July/Klong.pdf"><img src="/News/2015_July/Klong.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p> <span class="font_Ruddy">à¸à¸²à¸£à¸à¸´à¸à¸±à¸à¸´à¸à¸­à¸à¸à¸à¸à¸£à¸´à¸¡à¸à¸¥à¸­à¸ à¸à¸£à¸à¸µà¸ à¸±à¸¢à¹à¸¥à¹à¸ à¸.à¸¨. 2558</span></p>
+                <p>&nbsp;</p>
+                <p>à¹à¸à¸¢ à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ <a href="/News/2015_July/home.pdf"><img src="/images/icon/New_icons_19.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="30" height="11" /></a><br />
+                </p></td>
+            </tr>  
+            <tr><td colspan="2"><img src="/images/Structure/Sline.gif" /></td></tr>
+           <tr>
+              <td align="center"><div align="left"><a href="/News/2015_July/home.pdf"><img src="/News/2015_July/home.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p> <span class="font_Ruddy">à¸à¹à¸²à¸à¸à¸£à¸¸à¸ à¸à¹à¸²à¸à¸£à¹à¸²à¸§ à¸à¹à¸²à¸à¸¥à¹à¸¡ ... à¸à¸ à¸£à¸§à¸¢ à¹à¸¡à¹à¹à¸à¸µà¹à¸¢à¸§</span></p>
+                <p>&nbsp;</p>
+                <p>à¹à¸à¸¢ à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ <a href="/News/2015_July/home.pdf"><img src="/images/icon/New_icons_19.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="30" height="11" /></a><br />
+                </p></td>
+            </tr>  
+            <tr><td colspan="2"><img src="/images/Structure/Sline.gif" /></td></tr>
+            <tr>
+              <td align="center"><div align="left"><a href="/News/2015_May/à¸£à¸²à¸¢à¸à¸²à¸à¸à¸²à¸£à¸ªà¸³à¸£à¸§à¸à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸à¸²à¸¥.pdf" target="_blank"><img src="News/2015_May/Damsafety.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p> <span class="font_Ruddy">à¸£à¸²à¸¢à¸à¸²à¸à¸à¸²à¸£à¸ªà¸³à¸£à¸§à¸à¸à¸²à¸à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡: à¸à¸£à¸à¸µà¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸à¸²à¸¥</span></p>
+                <p>à¹à¸à¸¢ à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ <a href="/News/2015_May/à¸£à¸²à¸¢à¸à¸²à¸à¸à¸²à¸£à¸ªà¸³à¸£à¸§à¸à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸à¸²à¸¥.pdf" target="_blank"><img src="/images/icon/New_icons_19.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="30" height="11" /></a></p>
+                <p>&nbsp;</p>
+                <p>* à¸à¸à¸à¸§à¸²à¸¡à¸à¸µà¹à¹à¸à¸µà¹à¸¢à¸§à¸à¹à¸­à¸: <strong>Observation of Building Damage Patterns in KATHMANDU due to Earthquak</strong>e  by Mr. Kiran Acharya <a href="News/2015_May/Draft Report- Observation of Building damage in Ktm Valley after Eq. - Kiran.pdf"><img src="/images/icon/New_icons_19.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="30" height="11" /></a><br />
+                </p></td>
+            </tr>  
+            <tr><td colspan="2"><img src="/images/Structure/Sline.gif" /></td></tr>
+            <tr>
+              <td align="center"><div align="left"><a href="/News/2015_Jan/LMS_Seminar/LMS_Seminar.html" target="_blank"><img src="/News/2015_Jan/LMS_Seminar/LMS_Sm.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p> <span class="font_Ruddy">Landslide Mitigation Seminar</span>: International  Academic Cooperation Delegation in Chiangrai, Thailand.</p>
+                <p>              26-27 January, 2015</p>
+                <p><br />
+                  <span class="font_bluesky">à¸à¸²à¸£à¸ªà¸±à¸¡à¸¡à¸à¸²à¸à¸²à¸£à¸à¹à¸­à¸à¸à¸±à¸à¹à¸¥à¸°à¸¥à¸à¸à¸¥à¸à¸£à¸°à¸à¸à¸à¸²à¸à¸à¸´à¸à¸à¸¥à¹à¸¡</span> <a href="/News/2015_Jan/LMS_Seminar/LMS_Seminar.html" target="_blank"><img src="/images/icon/New_icons_19.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="30" height="11" /></a><br />
+                </p></td>
+            </tr>  
+            <tr><td colspan="2"><img src="/images/Structure/Sline.gif" /></td></tr>
+              <tr>
+              <td rowspan="2" align="left"><a href="/News/2012_July/LS.html" target="_blank"><img src="/News/2012_July/S_LS.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></td>
+              <td height="100"><p>à¸¨à¸±à¸à¸¢à¸ à¸²à¸à¹à¸¥à¸°à¸à¸§à¸²à¸¡à¸à¸£à¹à¸­à¸¡à¸à¸­à¸à¸¨à¸¹à¸à¸¢à¹à¸§à¸´à¸à¸±à¸¢à¹à¸¥à¸°à¸à¸±à¸à¸à¸²à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µà¹à¸¥à¸°à¸à¸²à¸à¸£à¸²à¸</p>
+                <p>&nbsp;</p>
+                <p><span class="font_bluesky">à¸à¸²à¸à¸à¸²à¸à¸§à¸´à¸à¸±à¸¢ à¸à¸±à¸à¸à¸²à¸ªà¸¹à¹à¸à¸²à¸£à¸à¹à¸­à¸à¸à¸±à¸à¸ à¸±à¸¢</span> <span class="font_Ruddy">âà¸£à¸°à¸à¸à¹à¸à¸·à¸­à¸à¸ à¸±à¸¢à¸à¸´à¸à¸à¸¥à¹à¸¡à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸¢â</span> <a href="/News/2012_July/LS.html" target="_blank"><img src="/images/icon/open1.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­.." width="28" height="14" /></a></p>
+                <p><br />
+                </p>
+                <p>&nbsp;</p>
+<p></p></td>
+            </tr> <tr>
+              <td align="right"><a href="/News/News.html"><img src="/images/icon_pv.jpg" width="101" height="21" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+                <tr>
+          <td valign="top" bgcolor="#e1f0f0"><img src="/images/Structure/T15.jpg" width="658" height="43" /></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#e1f0f0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="160"><img src="/images/10x10.gif" width="10" height="10" /></td>
+              <td width="498"><img src="/images/10x10.gif" width="10" height="10" /></td>
+           </tr>
+            <tr>
+              <td align="center"><div align="left"><a href="https://www.youtube.com/watch?v=NTn4OFnN378&amp;feature=youtu.be" target="_blank"><img src="/News/TV/2558/RoadFail.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="top"><p><br />
+              </p>
+                <p>à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ à¹à¸«à¹à¸ªà¸±à¸¡à¸ à¸²à¸©à¸à¹à¸£à¸²à¸¢à¸à¸²à¸£ Hardcore à¸à¹à¸²à¸§ à¸à¹à¸­à¸ 5</p>
+                <p>&nbsp;</p>
+                <p>à¸à¸­à¸ <span class="font_bluesky">à¸à¸à¸à¸à¸£à¸¸à¸.. à¸à¸¥à¸à¸§à¸à¸à¸²à¸à¸§à¸´à¸à¸¤à¸à¸´à¹à¸¥à¹à¸ </span> <a href="https://www.youtube.com/watch?v=NTn4OFnN378&amp;feature=youtu.be" target="_blank"><img src="/images/icon/open1.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="28" height="14" /></a></p>
+                <p> à¸­à¸­à¸à¸­à¸²à¸à¸²à¸¨à¸§à¸±à¸à¸à¸µà¹ 9 à¸.à¸. 2558</p>
+                <p>&nbsp;</p></td>
+            </tr>
+            <tr>
+              <td colspan="2"><img src="/images/Structure/Sline.gif" /></td>
+            </tr>
+            <tr>
+              <td align="center"><div align="left"><a href="http://www.thairath.co.th/clip/22009" target="_blank"><img src="/News/TV/2558/RoadFail_Thairat.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="top"><p><br />
+              </p>
+                <p>à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ à¹à¸«à¹à¸ªà¸±à¸¡à¸ à¸²à¸©à¸à¹à¹à¸à¸¢à¸£à¸±à¸à¸à¸´à¸§à¸ªà¹à¹à¸à¸§à¹ à¸à¹à¸­à¸à¹à¸à¸¢à¸£à¸±à¸à¸­à¸­à¸à¹à¸¥à¸à¹ </p>
+                <p>&nbsp;</p>
+                <p>à¸à¸­à¸ <span class="font_bluesky">à¸ªà¸²à¹à¸«à¸à¸¸à¸à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸¥à¸­à¸à¸à¸£à¸¸à¸ </span> <a href="http://www.thairath.co.th/clip/22009" target="_blank"><img src="/images/icon/open1.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="28" height="14" /></a></p>
+                <p> à¸­à¸­à¸à¸­à¸²à¸à¸²à¸¨à¸§à¸±à¸à¸à¸µà¹ 11 à¸.à¸. 2558 à¹à¸§à¸¥à¸² 18:38 à¸.</p>
+                <p> à¸à¸µà¹à¸¡à¸²: http://www.thairath.co.th/clip/22009</p></td>
+            </tr>
+            <tr>
+              <td colspan="2"><img src="/images/Structure/Sline.gif" /></td>
+            </tr>
+            <tr>
+              <td align="center"><div align="left"><a href="https://youtu.be/BKPYQfba0Ek" target="_blank"><img src="/News/TV/2558/EQ_Chairai_1Y.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="top"><p><br />
+              </p>
+                <p>à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ à¹à¸«à¹à¸ªà¸±à¸¡à¸ à¸²à¸©à¸à¹à¸à¸²à¸à¹à¸à¸£à¸¨à¸±à¸à¸à¹ à¸à¹à¸§à¸ à¸à¹à¸²à¸§ à¸ªà¸à¸²à¸à¸µ Thai PBS News</p>
+                <p>&nbsp;</p>
+                <p>à¸à¸­à¸ <span class="font_bluesky">à¸à¸±à¸à¸§à¸´à¸à¸²à¸à¸²à¸£à¸à¸µà¹à¸à¸à¹à¸£à¸µà¸¢à¸à¹à¸à¸à¸²à¸¥-à¹à¸à¸µà¸¢à¸à¸£à¸²à¸¢à¸ªà¸°à¸à¹à¸­à¸à¸à¸²à¸£à¸ªà¸£à¹à¸²à¸à¸­à¸²à¸à¸²à¸£à¸£à¸­à¸à¸£à¸±à¸à¹à¸à¹à¸à¸à¸´à¸à¹à¸«à¸§</span> <a href="https://youtu.be/BKPYQfba0Ek" target="_blank"><img src="/images/icon/open1.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="28" height="14" /></a> /  </p>
+                <p> à¸­à¸­à¸à¸­à¸²à¸à¸²à¸¨à¸§à¸±à¸à¸à¸µà¹ 28 à¹à¸¡à¸©à¸²à¸¢à¸ 2558</p></td>
+            </tr>
+           
+            <tr>
+              <td colspan="2"><img src="/images/Structure/Sline.gif" /></td>
+            </tr>
+            <tr>
+              <td rowspan="2" align="left"><a href="http://www.youtube.com/watch?v=8u_7pLgHRK4&amp;feature=youtu.be" target="_blank"><img src="/News/TV/KomChadLuk.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></td>
+              <td height="100"><p>à¸à¸£.à¹à¸à¸à¸¹à¸¥à¸¢à¹ à¸à¸§à¸¥à¸à¸´à¸¥, à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ à¹à¸¥à¸° à¸à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ </p>
+                <p>à¹à¸«à¹à¸ªà¸±à¸¡à¸ à¸²à¸©à¸à¹à¸£à¸²à¸¢à¸à¸²à¸£à¸à¸¡à¸à¸±à¸à¸¥à¸¶à¸ à¸à¹à¸­à¸ Nation TV</p>
+                <p>&nbsp;</p>
+                <p>à¸à¸­à¸ <span class="font_bluesky">à¸£à¸­à¸¢(100)à¹à¸¥à¸·à¹à¸­à¸? </span> <a href="http://www.youtube.com/watch?v=8u_7pLgHRK4&amp;feature=youtu.be" target="_blank"><img src="/images/icon/open1.gif" alt="à¸à¸à¹à¸£à¸µà¸¢à¸à¸à¸­à¸à¸à¸à¸à¸¸à¸¡à¸à¸à¸à¹à¸­à¸à¸­à¸" width="28" height="14" /></a> / </p>
+                <p> à¸­à¸­à¸à¸­à¸²à¸à¸²à¸¨à¸§à¸±à¸à¸­à¸±à¸à¸à¸²à¸£à¸à¸µà¹  6 à¸à¸¤à¸©à¸ à¸²à¸à¸¡ à¸.à¸¨. 2557</p>
+                <p><br />
+                </p>
+                <p>&nbsp;</p>
+<p></p></td>
+            </tr> <tr>
+              <td align="right"><a href="/News/OnTV.html" target="_blank"><img src="/images/icon_pv.jpg" width="101" height="21" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#e1f0f0"><img src="/images/Structure/T13.jpg" width="658" height="43" /></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#e1f0f0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="160"><img src="/images/10x10.gif" width="10" height="10" /></td>
+              <td width="498"><img src="/images/10x10.gif" width="10" height="10" /></td>
+           </tr><tr>
+           <td align="center"><div align="left"><a href="/Presentations/ASIA2016/Asia hydropower 1.pptx"><img src="/Presentations/ASIA2016/mairaing.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p class="font_bluesky"><span class="font_Ruddy">Download à¹à¸­à¸à¸ªà¸²à¸£à¸à¸²à¸£à¸à¸£à¸£à¸¢à¸²à¸¢ I</span> Deformation of Nam Ngum 2 concrete faced rockfill dam (CFRD)in Laos after construction</p>
+                <p>à¹à¸à¸¢ Warakorn Mairaing, Chinoros  Thongthumachat, 2016.Sixth International Conference on Water Resources and Hydropower Development in Asia Conference and Exhibition, Vientiane, Lao PDR, 1 to 3 March 2016 <a href="/Presentations/ASIA2016/Asia hydropower 1.pptx" target="_blank"><img src="/images/icon/open1.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­.." width="28" height="14" /></a></p></td>
+            </tr>      
+         <tr>
+              <td colspan="2"><img src="/images/Structure/Sline.gif" /></td>
+            </tr>   <tr>
+           <td align="center"><div align="left"><a href="/News/2013_July/Rock.html" target="_blank"><img src="/News/2013_July/Rocktraining.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></div></td>
+              <td valign="middle">
+                <p class="font_bluesky">&nbsp;</p>
+                Download à¹à¸­à¸à¸ªà¸²à¸£à¸à¸²à¸£à¸à¸£à¸£à¸¢à¸²à¸¢
+                <p class="font_Ruddy">à¸à¸£à¸°à¸ªà¸à¸à¸²à¸£à¸à¹à¸à¸²à¸à¸à¸£à¸à¸µà¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸²à¸£à¸à¹à¸­à¸ªà¸£à¹à¸²à¸à¸­à¸²à¸à¸²à¸£à¹à¸¥à¸°à¹à¸à¸£à¸à¸ªà¸£à¹à¸²à¸à¸à¸·à¹à¸à¸à¸²à¸à¹à¸à¸«à¸´à¸</p>
+                <p>à¹à¸à¸¢ Prof. Paul Marinos, Dr. Harald Wagner à¹à¸¥à¸° à¸£à¸¨.à¸à¸£.à¸ªà¸¸à¸à¸à¸´à¸¨à¸±à¸à¸à¸´à¹ à¸¨à¸£à¸¥à¸±à¸¡à¸à¹ Â <a href="/News/2013_July/Rock.html" target="_blank"><img src="/images/icon/open1.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­.." width="28" height="14" /></a></p>
+<p>Â </p>
+                <p>à¹à¸à¸§à¸±à¸à¸à¸¸à¸à¸à¸µà¹ 24 à¸à¸£à¸à¸à¸²à¸à¸¡ 2556  à¹à¸§à¸¥à¸² 08.30-16.30 à¸.
+à¹à¸£à¸à¹à¸£à¸¡ à¹à¸­à¸ª à¸à¸µ à¸à¸²à¸£à¹à¸</p></td>
+            </tr>      
+         <tr>
+              <td colspan="2"><img src="/images/Structure/Sline.gif" /></td>
+            </tr>   
+           <tr>
+              <td align="center"><a href="/News/2013_Apr/Jitrakorn.html"><img src="/News/2013_Apr/Jitrakorn0.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></td>
+              <td><p><strong> </strong></p>
+                <p class="font_bluesky">à¸à¸²à¸¢à¸à¸´à¸à¸à¸£ à¸à¸£à¸°à¸ªà¸¡à¸¨à¸£à¸µ </p>
+                <p>à¸à¸´à¸ªà¸´à¸à¸£à¸°à¸à¸±à¸à¸à¸£à¸´à¸à¸à¸²à¹à¸ à¸ªà¸²à¸à¸²à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µ à¸¡.à¹à¸à¸©à¸à¸£à¸¨à¸²à¸ªà¸à¸£à¹</p>
+                <p>&nbsp;</p>
+                <p>à¸£à¹à¸§à¸¡à¸à¸²à¸à¸§à¸´à¸à¸±à¸¢à¸à¸±à¸à¸¡à¸«à¸²à¸§à¸´à¸à¸¢à¸²à¸¥à¸±à¸¢à¸®à¹à¸­à¸à¸à¸à¹à¸à¸¥à¸µà¹à¸à¸à¸à¸´à¸ <a href="/News/2013_Apr/Jitrakorn.html"><img src="/images/icon/open1.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­.." width="28" height="14" /></a></p></td>
+            </tr>
+            <tr>
+              <td colspan="2"><img src="/images/Structure/Sline.gif" /></td>
+            </tr> 
+            <tr>
+              <td rowspan="2" align="left"><a href="/Paper/Paper_Gerd/Trip_Report_Myanmar_Earthquake.pdf" target="_blank"><img src="/Paper/Paper_Gerd/EQ_Myanmar.jpg" alt="à¸­à¹à¸²à¸à¸à¹à¸²à¸§.." width="150" height="120" /></a></td>
+              <td height="100"><p>Trip Repor <span class="font_Ruddy">The 6.8 Magnitude of Earthquake in The Union of Myanmar</span> <a href="/Paper/Paper_Gerd/Trip_Report_Myanmar_Earthquake.pdf" target="_blank"><img src="/images/icon/open1.gif" alt="à¸­à¹à¸²à¸à¸à¹à¸­.." width="28" height="14" /></a></p>
+<p>&nbsp;</p>
+                <p>Investigate  the effects on people and earth-structures from the 6.8 earthquake on the  Richter scale has occurred on 11 of November 2012 ...<br />
+                </p></td>
+            </tr> <tr>
+              <td align="right"><a href="/News/Knowledge.html"><a href="/News/Knowledge.html"><img src="/images/icon_pv.jpg" width="101" height="21" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="14"><img src="/images/Structure/T12.jpg" width="658" height="43" /></td>
+        </tr>
+        <tr>
+              <td width="160"><img src="/images/10x10.gif" width="10" height="10" /></td></tr>
+        <tr>
+          <td><script type="text/javascript">
+//Specify the slider's width (in pixels)
+var sliderwidth="658px"
+var sliderheight="140px"
+//Specify the slider's slide speed (larger is faster 1-10)
+var slidespeed=3
+//configure background color:
+slidebgcolor="#EAEAEA"
+
+//Specify the slider's images
+var leftrightslide=new Array()
+var finalslide=''
+leftrightslide[0]='<a href="/Library/Booknew/SoilProfile_Chowpaya.html"><img src="/Library/Booknew/Sindex/Shows/B01.jpg" alt="à¸à¹à¸­à¸¡à¸¹à¸¥à¸ªà¸ à¸²à¸à¸à¸´à¸à¸à¸£à¸´à¹à¸§à¸à¸¥à¸¸à¹à¸¡à¹à¸¡à¹à¸à¹à¸³à¹à¸à¹à¸²à¸à¸£à¸°à¸¢à¸²à¸à¸­à¸à¸¥à¹à¸²à¸" border=0></a>'
+leftrightslide[1]='<a href="/Library/Booknew/9780415437240.html"><img src="/Library/Booknew/Sindex/Shows/B02.jpg" alt="Internal Erosion of Dams and Their Foundations" border=0></a>'
+leftrightslide[2]='<a href="/Library/Booknew/9783851250701.html"><img src="/Library/Booknew/Sindex/Shows/B03.jpg" alt="2nd International Conference Long Term Behaviour of Dams (LTBD09)" border=0></a>'
+leftrightslide[3]='<a href="/Library/Booknew/Dam Foundation Grouting.html"><img src="/Library/Booknew/Sindex/Shows/B04.jpg" alt="Dam Foundation Grouting" border=0></a>'
+leftrightslide[4]='<a href="/Library/Booknew/Concrete Face Rockfill Dams.html"><img src="/Library/Booknew/Sindex/Shows/B07.jpg" alt="Concrete Face Rockfill Dams.html" border=0></a>'
+
+leftrightslide[5]='<a href="http://www.gerd.eng.ku.ac.th/News/05_FEM/FEM.html"><img src="/Library/Booknew/Sindex/Shows/Wood_M.jpg" alt="Geotechnical Modelling - Prof.David Muir Wood" border=0></a>'
+leftrightslide[6]='<a href="/Presentations/LectureNote/Chopra.html"><img src="/Library/Booknew/Sindex/Shows/Chopra_A.jpg" alt="Earthquake Analysis of Concrete Dame - Prof. Anil K. Chopra" border=0></a>'
+leftrightslide[7]='<a href="http://www.gerd.eng.ku.ac.th/News/2011_March/EndDamSafety.html"><img src="/Library/Booknew/Sindex/Shows/Anderson_L.jpg" alt="Dam Satey - Professor Loren R. Anderson" border=0></a>'
+leftrightslide[8]='<a href="/wkm/book_warakorn.html"><img src="/Library/Booknew/Sindex/Shows/wkm_mini.jpg" alt="à¸à¸µà¸§à¸à¸£à¸°à¸§à¸±à¸à¸´à¹à¸¥à¸°à¸à¸¥à¸à¸²à¸à¸à¸²à¸à¸§à¸´à¸à¸²à¸à¸²à¸£ à¸£à¸¨.à¸à¸£.à¸§à¸£à¸²à¸à¸£ à¹à¸¡à¹à¹à¸£à¸µà¸¢à¸" border=0></a>'
+leftrightslide[9]='<a href="http://www.unsat.eng.ku.ac.th"><img src="/Library/Booknew/Sindex/Shows/Unsat_mini.jpg" alt="5th AP-UNSAT 2011, UNsaturated Soils" border=0></a>'
+leftrightslide[10]='<a href="/Library/Booknew/TU_in_Thailand.html"><img src="/Library/Booknew/Sindex/Shows/Tunelling_Thai_mini.jpg" alt="Tunnelling and Underground Space in Thailand" border=0></a>'
+leftrightslide[11]='<a href="http://www.wtc2012.com"><img src="/Library/Booknew/Sindex/Shows/wtc2012_mini.jpg" alt="Proceeding WTC2012" border=0></a>'
+leftrightslide[12]='<a href="/Library/Booknew/ICOLD 2012 Kyoto.html"><img src="/Library/Booknew/Sindex/Shows/Damforachangingworld_mini.jpg" alt="ICOLD 2012 KYOTO" border=0></a>'
+leftrightslide[13]='<a href="/Library/Booknew/ICOLD 2012 Kyoto.html"><img src="/Library/Booknew/Sindex/Shows/DaminJapan_mini.jpg" alt="Dams in Japan" border=0></a>'
+leftrightslide[14]='<a href="/Library/Booknew/DamSafetySoralump.html"><img src="/Library/Booknew/Sindex/Shows/B06.jpg" alt="à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸§à¸²à¸¡à¸à¸¥à¸­à¸à¸ à¸±à¸¢à¹à¸à¸·à¹à¸­à¸ à¹à¸à¸·à¹à¸­à¸à¸²à¸£à¸­à¸­à¸à¹à¸à¸à¹à¸¥à¸°à¸à¸³à¸£à¸¸à¸à¸£à¸±à¸à¸©à¸²" border=0></a>'
+//Specify gap between each image (use HTML):
+var imagegap=" "
+
+//Specify pixels gap between each slideshow rotation (use integer):
+var slideshowgap=5
+
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var copyspeed=slidespeed
+leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+var iedom=document.all||document.getElementById
+if (iedom)
+document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>')
+var actualwidth=''
+var cross_slide, ns_slide
+
+function fillup(){
+if (iedom){
+cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+cross_slide2.style.left=actualwidth+slideshowgap+"px"
+}
+else if (document.layers){
+ns_slide=document.ns_slidemenu.document.ns_slidemenu2
+ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+ns_slide.document.write(leftrightslide)
+ns_slide.document.close()
+actualwidth=ns_slide.document.width
+ns_slide2.left=actualwidth+slideshowgap
+ns_slide2.document.write(leftrightslide)
+ns_slide2.document.close()
+}
+lefttime=setInterval("slideleft()",30)
+}
+window.onload=fillup
+
+function slideleft(){
+if (iedom){
+if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+else
+cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+
+if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+else
+cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+
+}
+else if (document.layers){
+if (ns_slide.left>(actualwidth*(-1)+8))
+ns_slide.left-=copyspeed
+else
+ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+
+if (ns_slide2.left>(actualwidth*(-1)+8))
+ns_slide2.left-=copyspeed
+else
+ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+}
+}
+
+
+if (iedom||document.layers){
+with (document){
+document.write('<table border="0" cellspacing="0" cellpadding="0"><td>')
+if (iedom){
+write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed">')
+write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width='+sliderwidth+' height='+sliderheight+' name="ns_slidemenu" bgColor='+slidebgcolor+'>')
+write('<layer name="ns_slidemenu2" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>')
+write('<layer name="ns_slidemenu3" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>')
+write('</ilayer>')
+}
+document.write('</td></table>')
+}
+}
+          </script></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="right" valign="middle"><a href="/Library/Library.html" target="_blank"><img src="/images/icon_pv.jpg" width="101" height="21" /></a></td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="/images/Structure/T16.jpg" width="658" height="43" /></td>
+        </tr>
+         <tr>
+          <td valign="top"><img src="/images/10x10.gif" width="10" height="10" /></td>
+        </tr>
+        <tr>
+          <td valign="top"><a href="/Library/Li_Database.html" target="_blank"><img src="/images/Structure/Introduce/books.jpg" alt="Geotech Library" width="100" height="100" border="0" /> </a><a href="/Cai/index.html" target="_blank"><img src="/images/Structure/Introduce/CAI.gif" alt="à¸ªà¸·à¹à¸­à¸à¸²à¸£à¸ªà¸­à¸ à¸à¸²à¸£à¸à¸à¸ªà¸­à¸à¸à¸²à¸à¸à¹à¸²à¸à¸§à¸´à¸¨à¸§à¸à¸£à¸£à¸¡à¸à¸à¸à¸µ" width="100" height="100" border="0" /> </a><a href="http://www.safetydam.net/home.php" target="_blank"><img src="/images/Structure/Introduce/safetydam.jpg" alt="à¸ªà¹à¸§à¸à¸à¸§à¸²à¸¡à¸à¸¥à¸­à¸à¸ à¸±à¸¢à¹à¸à¸·à¹à¸­à¸ à¸à¸£à¸¡à¸à¸¥à¸à¸£à¸°à¸à¸²à¸" width="161" height="100" /> </a><a href="http://www.ngi.no/en"><img src="images/Structure/Introduce/ngi_logo.gif" width="63" height="100" /> </a><a href="http://www.seags.ait.ac.th/history.htm" target="_blank"><img src="images/Structure/Introduce/seags.jpg" width="78" height="100" /> </a><a href="http://www.issmge.org/en/" target="_blank"><img src="images/Structure/Introduce/issmge.jpg" width="125" height="100" border="0" /></a></td>
+        </tr>
+       <tr>
+          <td valign="top"><img src="/images/10x10.gif" width="10" height="10" /></td>
+        </tr>
+         <tr>
+          <td valign="top"><p><a href="http://bga.city.ac.uk/cms/" target="_blank"><img src="images/Structure/Introduce/bga.jpg" width="134" height="56" /></a> <a href="http://www.geoss.sg/index.html" target="_blank"><img src="images/Structure/Introduce/geoss.jpg" width="86" height="100" /></a></p>
+            <p>&nbsp;</p></td>
+        </tr>
+      </table>
+    <!-- InstanceEndEditable --></td>
+    </tr>
+</table>
+    </td>
+    <td width="1" background="/images/Structure/line3.jpg">&nbsp;</td>
+  </tr>
+  <tr><td colspan="3" bgcolor="#b7d1d0"><img src="/images/10x10.gif" width="10" height="10" /></td></tr>
+  </td></tr></table>
+</body>
+<!-- InstanceEnd --></html><url>http://www.gerd.eng.ku.ac.th</url><pagerank>0.0009736097261330859</pagerank>

@@ -1,0 +1,456 @@
+
+<html>
+<head>
+<title>ระบบสารสนเทศนิสิต สำหรับบุคคลากร</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+
+<!--
+<link rel="shortcut icon" href="../exdesignz.ico">
+<link href="cpcmns/css/webtemp.css" type="text/css" rel="stylesheet">
+
+<style type="text/css" media="screen">@import "topnavtemplate.css"/*tpa=http://www.ex-designz.net/template/topnavtemplate.css*//*tpa=http://www.ex-designz.net/template/topnavtemplate.css*/;</style>
+<script src="cpcmns/js/openwindow.js"  type="text/javascript"></script>
+<script src="cpcmns/js/ratingtemplate.js"  type="text/javascript"></script>
+<script src="cpcmns/js/optionpopjs.js"  type="text/javascript"></script>
+<script src="cpcmns/js/tooltipztempate.js"  type="text/javascript"></script>
+<script type="text/javascript">
+    var GB_ROOT_DIR = "cpcmns/";
+</script>
+<script type="text/javascript" src="cpcmns/js/AJS.js" ></script>
+<script type="text/javascript" src="cpcmns/js/AJS_fx.js"></script>
+<script type="text/javascript" src="cpcmns/js/gb_scripts.js" ></script>
+<link href="cpcmns/css/gb_styles.css"  rel="stylesheet" type="text/css" />
+<!--[if gte IE 5]>
+<style>
+#LeftMNav ul a {height: 1em;}
+#LeftMNav li {float: left; clear: both; width: 100%;}
+.divdis {margin-top: 12px; margin-bottom: 12px;}
+.divimg {margin-right: 3px; margin-top: 0px; margin-bottom: 18px;}
+.divimghover {margin-right: 3px; margin-top: 0px; margin-bottom: 18px;}
+h3, h3 a:hover {margin-bottom: 1px;}
+.constar {position: relative; margin: 0;}
+</style>
+<![endif]-->
+
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+
+
+
+<!-- Begin add by Pichaya : October 8,2008 -->
+<script type="text/javascript">
+<!--
+var currenttime = 'October 29, 2016 16:03:35' //PHP method of getting server date
+var montharray=new Array("January","February","March","April","May","June","July","August","September",
+"October","November","December")
+var serverdate=new Date(currenttime)
+
+function padlength(what){
+var output=(what.toString().length==1)? "0"+what : what
+return output
+}
+
+function displaytime(){
+serverdate.setSeconds(serverdate.getSeconds()+1)
+var datestring=montharray[serverdate.getMonth()]+" "+padlength(serverdate.getDate())+", "+serverdate.getFullYear()
+var timestring=padlength(serverdate.getHours())+":"+padlength(serverdate.getMinutes())+":"+padlength(serverdate.getSeconds())
+document.getElementById("servertime").innerHTML=datestring+" "+timestring
+}
+
+
+//--- For Client time
+function ShowTime() {
+    today=new Date();
+    var theDay=today.getDate();
+    if (theDay<10)
+    var theDay="0"+theDay;
+    var theMonth=montharray[today.getMonth()];
+	var theYear=today.getYear();
+	
+    var theHours=today.getHours();
+    var theMinutes=today.getMinutes();
+    if (theMinutes<10)
+    var theMinutes="0"+theMinutes;
+    var theSeconds=today.getSeconds();
+    if (theSeconds<10)
+    var theSeconds="0"+theSeconds;
+    var theTimeNow= theMonth+ " " + theDay + ", " + theYear + " " + theHours+":"+theMinutes+":"+theSeconds;
+    document.getElementById('textTime').innerHTML=theTimeNow;
+}
+
+
+window.onload=function(){
+document.fromlogin.UserName.focus();
+setInterval("displaytime()", 1000);
+setInterval("ShowTime()",1000);
+}
+-->
+</script>
+<!-- End add by Pichaya : October 8,2008 -->
+
+
+</head>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+       function ValidateInfo (theForm)
+       {
+                if (theForm.UserName.value =="")
+                {
+                  alert ("กรุณาป้อนข้อมูลที่คอลัมน์ \"Account\" ");
+                  theForm.UserName .focus();
+                  return (false);
+                 }
+
+				var account = theForm.UserName.value ;
+//				alert(account);
+				var first = account.substring(0,1);
+//				alert(first);
+				var firstUpper = first.toUpperCase();
+//				alert(firstUpper);
+				var number =  account.substring(1);
+//				alert(number);
+                if ( (firstUpper=="B" || firstUpper=="G") && number > 0 )
+                {
+//                  alert ("อนุญาตเฉพาะเจ้าหน้าที่เท่านั้น ");
+                  alert ("อนุญาตเฉพาะบุคคลากรเท่านั้น ");
+                  theForm.UserName .focus();
+                  return (false);
+                 }
+
+
+                if (theForm.Password.value =="")
+                {
+                  alert ("กรุณาป้อนข้อมูลที่คอลัมน์ \"Password\" ");
+                  theForm.Password.focus();
+                  return (false);
+                 }
+                 return (true);
+      }   
+//-->
+</SCRIPT>
+
+<!-- body  onload="document.fromlogin.UserName.focus();" bgcolor="#FFFFFF" -->
+<body  bgcolor="#FFFFFF">
+
+<div id="Layer1" style="position:absolute; left:570px; top:23px; width:300px; height:135px; z-index:1">
+</div>
+<div id="Layer99" style="position:absolute;  left:250px; width:500px"> 
+<center><b><font color = 'green' size =+2>ระบบสารสนเทศนิสิต สำหรับบุคคลากร</font></b></center>
+</div>
+
+<!--div id="Layer1" style="position:absolute; left:260px; top:23px; width:300px; height:135px; z-index:1" !--> 
+<div id="Layer1" style="position:absolute; left:350px; top:70px; width:300px; height:135px; z-index:1"> 
+  <form  action="login.php" method="post" target="_top" onSubmit="return ValidateInfo(this)" name="fromlogin">
+    <table width="100%" border="1" cellpadding="0" cellspacing="0" style='font-family:MS Sans Serif;font-size:12pt;' >
+
+    <tr bgcolor="#3366CC"> 
+        <td colspan=2 align=center bgcolor="#339933"><font face="MS Sans Serif"  color="#FFFFFF"><b>Login 
+          เข้าระบบ</b></font></td>
+    </tr>
+    <tr> 
+      <td> 
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" style='font-family:MS Sans Serif;font-size:12pt;'>
+            <tr> 
+              <td><font color="#000000" face="MS Sans Serif" >&nbsp;Account</font></td>
+              <td> 
+                <input name="UserName" size=15 maxlength=11>
+              </td>
+          </tr>
+            <tr> 
+              <td><font color="#000000" face="MS Sans Serif" >&nbsp;Password</font></td>
+              <td> 
+                <input type=password name="Password" size="15">
+            </td>
+          </tr>
+            <tr> 
+              <td><font color="#000000" face="MS Sans Serif" >&nbsp;วิทยาเขต</font></td>
+              <td> 
+			  <SELECT NAME="Campus" width=100>
+			  <option value='B' selected >บางเขน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+			  <option value='K'>กำแพงแสน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+			  </SELECT>
+            </td>
+          </tr>
+            <tr > 
+              <td colspan=2 align=center > 
+                <div align="center"> 
+                  <input type="image" src="botton/btlogin.gif" border="0" name="Submit">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </form>
+
+
+<marquee scrolldelay="150" direction="LEFT" ><font color = "red">Login Please.... </font></marquee>
+</div>
+<div id="Layer2" style="position:absolute; left:100px; top:250px; width:800px; height:60px; z-index:2"> 
+  <div align=center> 
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  style='font-family:Tahoma;font-size:10pt;'>
+      <tr> 
+        <td bgcolor="#FFFFFF" align='Center'> 
+			<font face="MS Sans Serif" >การ Login เข้าระบบ ใช้ Account   (รหัสบัญชี) และ Password (รหัสผ่าน) ของเครือข่ายนนทรี </font> <br>
+            <font face="MS Sans Serif" >สำหรับอาจารย์ที่ปรึกษาท่านใด ที่ไม่มีรายชื่อนิสิตที่อยู่ในการดูแล   ให้แจ้งรหัสบัญชี </font><br>
+           <font face="MS Sans Serif" >และรหัสอาจารย์ที่ปรึกษาได้ที่<a href="mailto:nual@ku.ac.th">ผู้ดูแลระบบ</a> 
+       </font>  </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="Layer3" style="position:absolute; left:100px; top:300px; width:800px; height:60px; z-index:3"> 
+  <div align=center> 
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  style='font-family:Tahoma;font-size:10pt;'>
+      <tr> 
+ <td align=center> 
+
+<!--A HREF="http://www.registrar.ku.ac.th/Calender/Body/Academic_schedule/academic%20calendar51.htm#second"  
+     คลิกดูรายละเอียดประกาศสำนักทะเบียนฯ-->
+	 <hr>
+	<table border= 0 width=100%  style='font-family:MS Sans Serif;font-size:11pt;'>
+	 	 <tr>
+<!--    ปิดประกาศ
+		 <td  valign='top'>
+<!-- ---------------------------------------------------= ประกาศ =--------------------------------------------------------------- !-->	 
+				<TABLE BORDER=2 style='font-family:MS Sans Serif;font-size:10pt;' >
+                     <!--TR><TD width="424" ALIGN=center><font color="red" face="MS Sans Serif" size="2"> 
+                                 เนื่องจากงระบบฯ มีปัญหา ทำให้การเข้าสู่ระบบการลงทะเบียนล่าช้า ทำให้นิสิตไม่สามารถลงทะเบียนได้ตามกำหนด ดังนั้น สำนักทะเบียนฯ จึงได้ขยายเวลาลงทะเบียน  ดังนี้ 
+								 <table border='1'>
+								 <tr><th> เวลาเดิม</th><th>เวลาใหม่</th></tr>
+								 <tr><td> 08:30 - 09:30 </td><td> 13:15  - 14:00 </td></tr>
+								 <tr><td> 09:00 - 10:00 </td><td> 13:15  - 14:00 </td></tr>
+								 <tr><td> 09:30 - 10:30 </td><td> 13:15  - 14:00 </td></tr>
+								 <tr><td> 10:00 - 11:00 </td><td> 13:15  - 14:00 </td></tr>
+								 <tr><td> 10:30 - 11:30 </td><td> 13:15  - 14:00 </td></tr>
+								 <tr><td> 11:00 - 12:00 </td><td> 13:15  - 14:00 </td></tr>
+								 <tr><td> 11:30 - 12:30 </td><td> 13:45  - 14:30 </td></tr>
+								 <tr><td> 12:00 - 13:00 </td><td> 13:45  - 14:30 </td></tr>
+								 <tr><td> 12:30 - 13:30 </td><td> 13:45  - 14:30 </td></tr>
+								 </table>
+                                 </TD>  
+                           </TR>   - ->
+					 <TR><TD width="465" ALIGN="left"><font  color="blue" > <b> ขอปิดให้บริการชั่วคราว !!!!</b></font><br>
+								 <dd>เนื่องจากสำนักบริการคอมพิวเตอร์ จะดำเนินการเปลี่ยนเครื่องให้บริการฐานข้อมูลจากเครื่องเดิมที่จะหมดอายุการใช้งานเป็นเครื่องใหม่ที่สามารถรองรับงานได้มากขึ้น  จึงมีความจำเป็นต้องปิดให้บริการชั่วคราว
+						   และ  <font  color='red'> ในวันเสาร์ที่ 10 กันยายน 2554 ตั้งแต่เวลา 09:00 เป็นต้นไป</font> 
+								 <dd> จึงเรียนมาเพื่อโปรดทราบ และขออภัยในความไม่สะดวก
+                                 </TD> 
+                      </TR>   
+					 <!- -TR><TD width="465" ALIGN="center"><font  color="blue" > 
+                                  ขยายเวลาลงทะเบียน สำหรับนิสิตรหัส 52 ที่กำหนดลงทะเบียนวันที่ 18/03/2553 เวลาเดิม 8.30 - 9.30  เปลี่ยนเป็น<B> 9.00 น. - 10.00 น.</B> </font>
+                                 </TD> 
+                     </TR !-->
+					 <!--TR><TD width="424" ALIGN=center><font  color="blue" face="MS Sans Serif"> 
+                                กำหนดการขอถอนบางรายวิชา (ผ่านเว็บ) <b>สำหรับนิสิตทุกระดับปริญญา ภาคปกติ </b> 
+ระหว่าง</font><font  color="red">วันที่ 23-24 เม.ย. 2553</font> <br>----------------------------------------------<br><font  color="blue" > 
+สำหรับนิสิตปริญญาโท-เอก โครงการภาคพิเศษที่ประสงค์จะขอถอนบางรายวิชา ให้ติดต่อที่โครงการสังกัด... </font>
+                                 </TD> 
+                     </TR !-->     
+					 <!--TR><TD width="465" ALIGN="center"><font  color="blue" > 
+								<b>เกรดเป็น 'N' </b>... ถ้าอาจารย์กรอกเกรดแล้วบนระบบเกรดออนไลน์ ....แต่เกรดที่แสดงบนระบบสารสนเทศนิสิต ยังเป็น N แสดงว่า...
+								1) <U>อยู่ระหว่างการส่งหลักฐานการกรอกเกรดไปยังสำนักทะเบียนฯ</U> หรือ  2) <U>อยู่ระหว่างการดำเนินการของสำนักทะเบียนฯ
+								หลังจากได้รับหลักฐานจากคณะแล้ว</U> 
+                                 </TD> 
+                     </TR!-->
+					 <!--TR><TD width="465"  ALIGN="center"><font  color="red" face="MS Sans Serif"  size='2'> 
+									<b> เนื่องจากระบบเครือข่ายมีปัญหา!!!   อยู่ระหว่างการแก้ไข... เมื่อดำเนินการเสร็จเรียบร้อยแล้ว ระบบจะเปิดขยายเวลาลงทะเบียน และจะแจ้งให้ทราบต่อไป </b>
+									 </font>
+                                 </TD> 
+                     </TR !-->
+					 <!--TR><TD width="465"  ALIGN="center"><font  color="blue" face="MS Sans Serif"  size='2'> 
+									 เนื่องจากมีผู้ใช้งานระบบฯ เป็นจำนวนมาก ทำให้การลงทะเบียนเรียนของนิสิตในวันนี้ล่าช้า สำนักทะเบียนฯ จึงขอความร่วมมือ<b>นิสิตที่ไม่มีส่วนเกี่ยวข้องกับการลงทะเบียนวันนี้ ให้ใช้ระบบงฯ ในช่วงเวลา (07.00-8.30 และ 18.00-19.00) </b>
+									 </font>
+                                 </TD> 
+                     </TR !-->
+					 <!--TR><TD ALIGN='center'> <A HREF="https://www.regis.ku.ac.th/tester/"><img src ="appregis.gif"></A> </TD> </TR !-->
+				     <!--TR><TD ALIGN='center'> <A HREF="https://158.108.219.137/"   target="_blank"><img src ="toregis.gif"></A> </TD> </TR!- ->     
+					 <TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 นิสิตสามารถ</font><font  color="red"> <B>ตรวจสอบเวลาลงทะเบียน</B></font><font  color="blue">   ภาคต้น'59  ได้ </font> <font  color="red" face="MS Sans Serif" > หลังการ Login เข้าระบบ</font>
+                                 </TD> 
+                     </TR>
+					 <TR><TD  width="465"  ALIGN="center"><font  color="blue"> 
+                                  กำหนดพิมพ์ใบแจ้งหนี้ [KU9] ผ่านเว็บ เพื่อชำระเงินผ่านธนาคาร  สำหรับนิสิตที่ประสงค์จะลงทะเบียนภาคปลาย  ประจำปีการศึกษา 2553 <b> เริ่มวันที่  5 ต.ค.- 4 พ.ย. 2553</b> <br></font> <font  color="red" face="MS Sans Serif"> <b>นิสิตที่ชำระเงินผ่านธนาคารวันที่  5-19 ต.ค. 2553 สามารถลงทะเบียนเรียนผ่านเว็บตามวันเวลาที่กำหนด<b>  </font>
+                                 </TD> 
+                     </TR>
+					 <!--TR><TD width="424" ALIGN='center'><font  color="blue"> 
+                                 ประกาศ...<b>รายชื่อนิสิตที่ได้รับชั่วโมงกิจกรรม , สิทธิ์การลงทะเบียนก่อน  และ รางวัลพิเศษ </b>ในการเข้าร่วมทดสอบระบบลงทะเบียน ณ วันที่ 17, 20 ก.ย. 2553 สามารถดูได้ หลังการ Login เข้าสู่ระบบ </font>
+                                 </TD> 
+                     </TR!-->     
+					 <!--TR><TD width="424" ALIGN='center'><font  color="blue"> 
+                                 รายงานผลการขอถอนบางรายวิชา โดยบันทึกคำว่า 'W' ประจำภาคต้น 2553 สามารถดูได้หลังการ Login เข้าสู่ระบบ </font>
+                                 </TD> 
+                     </TR !-->     
+					 <!--TR><TD width="424" ALIGN=center><font  color="blue"> 
+                                กำหนดการขอถอนบางรายวิชา โดยติด 'W' ผ่านเว็บ สำหรับนิสิตทุกระดับปริญญา ภาคปกติ <font  color="red"><b>ระหว่างวันที่ 24-31 สิงหาคม 2553 </b></font><br>----------------------------------------------<br>สำหรับนิสิตปริญญาโท-เอก โครงการภาคพิเศษ ที่ประสงค์จะขอถอนบางรายวิชา ให้ติดต่อที่โครงการสังกัด... </font>
+                                 </TD> 
+                     </TR!- ->     
+					 <TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 <b>การพิมพ์ใบเสร็จรับเงิน (KU2) ออนไลน์</b> ตั้งแต่ภาคต้น 53 เป็นต้นไป นิสิตที่ชำระเงินผ่านธนาคาร ถูกต้อง ครบถ้วน และนิสิตใหม่ ปริญญาตรี (รับตรง) คณะสถาปัตย์, คณะอุตสาหกรรมเกษตร, คณะสัตวแพทย์ และคณะวิศวกรรมศาสตร์ สามารถพิมพ์ใบเสร็จรับเงิน (KU2) ผ่านเว็บได้เอง <br> <font  color="red"><b>ตั้งแต่วันที่ 14 มิ.ย. 53 เป็นต้นไป</b></font> <br>ที่เมนู <b>'การลงทะเบียน' -> 'พิมพ์ใบเสร็จ [KU2]' </B> </font> <font  color="red"> หลังการ Login เข้าระบบ  </font>
+                                 </TD> 
+                     </TR>
+					 <!--TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 สำนักทะเบียนฯ แจ้ง<b>ปิดการลงทะเบียนผ่านเว็บระบบสารสนเทศนิสิต ระหว่างวันที่ 5-6 มิ.ย.53</b> เพื่อลงทะเบียนให้นิสิตใหม่ปริญญาตรี (ภาคพิเศษ) <br>และจะ<b>เปิดให้นิสิตลงทะเบียนอีกครั้ง ตั้งแต่วันที่ 7-11 มิ.ย.53   ทั้งนี้จะไม่มีการล็อคสาขา <br>ตั้งแต่เวลา 08.00 น.ของวันที่ 7 มิ.ย.53 เป็นต้นไป </b>
+									 </font>
+                                 </TD> 
+                     </TR!- ->
+					 <TR><TD  width="465" ALIGN="center"> <font  color="red">**ขอความร่วมมือ**</font>&nbsp;การกรอกแบบประเมิน  <a href="https://www.regis.ku.ac.th/grade/q1.php?system=1" target="_blank">ความพึงพอใจในการใช้ระบบสารสนเทศนิสิต</font></a></TD>
+                     </TR>
+					 <!--TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 <b>โปรดทราบ</b>...ห้ามมิให้นิสิตลงทะเบียนเรียน ในวิชาที่ได้ลงมาแล้วในภาคการศึกษาก่อน (ยกเว้น วิชาที่เกรดเป็น 'F', 'W','U') <b>มิฉะนั้นจะถูกลบออกจากระบบ และถูกรายงานต่อคณบดีต้นสังกัด</b>
+									 </font>
+                                 </TD> 
+                     </TR!-- >
+					 <!--TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 <b><u>นิสิตปริญญาตรี รหัส'53</u> ที่ชำระเงินผ่านโครงการรับตรง ของแต่ละคณะ </b> เนื่องจากอยู่ระหว่างจัดส่งรายชื่อนิสิตที่ชำระเงินผ่านโครงการจากโครงการมายังสำนักทะเบียน ฯ ทำให้ไม่ปรากฎรายชื่อนิสิตที่ชำระเงินแล้วในระบบฯ. .ซึ่งสำนักทะเบียน จะรีบดำเนินการนำข้อมูลการชำระเงินของนิสิตเข้าระบบฯ ต่อไป
+									 </font>
+                                 </TD> 
+                     </TR !-->
+					 <!--TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 <b>สิทธิ์ในการลงทะเบียน</b> ก่อนการลงทะเบียนเรียนทุกครั้ง ขอให้นิสิตตรวจสอบสิทธิ์ในการลงทะเบียนก่อน ถึงกำหนดการลงทะเบียน ทั้งนี้เพื่อผลประโยชน์ของนิสิตเอง โดยตรวจสอบรายชื่อนิสิตที่ไม่มีสิทธิ์ลงทะเบียนได้ที่<B> เมนู 'การลงทะเบียน' ->'ไม่มีสิทธิ์ลงทะเบียน' </B> ได้ </font> <font  color="red" face="MS Sans Serif" > หลังการ Login เข้าระบบ</font>
+									 </font>
+                                 </TD> 
+                     </TR!-- >
+					 <TR><TD width="465"  ALIGN="center"><font  color="blue"> 
+									 <b>นิสิตปริญญาตรี โครงการพิเศษ ที่เดิมโครงการเคยลงทะเบียนให้โดยใช้เอกสาร (KU1) </b>ตั้งแต่ภาคต้น 2553 เป็นต้นไป การลงทะเบียนของนิสิต จะเปลี่ยนเป็นการลงทะเบียนผ่านเว็บ โดยนิสิตสามารถลงทะเบียนได้ที่ <A HREF="http://sp.regis.ku.ac.th"  target="_blank"><nobr>เว็บลงทะเบียนเรียนนิสิตโครงการภาคพิเศษ มก.<nobr></A></font>
+                                 </TD> 
+                     </TR >
+					 <TR><TD width="465" ALIGN="center"><font  color="blue" > 
+									 นิสิตที่ไม่สามารถดู<B>ผลการเรียน</B> ที่ระบบสารสนเทศนิสิตได้...สามารถแจ้งได้<a href="mailto:nual@ku.ac.th"><b>...ที่นี่...</b></a>
+                                 </TD> 
+                     </TR>
+					 <!--TR><TD width="465" ALIGN="center"><font  color="blue" > 
+									 นิสิตเหมาจ่ายที่ชำระเงินแล้วผ่านธนาคาร และนิสิตไม่เหมาจ่าย สามารถลงทะเบียน/เปลี่ยนแปลงรายวิชา (เก็บตก/ล่าช้า/เพิ่มถอน) ได้ตั้งแต่ <b> วันที่ 20 - 31 มี.ค. 53 (ยกเว้นวันที่ 21 มี.ค.53) <br>เวลา 00:01 น. - 24:00 น.</B>
+                                 </TD> 
+                     </TR!-->
+					 <!--TR><TD width="465" ALIGN="center"><font  color="blue" > 
+									 นิสิตที่ยื่นคำร้องขอลงทะเบียนหน่วยกิตรวมเกินกำหนด สามารถ <B>ตรวจสอบรายชื่อที่ได้รับอนุญาตได้ที่ เมนู 'การลงทะเบียน' -> 'นิสิตขอลงหน่วยกิตเกิน' </B> ได้ </font> <font  color="red" face="MS Sans Serif" > หลังการ Login เข้าระบบ</font>
+                                 </TD> 
+                     </TR!-->
+				   <!--  <TR><TD width="424" ALIGN="center"><a href="https://www.regis.ku.ac.th/Internet/" target="_blank"><font   face="MS Sans Serif" size="1"> <font  color="red" face="MS Sans Serif" size="1">**ขอความร่วมมือนิสิต**</font>ตอบแบบสอบถาม เรื่องพฤติกรรมจริยธรรมและผลกระทบของการใช้เครือข่ายอินเทอร์เน็ต ของนิสิตมหาวิทยาลัยเกษตรศาสตร์ </font></a>
+                                </TD>
+                     </TR> -->
+					<!--TR><TD width="424" ALIGN="center"><a href="https://eassess.ku.ac.th/" target="_blank"><font   face="MS Sans Serif" size="2"> <font  color="red">**ขอความร่วมมือนิสิต**</font>&nbsp;เข้าใช้ระบบประเมินการเรียนการสอนตั้งแต่วันที่ 8 ก.พ. - 12 มี.ค. 2553</font></a></TD>
+                     </TR !-->
+					 <!--TR><TD  width="465" ALIGN="center"><a href="https://www.regis.ku.ac.th/AssessKU/" target="_blank"><font   face="MS Sans Serif"> <font  color="red">**ขอความร่วมมือนิสิต**</font>&nbsp;การกรอกแบบประเมิน ความพึงพอใจของนิสิตต่อ มหาวิทยาลัยเกษตรศาสตร์ ตั้งแต่วันที่  23 ก.พ.  31 มี.ค. 2553</font></a></TD>
+                     </TR!-->
+ 				</TABLE>
+
+<!-- ---------------------------------------------------= ประกาศ หมดแค่นี้=-------------------------------------------------------------- !- ->	 
+		        </td>
+!-->
+<!--  เริ่ม เรื่องแจ้ง   -->
+<!--  -  ->
+				<td align=center valign=top><font color="#000000">
+		                <table border='0'>
+(1)					    <tr><th align='center'><font color='blue'><u>ปิดให้บริการระบบสารสนเทศนิสิตชั่วคราว!!!</u> </font></th></tr>     
+(2)					    <tr><th align='center'><font color='blue'><u>ปิดให้บริการระบบสารสนเทศนิสิตชั่วคราว ตั้งแต่เวลา 20:00 - 21:00 น.!!!</u> </font></th></tr>
+						<tr><td  class='txttable' >
+					     เรียน ผู้ใช้บริการระบบสารสนเทศนิสิตทุกท่าน
+				         <br> 
+										   <DD>เนื่องจากมีอุปกรณ์ที่ควบคุมการทำงานของฐานข้อมูลตัวหนึ่งชำรุด สำนักบริการคอมพิวเตอร์จึงมีความจำเป็นต้องปรับเปลี่ยน
+								   และ  <font  color='red'> ของดให้บริการระบบสารสนเทศชั่วคราว เป็น เวลา 1 ชั่วโมง ในวันศุกร์ที่ 4 มีนาคม 2554 ตั้งแต่เวลา 20:00-21:00 น</font> 
+		                  <br>
+					                       <dd>จึงขอแจ้งให้ทราบ และขออภัยในความไม่สะดวกในครั้งนี้ด้วย
+						<BR><hr>
+						</td></tr> 
+						</table> 
+  				</td></tr>
+<!-- - ->
+<!--  จบ เรื่องแจ้ง   -->
+
+<!--td align=center valign=top><font color="#000000">
+		                <A HREF="
+https://www.regis.ku.ac.th/cpcstk/checkregis" target="_blank">ระบบติดตามผลการลงทะเบียนนิสิต </b> </A!-->
+<td align=center valign=top><font color="#000000">
+		                <A HREF="
+https://std.regis.ku.ac.th/Adv_CheckRegis/" target="_blank">ระบบติดตามการลงทะเบียนนิสิต </b> </A>
+				<br>  
+		                <A HREF="https://webregis.ku.ac.th/index.php" target="_blank">ระบบการลงทะเบียน สำหรับนิสิตสังกัด <b>วิทยาเขตกำแพงแสน </b> </A>
+				<!--br>  
+		                <A HREF="https://www.regis.ku.ac.th/cpctrt/step_register.pdf">ขั้นตอนการลงทะเบียน </A-->
+				<br>
+		                <!--A HREF="http://registrar.ku.ac.th/student/calendar/calendar59#first" target="_blank">คลิกดูปฏิทินการศึกษา... ภาคต้น 2559 </A-->
+		                <A HREF=http://registrar.ku.ac.th/node/253 " target="_blank">คลิกดูปฏิทินการศึกษา... ภาคต้น 2559 </A>
+				<br>  
+						<A HREF="http://sp.regis.ku.ac.th"  target="_blank"><nobr>เว็บลงทะเบียนเรียนนิสิตโครงการภาคพิเศษ มก.<nobr></A></font>
+				<P><hr>
+				<font color="red"> 
+					  <b>ติดต่อสอบถาม</b><br></font>
+				<table border='0'>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td rowspan='2' valign='top'><font color = 'Blue'>สำนักทะเบียนและประมวลผล</font></td><td>โทร: 02-1180110, 02-9428200 ต่อ 618035-42 และ 618058  </td></tr>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td>Fax: 02-1180111</td></tr>
+			    <tr><td colspan='2'><hr></td></tr>
+			    <tr style='font-family:MS Sans Serif;font-size:11pt;' ><td rowspan='2' valign='top'><font color = 'Blue'>สำนักบริการคอมพิวเตอร์</font></td><td>โทร: 02-5620951-5  ต่อ 622988, 622575 และ 622582 </td></tr>
+				<tr style='font-family:MS Sans Serif;font-size:11pt;' ><td>Fax: 02-5620950</td></tr>
+				</table>
+			  </td></tr>
+    </table>
+    </td>
+    </tr>
+
+<!--
+     <tr> 
+      <td align=center>
+	<A HREF="http://grad.ku.ac.th/app51/report51/name_pay_first51.pdf" target="_blank">รายชื่อการโอนเงินของนิสิตระดับบัณฑิตศึกษา ปี 2551</A>
+	  </td>
+    </tr>
+-->
+
+    </table>
+
+  </div>
+</div>
+
+
+<div id="Layer4" style="position:absolute; left:2px; top:500px; height:25px; z-index:4"> 
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style='font-family:MS Sans Serif;font-size:10pt;'>
+  <tr>
+  <td>
+<dd><!--<font color="red" face="MS Sans Serif" size="4"> <a href="grade/q1.php?System=1" title="แบบประเมินความพึงพอใจในการใช้ระบบสารสนเทศนิสิต" rel="gb_page_center[800, 460]" name="dd">คลิกตอบแบบประเมินความพึงพอใจต่อระบบสารสนเทศนิสิต</a></font>-->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!a href="del_regis2.pdf"><!.....ตรวจสอบรายชื่อนิสิตที่ต้องลงทะเบียนใหม่ (1-2 มิถุนายน 2552).....<!/a>
+<br>
+  </td>
+  </tr>
+    <tr> 
+      <!--td style="font:'MS Sans Serif'; color:red; size:0.5"   align="right"!-->
+      <td  align=right valign=top>
+<!--	  <font color="red" face="MS Sans Serif">
+	    <dd>  เบอร์ติดต่อสอบถาม : 02-9428200,02-5620951-5<br>
+        <dd>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- สำนักทะเบียนและประมวลผล : ต่อ 1766,1767 และ 1768 <br>
+        <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - สำนักบริการคอมพิวเตอร์  : ต่อ 2541,2542    และ 2543 <br>
+</font>
+!-->
+      </td>
+    </tr>
+
+	<tr> 
+      <td> 
+        <hr width="100%">
+      </td>
+    </tr>
+    <tr> 
+      <td><font face="MS Sans Serif" size="1" color=#3366FF> พัฒนาโดย: ฝ่ายสารสนเทศ 
+        สำนักบริการคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์ </font> </td>
+    </tr>
+  </table>
+</div>
+<div align=center> </div>
+
+</body>
+</html>
+<url>https://regis.ku.ac.th/fromlogin.php</url><pagerank>0.0009777461137684957</pagerank>

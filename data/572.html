@@ -1,0 +1,1199 @@
+<html>
+<head>
+<!-- <META HTTP-EQUIV="Refresh"  CONTENT="0;URL=./CommingSoon.html"> -->
+<!-- <META HTTP-EQUIV="Refresh"  CONTENT="0;URL=./indexN.html">-->
+<!-- <META HTTP-EQUIV="Refresh"  CONTENT="0;URL=./readme/readme.html">-->
+<META HTTP-EQUIV="Refresh"  CONTENT="0;URL=./index.php">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+<title>:: LoginFormStudent ::</title>
+<STYLE type=text/css>
+
+BODY {font-family:Tahoma;PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+/*
+A:link {
+	COLOR: #0000CC; TEXT-DECORATION: None
+}
+A:visited {
+	COLOR: #0099AA; TEXT-DECORATION: None
+}
+A:active {
+	COLOR: #10A030; TEXT-DECORATION: None
+}
+A:hover {
+	COLOR: #FFAA00; TEXT-DECORATION: None
+}
+*/
+p {margin-bottom:3px; margin-top:10px;}
+div {margin-left:5px; }
+.toc {color:nany; font-weight:bold;}
+.col { font-family:Tahoma; font-size:9pt;line-height:130%}
+
+.F1 {filter: glow(Color=#FF8000,Strength=1);
+     width=150px;
+     height=200px;}
+     
+.F2 {filter: glow(Color=#00FF00,Strength=2);
+     width=110px;
+     height=200px;}
+     
+.F3 {filter: glow(Color=#0080FF,Strength=3);
+     width=90px;
+     height=200px;}     
+</style>
+
+
+<link href="css/login.css" rel="stylesheet" type="text/css">
+
+
+    <style type="text/css">
+    /*
+      margin and padding on body element
+      can introduce errors in determining
+      element position and are not recommended;
+      we turn them off as a foundation for YUI
+      CSS treatments. 
+    */
+    body {
+        margin:0;
+        padding:0;
+    }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="yui_2.5.0/build/fonts/fonts-min.css" />
+    <link rel="stylesheet" type="text/css" href="yui_2.5.0/build/container/assets/skins/sam/container.css" />
+    <link rel="stylesheet" type="text/css" href="yui_2.5.0/build/resize/assets/skins/sam/resize.css" />
+	<link rel="stylesheet" type="text/css" href="yui_2.5.0/build/fonts/fonts-min.css" />
+	<link rel="stylesheet" type="text/css" href="yui_2.5.0/build/button/assets/skins/sam/button.css" />
+
+    <script type="text/javascript" src="yui_2.5.0/build/utilities/utilities.js"></script>
+    <script type="text/javascript" src="yui_2.5.0/build/container/container.js"></script>
+    <script type="text/javascript" src="yui_2.5.0/build/resize/resize-beta.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/button/button-min.js"></script>
+
+	
+	<script type="text/javascript" src="yui_2.5.0/build/yahoo/yahoo-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/event/event-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/connection/connection-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/dom/dom-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/element/element-beta-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/dragdrop/dragdrop-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/container/container-min.js"></script>
+	<script type="text/javascript" src="yui_2.5.0/build/json/json-debug.js"></script>
+
+
+    <style type="text/css">
+    #examplecontainer {
+        padding:10px;
+    }
+
+    #resizablepanel .bd {
+        overflow:auto;
+        height: 300px;
+        background-color:#fff;
+        padding:10px;
+    }
+
+    #resizablepanel .ft {
+        height:15px;
+        padding:0;
+    }
+
+    #resizablepanel .yui-resize-handle-br {
+        right:0;
+        bottom:0;
+        height: 8px;
+        width: 8px;
+        position:absolute;
+    }
+
+    /*  
+        The following CSS is added to prevent scrollbar bleedthrough on
+        Gecko browsers (e.g. Firefox) on MacOS.
+    */
+
+    /*
+        PLEASE NOTE: It is necessary to toggle the "overflow" property 
+        of the body element between "hidden" and "auto" in order to 
+        prevent the scrollbars from remaining visible after the the 
+        Resizable Panel is hidden.  For more information on this issue, 
+        read the comments in the "container-core.css" file.
+       
+        We use the #reziablepanel_c id based specifier, so that the rule
+        is specific enough to over-ride the .bd overflow rule above.
+    */
+
+    #resizablepanel_c.hide-scrollbars .yui-resize .bd {
+        overflow: hidden;
+    }
+
+    #resizablepanel_c.show-scrollbars .yui-resize .bd {
+        overflow: auto;
+    }
+
+    /*
+        PLEASE NOTE: It is necessary to set the "overflow" property of
+        the underlay element to "visible" in order for the 
+        scrollbars on the body of a Resizable Panel instance to be 
+        visible.  By default the "overflow" property of the underlay 
+        element is set to "auto" when a Panel is made visible on
+        Gecko for Mac OS X to prevent scrollbars from poking through
+        it on that browser + platform combintation.  For more 
+        information on this issue, read the comments in the 
+        "container-core.css" file.
+    */
+
+    #resizablepanel_c.show-scrollbars .underlay {
+        overflow: visible;
+    }
+    </style>
+
+    <script type="text/javascript">
+    YAHOO.util.Event.onDOMReady(
+
+        function() {
+
+            // Setup constants
+
+            // QUIRKS FLAG, FOR BOX MODEL
+            var IE_QUIRKS = (YAHOO.env.ua.ie && document.compatMode == "BackCompat");
+
+            // UNDERLAY/IFRAME SYNC REQUIRED
+            var IE_SYNC = (YAHOO.env.ua.ie == 6 || (YAHOO.env.ua.ie == 7 && IE_QUIRKS));
+
+            // PADDING USED FOR BODY ELEMENT (Hardcoded for example)
+            var PANEL_BODY_PADDING = (10*2) // 10px top/bottom padding applied to Panel body element. The top/bottom border width is 0
+
+            // Create a panel Instance, from the 'resizablepanel' DIV standard module markup
+            var panel = new YAHOO.widget.Panel('resizablepanel', {
+                draggable: true,
+                width: '750px',
+                context: ["showbtn", "tl", "bl"]
+            });
+            panel.render();
+
+            // Create Resize instance, binding it to the 'resizablepanel' DIV 
+            var resize = new YAHOO.util.Resize('resizablepanel', {
+                handles: ['br'],
+                autoRatio: false,
+                minWidth: 300,
+                minHeight: 200,
+                status: true
+            });
+
+            // Setup resize handler to update the size of the Panel's body element
+            // whenever the size of the 'resizablepanel' DIV changes
+            resize.on('resize', function(args) {
+
+                var panelHeight = args.height;
+
+                var headerHeight = this.header.offsetHeight; // Content + Padding + Border
+                var footerHeight = this.footer.offsetHeight; // Content + Padding + Border
+
+                var bodyHeight = (panelHeight - headerHeight - footerHeight);
+                var bodyContentHeight = (IE_QUIRKS) ? bodyHeight : bodyHeight - PANEL_BODY_PADDING;
+
+                YAHOO.util.Dom.setStyle(this.body, 'height', bodyContentHeight + 'px');
+
+                if (IE_SYNC) {
+
+                    // Keep the underlay and iframe size in sync.
+
+                    // You could also set the width property, to achieve the 
+                    // same results, if you wanted to keep the panel's internal
+                    // width property in sync with the DOM width. 
+
+                    this.sizeUnderlay();
+
+                    // Syncing the iframe can be expensive. Disable iframe if you
+                    // don't need it.
+
+                    this.syncIframe();
+                }
+            }, panel, true);
+
+            YAHOO.util.Event.on("showbtn", "click", panel.show, panel, true);
+        }
+    );
+    </script>
+
+</head>
+<script language="JavaScript" src="js/formStudent.js"></script>
+
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="./lightbox-iframe/lightbox.css" media="screen,projection" type="text/css" />
+
+<!-- JavaScript -->
+<script type="text/javascript" src="./lightbox-iframe/prototype.js"></script>
+<script type="text/javascript" src="./lightbox-iframe/lightbox-iframe.js"></script>
+
+<body class=" yui-skin-sam">
+	
+
+
+  <table  height="100%" width="880" align="center" class="col" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+    <tr> 
+      <td colspan="2"  valign="top" bgcolor="#F0F0F0" style="border-top-width:0; border-right-width:0; border-bottom-width:0; border-left-width:0; border-color:grey; border-style:solid;"> 
+<DIV id=wrapper>
+<DIV id=header>
+    <DIV id=mambo><IMG alt="MOS Logo" src="images/header_text.png"><span style="position: Absolute; Left: 50px; Color: yellow; font-family: MS Sans Serif,MS Serif; font-size: 16px;">ÃÐàºÕÂ¹»ÃÐÇÑµÔáÅÐáººÊÓÃÇ¨¹ÔÊÔµãËÁè</span><span style="position: Absolute; Left: 70px; Top: 20px; Color: #0099FF; font-family: MS Sans Serif,MS Serif; font-size: 12px; filter: shadow(color=#0033FF,direction=135)";>ÁËÒÇÔ·ÂÒÅÑÂà¡ÉµÃÈÒÊµÃì&nbsp;&nbsp;</span>
+	</DIV>
+</DIV>
+</DIV>
+
+
+<CENTER>
+
+ <!-- 
+<TABLE style="text-align:center;width:80%; background-color: #FFFF99;
+	border: 1 solid Green;" border=1 bordercolorlight=#FFFF99 bordercolordark=#009900 cellspacing=0 cellpadding=4>
+ <TR>
+	<TD> <B>ºÑ¹·Ö¡ÃÐàºÕÂ¹»ÃÐÇÑµÔ¹ÔÊÔµãËÁè</B></TD>
+ </TR>
+ </TABLE>
+ -->
+<IMG style="display: ;" SRC="./images/specification59.png">
+<!-- <IMG style="display: ;" SRC="./images/specification57.png"> -->
+<!-- <A HREF="https://www.student.ku.ac.th/history/report/b2.php" target="_blank">ÃÒÂª×èÍ¹ÔÊÔµãËÁè·ÕèºÑ¹·Ö¡áÅÐäÁèä´éºÑ¹·Ö¡¢ÑÍÁÙÅ»ÃÐÇÑµÔáÅÐáººÊÓÃÇ¨</A> -->
+</CENTER>
+
+
+<DIV id=ctr align=center style="display: ;">
+
+<DIV class=login>
+<DIV class=login-text  style=" border: 0px solid; width: 60px; text-align: left; margin-top: 35px;">
+
+
+
+    <div id="examplecontainer" style="text-align: left; margin-left: -25px;">
+	<IMG height=64 alt=security src="images/security.png" width=64><BR><BR><BR><BR>
+        <A HREF="readme/readme.html" target="_blank"><IMG id="showbtn" alt=helpMe? src="images/helpme.gif" width=64 height=64 border="1" style="cursor: hand;"></A>
+		<nobr>&nbsp;&nbsp;&nbsp;&nbsp;¤Óá¹Ð¹Ó</nobr><BR>
+		<nobr>¡ÒÃ¡ÃÍ¡¢éÍÁÙÅ</nobr>
+
+<!-- 
+        <div id="resizablepanel" >
+            <div class="hd">¤Óá¹Ð¹Ó¡ÒÃ¡ÃÍ¡¢éÍÁÙÅ</div>
+            <div class="bd">
+
+			<iframe src="readme/readme.html" width="99%" height="95%" scrolling="yes"></iframe>
+
+            </div>
+            <div class="ft"></div>
+        </div>
+ -->
+
+    </div>
+
+</DIV>
+
+
+<FORM name="form1" id="form1" method="post" action="loginFormStudent.php" onsubmit="return false;">
+<DIV class=form-block  style="width:550;">
+
+	<DIV class=form-block style="text-align: left;">àÅ¢ºÑµÃ»ÃÐ¨ÓµÑÇ»ÃÐªÒª¹
+	<TABLE class="table-box" border="0" width="100%">
+	<TR>
+		<TD  colspan="10">
+		<INPUT ID="id1" class=inputbox style="text-align:center; width:20;" TYPE="text" NAME="id1" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;"> -
+		<INPUT ID="id2" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id2" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id3" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id3" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id4" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id4" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id5" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id5" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;"> -
+		<INPUT ID="id6" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id6" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id7" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id7" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id8" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id8" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id9" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id9" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id10" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id10" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;"> -
+		<INPUT ID="id11" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id11" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		<INPUT ID="id12" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id12" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;"> -
+		<INPUT ID="id13" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id13" onKeyUp="return autoTab(this, 1, event);" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+		
+
+		</TD>
+	</TR>
+	</TABLE>
+	</DIV>
+	<DIV align=left>
+	<INPUT class=button name="button" type="button" value="Submit"  onclick="ValidateInfo2(document.form1)">
+		<INPUT ID="major_id" NAME="major_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="campus_id" NAME="campus_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="std_id" NAME="std_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="curr_inter_id" NAME="curr_inter_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="inter_flag" NAME="inter_flag" class=inputbox style="text-align:center; width:40;"  TYPE="hidden" value="N">
+	</DIV>
+</FORM>
+
+<HR width="440">
+<FORM name="form2" id="form2" method="post" action="loginFormStudent.php" >
+	<DIV class=form-block style="text-align: left;">Passport ID (à©¾ÒÐ¹ÔÊÔµµèÒ§ªÒµÔ)
+	<TABLE class="table-box" border="0" width="100%">
+	<TR>
+		<TD  colspan="10">
+		<INPUT ID="id1" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id1" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id2" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id2" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id3" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id3" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id4" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id4" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id5" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id5" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id6" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id6" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id7" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id7" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id8" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id8" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id9" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id9" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id10" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id10" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">		
+		<INPUT ID="id11" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id11" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id12" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id12" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id13" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id13" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id14" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id14" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id15" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id15" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id16" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id16" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id17" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id17" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id18" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id18" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id19" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id19" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		<INPUT ID="id20" class=inputbox style="text-align:center; width:20;"  TYPE="text" NAME="id20" onKeyUp="return autoTab(this, 1, event);" onblur="this.value=this.value.toUpperCase();">
+		
+
+		</TD>
+	</TR>
+	</TABLE>
+	</DIV>
+	<DIV align=left>
+	<!-- <INPUT class=button name="button" type="submit" value="Submit" > -->
+	<INPUT class=button name="button" type="button" value="Submit"  onclick="ValidateInfo3(document.form2)">
+		<INPUT ID="major_id" NAME="major_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="campus_id" NAME="campus_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="std_id" NAME="std_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="curr_inter_id" NAME="curr_inter_id" class=inputbox style="text-align:center; width:40;"  TYPE="hidden">
+		<INPUT ID="inter_flag" NAME="inter_flag" class=inputbox style="text-align:center; width:40;"  TYPE="hidden" value="Y">
+	</DIV>
+</FORM>
+
+
+</DIV>
+
+
+
+      </td>
+    </tr>
+    <tr> 
+      <td align="center"> 
+<!-- 
+        &nbsp;<font color="whitesmoke">:: </font><a href="http://www.cpc.ku.ac.th"><font color="whitesmoke">Kasetsart 
+        University Office of Computer Services</font></a><font color="whitesmoke"> 
+        ::</font> </td>
+      <td width="30%" align="right" bgcolor="#30559C" style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:black; border-style:solid;"> 
+        <a href="mailto:cpcmns@ku.ac.th"><img src="images/email.gif" border="0"><font color="whitesmoke"> 
+        Contact WebMaster</font></a>&nbsp; 
+ -->
+
+
+ <br>
+	<div style="text-align: center;
+		border: thin solid Red;
+		background-color: White;
+		display: ;">
+		<IMG alt="alert!" src="images/alert.gif" width="20" height="20"><br>
+		<u>¶éÒ¹ÔÊÔµÁÕ»Ñ­ËÒ¢éÍÁÙÅà¡ÕèÂÇ¡Ñº àÅ¢ºÑµÃ»ÃÐ¨ÓµÑÇ»ÃÐªÒª¹ ª×èÍ ¹ÒÁÊ¡ØÅ ÃËÑÊÊÒ¢ÒÇÔªÒ äÁè¶Ù¡µéÍ§  µÔ´µèÍ·Õè </u>
+		<DIV style="MARGIN-TOP: 1em; text-align: left; width=100%;text-align: left; margin-left: 110px"><div><U>ÇÔ·ÂÒà¢µºÒ§à¢¹</U> 02-9428200 µèÍ (61) 8046 »Ò¹¨Ôµ , (61) 8048 ·ÑÈ¹ÕÂì , (61) 8049 ÃÑª®ÒÀÃ³ì , (61) 8050 ÍÃØ³Õ , (61) 8051 ¹ÇÕÂÒ</div>
+			<div><U>ÇÔ·ÂÒà¢µ¡Óá¾§áÊ¹</U> ¤Ø³ÊÁà¡ÕÂÃµÔ,¤Ø³¹ÔÃØ·¸ì  àºÍÃìâ·Ã 034-351395, 034-281095</div>
+			<div><U>ÇÔ·ÂÒà¢µà©ÅÔÁ¾ÃÐà¡ÕÂÃµÔ Ê¡Å¹¤Ã</U> ¤Ø³ ÀÑ·ÃÔÂÒ áÅÐ¤Ø³ÍÃªØ®Ò  042-725052</div>
+			<div><U>ÇÔ·ÂÒà¢µÈÃÕÃÒªÒ</U> µÔ´µèÍ ¤Ø³ÇÑ¹´Õ  038-354580-4 µèÍ 2637</div>
+		</DIV>
+	</div>
+<!-- readme  -->
+<!-- 
+	<br>  
+	<TABLE class="table-box" border="0" width="100%">
+    <tr> 
+      <td align="center"> 
+
+	<iframe src="https://student.ku.ac.th/newregis/readme/readme.html" width="100%" height="700">
+	  <p>Your browser does not support iframes.</p>
+	</iframe>
+	</td>
+    </tr>
+  </table>
+ -->
+<!-- readme  -->
+	<h2><a href="./download/M3(Ê·».2).pdf" target="_blank">Download Ê·».2</a></h2>
+  
+	
+<!-- 
+	<iframe src="https://student.ku.ac.th/history/alert.php" width="100%" height="700">
+	  <p>Your browser does not support iframes.</p>
+	</iframe>
+ -->
+
+ 
+ 
+	<TABLE class="table-box" border="0" width="100%">
+    <tr> 
+      <td align="center"> 
+		<div style="text-align: center;
+			border: thin solid Red;
+			background-color: White;
+			display: ; width: 100%;" >
+			<u>¶éÒäÁè¾ºª×èÍ<IMG alt="alert!" src="images/school_small.jpg" width="60" height="60"></u>
+			<DIV>
+			<div><U>â»Ã´á¨é§.</U>ª×èÍâÃ§àÃÕÂ¹ ¾ÃéÍÁª×èÍÍÓàÀÍ áÅÐª×èÍ¨Ñ§ËÇÑ´·Õè¶Ù¡µéÍ§ <br>E-mail:  cpcmns@ku.ac.th
+			</DIV>
+		</div>
+	</td>
+      <td align="center"> 
+		<div style="text-align: center;
+			border: thin solid Red;
+			background-color: White;
+			display: ; width: 100%;" >
+			<u>¶éÒäÁè¾ºª×èÍ<IMG alt="alert!" src="images/tumbon_small.jpg" width="60" height="60"></u>
+			<DIV>
+			<div><U>â»Ã´á¨é§.</U>ª×èÍµÓºÅ ¾ÃéÍÁª×èÍÍÓàÀÍ áÅÐª×èÍ¨Ñ§ËÇÑ´·Õè¶Ù¡µéÍ§ <br>E-mail:  cpcmns@ku.ac.th
+			</DIV>
+		</div>
+	</td>
+    </tr>
+  </table>
+  <BR><BR><BR><BR> 
+<!--  -->
+		</td>
+    </tr>
+  </table>
+
+
+
+
+
+<!--BEGIN SOURCE CODE FOR EXAMPLE =============================== -->
+
+<style>
+#example {height:30em;}
+label { display:block;float:left;width:45%;clear:left; }
+.clear { clear:both; }
+#resp { margin:10px;padding:5px;border:1px solid #ccc;background:#fff;}
+#resp li { font-family:monospace }
+</style>
+
+<script>
+YAHOO.namespace("example.container");
+
+function init() {
+	
+	// Define various event handlers for Dialog
+	var handleSubmit = function() {
+		//this.submit();		
+		chkAuthen2();
+	};
+	var handleCancel = function() {
+		this.cancel();
+	};
+	var handleSuccess = function(o) {
+		var response = o.responseText;
+		response = response.split("<!")[0];
+		document.getElementById("resp").innerHTML = response;
+	};
+	var handleFailure = function(o) {
+		alert("Submission failed: " + o.status);
+	};
+
+	// Instantiate the Dialog
+	YAHOO.example.container.dialog1 = new YAHOO.widget.Dialog("dialog1", 
+							{ width : "480px",
+							  fixedcenter : true,
+							  visible : false, 
+							  constraintoviewport : true,
+							  buttons : [ { text:"Submit", handler:handleSubmit, isDefault:true },
+								      { text:"Cancel", handler:handleCancel } ]
+							});
+
+	// Validate the entries in the form to require that both first and last name are entered
+	YAHOO.example.container.dialog1.validate = function() {
+		var data = this.getData();
+		if (data.question == "" || data.answer == "") {
+			alert("¡ÃØ³Ò¡ÃÍ¡¢éÍÁÙÅ");
+			return false;
+		} else {
+			return true;
+		}
+	};
+
+	// Wire up the success and failure handlers
+	YAHOO.example.container.dialog1.callback = { success: handleSuccess,
+						     failure: handleFailure };
+	
+	// Render the Dialog
+	YAHOO.example.container.dialog1.render();
+
+
+/****passport******/
+
+	// Define various event handlers for Dialog
+	var handleSubmit2 = function() {
+		//this.submit();		
+		chkAuthen4();
+	};
+	var handleCancel2 = function() {
+		this.cancel();
+	};
+	var handleSuccess2 = function(o) {
+		var response = o.responseText;
+		response = response.split("<!")[0];
+		document.getElementById("resp").innerHTML = response;
+	};
+	var handleFailure2 = function(o) {
+		alert("Submission failed: " + o.status);
+	};
+
+	// Instantiate the Dialog
+	YAHOO.example.container.dialog2 = new YAHOO.widget.Dialog("dialog2", 
+							{ width : "480px",
+							  fixedcenter : true,
+							  visible : false, 
+							  constraintoviewport : true,
+							  buttons : [ { text:"Submit", handler:handleSubmit2, isDefault:true },
+								      { text:"Cancel", handler:handleCancel2 } ]
+							});
+
+	// Validate the entries in the form to require that both first and last name are entered
+	YAHOO.example.container.dialog2.validate = function() {
+		var data = this.getData();
+		if (data.question == "" || data.answer == "") {
+			alert("¡ÃØ³Ò¡ÃÍ¡¢éÍÁÙÅ");
+			return false;
+		} else {
+			return true;
+		}
+	};
+
+	// Wire up the success and failure handlers
+	YAHOO.example.container.dialog2.callback = { success: handleSuccess2,
+						     failure: handleFailure2 };
+	
+	// Render the Dialog
+	YAHOO.example.container.dialog2.render();
+
+/****passport*****/
+
+
+/****major******/
+
+	// Define various event handlers for Dialog
+	var handleSubmit3 = function() {
+		//this.submit();		
+		//chkAuthen4();
+		var theForm=document.getElementById('select_major');
+		for(var i=0;i<theForm.length;i++){
+		
+		if (theForm[i].checked==true){
+				mcvalue=theForm[i].value;
+				var mc=mcvalue.split("_");
+				
+		document.form1.major_id.value=mc[0]; 
+		document.form1.campus_id.value=mc[1]; 
+		document.form1.std_id.value=mc[2]; 
+		document.form1.curr_inter_id.value=mc[3]; 
+		
+			    
+				
+			 YAHOO.example.container.dialog3.hide();
+			 document.form1.submit(); 
+		}
+	}
+	};
+	var handleCancel3 = function() {
+		this.cancel();
+	};
+	var handleSuccess3 = function(o) {
+		var response = o.responseText;
+		response = response.split("<!")[0];
+		document.getElementById("resp").innerHTML = response;
+	};
+	var handleFailure3 = function(o) {
+		alert("Submission failed: " + o.status);
+	};
+
+	// Instantiate the Dialog
+	YAHOO.example.container.dialog3 = new YAHOO.widget.Dialog("dialog3", 
+							{ width : "500px",
+							  fixedcenter : true,
+							  visible : false, 
+							  constraintoviewport : true,
+							  buttons : [ { text:"Submit", handler:handleSubmit3, isDefault:true },
+								      { text:"Cancel", handler:handleCancel3 } ]
+							});
+
+	// Validate the entries in the form to require that both first and last name are entered
+	YAHOO.example.container.dialog3.validate = function() {
+		var data = this.getData();
+		if (data.major_campus == "" ) {
+			alert("â»Ã´àÅ×Í¡ÊÒ¢ÒÇÔªÒ·ÕèµéÍ§¡ÒÃÃÒÂ§Ò¹µÑÇ");
+			return false;
+		} else {
+			return true;
+		}
+	};
+
+	// Wire up the success and failure handlers
+	YAHOO.example.container.dialog3.callback = { success: handleSuccess3,
+						     failure: handleFailure3 };
+	
+	// Render the Dialog
+	YAHOO.example.container.dialog3.render();
+
+/****major*****/
+
+/****major2******/
+
+	// Define various event handlers for Dialog
+	var handleSubmit4 = function() {
+		//this.submit();		
+		//chkAuthen4();
+		var theForm=document.getElementById('select_major');
+		for(var i=0;i<theForm.length;i++){
+		
+		if (theForm[i].checked==true){
+				mcvalue=theForm[i].value;
+				var mc=mcvalue.split("_");
+				
+		document.form2.major_id.value=mc[0]; 
+		document.form2.campus_id.value=mc[1]; 
+		document.form2.std_id.value=mc[2]; 
+		document.form2.curr_inter_id.value=mc[3]; 
+		
+			    
+				
+			 YAHOO.example.container.dialog4.hide();
+			 document.form2.submit(); 
+		}
+	}
+	};
+	var handleCancel4 = function() {
+		this.cancel();
+	};
+	var handleSuccess4 = function(o) {
+		var response = o.responseText;
+		response = response.split("<!")[0];
+		document.getElementById("resp").innerHTML = response;
+	};
+	var handleFailure4 = function(o) {
+		alert("Submission failed: " + o.status);
+	};
+
+	// Instantiate the Dialog
+	YAHOO.example.container.dialog4 = new YAHOO.widget.Dialog("dialog4", 
+							{ width : "500px",
+							  fixedcenter : true,
+							  visible : false, 
+							  constraintoviewport : true,
+							  buttons : [ { text:"Submit", handler:handleSubmit4, isDefault:true },
+								      { text:"Cancel", handler:handleCancel4 } ]
+							});
+
+	// Validate the entries in the form to require that both first and last name are entered
+	YAHOO.example.container.dialog4.validate = function() {
+		var data = this.getData();
+		if (data.major_campus == "" ) {
+			alert("â»Ã´àÅ×Í¡ÊÒ¢ÒÇÔªÒ·ÕèµéÍ§¡ÒÃÃÒÂ§Ò¹µÑÇ");
+			return false;
+		} else {
+			return true;
+		}
+	};
+
+	// Wire up the success and failure handlers
+	YAHOO.example.container.dialog4.callback = { success: handleSuccess4,
+						     failure: handleFailure4 };
+	
+	// Render the Dialog
+	YAHOO.example.container.dialog4.render();
+
+/****major2*****/
+/*
+	YAHOO.util.Event.addListener("show", "click", YAHOO.example.container.dialog1.show, YAHOO.example.container.dialog1, true);
+	YAHOO.util.Event.addListener("hide", "click", YAHOO.example.container.dialog1.hide, YAHOO.example.container.dialog1, true);
+*/
+}
+
+YAHOO.util.Event.onDOMReady(init);
+
+
+
+function chkAuthen(idcode){
+	//var obj=document.getElementById(obj_id);
+               //alert(idcode);
+	var sUrl="chk_authen.php?idcode="+idcode;
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacks,null); 	
+  }
+
+var callbacks = { 
+  success:function(o) {
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+                alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+			
+            for (var i = 0, len = messages.length; i < len; ++i) {
+                var m = messages[i];										
+
+				if(m.status=="empty"){
+				//alert(o.responseText);
+							chkMajor(m.idcode);
+						  //document.form1.submit(); 
+
+				}else if(m.status=="have"){		
+				//alert(m.status);
+
+					YAHOO.example.container.dialog1.show();
+				}
+
+            }
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+
+
+function chkMajor(idcode){
+	//var obj=document.getElementById(obj_id);
+               //alert(idcode);
+	var sUrl="chk_major.php?idcode="+idcode;
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacksMajor ,null); 	
+  }
+
+//setTimeout('alert(\'hello\')',1250);"
+
+var callbacksMajor = { 
+  success:function(o) {
+  //setTimeout("...",1000000250);
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+                //alert(o.responseText);
+			
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+                alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+			
+            //YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+			len = messages.length;
+			if(len==0){
+				alert("äÁèÁÕàÅ¢ »ªª. ã¹°Ò¹¢éÍÁÙÅ¹ÔÊÔµãËÁè  ËÃ×ÍäÁèÍÂÙèã¹ªèÇ§àÇÅÒ·Õè¡ÓË¹´!! ");
+			}else if(len==1){
+				for (var i = 0, len = len; i < len; ++i) {
+					var m = messages[i];		
+					//alert(m.status+m.major_id+m.campus_id+i+len);
+					
+					document.form1.major_id.value=m.major_id; 
+					document.form1.campus_id.value=m.campus_id; 
+					document.form1.std_id.value=m.std_id; 
+					document.form1.curr_inter_id.value=m.curr_inter_id; 
+					//alert(document.form1.curr_inter_id.value+m.curr_inter_id);
+				}
+				
+			    document.form1.submit(); 
+			}else{
+			
+				var desc ='<form name="select_major" id="select_major" method="POST" action="">';
+				for (var i = 0, len = len; i < len; ++i) {
+					var m = messages[i];		
+					//alert(m.status+m.major_id+m.campus_id+i);
+
+					if(i==0){
+					desc=desc+'<B>'+(i+1)+'.&nbsp;'+'</B>&nbsp;<INPUT TYPE="radio" NAME="major_campus" value="'+m.major_id+'_'+m.campus_id+'_'+m.std_id+'_'+m.curr_inter_id+'">&nbsp;ÊÒ¢ÒÇÔªÒ'+m.major_name+'('+m.major_id+')'+'&nbsp;ÇÔ·ÂÒà¢µ'+m.campus_name+'('+m.campus_id+')'+'&nbsp;ÀÒ¤'+m.extra_status_name+'('+m.extra_status+')'+'('+m.admit_type+')';
+					}else{
+					desc=desc+'<BR><B>'+(i+1)+'.&nbsp;'+'</B>&nbsp;<INPUT TYPE="radio" NAME="major_campus" value="'+m.major_id+'_'+m.campus_id+'_'+m.std_id+'_'+m.curr_inter_id+'">&nbsp;ÊÒ¢ÒÇÔªÒ'+m.major_name+'('+m.major_id+')'+'&nbsp;ÇÔ·ÂÒà¢µ'+m.campus_name+'('+m.campus_id+')'+'&nbsp;ÀÒ¤'+m.extra_status_name+'('+m.extra_status+')'+'('+m.admit_type+')';
+					}
+				}			
+				desc=desc+'</form>';
+
+				document.getElementById("radio_major").innerHTML=desc;
+	
+					YAHOO.example.container.dialog3.show();
+			}
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+
+function chkAuthen2(){
+	//var obj=document.getElementById(obj_id);
+               // alert(obj.id);
+	var idcode="";
+	var theForm=document.getElementById('form1');
+		for(var i=0;i<theForm.length;i++){
+		if (theForm[i].type=="text"){
+				idcode=idcode+theForm[i].value;
+		}
+	}
+	var sUrl="chk_authen.php?idcode="+idcode;
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacks2,null); 	
+  }
+
+var callbacks2 = { 
+  success:function(o) {
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+                //alert(o.responseText);
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+                alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+			
+            for (var i = 0, len = messages.length; i < len; ++i) {
+                var m = messages[i];	
+				var question = document.short_question.question.value; 
+				var answer = document.short_question.answer.value; 
+//alert(m.answer+'=='+answer);
+			
+				if(m.question==question && m.answer==answer){
+				//alert(m.answer+'=='+answer);
+
+					//alert(m.status+m.major_id+m.campus_id+i);
+					
+					document.form1.major_id.value=m.major_id; 
+					document.form1.campus_id.value=m.campus_id; 
+					document.form1.std_id.value=m.std_id; 
+					document.form1.curr_inter_id.value=m.curr_inter_id; 
+						  document.form1.submit(); 
+
+				}else{		
+				alert('¤ÓµÍºäÁè¶Ù¡µéÍ§ !');
+
+					YAHOO.example.container.dialog1.show();
+				}
+
+            }
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+
+/*****passport*******/
+
+function chkAuthen3(idcode){
+	//var obj=document.getElementById(obj_id);
+               // alert(idcode);
+	var sUrl="chk_authen.php?idcode="+idcode;
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacks3,null); 	
+  }
+
+var callbacks3 = { 
+  success:function(o) {
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+               // alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+			
+            for (var i = 0, len = messages.length; i < len; ++i) {
+                var m = messages[i];										
+
+				if(m.status=="empty"){
+				//alert(m.status);
+
+				//alert(o.responseText);
+							chkMajor2(m.idcode);
+						  //document.form2.submit(); 
+
+				}else if(m.status=="have"){		
+				//alert(m.status);
+
+					YAHOO.example.container.dialog2.show();
+				}
+
+            }
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+
+
+function chkMajor2(idcode){
+	//var obj=document.getElementById(obj_id);
+               //alert(idcode);
+	var sUrl="chk_major.php?idcode="+idcode;
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacksMajor2 ,null); 	
+  }
+
+var callbacksMajor2 = { 
+  success:function(o) {
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+                alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+			len = messages.length;
+
+			if(len==0){
+				alert("äÁèÁÕ passport_id ã¹°Ò¹¢éÍÁÙÅ¹ÔÊÔµãËÁè !!  â»Ã´ÅÍ§ÍÕ¡¤ÃÑé§¤èÐ");
+			}else if(len==1){
+				for (var i = 0, len = len; i < len; ++i) {
+					var m = messages[i];		
+					//alert(m.status+m.major_id+m.campus_id+i);
+					
+					document.form2.major_id.value=m.major_id; 
+					document.form2.campus_id.value=m.campus_id; 
+					document.form2.std_id.value=m.std_id; 
+					document.form2.curr_inter_id.value=m.curr_inter_id; 
+					//alert(document.form2.curr_inter_id.value+m.curr_inter_id);
+				}
+				
+			    document.form2.submit(); 
+			}else{
+			
+				var desc ='<form name="select_major" id="select_major" method="POST" action="">';
+				for (var i = 0, len = len; i < len; ++i) {
+					var m = messages[i];		
+					//alert(m.status+m.major_id+m.campus_id+i);
+
+					if(i==0){
+					desc=desc+'<B>'+(i+1)+'.&nbsp;'+'</B>&nbsp;<INPUT TYPE="radio" NAME="major_campus" value="'+m.major_id+'_'+m.campus_id+'_'+m.std_id+'_'+m.curr_inter_id+'">&nbsp;ÊÒ¢ÒÇÔªÒ'+m.major_name+'('+m.major_id+')'+'&nbsp;ÇÔ·ÂÒà¢µ'+m.campus_name+'('+m.campus_id+')'+'&nbsp;ÀÒ¤'+m.extra_status_name+'('+m.extra_status+')'+'('+m.admit_type+')';
+					}else{
+					desc=desc+'<BR><B>'+(i+1)+'.&nbsp;'+'</B>&nbsp;<INPUT TYPE="radio" NAME="major_campus" value="'+m.major_id+'_'+m.campus_id+'_'+m.std_id+'_'+m.curr_inter_id+'">&nbsp;ÊÒ¢ÒÇÔªÒ'+m.major_name+'('+m.major_id+')'+'&nbsp;ÇÔ·ÂÒà¢µ'+m.campus_name+'('+m.campus_id+')'+'&nbsp;ÀÒ¤'+m.extra_status_name+'('+m.extra_status+')'+'('+m.admit_type+')';
+					}
+				}			
+				desc=desc+'</form>';
+
+				document.getElementById("radio_major2").innerHTML=desc;
+	
+					YAHOO.example.container.dialog4.show();
+			}
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+
+
+function chkAuthen4(){
+	//var obj=document.getElementById(obj_id);
+               // alert(obj.id);
+	var idcode="";
+	var theForm=document.getElementById('form2');
+		for(var i=0;i<theForm.length;i++){
+		if (theForm[i].type=="text"){
+				idcode=idcode+theForm[i].value;
+		}
+	}
+	var sUrl="chk_authen.php?idcode="+idcode;
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacks4,null); 	
+  }
+
+var callbacks4 = { 
+  success:function(o) {
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+                //alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+
+			
+            for (var i = 0, len = messages.length; i < len; ++i) {
+                var m = messages[i];	
+				var question = document.short_question2.question2.value; 
+				var answer = document.short_question2.answer2.value; 
+
+				if(m.question==question && m.answer==answer){
+				//alert(m.answer+'=='+answer);
+
+					document.form2.major_id.value=m.major_id; 
+					document.form2.campus_id.value=m.campus_id; 
+					document.form2.std_id.value=m.std_id; 
+					document.form2.curr_inter_id.value=m.curr_inter_id; 
+						  document.form2.submit(); 
+
+				}else{		
+				//alert(m.answer+'=='+answer+','+m.question+'=='+question);
+				alert('¤ÓµÍºäÁè¶Ù¡µéÍ§ !');
+
+					YAHOO.example.container.dialog2.show();
+				}
+
+            }
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+
+
+/*****passport*******/
+
+
+
+
+//setTimeout(chkPersent(S),1000);
+
+function chkPersent(campus_id){
+	//var obj=document.getElementById(obj_id);
+               //alert(idcode);
+	//var sUrl="chk_entry.php?campus_id="+campus_id;
+	var sUrl="chk_entry.php?campus_id=S";
+	//var sUrl="login_admin.php";
+	YAHOO.util.Connect.asyncRequest('GET',sUrl, callbacksChkPersent,null); 	
+  }
+
+var callbacksChkPersent = { 
+  success:function(o) {
+            YAHOO.log("RAW JSON DATA: " + o.responseText);
+            // Process the JSON data returned from the server
+            var messages = [];
+            try {
+                messages = YAHOO.lang.JSON.parse(o.responseText);
+            }
+            catch (x) {
+                alert("JSON Parse failed!"+o.responseText);
+                return;
+            }
+            YAHOO.log("PARSED DATA: " + YAHOO.lang.dump(messages));   
+			
+            for (var i = 0, len = messages.length; i < len; ++i) {
+                var m = messages[i];		
+				//alert(((m.allPersonal/m.all)*100));
+				//document.getElemtByid('persentS').innerHTML = ((m.allPersonal/m.all)*100);
+				//document.getElemtById('persents').innerHTML = '99';
+				
+				var show=document.getElementById("persents");
+				show.innerHTML=((m.allPersonal/m.all)*100);
+
+            }
+	},
+
+  failure: function(o) {
+		alert("Submission failed: " + o.status);
+	}
+}; 
+</script>
+<!-- 
+<div>
+<button id="show">Show dialog1</button> 
+<button id="hide">Hide dialog1</button>
+</div>
+ -->
+
+<div id="dialog1">
+<div class="hd">¡ÃÍ¡¢éÍÁÙÅÂ×¹ÂÑ¹µÑÇµ¹ÊÓËÃÑº¢ÍÃÑººÑ­ªÕà¤Ã×Í¢èÒÂ¹¹·ÃÕ</div>
+<div class="bd">
+<form name="short_question" id="short_question" method="POST" action="">
+
+	<label for="question[]"><strong>¤Ó¶ÒÁ </strong>/ Question:</label>		 
+			<SELECT name="question" id="question"> 
+			<OPTION value="1">ÊÕ·ÕèªÍº_Favorite  Color</OPTION> 
+			<OPTION value="2">à¾Å§â»Ã´_Favorite Song</OPTION> 
+			<OPTION value="3">ª×èÍÊÑµÇìàÅÕéÂ§_Pet's Name</OPTION> 
+			<OPTION value="4">ÀÒ¾Â¹µÃìÊØ´»ÃÐ·Ñºã¨_Favorite Film</OPTION> 
+			<OPTION value="5">´ÒÃÒ·Õèª×è¹ªÍº_Favorite Star</OPTION> 
+			<OPTION value="6">¹Ñ¡¡ÕÌÒã¹´Ç§ã¨_Favorite Sport Man</OPTION>
+		   </SELECT>
+
+	<label for="answer"><strong>¤ÓµÍº </strong>/ Answer:</label>
+	<input  name="answer" id="answer" maxlength="40" size="26" value="">
+	<div class="clear"></div>
+
+</form>
+</div>
+</div>
+
+
+<div id="dialog2">
+<div class="hd">¡ÃÍ¡¢éÍÁÙÅÂ×¹ÂÑ¹µÑÇµ¹ÊÓËÃÑº¢ÍÃÑººÑ­ªÕà¤Ã×Í¢èÒÂ¹¹·ÃÕ</div>
+<div class="bd">
+<form name="short_question2" id="short_question2" method="POST" action="">
+
+	<label for="question2[]"><strong>¤Ó¶ÒÁ </strong>/ Question:</label>		 
+			<SELECT name="question2" id="question2"> 
+			<OPTION value="1">ÊÕ·ÕèªÍº_Favorite  Color</OPTION> 
+			<OPTION value="2">à¾Å§â»Ã´_Favorite Song</OPTION> 
+			<OPTION value="3">ª×èÍÊÑµÇìàÅÕéÂ§_Pet's Name</OPTION> 
+			<OPTION value="4">ÀÒ¾Â¹µÃìÊØ´»ÃÐ·Ñºã¨_Favorite Film</OPTION> 
+			<OPTION value="5">´ÒÃÒ·Õèª×è¹ªÍº_Favorite Star</OPTION> 
+			<OPTION value="6">¹Ñ¡¡ÕÌÒã¹´Ç§ã¨_Favorite Sport Man</OPTION>
+		   </SELECT>
+
+	<label for="answer2"><strong>¤ÓµÍº </strong>/ Answer:</label>
+	<input  name="answer2" id="answer2" maxlength="40" size="32" value="">
+	<div class="clear"></div>
+
+</form>
+</div>
+</div>
+
+<div id="dialog3">
+<div class="hd">àÅ×Í¡ÊÒ¢Ò·ÕèµéÍ§¡ÒÃÃÒÂ§Ò¹µÑÇ</div>
+<div class="bd">
+
+	<div id="radio_major"><div>
+
+	<div class="clear"></div>
+
+</div>
+</div>
+
+
+<div id="dialog4">
+<div class="hd">àÅ×Í¡ÊÒ¢Ò·ÕèµéÍ§¡ÒÃÃÒÂ§Ò¹µÑÇ</div>
+<div class="bd">
+
+	<div id="radio_major2"><div>
+
+	<div class="clear"></div>
+
+</div>
+</div>
+
+<!--END SOURCE CODE FOR EXAMPLE =============================== -->
+
+</body>
+</html>
+<url>https://student.ku.ac.th/newregis/</url><pagerank>0.0009777461137684957</pagerank>

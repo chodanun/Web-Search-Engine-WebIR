@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>ตรวจสอบข้อมูลอาจารย์ผู้สอน :: Academic e-Evalution of Kasetsart University ::</title>
+<LINK REL="SHORTCUT ICON" HREF="images/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+<link href="Templates/assess_style.css" rel="stylesheet" type="text/css">
+<link href="Templates/css_assess.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!-- Begin
+/*var arrItems = new Array();
+var arrItemsGrp = new Array();
+var arrItemValue = new Array();
+
+var arrItems2 = new Array();
+var arrItemsGrp2 = new Array();
+var arrItemsGrpB2 = new Array();
+var arrItemValue2 = new Array();*/
+
+function selectChange(control, controlToPopulate, ItemArray, GroupArray)
+{
+  var myEle ;
+  var x ;
+  for (var q=controlToPopulate.options.length;q>=0;q--) controlToPopulate.options[q]=null;
+  myEle = document.createElement("option") ;
+  myEle.value = 0 ;
+  myEle.text = " ทุกคณะ " ;
+  controlToPopulate.add(myEle) ;
+  for ( x = 0 ; x < ItemArray.length  ; x++ )
+    {
+      if ( GroupArray[x] == control.value )
+        {
+          myEle = document.createElement("option") ;
+		  myEle.value = arrItemValue[x];
+          myEle.text = ItemArray[x] ;
+          controlToPopulate.add(myEle) ;
+        }
+    }
+}
+function selectChange2(control2, controlToPopulate2,controlB2, ItemArray2, GroupArray2)
+{
+  var myEle ;
+  var x ;
+  for (var q=controlToPopulate2.options.length;q>=0;q--) controlToPopulate2.options[q]=null;
+  myEle = document.createElement("option") ;
+  myEle.value = 0 ;
+  myEle.text = " ทุกภาควิชา" ;
+  controlToPopulate2.add(myEle) ;
+  for ( x = 0 ; x < ItemArray2.length  ; x++ )
+    {
+  //    if ( GroupArray2[x] == control2.value && arrItemsGrpB2[x]==controlB2.value )
+  if ( GroupArray2[x] == control2.value && arrItemsGrpB2[x]==controlB2.value )
+        {
+          myEle = document.createElement("option") ;
+		  myEle.value = arrItemValue2[x];
+          myEle.text = ItemArray2[x] ;
+          controlToPopulate2.add(myEle) ;
+        }
+    }
+}
+// End -->
+
+function doChange(){ 
+var valueLabelPair  = new Array();
+var towho=document.myChoices.fac_id;
+var fromwho=document.myChoices.campus_id;
+var url="xml/getfaculty.php?campus="+fromwho.value+"&choice=fac&rand="+Math.random(); 
+document.myChoices.fac_id.options.length = 0; 
+    var str=loadxmlComboItem(url,towho,'Select One');
+    var str_array =str.split("-");
+	document.myChoices.fac_id.options[0] = new Option("ทุกคณะ",0);
+	for (i=0;i<str_array.length-1;i++) {   
+		valueLabelPair = str_array[i].split(",") ;
+		towho.options[i+1] = new Option(valueLabelPair[1], valueLabelPair[0]);
+   }
+}      // function
+
+function doChangeDept(){ 
+var valueLabelPair  = new Array();
+var towho=document.myChoices.dept_id;
+var fromwho=document.myChoices.fac_id;
+var fromwho2=document.myChoices.campus_id;
+var url="xml/getfaculty.php?fac="+fromwho.value+"&campus="+fromwho2.value+"&choice=dept&rand="+Math.random(); 
+document.myChoices.dept_id.options.length = 0; 
+   var str=loadxmlComboItem(url,towho,'Select One');
+    var str_array =str.split("-");
+	document.myChoices.dept_id.options[0] = new Option("ทุกภาควิชา",0);
+	for (i=0;i<str_array.length-1;i++) {   
+		valueLabelPair = str_array[i].split(",") ;
+		towho.options[i+1] = new Option(valueLabelPair[0]+"  -  "+valueLabelPair[1], valueLabelPair[0]);
+   }
+}      // function
+
+function loadxmlComboItem(url,towho,firstOption){ 
+var str ; 
+ //var adEle
+var urltarget ; 
+urltarget = url ;  
+var xmlhttp = false;
+var valueLabelPair  = new Array();
+try{
+xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+}catch(e){
+try{
+xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}catch(e){
+xmlhttp = false;
+}
+}
+xmlhttp.open("GET",urltarget, false); 
+xmlhttp.send(); 
+str = xmlhttp.responseText;
+return str;
+}    // function
+</script>
+<style type="text/css" >
+a:link {
+	font-family: "Microsoft Sans Serif", "MS Serif"; 	
+	font-size: 9pt; 
+	color: #000033;
+}
+a:visited {
+    font-family: "Microsoft Sans Serif", "MS Serif"; 	
+	font-size: 9pt; 
+	color: #000066;
+}
+a:hover {
+	font-family: "Microsoft Sans Serif", "MS Serif";
+	font-size: 9pt;
+	color: #F86B0A;
+}
+a:active {
+    font-family: "Microsoft Sans Serif", "MS Serif"; 	
+	font-size: 9pt; 
+	color: #F86B0A;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+       <tr>       
+    <td width="8%" valign="top"><img src="images/index01.jpg" width="191"  height="72"></td>
+          <td width="92%" height="68" valign="top" background="../images/bk_head.jpg" ><img src="../images/banner.jpg" width="517" height="72"></td>
+        </tr>
+</table>
+ <CENTER>
+</CENTER>
+  <form name="myChoices" method="post" action=""><!-- action="disp_advisor.php"-->
+    <table width="37%" border="1" align=center class="que_txt">
+	<tr><td colspan=2 align=center><font color="#3333FF"><b>ตรวจสอบข้อมูลอาจารย์ผู้สอน</b></font><br>
+		</td></tr>
+	<tr>
+	  <td align=center><div align="right"><font color="#3333FF"><b>ปีการศึกษา&nbsp;</b></font></div></td>
+	  <td align=center><div align="left">
+	  <select name="TYr">
+	  			<option value="52" >2552</option>
+	  			<option value="53" >2553</option>
+	  			<option value="54" >2554</option>
+	  			<option value="55" >2555</option>
+	  			<option value="56" >2556</option>
+	  			<option value="57" >2557</option>
+	  			<option value="58" >2558</option>
+	       <!--<option value="53">2553</option>
+	 <option value="52">2552</option>-->
+	 </select></div></td>
+	</tr>
+	<tr>
+	  <td align=center><div align="right"><font color="#3333FF"><b>ภาค&nbsp;</b></font></div></td>
+	  <td align=center><div align="left"><select name="TSm">
+	  	  <option value="1" selected="selected">ภาคต้น</option>
+	  <option value="2" >ภาคปลาย</option>
+	  </select>
+	  	  </div></td>
+	</tr>
+	<!--<tr>   //  19/11/2552
+      <td width="118"> 
+        <div align="right"><font color="#3333FF"><b>วิทยาเขต</b></font></div>
+      </td>
+      <td width="332">  onChange="selectChange(this, myChoices.fac_id, arrItems, arrItemsGrp);" 
+<select id=campus_id name=campus_id onChange="doChange()">
+	<option value=0 selected>[คลิกเลือก]</option>
+	<option value="B" >บางเขน</option>
+	<option value="K" >กำแพงแสน</option>
+	<option value="P" >สุพรรณบุรี</option>
+	<option value="I" >สถาบันสบทบ</option>
+	<option value="R" >กระบี่</option>
+</select>
+      </td>
+    </tr>-->
+    <tr> 
+      <td width="118">
+        <div align="right"><font color="#3333FF"><b>รหัสวิชา</b></font></div>      </td>
+      <td width="332"><input type="text" name="cs_code"  value="" size="20" maxlength="8">  <font face="Cordia New"; size="2" color="red">** รหัสวิชา 8 หลัก หรือ 5 หลักแรก</font></td>
+    </tr>
+
+    <tr> 
+      <td width="118">&nbsp;</td>
+      <td width="332">
+        <input type="submit" name="Submit" value="Search">      </td>
+    </tr>
+  </table>
+  <div align="center"></div>
+</form>
+</body>
+</html><url>https://eassess.ku.ac.th/rpt_advisor.php</url><pagerank>0.0011313095047330815</pagerank>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <title>  Password Self Service</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta id="application-info" name="application-name" content="SSPR Password Self Service" data-sspr-instance="1435E8F6112C5668" data-jsp-name="login.jsp"
+          data-url-context="" data-pwmFormID="5h96ScK0FGVr5KcOU71o8ZdGkQAGVTee1580fad88212WzR8" data-clientEtag="ad1519f6a260b0df443d4358083c8dbd7475bb1a" data-restClientKey=""/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7" />
+    <link rel="icon" type="image/x-icon" href="/public/resources/nonce-isip4srg/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/public/resources/nonce-isip4srg/font/font-awesome.css"/>
+    <link href="/public/resources/nonce-isip4srg/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/public/resources/nonce-isip4srg/themes/custom/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link media="only screen and (max-width: 600px)" href="/public/resources/nonce-isip4srg/mobileStyle.css" type="text/css" rel="stylesheet"/><link media="only screen and (max-width: 600px)" href="/public/resources/nonce-isip4srg/themes/custom/mobileStyle.css" type="text/css" rel="stylesheet"/><link href="/public/resources/nonce-isip4srg/dojo/dijit/themes/nihilo/nihilo.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" nonce="mLRrzCpt4f">
+            var PWM_GLOBAL = PWM_GLOBAL || {}; PWM_GLOBAL['startupFunctions'] = [];
+        
+    </script></head>
+<body class="nihilo">
+<div id="wrapper" class="login-wrapper">
+    <div id="header">
+    <div id="header-company-logo">
+    </div>
+    <div id="header-balance-div">
+        <br/></div>
+    <div id="header-right-logo" style="position: absolute">
+    </div>
+    <div id="header-center">
+        <div id="header-center-left">
+            <div id="header-page">Nontri Account Management</div>
+            <div id="header-title">Password self service</div>
+        </div>
+        <div id="header-center-right">
+            </div>
+    </div>
+</div>
+<div id="centerbody">
+        
+
+        <form action="Login" method="post" name="login" enctype="application/x-www-form-urlencoded" id="login">
+            <div id="message_wrapper">
+<span style="display:none" id="message" class="message">&nbsp;</span>
+<div id="capslockwarning" style="display:none;">CAPS LOCK is on</div>
+</div>
+<div style="display: none" id="contextSelectorWrapper">
+    <h2><label for="context">Location</label></h2>
+    <select name="context" id="context" class="selectfield">
+        </select>
+</div>
+<h2><label for="username">Username</label></h2>
+            <input type="text" name="username" id="username" class="inputfield" autofocus="autofocus"  required="required">
+
+            <h2><label for="password">Current Password</label></h2>
+            <input type="password" name="password" id="password" required="required" class="inputfield passwordfield"/>
+
+            <div class="buttonbar">
+                <button type="submit" class="btn" name="button" id="submitBtn">
+                    <span class="btn-icon fa fa-sign-in"></span>Login</button>
+                <input type="hidden" name="processAction" value="login">
+                <button style="visibility:hidden;" type="button" name="button" class="btn" id="button_cancel">
+    <span class="btn-icon fa fa-times"></span>Cancel</button>
+<input type="hidden" id="pwmFormID" name="pwmFormID" value="5h96ScK0FGVr5KcOU71o8ZdGkQAGVTee1580fad88212WzR8"/>
+            </div>
+        </form>
+        <br/>
+        <table style="border:0">
+                <tr style="border:0">
+                        <td style="border:0" class="menubutton_key">
+                            <a class="menubutton" id="Title_ForgottenPassword" href="/public/ForgottenPassword">
+                                <span class="btn-icon fa fa-unlock"></span>Forgotten Password</a>
+                        </td>
+                        <td style="border: 0">
+                            <p>Regain access to your account if you have forgotten your password.</p>
+                        </td>
+                    </tr>
+                <tr style="border:0">
+                        <td style="border:0" class="menubutton_key">
+                            <a class="menubutton" id="Title_ActivateUser" href="/public/ActivateUser">
+                                <span class="btn-icon fa fa-graduation-cap"></span>Personal information verification</a>
+                        </td>
+                        <td style="border: 0">
+                            <p>Activate a pre-configured account and establish a new password.</p>
+                        </td>
+                    </tr>
+                </table>
+        <p>
+            <span class="panel-login-display-message"><center><small>Please contact OCS:Office of Computer Services for support Tel: 02-5620951-6 ext 622541-3</small><br/><b>Chrome, Firefox, IE(10 or higher) supported</b></center></span>
+        </p>
+    </div>
+    <div class="push"></div>
+</div>
+<script type="text/javascript" nonce="mLRrzCpt4f">
+        PWM_GLOBAL['startupFunctions'].push(function(){
+            PWM_MAIN.addEventHandler('login','submit',function(event){
+                PWM_MAIN.handleLoginFormSubmit(PWM_MAIN.getObject('login'),event);
+            });
+        });
+    
+</script><div id="footer">
+    <div id="footer-content">
+        <span class="infotext">
+            &nbsp;
+        </span>
+        <div>
+            <span id="idle_wrapper">
+            <span id="idle_status">
+                Idle Timeout:15 minutes</span>
+            </span>
+            &nbsp;&nbsp;&nbsp;&#x2022;&nbsp;&nbsp;&nbsp;<span id="localeSelectionMenu">
+                <img src="/public/resources/nonce-isip4srg/flags/png/us.png"/>
+                
+                &nbsp;English</span>
+            </div>
+    </div>
+</div>
+<script type="text/javascript" nonce="mLRrzCpt4f">
+        PWM_GLOBAL['startupFunctions'].push(function() {
+            
+        });
+    
+</script><script nonce="mLRrzCpt4f" data-dojo-config="async: true" dojo-sync-loader="false" type="text/javascript" src="/public/resources/nonce-isip4srg/dojo/dojo/dojo.js"></script>
+<script type="text/javascript" nonce="mLRrzCpt4f" src="/public/resources/nonce-isip4srg/js/main.js"></script></body>
+</html>
+<url>https://accounts.ku.ac.th</url><pagerank>0.0009777461137684957</pagerank>
